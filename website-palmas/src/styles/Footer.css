@@ -1,0 +1,237 @@
+
+li a {
+    text-decoration: none;
+    color: black
+}
+
+li a:hover{
+    color: rgb(72, 185, 72);
+    transition: ease-in-out all 0.2s;
+}
+
+.footer{
+    /* background-color: #605d57; */
+    background-color:  	#e8de97;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+div .list-section{
+    text-align: center;
+}
+
+li{
+    list-style: none;
+    text-align: left;
+}
+
+.developer{
+    text-decoration: none;
+    font-family: 'Libre Baskerville', serif;
+    color: white
+}
+
+.developer:hover {
+    color:rgb(68, 168, 68);
+    transition: ease-in-out all 0.3s;
+}
+
+footer .social-media{
+    color: white;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #312f28;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social-media p{
+    margin: 0
+}
+
+.footer h5{
+    padding-top: 40px;
+    margin-bottom: 30px;
+}
+
+.footer li span{
+    margin-right: 6px;
+}
+
+.list-section div ul li{
+    display: flex;
+    align-items: center;
+}
+
+.list-section div ul li a{
+    margin: 2px
+}
+
+.logo{
+    font-size: 2em !important;
+}
+
+div.logos button:hover{
+    color: rgb(48, 139, 48);
+    transition: ease-in-out all 0.3s;
+}
+
+.list-section div li button{
+    font-family: 'Libre Baskerville', serif !important;
+    text-align: center;
+    text-transform: none;
+    font-size: 1em !important;
+    margin: 2px;
+    padding: 0;
+    flex-shrink: 1 !important;
+}
+
+.MuiIconButton-root{
+    color: black !important;
+    opacity: 1 !important;
+    padding: 0 !important
+}
+
+@media (max-width: 991.98px){
+    .list-section{
+        width: 25rem
+    }
+    .list-section div li button{
+        font-family: 'Libre Baskerville', serif !important;
+        text-transform: none;
+        font-size: 0.99em !important;
+        margin: 0;
+        padding: 0;
+        transform: translateX(14px);
+    }
+    .list-section div li span button{
+        font-family: 'Libre Baskerville', serif !important;
+        text-transform: none;
+        font-size: 0.99em !important;
+        margin: 0;
+        padding: 0;
+        transform: none;
+    }
+}
+
+@media (max-width: 767.98px){
+    footer{
+        width: 100%
+    }
+
+    .list-section{
+        width: 15rem
+    }
+
+    .list-section h5{
+        font-size: 1em;
+        width: 50%;
+    }  
+
+    .footer{
+        align-items: flex-start;
+        width: 100;
+        justify-content: center;
+    }
+
+    .list-section ul{
+        margin: 0;
+        padding: 0;
+    }
+    .list-section div{
+        margin: 10px
+    }
+
+    .list-section ul li{
+        font-size: 0.6em;
+    }
+
+    .list-section div ul{
+        margin-top: -10px;
+    }
+
+    .social-media{
+        font-size: 0.7em;
+    }
+
+    .social-media p{
+        margin-left: -15px;
+    }
+
+    .logo{
+        font-size: 1em !important;
+    }
+
+    .list-section div li button{
+        font-family: 'Libre Baskerville', serif !important;
+        text-transform: none;
+        font-size: 0.99em !important;
+        margin: 0;
+        padding: 0;
+        transform: translateX(5px);
+    }
+}
+
+@media (max-width: 575.98px){
+    footer{
+        width: 100%
+    }
+    .list-section h5{
+        font-size: 1em;
+        width: 50%;
+    }  
+
+    .footer{
+        align-items: flex-start;
+        width: 100;
+        justify-content: center;
+    }
+
+    .list-section ul{
+        margin: 0;
+        padding: 0;
+    }
+    .list-section div{
+        margin: 10px
+    }
+
+    .list-section ul li{
+        font-size: 0.6em;
+    }
+
+    .list-section div ul{
+        margin-top: -10px;
+    }
+
+    .social-media{
+        font-size: 0.45em;
+    }
+
+    .social-media p{
+        margin-left: -10px;
+        width: 50%
+    }
+
+    .logo{
+        font-size: 1em !important;
+    }
+}
+
+@media (max-width: 370px){
+    .logo{
+        font-size: 0.8em !important;
+    }
+}
+
