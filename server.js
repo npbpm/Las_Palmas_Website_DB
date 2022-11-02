@@ -27,6 +27,12 @@ if (process.env.NODE_ENV === "production") {
     );
   });
 }
+
+app.all("/", (req, res, next) => {
+  res.render(__dirname + "/website-palmas/build/index.html");
+  next();
+});
+
 const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, function () {
