@@ -1,7 +1,7 @@
 {
   "name": "website-palmas",
   "version": "0.1.0",
-  "homepage": "https://npbpm.github.io/Las_Palmas_Website",
+  "homepage": "https://sheltered-retreat-22436.herokuapp.com/",
   "main": "index.js",
   "proxy": "https://sheltered-retreat-22436.herokuapp.com/",
   "dependencies": {
