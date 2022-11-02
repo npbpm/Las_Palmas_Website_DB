@@ -21,11 +21,11 @@ if (process.env.NODE_ENV === "production") {
   // Set static folder
   app.use(express.static("website-palmas/build"));
 
-  app.get("*", (req, res) =>
+  app.get("*", (req, res) => {
     res.sendFile(
       path.resolve(__dirname, "website-palmas", "build", "index.html")
-    )
-  );
+    );
+  });
 }
 const PORT = process.env.PORT || 3001;
 
