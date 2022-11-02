@@ -19,7 +19,7 @@ app.use("/", require("./routes/reviewRoute"));
 
 if (process.env.NODE_ENV === "production") {
   // Set static folder
-  app.use(express.static(path.join(__dirname, "/website-palmas/build")));
+  app.use(express.static(path.join(__dirname, "website-palmas/build")));
 
   app.get("*", (req, res) => {
     res.sendFile(
@@ -27,11 +27,6 @@ if (process.env.NODE_ENV === "production") {
     );
   });
 }
-
-app.all("/", (req, res, next) => {
-  res.render(__dirname + "/website-palmas/build/index.html");
-  next();
-});
 
 const PORT = process.env.PORT || 3001;
 
