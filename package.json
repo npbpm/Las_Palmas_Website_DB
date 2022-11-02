@@ -5,9 +5,12 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd website-palmas && npm run build",
+    "install": "cd website-palmas && npm run install -force",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix website-palmas",
+    "clientinstall": "npm install --prefix website-palmas",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install -force --prefix website-palmas"
   },
