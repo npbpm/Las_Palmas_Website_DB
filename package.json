@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd website-palmas && npm run build",
-    "install": "cd website-palmas && npm run install -force",
+    "install": "cd website-palmas && npm install -force",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix website-palmas",
