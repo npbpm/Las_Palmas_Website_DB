@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === "production") {
   // Set static folder
   app.use(express.static(__dirname + "/website-palmas/build"));
 
-  app.get("*", (re, res) =>
+  app.get("*", (req, res) =>
     res.sendFile(
       path.resolve(__dirname, "website-palmas", "build", "index.html")
     )
