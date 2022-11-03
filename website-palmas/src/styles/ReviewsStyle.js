@@ -45,6 +45,11 @@ const style = {
     width: "98%",
     borderRadius: "13px",
   },
+  formBtns: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-evenly",
+  },
 };
 
 export default style;

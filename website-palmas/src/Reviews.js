@@ -9,6 +9,7 @@ import axios from "axios";
 import Authentication from "./Authentication";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
 import { red } from "@mui/material/colors";
+import Loading from "./Loading";
 
 function Reviews(props) {
   const { classes } = props;
@@ -25,9 +26,23 @@ function Reviews(props) {
 
   const [adminValidated, setAdminValidated] = useState(false);
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const { language } = useContext(LanguageContext);
 
   useEffect(() => {
+    setIsLoading(true);
+
+    fetchData();
+
+    document.addEventListener("keydown", keyDownHandler);
+
+    return () => {
+      document.removeEventListener("keydown", keyDownHandler);
+    };
+  }, []);
+
+  const fetchData = () => {
     fetch("/reviews")
       .then((res) => {
         if (res.ok) {
@@ -37,6 +52,7 @@ function Reviews(props) {
       .then((jsonRes) => {
         if (jsonRes.length !== 0) {
           setOpinions(jsonRes);
+          setIsLoading(false);
         } else {
           setOpinions([
             {
@@ -100,25 +116,19 @@ function Reviews(props) {
           ]);
         }
       });
+  };
 
-    const keyDownHandler = (event) => {
-      if (event.key === "e") {
-        event.preventDefault();
-        setEditing(true);
-      }
-      if (event.key === "q") {
-        event.preventDefault();
-        setEditing(false);
-        setAdminValidated(false);
-      }
-    };
-
-    document.addEventListener("keydown", keyDownHandler);
-
-    return () => {
-      document.removeEventListener("keydown", keyDownHandler);
-    };
-  }, []);
+  const keyDownHandler = (event) => {
+    if (event.key === "e" && event.ctrlKey) {
+      event.preventDefault();
+      setEditing(true);
+    }
+    if (event.key === "q" && event.ctrlKey) {
+      event.preventDefault();
+      setEditing(false);
+      setAdminValidated(false);
+    }
+  };
 
   const validateAdmin = () => {
     setAdminValidated(true);
@@ -131,6 +141,7 @@ function Reviews(props) {
     } catch (error) {
       console.log("ERROR");
     }
+    fetchData();
   };
 
   return (
@@ -138,36 +149,42 @@ function Reviews(props) {
       <Typography variant="h1">
         {language === "spanish" ? "Testimonios" : "Reviews"}
       </Typography>
-      <div className={classes.content}>
-        <div className={classes.opinions}>
-          {opinions.map((opinion, idx) => (
-            <div className={classes.opinion} key={idx}>
-              {adminValidated && (
-                <IconButton
-                  sx={{ position: "relative", top: 2, left: "+49%" }}
-                  onClick={() => handleClick(opinion._id)}
-                >
-                  <HighlightOffIcon
-                    sx={{ color: red[700], fontSize: "1.5em" }}
-                  />
-                </IconButton>
-              )}
+      {isLoading ? (
+        <Loading />
+      ) : (
+        <div className={classes.content}>
+          <div className={classes.opinions}>
+            {opinions.map((opinion, idx) => (
+              <div className={classes.opinion} key={idx}>
+                {adminValidated && (
+                  <IconButton
+                    sx={{ position: "relative", top: 2, left: "+49%" }}
+                    onClick={() => handleClick(opinion._id)}
+                  >
+                    <HighlightOffIcon
+                      sx={{ color: red[700], fontSize: "1.5em" }}
+                    />
+                  </IconButton>
+                )}
 
-              <p style={{ fontStyle: "italic" }}>{opinion.message}</p>
-              <div style={{ display: "flex" }}>
-                <PersonIcon />
-                {opinion.name !== ""
-                  ? opinion.name
-                  : language === "spanish"
-                  ? "ANONIMO"
-                  : "ANONYMOUS"}
+                <p style={{ fontStyle: "italic" }}>{opinion.message}</p>
+                <div style={{ display: "flex" }}>
+                  <PersonIcon />
+                  {opinion.name !== ""
+                    ? opinion.name
+                    : language === "spanish"
+                    ? "ANONIMO"
+                    : "ANONYMOUS"}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <div className={classes.formBtns}>
+            <FormDialog addOpinion={addOpinion} />
+            {editing && <Authentication validateAdmin={validateAdmin} />}
+          </div>
         </div>
-        <FormDialog addOpinion={addOpinion} />
-        {editing && <Authentication validateAdmin={validateAdmin} />}
-      </div>
+      )}
     </div>
   );
 }
