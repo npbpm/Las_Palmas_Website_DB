@@ -3,9 +3,12 @@ import { withStyles } from "@mui/styles";
 import FormDialog from "./Formdialog";
 import PersonIcon from "@mui/icons-material/Person";
 import style from "./styles/ReviewsStyle";
-import { Typography } from "@mui/material";
+import { IconButton, Typography } from "@mui/material";
 import { LanguageContext } from "./context/LanguageContext";
 import axios from "axios";
+import Authentication from "./Authentication";
+import HighlightOffIcon from "@mui/icons-material/HighlightOff";
+import { red } from "@mui/material/colors";
 
 function Reviews(props) {
   const { classes } = props;
@@ -17,6 +20,10 @@ function Reviews(props) {
   };
 
   const [opinions, setOpinions] = useState([]);
+
+  const [editing, setEditing] = useState(false);
+
+  const [adminValidated, setAdminValidated] = useState(false);
 
   const { language } = useContext(LanguageContext);
 
@@ -93,7 +100,38 @@ function Reviews(props) {
           ]);
         }
       });
+
+    const keyDownHandler = (event) => {
+      if (event.key === "e") {
+        event.preventDefault();
+        setEditing(true);
+      }
+      if (event.key === "q") {
+        event.preventDefault();
+        setEditing(false);
+        setAdminValidated(false);
+      }
+    };
+
+    document.addEventListener("keydown", keyDownHandler);
+
+    return () => {
+      document.removeEventListener("keydown", keyDownHandler);
+    };
   }, []);
+
+  const validateAdmin = () => {
+    setAdminValidated(true);
+  };
+
+  const handleClick = (id) => {
+    try {
+      axios.delete("/delete/" + id);
+      alert("Review deleted");
+    } catch (error) {
+      console.log("ERROR");
+    }
+  };
 
   return (
     <div className={classes.container}>
@@ -104,6 +142,17 @@ function Reviews(props) {
         <div className={classes.opinions}>
           {opinions.map((opinion, idx) => (
             <div className={classes.opinion} key={idx}>
+              {adminValidated && (
+                <IconButton
+                  sx={{ position: "relative", top: 2, left: "+49%" }}
+                  onClick={() => handleClick(opinion._id)}
+                >
+                  <HighlightOffIcon
+                    sx={{ color: red[700], fontSize: "1.5em" }}
+                  />
+                </IconButton>
+              )}
+
               <p style={{ fontStyle: "italic" }}>{opinion.message}</p>
               <div style={{ display: "flex" }}>
                 <PersonIcon />
@@ -117,6 +166,7 @@ function Reviews(props) {
           ))}
         </div>
         <FormDialog addOpinion={addOpinion} />
+        {editing && <Authentication validateAdmin={validateAdmin} />}
       </div>
     </div>
   );

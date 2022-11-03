@@ -3,6 +3,7 @@ const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
 const path = require("path");
+const Review = require("./models/reviewModel");
 
 app.use(cors());
 app.use(express.json());
@@ -16,6 +17,17 @@ mongoose.connect(
 app.use("/", require("./routes/reviewRoute"));
 
 // Serve static asses in production
+
+app.delete("/delete/:id", function (req, res) {
+  const id = mongoose.Types.ObjectId(req.params.id);
+  Review.findByIdAndDelete(id, function (err) {
+    if (!err) {
+      console.log("No Error");
+    } else {
+      console.log("Error");
+    }
+  });
+});
 
 if (process.env.NODE_ENV === "production") {
   // Set static folder
@@ -31,5 +43,5 @@ if (process.env.NODE_ENV === "production") {
 const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, function () {
-  console.log("Express server running on port 3001");
+  console.log("Express server running on port" + PORT);
 });
