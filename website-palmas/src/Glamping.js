@@ -130,7 +130,7 @@ function Glamping(props) {
             ) : (
               <p>
                 We welcome you to our Glamping{" "}
-                <span style={{ fintWeight: "800" }}>Nidos del Cóndor</span>, the
+                <span style={{ fontWeight: "800" }}>Nidos del Cóndor</span>, the
                 only glamping located on the top of the Cocora Valley. This is
                 the perfect place for those one weekend couple runaways, take
                 this chance to take the city's weight of your shoulders and
@@ -143,7 +143,6 @@ function Glamping(props) {
         <div
           className={classes.intro}
           style={{
-            backgroundColor: "rgba(255,255,255,0.8)",
             marginBottom: "20px",
           }}
         >
@@ -165,10 +164,7 @@ function Glamping(props) {
             </p>
           )}
         </div>
-        <div
-          className={classes.intro}
-          style={{ backgroundColor: "rgba(255,255,255,0.8)" }}
-        >
+        <div className={classes.intro}>
           <Slideshow
             slideImages={outsideImages}
             width={"500px"}

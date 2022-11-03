@@ -4,6 +4,8 @@ import style from "./styles/CofeeHouseStyle";
 import { Typography } from "@mui/material";
 import { LanguageContext } from "./context/LanguageContext";
 import words from "./text/CoffeHouseWords";
+import CoffeeIcon from "@mui/icons-material/Coffee";
+import { brown } from "@mui/material/colors";
 
 function CofeeHouse(props) {
   const { classes } = props;
@@ -30,6 +32,14 @@ function CofeeHouse(props) {
             En su terraza podrá disfrutar de la naturaleza, el aire fresco y de
             la tranquilidad del campo mientras disfruta de los mejores helados
             acompañados del mejor café de la región.
+            <CoffeeIcon
+              sx={{
+                fontSize: "1em",
+                transform: "translateY(3px)",
+                marginLeft: "2px",
+                color: brown[700],
+              }}
+            />
             <br /> <br />
             Desde la terraza se tiene una clara vista de la zona de juegos para
             niños, por lo que podrá disfrutar de su postre mientras vigila a sus

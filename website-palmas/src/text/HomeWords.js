@@ -8,6 +8,20 @@ const words = {
       path: "/restaurant",
     },
     {
+      title: "Glamping Cocora Nidos del Cóndor",
+      description:
+        "Este es el lugar perfecto para esas escapadas de un fin de semana en pareja, para sacarse el peso de la ciudad y disfrutar de una experiencia única dentro de las montañas del Valle de Cocora.",
+      img: "./images/logoGlamping.jpg",
+      path: "/cocora-nidos-del-condor",
+    },
+    {
+      title: "Vivero Cocora Viva",
+      description:
+        "Venga y aproveche la oportunidad de llevarse con usted un recuerdo de la flora del Valle, con el toque único del Vivero Cocora Viva",
+      img: "./images/vivero1.jpeg",
+      path: "/cocora-viva",
+    },
+    {
       title: "Casita del sabor",
       description:
         "Déjese atrapar por el aroma del café, disfrute de esta deliciosa bebida preparada en diferentes formas, en nuestra casita de arquitectura quindiana.",
@@ -57,6 +71,20 @@ const words = {
         "We take pride on our typically colombian menu, here you can have a taste of what colombian culture is actually like. Allow yourself to awaken all of your senses in this beautiful Valley, while admiring the beauty of the land with its majestic wax palm trees and its green mountains.",
       img: "./images/FrenteRestaurante.jpeg",
       path: "/restaurant",
+    },
+    {
+      title: "Glamping Cocora Nidos del Cóndor",
+      description:
+        "This is the perfect place for those one weekend couple runaways, take this chance to take the city's weight of your shoulders and enjoy of this unique experience deep inside the Valley's mountains.",
+      img: "./images/logoGlamping.jpg",
+      path: "/cocora-nidos-del-condor",
+    },
+    {
+      title: "Florist Cocora Viva",
+      description:
+        "Comme and take advantage of this opportunity to bring back home a memory with the special touch of the Florist Cocora Viva",
+      img: "./images/vivero1.jpeg",
+      path: "/cocora-viva",
     },
     {
       title: "Coffee House",

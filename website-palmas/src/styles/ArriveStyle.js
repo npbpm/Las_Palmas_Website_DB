@@ -33,10 +33,6 @@ const styles = {
     maxHeight: "100%",
     width: "49.5%",
     height: "800px",
-    boxShadow: "10px 10px 5px #ccc",
-    mozBoxShadow: "10px 10px 5px #ccc",
-    webkitBoxShadow: "10px 10px 5px #ccc",
-    khtmlBoxShadow: "10px 10px 5px #ccc",
     borderRadius: "13px",
     [sizes.down("md")]: {
       height: "200px",
