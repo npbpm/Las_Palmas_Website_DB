@@ -45,7 +45,7 @@ function WhoAreWe(props) {
         {language === "spanish" ? (
           <p className={classes.paragraph}>
             Desde sus inicios, Las Palmas de Cocora han sido un restaurante
-            familial, fundado hace más de 30 años por el ganadero Alberto Pérez
+            familiar, fundado hace más de 30 años por el ganadero Alberto Pérez
             Puerta y su esposa Maria Teresa Puerta Manzano.
             <br />
             Fue el primer restaurante que apareció en el Valle de Cocora

@@ -5,6 +5,7 @@ import { Typography } from "@mui/material";
 import style from "./styles/HomeStyle";
 import { LanguageContext } from "./context/LanguageContext";
 import words from "./text/HomeWords";
+import { red } from "@mui/material/colors";
 
 function Home(props) {
   const { classes } = props;
@@ -28,8 +29,9 @@ function Home(props) {
     <div className={classes.home}>
       <div className={classes.homeBody}>
         <div>
-          <Typography variant="h1">
-            {language === "spanish" ? "El Lugar" : "The Place"}
+          <Typography variant="h1" sx={{ color: red[800] }}>
+            {/* {language === "spanish" ? "El Lugar" : "The Place"} */}
+            Eco - Hotel Las Palmas De Cocora
           </Typography>
           <section className={classes.location}>
             <img

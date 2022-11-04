@@ -275,7 +275,7 @@ const ResponsiveAppBar = (props) => {
                   md: "flex",
                   justifyContent: "flex-end",
                   alignItems: "center",
-                  backgroundColor: `${green[500]}`,
+                  backgroundColor: `${green[700]}`,
                   borderRadius: "30px",
                   border: "solid 0.2rem #eeeeee",
                   boxShadow: "rgba(27, 176, 9, 0.1) 0px 4px 12px",
