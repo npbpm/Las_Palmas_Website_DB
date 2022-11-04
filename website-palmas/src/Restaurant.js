@@ -13,6 +13,9 @@ import words from "./text/RestaurantWords";
 
 const slideImages = [
   {
+    url: "./images/AtardercerPalmas.jpeg",
+  },
+  {
     url: "./images/Who-are-we.jpeg",
   },
   {

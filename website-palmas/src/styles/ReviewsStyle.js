@@ -30,11 +30,13 @@ const style = {
   },
   opinions: {
     display: "flex",
+    height: "80vh",
     alignItems: "center",
     justifyContent: "center",
     flexWrap: "wrap",
     marginBottom: "30px",
     padding: "20px",
+    overflowY: "scroll",
     [sizes.down("md")]: {
       padding: "10px",
     },
