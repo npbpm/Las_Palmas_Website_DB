@@ -17,7 +17,7 @@ function Reviews(props) {
   const addOpinion = (opinion) => {
     setOpinions([...opinions, opinion]);
 
-    axios.post("/create", opinion);
+    axios.post("/api/create", opinion);
   };
 
   const [opinions, setOpinions] = useState([]);
@@ -42,16 +42,21 @@ function Reviews(props) {
     };
   }, []);
 
+  /*  axios.defaults.baseURL = "http://localhost:3001"; */
+
   const fetchData = async () => {
-    await fetch("/reviews")
+    const defaultReviews = await axios.get("/api/reviews");
+    setOpinions(defaultReviews.data);
+    setIsLoading(false);
+    /* fetch("/reviews")
       .then(async (res) => {
         if (res.ok) {
-          return await res.json();
+          return res.json();
         }
       })
-      .then(async (jsonRes) => {
+      .then((jsonRes) => {
         if (jsonRes.length !== 0) {
-          await setOpinions(jsonRes);
+          setOpinions(jsonRes);
           setIsLoading(false);
         } else {
           setOpinions([
@@ -115,7 +120,7 @@ function Reviews(props) {
             },
           ]);
         }
-      });
+      }); */
   };
 
   const keyDownHandler = (event) => {
@@ -136,7 +141,7 @@ function Reviews(props) {
 
   const handleClick = (id) => {
     try {
-      axios.delete("/delete/" + id);
+      axios.delete("/api/delete/" + id);
       alert("Review deleted");
     } catch (error) {
       console.log("ERROR");

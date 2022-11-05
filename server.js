@@ -18,7 +18,7 @@ app.use("/", require("./routes/reviewRoute"));
 
 // Serve static asses in production
 
-app.delete("/delete/:id", function (req, res) {
+app.delete("/api/delete/:id", function (req, res) {
   const id = mongoose.Types.ObjectId(req.params.id);
   Review.findByIdAndDelete(id, function (err) {
     if (!err) {
