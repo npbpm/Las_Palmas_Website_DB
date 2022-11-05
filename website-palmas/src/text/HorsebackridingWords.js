@@ -3,7 +3,7 @@ const words = {
     title: "Paseos Ecológicos a Caballo y Caminatas",
   },
   english: {
-    title: "Ecological Horseback Riding",
+    title: "Eco-Friendly Activities",
   },
 };
 

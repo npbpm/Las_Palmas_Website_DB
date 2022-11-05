@@ -32,7 +32,7 @@ const words = {
     lodging: "Lodging",
     camping: "Camping",
     games: "Attractions",
-    horse: "Horseback Riding",
+    horse: "Eco-Friendly Activities",
     crafts: "Regional Crafts",
     glamping: "Glamping Cocora Nidos del Cóndor",
     flowers: "Florist Cocora Viva",

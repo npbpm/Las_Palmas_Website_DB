@@ -115,7 +115,7 @@ const words = {
       path: "/games",
     },
     {
-      title: "Horse Back Riding",
+      title: "Eco-friendly Activities",
       description:
         "A Horseback Ride inside the Cocora Valley at Salento, Quindio is an experience you cannot miss on your agenda, a unique landscape filled with wax palm trees in the middle of the mountains.",
       img: "./images/HorseRiding.jpeg",

@@ -37,6 +37,7 @@ const style = {
     marginBottom: "30px",
     padding: "20px",
     overflowY: "scroll",
+    boxShadow: "rgba(33, 35, 38, 0.1) 0px 10px 10px -10px",
     [sizes.down("md")]: {
       padding: "10px",
     },
