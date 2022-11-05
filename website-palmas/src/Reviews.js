@@ -42,16 +42,16 @@ function Reviews(props) {
     };
   }, []);
 
-  const fetchData = () => {
-    fetch("/reviews")
-      .then((res) => {
+  const fetchData = async () => {
+    await fetch("/reviews")
+      .then(async (res) => {
         if (res.ok) {
-          return res.json();
+          return await res.json();
         }
       })
-      .then((jsonRes) => {
+      .then(async (jsonRes) => {
         if (jsonRes.length !== 0) {
-          setOpinions(jsonRes);
+          await setOpinions(jsonRes);
           setIsLoading(false);
         } else {
           setOpinions([
