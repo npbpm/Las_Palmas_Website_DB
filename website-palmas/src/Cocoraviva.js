@@ -26,6 +26,30 @@ const images = [
   },
 ];
 
+const plantImg = [
+  {
+    url: "./images/viveroMata1.jpeg",
+  },
+  {
+    url: "./images/viveroMata2.jpeg",
+  },
+  {
+    url: "./images/viveroMata3.jpeg",
+  },
+  {
+    url: "./images/viveroMata4.jpeg",
+  },
+  {
+    url: "./images/viveroMata5.jpeg",
+  },
+  {
+    url: "./images/viveroMata6.jpeg",
+  },
+  {
+    url: "./images/viveroMata7.jpeg",
+  },
+];
+
 function Cocoraviva(props) {
   const { classes } = props;
 
@@ -65,6 +89,18 @@ function Cocoraviva(props) {
             <strong>Florist Cocora Viva</strong>
           </p>
         )}
+      </div>
+      <Typography variant="h3">
+        {language === "spanish" ? "Nuestra colección" : "Our collection"}
+      </Typography>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Slideshow slideImages={plantImg} width={"600px"} height={"800px"} />
       </div>
     </div>
   );
