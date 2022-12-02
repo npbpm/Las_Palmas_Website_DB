@@ -40,6 +40,26 @@ function WhoAreWe(props) {
           alt="Not found"
         />
       </div>
+      <div className={classes.ecoFriendly}>
+        <Typography variant="h4">
+          {language === "spanish"
+            ? "Somos Eco Amigables!"
+            : "We are Ecore Friendly!"}
+        </Typography>
+        <p
+          style={{
+            width: "200px",
+            marginRight: "auto",
+            marginLeft: "auto",
+            fontSize: "1.3em",
+            color: "#A8642A",
+          }}
+        >
+          {language === "spanish"
+            ? "Somos conscientes de la gran importancia que tiene el cuidar de nuestro planeta. Es por eso que nos aseguramos de tener el menor impacto en el medio ambiente!"
+            : "We are aware of the great importance that is taking care of our planet. That is why we make sure we have a minimal impact in the Eco System!"}
+        </p>
+      </div>
       <Typography variant="h3">{history}</Typography>
       <div className={classes.history}>
         {language === "spanish" ? (

@@ -14,7 +14,7 @@ export default function DispAppBar() {
     <Box sx={{ height: "80px" }}>
       <AppBar
         position="fixed"
-        sx={{ backgroundColor: red[800], color: "rgb(245,238,219)" }}
+        sx={{ backgroundColor: "#422711", color: "rgb(245,238,219)" }}
       >
         <Toolbar sx={{ minHeight: "40px !important" }}>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>

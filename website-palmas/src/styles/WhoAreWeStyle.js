@@ -2,26 +2,24 @@ import sizes from "./sizes";
 
 const style = {
   container: {
-    width: "99%",
-    marginLeft: "auto",
-    marginRight: "auto",
+    width: "100%",
     textAlign: "center",
     "& p": {
-      backgroundColor: "#eeeeee",
-      borderRadius: "13px",
+      backgroundColor: "transparent",
+      fontFamily: "'Bebas Neue', cursive",
       padding: "30px",
     },
   },
   description: {
-    marginLeft: "auto",
-    marginRight: "auto",
+    marginLeft: 0,
     textAlign: "center",
-    width: "80%",
+    width: "100%",
     display: "flex",
     justifyContent: "space-evenly",
     alignItems: "center",
-    marginTop: "100px",
+    marginTop: "10px",
     padding: "40px",
+    backgroundColor: "#F6923D",
     [sizes.down("md")]: {
       width: "95%",
       justifyContent: "space-between",
@@ -58,7 +56,7 @@ const style = {
     maxHeight: "100%",
     height: "auto",
     width: "30%",
-    margin: "2px",
+    marginRight: "80px",
     borderRadius: "13px",
     boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
     [sizes.down("md")]: {
@@ -84,9 +82,8 @@ const style = {
     width: "70%",
     marginRight: "40px",
     backgroundColor: "#eeeeee",
-    boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
     fontFamily: "'Libre Baskerville', serif",
-    fontSize: "1.5rem",
+    fontSize: "2rem",
     paddingTop: "15px",
     textAlign: "left",
     [sizes.down("md")]: {
@@ -105,12 +102,12 @@ const style = {
     display: "flex",
     justifyContent: "space-evenly",
     alignItems: "center",
+    backgroundColor: "rgb(131,77,33)",
     marginTop: "50px",
     marginBottom: "110px",
     "& p": {
       width: "33%",
       backgroundColor: "#eeeeee",
-      boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
       fontFamily: "'Libre Baskerville', serif",
       fontSize: "1.5rem",
       paddingTop: "15px",

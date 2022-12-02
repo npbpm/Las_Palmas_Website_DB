@@ -80,7 +80,7 @@ function App(props) {
                 slideImages={slideImages}
                 isNavbar={true}
                 width={"100%"}
-                height={"600px"}
+                height={"750px"}
               />
             </div>
             <Routes>
