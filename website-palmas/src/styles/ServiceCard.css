@@ -9,7 +9,6 @@
     padding: 35px;
 }
 
-
 .service-card-image{
     max-height: 100%;
     max-width: 100%;
@@ -66,24 +65,30 @@ p{
 
 
 h1{
-    font-family: 'Lobster', cursive !important;
+    font-family: 'Gloria Hallelujah', cursive !important;
     color: #c62828
 }
 
 h2{
-    font-family: 'Lobster', cursive !important;
+    font-family: 'Gloria Hallelujah', cursive !important;
     color: #2e7d32;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 h3{
-    font-family: 'Lobster', cursive !important;
+    font-family: 'Gloria Hallelujah', cursive !important;
     color: #2e7d32;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 h4{
-    font-family: 'Lobster', cursive !important;
+    font-family: 'Gloria Hallelujah', cursive !important;
+    color: #2e7d32;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+h5{
+    font-family: 'Gloria Hallelujah', cursive !important;
     color: #2e7d32;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }

@@ -14,7 +14,7 @@ li a:hover{
 
 .footer{
     /* background-color: #605d57; */
-    background-color:  	#e8de97;
+    background-color:  	#FFD9B8;
     height: auto;
     display: flex;
     justify-content: space-around;
@@ -52,7 +52,7 @@ footer .social-media{
     padding-left: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: #312f28;
+    background-color: #422711;
     width: 100%;
     height: 40px;
     display: flex;

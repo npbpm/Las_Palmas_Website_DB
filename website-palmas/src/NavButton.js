@@ -11,7 +11,7 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 function MenuPopupState(props) {
   const [anchorEl, setAnchorEl] = useState(null);
 
-  const { page, classes, handleCloseNavMenu } = props;
+  const { page, classes, handleCloseNavMenu, isFooter } = props;
 
   const open = Boolean(anchorEl);
 
@@ -28,7 +28,7 @@ function MenuPopupState(props) {
       <React.Fragment>
         <div>
           <Button
-            className={classes.dropBtn}
+            className={isFooter ? classes.dropBtnFooter : classes.dropBtn}
             onMouseOver={(e) => handleMouseOver(e)}
             onClick={(e) => {
               e.stopPropagation();
@@ -56,7 +56,7 @@ function MenuPopupState(props) {
             <Link
               style={{
                 textDecoration: "none",
-                color: "black",
+                color: "#422711",
               }}
               to={subservice.path}
               key={idx}
@@ -75,7 +75,7 @@ function MenuPopupState(props) {
         className={classes.link}
         to={page.path}
         onClick={(e) => handleCloseNavMenu(e, page.path)}
-        style={{ color: "black" }}
+        style={{ color: "#422711" }}
       >
         <MenuItem className={classes.menuItemNoSubServices}>
           {page.text}

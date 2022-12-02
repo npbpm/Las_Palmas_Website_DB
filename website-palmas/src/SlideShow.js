@@ -4,11 +4,17 @@ import "react-slideshow-image/dist/styles.css";
 import "./styles/SlideShowStyle.css";
 
 const Slideshow = (props) => {
-  const { slideImages, width, height } = props;
+  Slideshow.defaultProps = {
+    isNavbar: false,
+    width: "auto",
+    height: "auto",
+  };
+
+  const { slideImages, width, height, isNavbar } = props;
 
   return (
     <div
-      className="slide-container"
+      className={isNavbar ? "slide-container slideNav" : "slide-container"}
       style={{
         width: width,
       }}
@@ -26,7 +32,8 @@ const Slideshow = (props) => {
                   display: "block",
                   marginLeft: "auto",
                   marginRight: "auto",
-                  borderRadius: "13px",
+                  borderRadius: `${isNavbar ? "none" : "13px"}`,
+                  transform: `${isNavbar && "translateY(-250px)"}`,
                 }}
                 src={require(`${slideImage.url}`)}
                 alt="Error not found"

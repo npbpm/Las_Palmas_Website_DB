@@ -1,231 +1,112 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import "./styles/ServiceCard.css";
 import { Link } from "react-router-dom";
+import { LanguageContext } from "./context/LanguageContext";
 import { Typography } from "@mui/material";
-import CabinOutlinedIcon from "@mui/icons-material/CabinOutlined";
-import CoffeeIcon from "@mui/icons-material/Coffee";
-import FestivalIcon from "@mui/icons-material/Festival";
-import SportsSoccerIcon from "@mui/icons-material/SportsSoccer";
-import ForestIcon from "@mui/icons-material/Forest";
-import ColorLensIcon from "@mui/icons-material/ColorLens";
-import RestaurantIcon from "@mui/icons-material/Restaurant";
-import KingBedIcon from "@mui/icons-material/KingBed";
-import SpaIcon from "@mui/icons-material/Spa";
-import {
-  brown,
-  amber,
-  green,
-  purple,
-  red,
-  lightGreen,
-} from "@mui/material/colors";
+import { withStyles } from "@mui/styles";
 
 function ServiceCard(props) {
-  const { img, title, description, display, path } = props;
+  const { language } = useContext(LanguageContext);
 
-  if (display % 2 === 0) {
-    return (
-      <div className="service-card">
-        <div className="service-card-img">
-          <Link to={path}>
-            <img
-              className="service-card-image"
-              src={require(`${img}`)}
-              alt="Restaurant"
-            />
-          </Link>
-        </div>
-        <div className="service-card-text">
-          <Typography variant="h5" className="title">
-            {title}
-          </Typography>
-          <p className="description">
-            {description}
-            {title === "Restaurante" && (
-              <RestaurantIcon
-                sx={{
-                  transform: "translateY(5px)",
-                  marginLeft: "3px",
-                  color: red[800],
-                }}
-                fontSize="inherit"
-              />
-            )}
-            {title === "Restaurant" && (
-              <RestaurantIcon
-                sx={{
-                  transform: "translateY(5px)",
-                  marginLeft: "3px",
-                  color: red[800],
-                }}
-                fontSize="inherit"
-              />
-            )}
-            {title === "Vivero Cocora Viva" && (
-              <SpaIcon
-                sx={{
-                  transform: "translateY(5px)",
-                  marginLeft: "3px",
-                  color: lightGreen[800],
-                }}
-                fontSize="inherit"
-              />
-            )}
-            {title === "Florist Cocora Viva" && (
-              <SpaIcon
-                sx={{
-                  transform: "translateY(5px)",
-                  marginLeft: "3px",
-                  color: lightGreen[800],
-                }}
-                fontSize="inherit"
-              />
-            )}
-            {title === "Hospedaje" && (
-              <CabinOutlinedIcon
-                sx={{
-                  transform: "translateY(5px)",
-                  marginLeft: "3px",
-                  color: brown[700],
-                }}
-                fontSize="inherit"
-              />
-            )}
-            {title === "Lodging" && (
-              <CabinOutlinedIcon
-                sx={{
-                  transform: "translateY(5px)",
-                  marginLeft: "3px",
-                  color: brown[700],
-                }}
-                fontSize="inherit"
-              />
-            )}
-            {title === "Atracciones" && (
-              <SportsSoccerIcon
-                sx={{
-                  transform: "translateY(5px)",
-                  marginLeft: "3px",
-                }}
-                fontSize="inherit"
-              />
-            )}
-            {title === "Games" && (
-              <SportsSoccerIcon
-                sx={{
-                  transform: "translateY(5px)",
-                  marginLeft: "3px",
-                }}
-                fontSize="inherit"
-              />
-            )}
-            {title === "Artesanías de la región" && (
-              <ColorLensIcon
-                sx={{
-                  transform: "translateY(5px)",
-                  marginLeft: "3px",
-                  color: purple[800],
-                }}
-                fontSize="inherit"
-              />
-            )}
-            {title === "Regional Crafts" && (
-              <ColorLensIcon
-                sx={{
-                  transform: "translateY(5px)",
-                  marginLeft: "3px",
-                  color: purple[800],
-                }}
-                fontSize="inherit"
-              />
-            )}
-          </p>
+  const { img, title, description, display, path, classes } = props;
+
+  const [showingDesc, setShowingDesc] = useState(false);
+
+  const handleMouseClick = (e) => {
+    e.stopPropagation();
+    setShowingDesc(!showingDesc);
+  };
+
+  return (
+    <div className={classes.serviceCard}>
+      <img
+        src={require(`${img}`)}
+        onClick={(e) => handleMouseClick(e)}
+        className={showingDesc ? classes.serviceCardImg : ""}
+      />
+      <div
+        className={
+          showingDesc
+            ? classes.serviceTextShowing
+            : classes.serviceTextNotShowing
+        }
+      >
+        <Typography variant="h5">{title}</Typography>
+        {description}
+        <div className={classes.linkButton}>
+          <Link to={path}>{language === "spanish" ? "Ver Más" : "More"}</Link>
         </div>
       </div>
-    );
-  } else {
-    return (
-      <div className="service-card right">
-        <div className="service-card-text">
-          <Typography variant="h5" className="title">
-            {title}
-          </Typography>
-          <p className="description">
-            {description}
-            {title === "Glamping Cocora Nidos del Cóndor" && (
-              <KingBedIcon
-                sx={{
-                  transform: "translateY(5px)",
-                  marginLeft: "3px",
-                }}
-                fontSize="inherit"
-              />
-            )}
-            {title === "Casita del sabor" && (
-              <CoffeeIcon
-                sx={{
-                  transform: "translateY(5px)",
-                  marginLeft: "3px",
-                  color: brown[600],
-                }}
-                fontSize="inherit"
-              />
-            )}
-            {title === "Coffee House" && (
-              <CoffeeIcon
-                sx={{
-                  transform: "translateY(5px)",
-                  marginLeft: "3px",
-                  color: brown[600],
-                }}
-                fontSize="inherit"
-              />
-            )}
-
-            {title === "Camping" && (
-              <FestivalIcon
-                sx={{
-                  transform: "translateY(5px)",
-                  marginLeft: "3px",
-                  color: amber[900],
-                }}
-                fontSize="inherit"
-              />
-            )}
-            {title === "Paseos Ecológicos a Caballo y Caminatas" && (
-              <ForestIcon
-                sx={{
-                  transform: "translateY(5px)",
-                  marginLeft: "3px",
-                  color: green[900],
-                }}
-                fontSize="inherit"
-              />
-            )}
-            {title === "Horse Back Riding" && (
-              <ForestIcon
-                sx={{
-                  transform: "translateY(5px)",
-                  marginLeft: "3px",
-                  color: green[900],
-                }}
-                fontSize="inherit"
-              />
-            )}
-          </p>
-        </div>
-        <div className="service-card-img">
-          <Link to={path}>
-            <img
-              className="service-card-image"
-              src={require(`${img}`)}
-              alt="Restaurant"
-            />
-          </Link>
-        </div>
-      </div>
-    );
-  }
+    </div>
+  );
 }
 
-export default ServiceCard;
+const styles = {
+  serviceCard: {
+    width: "23%",
+    height: "550px",
+    position: "relative",
+    "& img": {
+      maxWidth: "100%",
+      maxHeight: "100%",
+      height: "500px",
+      width: "400px",
+      borderRadius: "50%",
+      zIndex: 1,
+      border: "none",
+      "&:hover": {
+        cursor: "pointer",
+        transform: "scale(1.04)",
+        transition: "ease-in-out all 0.2s",
+      },
+    },
+    "& a": {
+      textDecoration: "none",
+      color: "#F6923D",
+    },
+  },
+  serviceCardImg: {
+    filter: "brightness(30%)",
+  },
+  serviceTextShowing: {
+    position: "absolute",
+    zIndex: 5,
+    top: "40%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: "80%",
+    height: "auto",
+    whiteSpace: "normal",
+    overflowWrap: "break-word",
+    color: "rgb(255,255,255)",
+    visibility: "visible",
+    fontSize: "1.08rem",
+    fontFamily: "'Bebas Neue', cursive",
+    textShadow:
+      "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
+    transition: "ease-in-out all 0.2s",
+  },
+  serviceTextNotShowing: {
+    visibility: "hidden",
+  },
+  linkButton: {
+    position: "absolute",
+    top: "90%",
+    transform: "translate(-50%,50%)",
+    left: "50%",
+    marginLeft: "auto",
+    marginRight: "auto",
+    width: "100px",
+    height: "auto",
+    backgroundColor: "rgba(0,0,0,0.6)",
+    padding: "10px",
+    fontSize: "1.7rem",
+    "&:hover": {
+      cursor: "pointer",
+      backgroundColor: "rgba(0,0,0,0.8)",
+      transition: "ease-in-out all 0.2s",
+    },
+  },
+};
+
+export default withStyles(styles)(ServiceCard);

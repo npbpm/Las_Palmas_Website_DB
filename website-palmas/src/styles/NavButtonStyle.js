@@ -2,13 +2,29 @@ import sizes from "./sizes";
 
 const style = {
   dropBtn: {
-    color: "black !important",
+    color: "#422711 !important",
+    textDecoration: "none !important",
+    fontWeight: "500 !important",
+    /* backgroundColor: "#F6923D !important", */
+    textTransform: "none",
+    fontFamily: "'Lobster', cursive !important",
+    borderRadius: "5px",
+    fontFamily: "'Gochi Hand', cursive !important",
+    fontSize: "28px !important",
+    [sizes.down("md")]: {
+      fontSize: "1rem !important",
+      marginLeft: "-12px !important",
+    },
+  },
+  dropBtnFooter: {
+    color: "#000000 !important",
     textDecoration: "none !important",
     fontWeight: "500 !important",
     fontSize: "1rem !important",
-    bgcolor: "transparent",
+    backgroundColor: "transparent !important",
     textTransform: "none",
-    fontFamily: "'Lobster', cursive !important",
+    fontFamily: "'Gochi Hand', cursive !important",
+    borderRadius: "5px",
     [sizes.down("md")]: {
       fontSize: "1rem !important",
       marginLeft: "-12px !important",
@@ -17,22 +33,24 @@ const style = {
   link: {
     color: "white",
     display: "block",
-    fontSize: "1.2rem",
     fontWeight: "500",
     textDecoration: "none",
-    fontFamily: "'Lobster', cursive !important",
+    fontFamily: "'Gochi Hand', cursive !important",
     width: "100%",
+    fontSize: "28px !important",
+    /* backgroundColor: "#F6923D", */
+    borderRadius: "5px",
     [sizes.down("md")]: {
       fontSize: "1rem",
     },
   },
   menuItem: {
-    fontFamily: "'Libre Baskerville', serif !important",
-    fontSize: "1em",
+    fontFamily: "'Gochi Hand', cursive !important",
+    fontSize: "25px !important",
     width: "100% !important",
   },
   menuItemNoSubServices: {
-    fontFamily: "'Lobster', cursive !important",
+    fontFamily: "'Gochi Hand', cursive !important",
     fontSize: "1em !important",
     width: "100% !important",
   },

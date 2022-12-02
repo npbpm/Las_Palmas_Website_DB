@@ -79,7 +79,7 @@ function Footer() {
                 <Link to="/">{home}</Link>
               </li>
               <li>
-                <NavButton page={footerServices} />
+                <NavButton page={footerServices} isFooter={true} />
               </li>
               <li>
                 <Link to="/packages-and-sales">{packages}</Link>

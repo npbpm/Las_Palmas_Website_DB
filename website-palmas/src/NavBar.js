@@ -275,10 +275,8 @@ const ResponsiveAppBar = (props) => {
                   md: "flex",
                   justifyContent: "flex-end",
                   alignItems: "center",
-                  backgroundColor: `${green[700]}`,
+                  backgroundColor: "transparent",
                   borderRadius: "30px",
-                  border: "solid 0.2rem #eeeeee",
-                  boxShadow: "rgba(27, 176, 9, 0.1) 0px 4px 12px",
                 },
               }}
             >
@@ -299,6 +297,10 @@ const ResponsiveAppBar = (props) => {
                   onChange={changeLanguage}
                   size="small"
                   variant="standard"
+                  sx={{
+                    padding: "5px",
+                    borderRadius: "5px",
+                  }}
                 >
                   <MenuItem value="spanish">🇨🇴</MenuItem>
                   <MenuItem value="english">🇺🇸</MenuItem>
@@ -310,7 +312,11 @@ const ResponsiveAppBar = (props) => {
       </AppBar>
       <Toolbar id="back-to-top-anchor" />
       <ScrollTop {...props}>
-        <Fab size="small" aria-label="scroll back to top">
+        <Fab
+          size="small"
+          aria-label="scroll back to top"
+          sx={{ backgroundColor: "#A8642A !important" }}
+        >
           <KeyboardArrowUpIcon />
         </Fab>
       </ScrollTop>

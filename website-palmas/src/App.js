@@ -2,6 +2,7 @@ import "./styles/App.css";
 import { Routes, Route /* Navigate */ } from "react-router-dom";
 import Home from "./Home";
 import ErrorSite from "./ErrorSite";
+import DispAppBar from "./DispAppBar";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import WhoAreWe from "./WhoAreWe";
@@ -21,10 +22,29 @@ import Reviews from "./Reviews";
 import Bookings from "./Bookings";
 import Contact from "./Contact";
 import Loading from "./Loading";
+import Slideshow from "./SlideShow";
 import { withStyles } from "@mui/styles";
 import style from "./styles/AppStyle";
 import { LanguageProvider } from "./context/LanguageContext";
 import { useEffect, useState } from "react";
+
+const slideImages = [
+  {
+    url: "./images/AtardercerPalmas.jpeg",
+  },
+  {
+    url: "./images/FrenteEnteroRestaurante.jpeg",
+  },
+  {
+    url: "./images/FrontRestaurant.jpeg",
+  },
+  {
+    url: "./images/FrenteRestaurante.jpeg",
+  },
+  {
+    url: "./images/glamping4.jpeg",
+  },
+];
 
 function App(props) {
   const { classes } = props;
@@ -54,7 +74,14 @@ function App(props) {
         ) : (
           <div className="container">
             <div className={classes.homeHeader}>
+              <DispAppBar />
               <NavBar />
+              <Slideshow
+                slideImages={slideImages}
+                isNavbar={true}
+                width={"100%"}
+                height={"600px"}
+              />
             </div>
             <Routes>
               <Route path="/" element={<Home />} />

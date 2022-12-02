@@ -14,11 +14,12 @@ const style = {
     height: "100%",
     textAlign: "center",
     "& p": {
-      boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
       marginLeft: "auto",
       marginRight: "auto",
-      backgroundColor: "#eeeeee",
       padding: "20px",
+      height: "100%",
+      fontSize: "2rem",
+      fontFamily: "'Bebas Neue', cursive",
       [sizes.down("md")]: {
         boxShadow:
           "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px",
@@ -27,17 +28,24 @@ const style = {
   },
   serviceCards: {
     width: "100%",
-  },
-  services: {
-    marginTop: "160px",
-  },
-  location: {
     display: "flex",
     justifyContent: "space-evenly",
     alignItems: "center",
-    marginTop: "80px",
+    flexWrap: "wrap",
+  },
+  services: {
+    marginTop: "20px",
+  },
+  location: {
+    padding: "25px",
+    display: "flex",
+    justifyContent: "space-evenly",
+    alignItems: "center",
+    width: "100%",
+    margin: "0 !important",
+    marginTop: "5px !important",
+    backgroundColor: "#F6923D",
     "& img": {
-      borderRadius: "20px",
       boxShadow:
         "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
       width: "45%",

@@ -2,7 +2,7 @@ const style = {
   homeHeader: {
     width: "100%",
     textAlign: "center",
-    paddingBottom: "100px",
+    overflow: "hidden",
   },
 };
 

@@ -47,7 +47,7 @@ function Home(props) {
                   margin: "15px",
                   padding: "20px",
                   borderRadius: "13px",
-                  backgroundColor: "#eeeeee",
+                  color: "#422711",
                 }}
               >
                 Estamos adentrados en el valle de Cocora, justo en el Km 10.
@@ -67,7 +67,7 @@ function Home(props) {
                   margin: "15px",
                   padding: "20px",
                   borderRadius: "13px",
-                  backgroundColor: "#eeeeee",
+                  color: "#422711",
                 }}
               >
                 Deep inside the Cocora Valley, we are located on the 10
@@ -83,7 +83,7 @@ function Home(props) {
           </section>
         </div>
         <div className={classes.services}>
-          <Typography variant="h3">
+          <Typography variant="h3" fontSize="4rem" marginBottom="55px">
             {language === "spanish" ? "Nuestros Servicios" : "Our Services"}
           </Typography>
           <div className={classes.serviceCards}>{services}</div>
