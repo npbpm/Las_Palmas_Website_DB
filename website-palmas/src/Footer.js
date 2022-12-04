@@ -94,7 +94,7 @@ function Footer() {
           </div>
         </li>
         <li className="list-section">
-          <div>
+          <div style={{ width: "100%" }}>
             <Typography variant="h5">{contact}</Typography>
             <ul>
               <li>

@@ -26,7 +26,7 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     marginLeft: "auto",
-    marginTop: "15px",
+    backgroundColor: "rgb(131,77,33)",
   },
   img: {
     maxWidth: "100%",
@@ -42,9 +42,8 @@ const styles = {
   },
   paragraph: {
     width: "60%",
-    boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
-    fontFamily: "'Libre Baskerville', serif",
-    backgroundColor: "#eeeeee",
+    fontFamily: "'Bebas Neue', cursive",
+    color: "#F6923D",
     fontSize: "1.5rem",
     padding: "60px",
     borderRadius: "13px",

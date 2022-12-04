@@ -41,10 +41,6 @@
     justify-content: center;
 }
 
-p{
-    font-family: 'Libre Baskerville', serif;
-}
-
 .description{
     margin-top: auto;
     margin-bottom: auto;
@@ -66,7 +62,7 @@ p{
 
 h1{
     font-family: 'Gloria Hallelujah', cursive !important;
-    color: #c62828
+    color: #A8642A
 }
 
 h2{

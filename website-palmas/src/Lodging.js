@@ -8,13 +8,28 @@ import words from "./text/lodgingWords";
 
 const images = [
   {
-    url: "./images/Cabin.jpeg",
+    url: "./images/cabana1.jpeg",
   },
   {
-    url: "./images/cabin2.jpeg",
+    url: "./images/cabana2.jpeg",
   },
   {
-    url: "./images/cabin1.jpeg",
+    url: "./images/cabana3.jpeg",
+  },
+  {
+    url: "./images/cabana5.jpeg",
+  },
+  {
+    url: "./images/cabana6.jpeg",
+  },
+  {
+    url: "./images/cabana7.jpeg",
+  },
+  {
+    url: "./images/cabana8.jpeg",
+  },
+  {
+    url: "./images/cabana9.jpeg",
   },
 ];
 

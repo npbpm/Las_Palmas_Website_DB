@@ -60,63 +60,68 @@ function WhoAreWe(props) {
             : "We are aware of the great importance that is taking care of our planet. That is why we make sure we have a minimal impact in the Eco System!"}
         </p>
       </div>
-      <Typography variant="h3">{history}</Typography>
-      <div className={classes.history}>
-        {language === "spanish" ? (
-          <p className={classes.paragraph}>
-            Desde sus inicios, Las Palmas de Cocora han sido un restaurante
-            familiar, fundado hace más de 30 años por el ganadero Alberto Pérez
-            Puerta y su esposa Maria Teresa Puerta Manzano.
-            <br />
-            Fue el primer restaurante que apareció en el Valle de Cocora
-            impulsando así el turismo y el desarrollo de la región.
-            <br />
-            Hemos sido durante años un negocio familiar, por lo que nos
-            preocupamos por hacer que cada quién se sienta como en su casa
-          </p>
-        ) : (
-          <p className={classes.paragraph}>
-            Since its beginning, Las Palmas de Cocora has been a family
-            restaurant, founded 30 years ago by the farmer Alberto Pérez Puerta
-            alongside with his wife Maria Teresa Puerta Manzano.
-            <br />
-            It was the first restaurant in the Valley, with its arrival, the
-            region was stormed by tourists of all around the world.
-            <br />
-            As a family business, we know what matters the most when it comes to
-            going out with your family, so we make every effort for you to feel
-            like you are at home.
-          </p>
-        )}
+      <div style={{ backgroundColor: "rgb(131,77,33)" }}>
+        <Typography variant="h3">{history}</Typography>
+        <div className={classes.history}>
+          {language === "spanish" ? (
+            <p className={classes.paragraph}>
+              Desde sus inicios, Las Palmas de Cocora han sido un restaurante
+              familiar, fundado hace más de 30 años por el ganadero Alberto
+              Pérez Puerta y su esposa Maria Teresa Puerta Manzano.
+              <br />
+              Fue el primer restaurante que apareció en el Valle de Cocora
+              impulsando así el turismo y el desarrollo de la región.
+              <br />
+              Hemos sido durante años un negocio familiar, por lo que nos
+              preocupamos por hacer que cada quién se sienta como en su casa
+            </p>
+          ) : (
+            <p className={classes.paragraph}>
+              Since its beginning, Las Palmas de Cocora has been a family
+              restaurant, founded 30 years ago by the farmer Alberto Pérez
+              Puerta alongside with his wife Maria Teresa Puerta Manzano.
+              <br />
+              It was the first restaurant in the Valley, with its arrival, the
+              region was stormed by tourists of all around the world.
+              <br />
+              As a family business, we know what matters the most when it comes
+              to going out with your family, so we make every effort for you to
+              feel like you are at home.
+            </p>
+          )}
 
-        <img
-          className={classes.img}
-          src={require("./images/MariaTYAlberto.jpeg")}
-          alt="img Not found"
-        />
-        {language === "spanish" ? (
-          <p className={classes.paragraph}>
-            Todos nuestros esfuerzos siempre han sido y siempre serán para hacer
-            de este el lugar por excelencia para pasar un buen momento lejos de
-            la ciudad, en familia, impregnandose de la naturaleza y de la
-            hermosura del Valle.
-          </p>
-        ) : (
-          <p className={classes.paragraph}>
-            All of our efforts have gone and will continue to go towards the
-            same objective, to make this a great place to spend some time away
-            from the city, in family, filling your soul with nature and the
-            beauty of the Valley
-          </p>
-        )}
+          <img
+            className={classes.img}
+            src={require("./images/MariaTYAlberto.jpeg")}
+            alt="img Not found"
+          />
+          {language === "spanish" ? (
+            <p className={classes.paragraph}>
+              Todos nuestros esfuerzos siempre han sido y siempre serán para
+              hacer de este el lugar por excelencia para pasar un buen momento
+              lejos de la ciudad, en familia, impregnandose de la naturaleza y
+              de la hermosura del Valle.
+            </p>
+          ) : (
+            <p className={classes.paragraph}>
+              All of our efforts have gone and will continue to go towards the
+              same objective, to make this a great place to spend some time away
+              from the city, in family, filling your soul with nature and the
+              beauty of the Valley
+            </p>
+          )}
+        </div>
       </div>
-      <Typography variant="h3">{societies}</Typography>
-      <div className={classes.society}>
-        <img
-          className={classes.imgCertificate}
-          src={require("./images/CertificacionPalmas.png")}
-          alt="Error: Not Found"
-        />
+
+      <div>
+        <Typography variant="h3">{societies}</Typography>
+        <div className={classes.society}>
+          <img
+            className={classes.imgCertificate}
+            src={require("./images/CertificacionPalmas.png")}
+            alt="Error: Not Found"
+          />
+        </div>
       </div>
     </div>
   );

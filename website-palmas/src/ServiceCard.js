@@ -54,6 +54,7 @@ const styles = {
       borderRadius: "50%",
       zIndex: 1,
       border: "none",
+      boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
       "&:hover": {
         cursor: "pointer",
         transform: "scale(1.04)",

@@ -2,8 +2,9 @@ import sizes from "./sizes";
 
 const style = {
   content: {
-    padding: "10px",
+    padding: "30px",
     display: "flex",
+    backgroundColor: "#422711",
     "& img": {
       boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
       borderRadius: "13px",
@@ -23,14 +24,13 @@ const style = {
       display: "block",
     },
     "& p": {
-      boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
       marginLeft: "70px",
       marginRight: "30px",
-      backgroundColor: "#eeeeee",
       borderRadius: "13px",
-      fontFamily: "'Libre Baskerville', serif !important",
+      color: "#A8642A",
+      fontFamily: "'Bebas Neue', cursive !important",
       padding: "30px",
-      fontSize: "1.2rem",
+      fontSize: "1.5rem",
       textAlign: "left",
       [sizes.down("md")]: {
         marginLeft: "auto",
@@ -38,7 +38,7 @@ const style = {
       },
     },
     alignItems: "center",
-    marginTop: "100px",
+    marginTop: "10px",
   },
   container: {
     textAlign: "center",

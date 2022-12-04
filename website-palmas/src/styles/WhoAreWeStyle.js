@@ -39,7 +39,7 @@ const style = {
     margin: "2px",
     borderRadius: "50%",
     boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
-    border: "solid 0.3rem #b58162",
+    border: "solid 0.3rem #F6923D",
     [sizes.down("md")]: {
       marginRight: "15px",
       boxShadow:
@@ -81,8 +81,7 @@ const style = {
   paragraphHistory: {
     width: "70%",
     marginRight: "40px",
-    backgroundColor: "#eeeeee",
-    fontFamily: "'Libre Baskerville', serif",
+    fontFamily: "'Bebas Neue', cursive",
     fontSize: "2rem",
     paddingTop: "15px",
     textAlign: "left",
@@ -104,11 +103,11 @@ const style = {
     alignItems: "center",
     backgroundColor: "rgb(131,77,33)",
     marginTop: "50px",
-    marginBottom: "110px",
+    paddingBottom: "50px",
     "& p": {
       width: "33%",
-      backgroundColor: "#eeeeee",
-      fontFamily: "'Libre Baskerville', serif",
+      fontFamily: "'Bebas Neue', cursive",
+      color: "#F6923D",
       fontSize: "1.5rem",
       paddingTop: "15px",
       textAlign: "left",

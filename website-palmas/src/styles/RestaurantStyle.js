@@ -8,7 +8,7 @@ const style = {
       padding: "10px",
     },
     "& h3": {
-      fontFamily: "'Libre Baskerville', serif !important",
+      fontFamily: "'Bebas Neue', cursive",
     },
     [sizes.down("md")]: {
       "& h1": {
@@ -24,8 +24,9 @@ const style = {
   content: {
     display: "flex",
     padding: "10px",
-    marginTop: "100px",
     alignItems: "center",
+    marginTop: "10px",
+    backgroundColor: "rgb(131,77,33)",
     [sizes.down("md")]: {
       display: "block",
       marginLeft: "auto",
@@ -34,12 +35,11 @@ const style = {
     },
   },
   text: {
-    backgroundColor: "#eeeeee",
-    boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
     borderRadius: "13px",
     marginLeft: "10px",
-    fontFamily: "'Libre Baskerville', serif !important",
-    fontSize: "1.2rem",
+    fontFamily: "'Bebas Neue', cursive !important",
+    color: "#F6923D",
+    fontSize: "1.4rem",
     [sizes.down("md")]: {
       margin: 0,
     },
@@ -53,13 +53,17 @@ const style = {
     padding: "20px",
   },
   menu: {
-    color: "black",
-    fontFamily: "'Libre Baskerville', serif !important",
+    color: "#F6923D",
+    fontFamily: "'Bebas Neue', cursive !important",
     fontSize: "1.5em",
     fontWeight: "800",
   },
   menuItem: {
-    color: "black",
+    color: "#F6923D",
+    "&:hover": {
+      filter: "brightness(80%)",
+      transition: "ease-in-out all 0.2s",
+    },
   },
   environments: {
     padding: "8px 2px",

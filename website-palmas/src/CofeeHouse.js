@@ -37,7 +37,7 @@ function CofeeHouse(props) {
                 fontSize: "1em",
                 transform: "translateY(3px)",
                 marginLeft: "2px",
-                color: brown[700],
+                color: "#A8642A",
               }}
             />
             <br /> <br />
@@ -54,6 +54,14 @@ function CofeeHouse(props) {
             In our terrace you can enjoy the nature, the fresh air y the
             tranquility of the countryside while eating some delicious ice cream
             with a cup of coffee.
+            <CoffeeIcon
+              sx={{
+                fontSize: "1em",
+                transform: "translateY(3px)",
+                marginLeft: "2px",
+                color: "#A8642A",
+              }}
+            />
             <br /> <br />
             If you have children, you can let them go to the play zone while you
             make sure they are ok from our terrace, where you can have a clear

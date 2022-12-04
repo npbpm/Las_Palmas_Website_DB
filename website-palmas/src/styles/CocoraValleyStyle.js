@@ -3,12 +3,10 @@ import sizes from "./sizes";
 const style = {
   container: {
     display: "flex",
-    paddingTop: "3px",
-    width: "99%",
-    marginRight: "auto",
-    marginLeft: "auto",
-    marginTop: "100px",
+    padding: "10px",
+    width: "100%",
     alignItems: "center",
+    backgroundColor: "#F6923D",
     [sizes.down("md")]: {
       display: "block",
     },
@@ -33,14 +31,14 @@ const style = {
   description: {
     width: "59%",
     height: "100%",
-    boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
     marginLeft: "auto",
     marginRight: "auto",
-    fontFamily: "'Libre Baskerville', serif",
-    backgroundColor: "#eeeeee",
+    fontFamily: "'Bebas Neue', cursive !important",
+    color: "#422711",
+    lineHeight: "35px",
     padding: "20px",
     borderRadius: "13px",
-    fontSize: "1.3rem",
+    fontSize: "1.5rem",
     "& img": {
       display: "none",
       [sizes.down("md")]: {

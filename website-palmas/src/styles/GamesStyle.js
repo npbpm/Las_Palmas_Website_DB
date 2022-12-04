@@ -3,9 +3,13 @@ import sizes from "./sizes";
 const style = {
   content: {
     padding: "10px",
-    fontFamily: "'Libre Baskerville', serif !important",
+    fontFamily: "'Bebas Neue', curisve !important",
+    fontSize: "1.5rem",
     display: "flex",
-    marginTop: "100px",
+    marginTop: "10px",
+    color: "#422711",
+    alignItems: "center",
+    backgroundColor: "#F6923D",
     "& img": {
       maxWidth: "100%",
       maxHeight: "100%",
@@ -29,8 +33,6 @@ const style = {
   description: {
     padding: "20px",
     textAlign: "center",
-    boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
-    backgroundColor: "#eeeeee",
     borderRadius: "13px",
     marginLeft: "40px",
     [sizes.down("md")]: {
