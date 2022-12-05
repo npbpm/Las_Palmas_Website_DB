@@ -1,7 +1,6 @@
 {
   "name": "website-palmas",
   "version": "0.1.0",
-  "homepage": "papaya-frangipane-55db31.netlify.app",
   "main": "index.js",
   "proxy": "papaya-frangipane-55db31.netlify.app",
   "dependencies": {
