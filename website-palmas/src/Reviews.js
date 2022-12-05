@@ -237,7 +237,7 @@ function Reviews(props) {
                 )}
 
                 <p style={{ fontStyle: "italic" }}>{opinion.message}</p>
-                <div style={{ display: "flex" }}>
+                <div style={{ display: "flex", color: "black" }}>
                   <PersonIcon />
                   {opinion.name !== ""
                     ? opinion.name

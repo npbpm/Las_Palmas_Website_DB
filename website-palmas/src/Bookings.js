@@ -189,7 +189,7 @@ function Bookings(props) {
               onChange={handleChange}
               value={toSend.Message}
             />
-            <Button variant="outlined" type="submit">
+            <Button variant="filled" type="submit">
               {sendMessage}
             </Button>
           </ValidatorForm>

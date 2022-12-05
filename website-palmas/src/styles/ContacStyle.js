@@ -16,12 +16,13 @@ const style = {
   },
   content: {
     display: "flex",
-    width: "80%",
-    justifyContent: "space-around",
+    width: "100%",
+    justifyContent: "space-evenly",
     alignItems: "flex-start",
     marginLeft: "auto",
     marginRight: "auto",
-    marginTop: "100px",
+    padding: "70px",
+    backgroundColor: "#422711",
     [sizes.down("md")]: {
       display: "block",
       width: "95%",
@@ -30,11 +31,9 @@ const style = {
   contactUs: {
     width: "30%",
     textAlign: "center",
-    boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
-    borderRadius: "13px",
-    fontFamily: "'Libre Baskerville', serif !important",
+    fontFamily: "'Bebas Neue', cursive !important",
     padding: "30px",
-    backgroundColor: "#eeeeee",
+    backgroundColor: "#F6923D",
     "& span": {
       marginRight: "10px",
     },
@@ -55,11 +54,13 @@ const style = {
   form: {
     padding: "2px",
     width: "20%",
-    boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
     borderRadius: "13px",
-    backgroundColor: "#eeeeee",
+    backgroundColor: "#F6923D",
     "& button": {
       margin: "20px",
+      color: "#422711",
+      backgroundColor: "#F6923D",
+      border: "solid 1px #422711",
     },
     [sizes.down("xl")]: {
       width: "40%",
