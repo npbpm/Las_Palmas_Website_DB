@@ -10,7 +10,8 @@
     "client": "npm start --prefix website-palmas",
     "clientinstall": "npm install --prefix website-palmas",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install -force --prefix website-palmas && npm run build --prefix website-palmas"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install -force --prefix website-palmas && npm run build --prefix website-palmas",
+    "build": "npm run build --prefix website-palmas"
   },
   "keywords": [],
   "author": "",
