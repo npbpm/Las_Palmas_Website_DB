@@ -16,7 +16,7 @@ const style = {
       maxHeight: "100%",
       width: "55%",
       [sizes.down("md")]: {
-        width: "95%",
+        width: "100%",
         boxShadow:
           "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
       },
@@ -40,13 +40,15 @@ const style = {
     [sizes.down("md")]: {
       display: "block",
       marginTop: "60px",
+      padding: 0,
+      paddingTop: "20px",
     },
   },
   container: {
     textAlign: "center",
     "& h1": {
-      [sizes.down("us")]: {
-        fontSize: "4em",
+      [sizes.down("sm")]: {
+        fontSize: "3em",
       },
     },
   },

@@ -12,12 +12,17 @@ const style = {
     },
     [sizes.down("md")]: {
       "& h1": {
-        fontSize: "5.4rem",
+        fontSize: "4rem",
+      },
+    },
+    [sizes.down("sm")]: {
+      "& h1": {
+        fontSize: "3.8rem",
       },
     },
     [sizes.down("us")]: {
       "& h1": {
-        fontSize: "4.8rem",
+        fontSize: "3.5rem",
       },
     },
   },
@@ -29,9 +34,7 @@ const style = {
     backgroundColor: "rgb(131,77,33)",
     [sizes.down("md")]: {
       display: "block",
-      marginLeft: "auto",
-      marginRight: "auto",
-      padding: "2px",
+      paddingBottom: "25px",
     },
   },
   text: {

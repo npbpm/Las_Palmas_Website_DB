@@ -19,10 +19,7 @@ const style = {
     textAlign: "center",
     "& h1": {
       [sizes.down("sm")]: {
-        fontSize: "4.7rem",
-      },
-      [sizes.down("us")]: {
-        fontSize: "4rem",
+        fontSize: "3.7rem",
       },
     },
   },
@@ -33,10 +30,23 @@ const style = {
     flexDirection: "column",
     "& li": {
       marginBottom: "5px",
+      whiteSpace: "normal",
+      [sizes.down("md")]: {
+        fontSize: "1.2rem",
+      },
     },
     [sizes.down("md")]: {
       padding: 0,
-      margin: 0,
+      marginTop: "10px",
+      marginBottom: "10px",
+    },
+    "& div": {
+      [sizes.down("md")]: {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "stretch",
+        justifyContent: "center",
+      },
     },
   },
   description: {

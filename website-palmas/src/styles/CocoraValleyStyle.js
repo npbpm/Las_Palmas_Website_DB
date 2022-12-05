@@ -9,6 +9,7 @@ const style = {
     backgroundColor: "#F6923D",
     [sizes.down("md")]: {
       display: "block",
+      paddingLeft: 0,
     },
   },
   images: {
@@ -43,14 +44,17 @@ const style = {
       display: "none",
       [sizes.down("md")]: {
         display: "block",
+        marginTop: "10px",
+        marginBottom: "10px",
       },
     },
     [sizes.down("md")]: {
       width: "95%",
-      padding: "10px 4px",
-      fontSize: "1rem",
-      boxShadow:
-        "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px",
+      padding: 0,
+      marginRight: "auto",
+      marginLeft: "auto",
+      fontSize: "1.2rem",
+      lineHeight: "25px",
     },
   },
 };

@@ -41,7 +41,6 @@ const style = {
     boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
     border: "solid 0.3rem #F6923D",
     [sizes.down("md")]: {
-      marginRight: "15px",
       boxShadow:
         "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
     },
@@ -60,6 +59,7 @@ const style = {
     borderRadius: "13px",
     boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
     [sizes.down("md")]: {
+      margin: 0,
       width: "25rem",
       boxShadow:
         "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
@@ -74,7 +74,7 @@ const style = {
     height: "25em",
     width: "100",
     [sizes.down("sm")]: {
-      width: "100%",
+      width: "98%",
       height: "auto",
     },
   },
@@ -83,14 +83,13 @@ const style = {
     marginRight: "40px",
     fontFamily: "'Bebas Neue', cursive",
     fontSize: "2rem",
+    color: "#422711",
     paddingTop: "15px",
     textAlign: "left",
     [sizes.down("md")]: {
       margin: 0,
       fontSize: "1.3em",
       width: "40%",
-      boxShadow:
-        "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px",
     },
     [sizes.down("sm")]: {
       marginTop: "35px",
@@ -116,8 +115,7 @@ const style = {
         marginLeft: "auto",
         marginRight: "auto",
         fontSize: "1.3em",
-        boxShadow:
-          "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px",
+
         padding: "15px",
       },
     },

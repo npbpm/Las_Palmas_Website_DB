@@ -9,6 +9,17 @@ const style = {
       display: "block",
     },
   },
+  firstText: {
+    paddingTop: "50px",
+    paddingBottom: "50px",
+    width: "100%",
+    paddingLeft: "20px",
+    [sizes.down("md")]: {
+      padding: 0,
+      paddingTop: "10px",
+      paddingBottom: "5px",
+    },
+  },
   container: {
     textAlign: "center",
     "& p": {
@@ -19,10 +30,11 @@ const style = {
       fontSize: "1.5rem",
       color: "#F6923D",
       [sizes.down("md")]: {
-        margin: 0,
         marginTop: "20px",
+        fontSize: "1.2rem",
+        margin: 0,
         width: "100% !important",
-        padding: "15px 2px",
+        padding: 0,
       },
     },
     "& h1": {
@@ -35,13 +47,19 @@ const style = {
     display: "flex",
     justifyContent: "space-evenly",
     alignItems: "center",
-    borderRadius: "13px",
     [sizes.down("md")]: {
       display: "block",
       justifyContent: "center",
       marginLeft: 0,
       marginRight: 0,
       marginBottom: "70px",
+    },
+  },
+  insideIntro: {
+    padding: "5px",
+    textAlign: "center",
+    [sizes.down("md")]: {
+      padding: 0,
     },
   },
   contact: {

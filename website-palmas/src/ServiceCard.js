@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { LanguageContext } from "./context/LanguageContext";
 import { Typography } from "@mui/material";
 import { withStyles } from "@mui/styles";
+import sizes from "./styles/sizes";
 
 function ServiceCard(props) {
   const { language } = useContext(LanguageContext);
@@ -46,6 +47,14 @@ const styles = {
     width: "23%",
     height: "550px",
     position: "relative",
+    [sizes.down("md")]: {
+      width: "48%",
+      height: "450px",
+      marginBottom: "10px",
+    },
+    [sizes.down("sm")]: {
+      width: "98%",
+    },
     "& img": {
       maxWidth: "100%",
       maxHeight: "100%",

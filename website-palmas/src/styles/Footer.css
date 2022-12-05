@@ -114,7 +114,7 @@ div.logos button svg:hover{
         width: 25rem
     }
     .list-section div li button{
-        font-family: 'Libre Baskerville', serif !important;
+        font-family: 'Gochi Hand', cursive !important;
         text-transform: none;
         font-size: 0.99em !important;
         margin: 0;
@@ -122,7 +122,7 @@ div.logos button svg:hover{
         transform: translateX(14px);
     }
     .list-section div li span button{
-        font-family: 'Libre Baskerville', serif !important;
+        font-family: 'Gochi Hand', cursive !important;
         text-transform: none;
         font-size: 0.99em !important;
         margin: 0;
@@ -180,7 +180,7 @@ div.logos button svg:hover{
     }
 
     .list-section div li button{
-        font-family: 'Libre Baskerville', serif !important;
+        font-family: 'Gochi Hand', cursive !important;
         text-transform: none;
         font-size: 0.99em !important;
         margin: 0;
@@ -197,7 +197,7 @@ div.logos button svg:hover{
         width: 100%
     }
     .list-section h5{
-        font-size: 1em;
+        font-size: 0.75em;
         width: 50%;
     }  
 

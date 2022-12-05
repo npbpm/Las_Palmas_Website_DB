@@ -49,7 +49,7 @@ const style = {
     textAlign: "center",
     "& h1": {
       [sizes.down("md")]: {
-        fontSize: "5em",
+        fontSize: "4.4em",
       },
       [sizes.down("us")]: {
         fontSize: "3.8em",

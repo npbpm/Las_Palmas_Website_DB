@@ -6,8 +6,8 @@ const style = {
     marginLeft: "auto",
     marginRight: "auto",
     "& h1": {
-      [sizes.down("us")]: {
-        fontSize: "4em",
+      [sizes.down("sm")]: {
+        fontSize: "4.5em",
       },
     },
   },
@@ -22,7 +22,7 @@ const style = {
     padding: "70px",
     [sizes.down("md")]: {
       display: "block",
-      width: "95%",
+      padding: 0,
     },
   },
   contactUs: {
@@ -43,9 +43,11 @@ const style = {
       padding: "10px 0",
       marginRight: "auto",
       marginLeft: "auto",
+      marginBottom: "20px",
     },
-    [sizes.down("us")]: {
-      fontSize: "0.6em",
+    [sizes.down("sm")]: {
+      fontSize: "1em",
+      marginBottom: "20px",
     },
   },
   form: {

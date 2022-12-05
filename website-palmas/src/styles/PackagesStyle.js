@@ -78,7 +78,7 @@ const style = {
     marginTop: "20px",
     marginLeft: "auto",
     marginRight: "auto",
-    [sizes.down("md")]: {
+    [sizes.down("sm")]: {
       display: "block",
       marginTop: "100px",
     },
@@ -92,6 +92,9 @@ const style = {
     boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
     "& ul": {
       textAlign: "left",
+      [sizes.down("md")]: {
+        margin: "0px 10px",
+      },
     },
     "&:hover": {
       transform: "scale(1.2)",
@@ -100,14 +103,11 @@ const style = {
         transform: "none",
       },
     },
-    [sizes.down("lg")]: {
-      width: "32%",
-    },
     [sizes.down("md")]: {
+      width: "31%",
+    },
+    [sizes.down("sm")]: {
       width: "95%",
-      marginLeft: "auto",
-      marginRight: "auto",
-      padding: "20px 0",
     },
     "& img": {
       [sizes.down("lg")]: {
@@ -115,7 +115,7 @@ const style = {
         height: "330px !important",
       },
       [sizes.down("md")]: {
-        height: "800px !important",
+        height: "300px !important",
       },
       [sizes.down("sm")]: {
         height: "670px !important",

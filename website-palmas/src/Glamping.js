@@ -110,23 +110,10 @@ function Glamping(props) {
     <div className={classes.container}>
       <Typography variant="h1">Cocora Nidos del Condor - Glamping</Typography>
       <div className={classes.content}>
-        <div
-          style={{
-            backgroundColor: "rgb(131,77,33)",
-            paddingTop: "50px",
-            paddingBottom: "50px",
-            width: "100%",
-            paddingLeft: "20px",
-          }}
-        >
+        <div className={classes.firstText}>
           <div className={classes.intro}>
             <Slideshow slideImages={images} width={"800px"} height={"600px"} />
-            <div
-              style={{
-                padding: "5px",
-                textAlign: "center",
-              }}
-            >
+            <div className={classes.insideIntro}>
               {language === "spanish" ? (
                 <p>
                   Les damos la bienvenida al glamping{" "}

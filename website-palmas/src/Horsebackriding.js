@@ -16,7 +16,7 @@ function Horsebackriding(props) {
     <div className={classes.container}>
       <Typography variant="h1">{title}</Typography>
       <div className={classes.content}>
-        <div style={{ backgroundColor: "#F6923D", padding: "20px" }}>
+        <div style={{ backgroundColor: "#F6923D", paddingBottom: "20px" }}>
           <Typography variant="h3">
             {language === "spanish" ? "Caminatas" : "Hikes"}
           </Typography>

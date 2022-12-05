@@ -25,7 +25,7 @@ const style = {
     backgroundColor: "#422711",
     [sizes.down("md")]: {
       display: "block",
-      width: "95%",
+      padding: 0,
     },
   },
   contactUs: {
@@ -39,16 +39,14 @@ const style = {
     },
     [sizes.down("xl")]: {
       width: "40%",
-      fontSize: "0.95em",
+      fontSize: "1.4em",
     },
     [sizes.down("md")]: {
       width: "100%",
       padding: "10px 0",
       marginRight: "auto",
       marginLeft: "auto",
-    },
-    [sizes.down("us")]: {
-      fontSize: "0.6em",
+      fontSize: "1em",
     },
   },
   form: {
