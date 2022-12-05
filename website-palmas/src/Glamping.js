@@ -110,79 +110,102 @@ function Glamping(props) {
     <div className={classes.container}>
       <Typography variant="h1">Cocora Nidos del Condor - Glamping</Typography>
       <div className={classes.content}>
-        <div className={classes.intro}>
-          <Slideshow slideImages={images} width={"800px"} height={"600px"} />
+        <div
+          style={{
+            backgroundColor: "rgb(131,77,33)",
+            paddingTop: "50px",
+            paddingBottom: "50px",
+            width: "100%",
+            paddingLeft: "20px",
+          }}
+        >
+          <div className={classes.intro}>
+            <Slideshow slideImages={images} width={"800px"} height={"600px"} />
+            <div
+              style={{
+                padding: "5px",
+                textAlign: "center",
+              }}
+            >
+              {language === "spanish" ? (
+                <p>
+                  Les damos la bienvenida al glamping{" "}
+                  <span style={{ fontWeight: "800" }}>Nidos del Condor</span>,
+                  el único glamping ubicado en la cima del Valle de Cocora. Este
+                  es el lugar perfecto para esas escapadas de un fin de semana
+                  en pareja, para sacarse el peso de la ciudad y disfrutar de
+                  una experiencia única dentro de las montañas del Valle de
+                  Cocora.
+                </p>
+              ) : (
+                <p>
+                  We welcome you to our Glamping{" "}
+                  <span style={{ fontWeight: "800" }}>Nidos del Cóndor</span>,
+                  the only glamping located on the top of the Cocora Valley.
+                  This is the perfect place for those one weekend couple
+                  runaways, take this chance to take the city's weight of your
+                  shoulders and enjoy of this unique experience deep inside the
+                  Valley's mountains.
+                </p>
+              )}
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            backgroundColor: "#F6923D",
+            paddingTop: "50px",
+            paddingBottom: "10px",
+          }}
+        >
           <div
+            className={classes.intro}
             style={{
-              padding: "5px",
-              textAlign: "center",
+              marginBottom: "20px",
             }}
           >
+            <Slideshow
+              slideImages={insideImages}
+              width={"500px"}
+              height={"400px"}
+            />
             {language === "spanish" ? (
-              <p>
-                Les damos la bienvenida al glamping{" "}
-                <span style={{ fontWeight: "800" }}>Nidos del Condor</span>, el
-                único glamping ubicado en la cima del Valle de Cocora. Este es
-                el lugar perfecto para esas escapadas de un fin de semana en
-                pareja, para sacarse el peso de la ciudad y disfrutar de una
-                experiencia única dentro de las montañas del Valle de Cocora.
+              <p style={{ width: "700px", color: "#422711" }}>
+                Nuestro servicio es de la mejor calidad, podrá disfrutar de la
+                naturaleza, la fauna y la flora del valle todo con un servicio
+                de alojamiento al aire libre VIP.
               </p>
             ) : (
-              <p>
-                We welcome you to our Glamping{" "}
-                <span style={{ fontWeight: "800" }}>Nidos del Cóndor</span>, the
-                only glamping located on the top of the Cocora Valley. This is
-                the perfect place for those one weekend couple runaways, take
-                this chance to take the city's weight of your shoulders and
-                enjoy of this unique experience deep inside the Valley's
-                mountains.
+              <p style={{ width: "700px", color: "#422711" }}>
+                With our first class service you will enjoy the nature, the
+                fauna and flora of the Valley, all with a VIP lodging service.
               </p>
             )}
           </div>
         </div>
         <div
-          className={classes.intro}
-          style={{
-            marginBottom: "20px",
-          }}
+          style={{ backgroundColor: "#422711", paddingTop: "50px", margin: 0 }}
         >
-          <Slideshow
-            slideImages={insideImages}
-            width={"500px"}
-            height={"400px"}
-          />
-          {language === "spanish" ? (
-            <p style={{ width: "700px" }}>
-              Nuestro servicio es de la mejor calidad, podrá disfrutar de la
-              naturaleza, la fauna y la flora del valle todo con un servicio de
-              alojamiento al aire libre VIP.
-            </p>
-          ) : (
-            <p style={{ width: "700px" }}>
-              With our first class service you will enjoy the nature, the fauna
-              and flora of the Valley, all with a VIP lodging service.
-            </p>
-          )}
-        </div>
-        <div className={classes.intro}>
-          <Slideshow
-            slideImages={outsideImages}
-            width={"500px"}
-            height={"400px"}
-          />
-          {language === "spanish" ? (
-            <p style={{ width: "700px" }}>
-              Cada una de nuestras carpas cuenta con una mesa particular y una
-              fogata para que puedan disfrutar de un momento inolvidable bajo
-              las estrellas.
-            </p>
-          ) : (
-            <p style={{ width: "700px" }}>
-              Every single one of our tents is integrated with an outside table
-              and a bonfire so you can enjoy an unforgetable moment under the
-              starlight.
-            </p>
-          )}
+          <div className={classes.intro}>
+            <Slideshow
+              slideImages={outsideImages}
+              width={"500px"}
+              height={"400px"}
+            />
+            {language === "spanish" ? (
+              <p style={{ width: "700px", color: "#F6923D" }}>
+                Cada una de nuestras carpas cuenta con una mesa particular y una
+                fogata para que puedan disfrutar de un momento inolvidable bajo
+                las estrellas.
+              </p>
+            ) : (
+              <p style={{ width: "700px", color: "#F6923D" }}>
+                Every single one of our tents is integrated with an outside
+                table and a bonfire so you can enjoy an unforgetable moment
+                under the starlight.
+              </p>
+            )}
+          </div>
         </div>
         <div className={classes.contact}>
           <Typography variant="h4">

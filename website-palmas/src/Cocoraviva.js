@@ -90,17 +90,19 @@ function Cocoraviva(props) {
           </p>
         )}
       </div>
-      <Typography variant="h3">
-        {language === "spanish" ? "Nuestra colección" : "Our collection"}
-      </Typography>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Slideshow slideImages={plantImg} width={"600px"} height={"800px"} />
+      <div className={classes.collection}>
+        <Typography variant="h3">
+          {language === "spanish" ? "Nuestra colección" : "Our collection"}
+        </Typography>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Slideshow slideImages={plantImg} width={"600px"} height={"800px"} />
+        </div>
       </div>
     </div>
   );

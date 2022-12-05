@@ -1,9 +1,9 @@
 {
   "name": "website-palmas",
   "version": "0.1.0",
-  "homepage": "https://sheltered-retreat-22436.herokuapp.com/",
+  "homepage": "papaya-frangipane-55db31.netlify.app",
   "main": "index.js",
-  "proxy": "https://sheltered-retreat-22436.herokuapp.com/",
+  "proxy": "papaya-frangipane-55db31.netlify.app",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",

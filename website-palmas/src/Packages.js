@@ -72,131 +72,143 @@ function Packages(props) {
           <br /> <strong>{description5}</strong> {description6}
         </p>
       </div>
-      <div className={classes.packages}>
-        <div className={classes.package}>
-          <img
-            alt="Error: Not Found"
-            src={require("./images/glamping22.jpeg")}
-          />
-          <Typography variant="h4">{dawnTitle}</Typography>
-          <p style={{ background: "none", boxShadow: "none" }}>
-            {dawnText1}
-            <br />
-            {dawnText2}
-            <br />
+      <div
+        style={{
+          backgroundColor: "#422711",
+          width: "100%",
+          paddingBottom: "40px  ",
+        }}
+      >
+        <div className={classes.packages}>
+          <div className={classes.package}>
+            <img
+              alt="Error: Not Found"
+              src={require("./images/glamping22.jpeg")}
+            />
+            <Typography variant="h4">{dawnTitle}</Typography>
+            <p style={{ background: "none", boxShadow: "none" }}>
+              {dawnText1}
+              <br />
+              {dawnText2}
+              <br />
+              <ul>
+                <strong>{includes}</strong>
+                <li>{breakfast}</li>
+                <li>{lodging}</li>
+                <li>{mainDish}</li>
+                <li>{horseRide}</li>
+              </ul>
+            </p>
+          </div>
+          <div className={classes.package}>
+            <img
+              alt="Error: Not Found"
+              src={require("./images/plan_cabana.jpg")}
+            />
+            <Typography variant="h4">{restingTitle}</Typography>
+            <p style={{ background: "none", boxShadow: "none" }}>
+              {restingText}
+              <ul>
+                <strong>{includes}</strong>
+                <li>{lodging}</li>
+                <li>{breakfast}</li>
+                <li>{horseRide}</li>
+              </ul>
+            </p>
+          </div>
+          <div className={classes.package}>
+            <img
+              alt="Error: Not Found"
+              src={require("./images/ecosemilla.jpg")}
+            />
+            <Typography variant="h4">{ecoSeedTitle}</Typography>
+            <p style={{ background: "none", boxShadow: "none" }}>
+              {language === "spanish"
+                ? "Dirigido a los estudiantes"
+                : "For students"}
+              <ul>
+                <strong>{includes}</strong>
+                <li>{arrival}</li>
+                <li>{hike}</li>
+                <li>{comeback}</li>
+                <li>{outdoor}</li>
+              </ul>
+            </p>
+          </div>
+          <div className={classes.package}>
+            <img
+              alt="Error: Not Found"
+              src={require("./images/estiloPropio.jpeg")}
+            />
+            <Typography variant="h4">{ownStyleTitle}</Typography>
+            <p style={{ background: "none", boxShadow: "none" }}>
+              {ownStyleText1}
+              <br />
+              {ownStyleText2}
+            </p>
+          </div>
+          <div className={classes.package}>
+            <img
+              alt="Error: Not Found"
+              src={require("./images/naturaleza_y_yo.jpg")}
+            />
+            <Typography variant="h4">{natureTitle}</Typography>
+            <p style={{ background: "none", boxShadow: "none" }}>
+              {natureText}
+            </p>
             <ul>
               <strong>{includes}</strong>
-              <li>{breakfast}</li>
-              <li>{lodging}</li>
-              <li>{mainDish}</li>
-              <li>{horseRide}</li>
+              <li>{fogRide}</li>
+              <li>{lunch}</li>
             </ul>
-          </p>
-        </div>
-        <div className={classes.package}>
-          <img
-            alt="Error: Not Found"
-            src={require("./images/plan_cabana.jpg")}
-          />
-          <Typography variant="h4">{restingTitle}</Typography>
-          <p style={{ background: "none", boxShadow: "none" }}>
-            {restingText}
+          </div>
+          <div className={classes.package}>
+            <img alt="Error: Not Found" src={require("./images/romance.jpg")} />
+            <Typography variant="h4">{romanticTitle}</Typography>
+            <p style={{ background: "none", boxShadow: "none" }}>
+              {romanticText}
+            </p>
             <ul>
               <strong>{includes}</strong>
-              <li>{lodging}</li>
-              <li>{breakfast}</li>
-              <li>{horseRide}</li>
+              <li>{romanticArrival}</li>
+              <li>{romanticDinner}</li>
+              <li>{romanticDrink}</li>
+              <li>{romanticDessert}</li>
             </ul>
-          </p>
-        </div>
-        <div className={classes.package}>
-          <img
-            alt="Error: Not Found"
-            src={require("./images/ecosemilla.jpg")}
-          />
-          <Typography variant="h4">{ecoSeedTitle}</Typography>
-          <p style={{ background: "none", boxShadow: "none" }}>
-            {language === "spanish"
-              ? "Dirigido a los estudiantes"
-              : "For students"}
+          </div>
+          <div className={classes.package}>
+            <img
+              alt="Error: Not Found"
+              src={require("./images/amor_de_luna.jpeg")}
+            />
+            <Typography variant="h4">{moonTitle}</Typography>
+            <p style={{ background: "none", boxShadow: "none" }}>{moonText}</p>
             <ul>
               <strong>{includes}</strong>
               <li>{arrival}</li>
-              <li>{hike}</li>
-              <li>{comeback}</li>
-              <li>{outdoor}</li>
+              <li>{romanticDinner}</li>
+              <li>{romanticDrink}</li>
+              <li>{romanticDessert}</li>
+              <li>{moonRoom}</li>
+              <li>{moonBreakfast}</li>
             </ul>
-          </p>
-        </div>
-        <div className={classes.package}>
-          <img
-            alt="Error: Not Found"
-            src={require("./images/estiloPropio.jpeg")}
-          />
-          <Typography variant="h4">{ownStyleTitle}</Typography>
-          <p style={{ background: "none", boxShadow: "none" }}>
-            {ownStyleText1}
-            <br />
-            {ownStyleText2}
-          </p>
-        </div>
-        <div className={classes.package}>
-          <img
-            alt="Error: Not Found"
-            src={require("./images/naturaleza_y_yo.jpg")}
-          />
-          <Typography variant="h4">{natureTitle}</Typography>
-          <p style={{ background: "none", boxShadow: "none" }}>{natureText}</p>
-          <ul>
-            <strong>{includes}</strong>
-            <li>{fogRide}</li>
-            <li>{lunch}</li>
-          </ul>
-        </div>
-        <div className={classes.package}>
-          <img alt="Error: Not Found" src={require("./images/romance.jpg")} />
-          <Typography variant="h4">{romanticTitle}</Typography>
-          <p style={{ background: "none", boxShadow: "none" }}>
-            {romanticText}
-          </p>
-          <ul>
-            <strong>{includes}</strong>
-            <li>{romanticArrival}</li>
-            <li>{romanticDinner}</li>
-            <li>{romanticDrink}</li>
-            <li>{romanticDessert}</li>
-          </ul>
-        </div>
-        <div className={classes.package}>
-          <img
-            alt="Error: Not Found"
-            src={require("./images/amor_de_luna.jpeg")}
-          />
-          <Typography variant="h4">{moonTitle}</Typography>
-          <p style={{ background: "none", boxShadow: "none" }}>{moonText}</p>
-          <ul>
-            <strong>{includes}</strong>
-            <li>{arrival}</li>
-            <li>{romanticDinner}</li>
-            <li>{romanticDrink}</li>
-            <li>{romanticDessert}</li>
-            <li>{moonRoom}</li>
-            <li>{moonBreakfast}</li>
-          </ul>
-        </div>
-        <div className={classes.package}>
-          <img
-            alt="Error: Not Found"
-            src={require("./images/valley-ge1efec97d_1920.jpg")}
-          />
-          <Typography variant="h4">{friendsTitle}</Typography>
-          <p style={{ background: "none", boxShadow: "none" }}>{friendsText}</p>
-          <ul>
-            <strong>{includes}</strong>
-            <li>{friendsArrival}</li>
-            <li>{friendsLunch}</li>
-            <li>{friendsRefreshment}</li>
-          </ul>
+          </div>
+          <div className={classes.package}>
+            <img
+              alt="Error: Not Found"
+              src={require("./images/valley-ge1efec97d_1920.jpg")}
+            />
+            <Typography variant="h4">{friendsTitle}</Typography>
+            <p style={{ background: "none", boxShadow: "none" }}>
+              {friendsText}
+            </p>
+            <ul>
+              <strong>{includes}</strong>
+              <li>{friendsArrival}</li>
+              <li>{friendsLunch}</li>
+              <li>{friendsRefreshment}</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

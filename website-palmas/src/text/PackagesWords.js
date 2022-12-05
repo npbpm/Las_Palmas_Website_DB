@@ -5,7 +5,7 @@ const words = {
     description2: "ESTA TEMPORADA Y DISFRUTE DEL VALLE DE COCORA CON LOS ",
     description3: "'DESCUENTOS ESPECIALES'",
     description4:
-      "QUE LE OFRECE EL RESTAURANTE LAS PALMAS DE COCORA. 'NO LO DEJES PASAR' ",
+      "QUE LE OFRECE EL RESTAURANTE LAS PALMAS DE COCORA. NO LO DEJES PASAR ",
     description5: "CUMPLEAÑOS: ",
     description6:
       "celebra tu cumpleaños en el RESTAURANTE LAS PALMAS DE COCORA, presenta tu cédula y de cortesía de la casa te invitamos a un delicioso POSTRE de tu elección y 15 POR CIENTO DE DESCUENTO!! En tu plato. SI VAS EN DOMINGO PODRÁS DISFRUTAR DE MÚSICA EN VIVO.",

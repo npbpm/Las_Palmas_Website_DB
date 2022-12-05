@@ -6,23 +6,23 @@ const style = {
     height: "auto",
   },
   content: {
-    padding: "10px",
+    padding: "40px",
     display: "flex",
+    backgroundColor: "#F6923D",
     "& img": {
       borderRadius: "13px",
       maxWidth: "100%",
       maxHeight: "100%",
     },
     "& p": {
-      boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
       marginLeft: "20px",
       marginRight: "auto",
       padding: "20px",
-      backgroundColor: "#eeeeee",
-      fontFamily: "'Libre Baskerville', serif !important",
+      fontFamily: "'Bebas Neue', cursive !important",
       borderRadius: "13px",
-      fontSize: "1.2em",
+      fontSize: "1.5rem",
       textAlign: "left",
+      color: "#422711",
       [sizes.down("md")]: {
         margin: 0,
         marginTop: "40px",
@@ -31,14 +31,16 @@ const style = {
     alignItems: "center",
     justifyContent: "center",
     textAlign: "center",
-    marginLeft: "20px",
-    marginRight: "20px",
-    marginTop: "100px",
+    marginTop: "10px",
     [sizes.down("md")]: {
       display: "block",
       margin: 0,
       marginTop: "60px",
     },
+  },
+  collection: {
+    backgroundColor: "#422711",
+    paddingBottom: "20px",
   },
 };
 

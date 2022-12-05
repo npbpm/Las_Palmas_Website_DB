@@ -11,6 +11,7 @@ const style = {
     borderRadius: "5px",
     fontFamily: "'Gochi Hand', cursive !important",
     fontSize: "28px !important",
+    textShadow: "1px 1px 2px #FFD9B8",
     [sizes.down("md")]: {
       fontSize: "1rem !important",
       marginLeft: "-12px !important",
@@ -40,6 +41,7 @@ const style = {
     fontSize: "28px !important",
     /* backgroundColor: "#F6923D", */
     borderRadius: "5px",
+    textShadow: "1px 1px 2px #FFD9B8",
     [sizes.down("md")]: {
       fontSize: "1rem",
     },

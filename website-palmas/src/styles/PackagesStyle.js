@@ -4,9 +4,6 @@ const style = {
   container: {
     textAlign: "center",
     height: "auto",
-    marginLeft: "auto",
-    marginRight: "auto",
-    padding: "5px",
     "& img": {
       maxWidth: "100%",
       maxHeight: "100%",
@@ -32,18 +29,17 @@ const style = {
       },
     },
     "& p": {
-      boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
       marginLeft: "auto",
       marginRight: "auto",
-      backgroundColor: "rgba(255,255,255,0.85)",
-      fontFamily: "'Libre Baskerville', serif !important",
-      fontSize: "0.97em",
+      fontFamily: "'Bebas Neue', cursive !important",
+      fontSize: "1.2rem",
       borderRadius: "13px",
       width: "90%",
       padding: "20px",
     },
     "& ul": {
-      fontFamily: "'Libre Baskerville', serif !important",
+      fontFamily: "'Bebas Neue', cursive !important",
+      fontSize: "1.2rem",
     },
     "& h1": {
       [sizes.down("md")]: {
@@ -58,11 +54,13 @@ const style = {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    marginTop: "100px",
+    marginTop: "10px",
+    backgroundColor: "#422711",
+    paddingTop: "40px",
     "& p": {
+      color: "#F6923D",
       marginLeft: "5px",
-      backgroundColor: "#eeeeee",
-      fontSize: "1.2em",
+      fontSize: "1.5rem",
     },
     [sizes.down("lg")]: {},
     [sizes.down("md")]: {
@@ -88,7 +86,7 @@ const style = {
   package: {
     margin: "5px",
     width: "24%",
-    backgroundColor: "rgba(255,255,255,0.85)",
+    backgroundColor: "rgba(246,146,61,0.95)",
     borderRadius: "13px",
     paddingTop: "10px",
     boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",

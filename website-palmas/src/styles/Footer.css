@@ -89,7 +89,7 @@ footer .social-media{
     font-size: 2em !important;
 }
 
-div.logos button:hover{
+div.logos button svg:hover{
     color: rgb(48, 139, 48);
     transition: ease-in-out all 0.3s;
 }

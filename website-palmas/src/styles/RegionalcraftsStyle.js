@@ -4,8 +4,11 @@ const style = {
   content: {
     padding: "10px",
     display: "flex",
-    marginTop: "100px",
+    marginTop: "10px",
+    paddingBottom: "40px",
+    paddingTop: "40px",
     alignItems: "center",
+    backgroundColor: "#F6923D",
     "& img": {
       boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
       borderRadius: "13px",
@@ -19,15 +22,14 @@ const style = {
       },
     },
     "& p": {
-      boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
       marginLeft: "auto",
       marginRight: "auto",
       padding: "20px",
       width: "40%",
-      backgroundColor: "#eeeeee",
-      fontFamily: "'Libre Baskerville', serif !important",
+      fontFamily: "'Bebas Neue', cursive !important",
       borderRadius: "13px",
-      fontSize: "1.2em",
+      color: "#422711",
+      fontSize: "1.5rem",
       [sizes.down("md")]: {
         width: "90%",
       },

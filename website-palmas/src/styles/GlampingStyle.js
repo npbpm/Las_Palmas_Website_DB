@@ -2,12 +2,9 @@ import sizes from "./sizes";
 
 const style = {
   content: {
-    padding: "10px",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "space-evenly",
-    marginTop: "100px",
+    marginTop: "10px",
+    marginRight: "0",
+    marginLeft: "0",
     [sizes.down("lg")]: {
       display: "block",
     },
@@ -15,13 +12,12 @@ const style = {
   container: {
     textAlign: "center",
     "& p": {
-      boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
       marginLeft: "20px",
       padding: "20px",
-      backgroundColor: "#eeeeee",
-      fontFamily: "'Libre Baskerville', serif !important",
+      fontFamily: "'Bebas Neue', cursive !important",
       borderRadius: "13px",
-      fontSize: "1.2em",
+      fontSize: "1.5rem",
+      color: "#F6923D",
       [sizes.down("md")]: {
         margin: 0,
         marginTop: "20px",
@@ -39,16 +35,26 @@ const style = {
     display: "flex",
     justifyContent: "space-evenly",
     alignItems: "center",
-    marginBottom: "100px",
     borderRadius: "13px",
-    marginLeft: "25px",
-    marginRight: "15px",
     [sizes.down("md")]: {
       display: "block",
       justifyContent: "center",
       marginLeft: 0,
       marginRight: 0,
       marginBottom: "70px",
+    },
+  },
+  contact: {
+    paddingTop: "25px",
+    paddingBottom: "25px",
+    backgroundColor: "#A8642A",
+    "& button": {
+      "& svg": {
+        "&:hover": {
+          color: "rgb(68, 168, 68)",
+          transition: "ease-in-out all 0.3s",
+        },
+      },
     },
   },
 };
