@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a0f62751.css",
-    "main.js": "/static/js/main.e9ff25bb.js",
+    "main.js": "/static/js/main.c72fcbcf.js",
     "static/media/ecosemilla.jpg": "/static/media/ecosemilla.6e444a12de9455f31711.jpg",
     "static/media/plan_cabana.jpg": "/static/media/plan_cabana.91361c9afd0775c96df4.jpg",
     "static/media/naturaleza_y_yo.jpg": "/static/media/naturaleza_y_yo.bb693876b4273428d377.jpg",
@@ -119,10 +119,10 @@
     "index.html": "/index.html",
     "static/media/flat-mountains.svg": "/static/media/flat-mountains.62bf5644e0709e3f0c562c4e4f781e3f.svg",
     "main.a0f62751.css.map": "/static/css/main.a0f62751.css.map",
-    "main.e9ff25bb.js.map": "/static/js/main.e9ff25bb.js.map"
+    "main.c72fcbcf.js.map": "/static/js/main.c72fcbcf.js.map"
   },
   "entrypoints": [
     "static/css/main.a0f62751.css",
-    "static/js/main.e9ff25bb.js"
+    "static/js/main.c72fcbcf.js"
   ]
 }
