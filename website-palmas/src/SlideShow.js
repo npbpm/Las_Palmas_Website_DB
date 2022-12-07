@@ -28,7 +28,6 @@ const Slideshow = (props) => {
                   maxWidth: "100%",
                   maxHeight: "100%",
                   width: width,
-                  height: height,
                   display: "block",
                   marginLeft: "auto",
                   marginRight: "auto",
