@@ -33,7 +33,6 @@ const Slideshow = (props) => {
                   marginLeft: "auto",
                   marginRight: "auto",
                   borderRadius: `${isNavbar ? "none" : "13px"}`,
-                  transform: `${isNavbar && "translateY(-250px)"}`,
                 }}
                 src={require(`${slideImage.url}`)}
                 alt="Error not found"

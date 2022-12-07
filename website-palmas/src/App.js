@@ -30,19 +30,13 @@ import { useEffect, useState } from "react";
 
 const slideImages = [
   {
-    url: "./images/AtardercerPalmas.jpeg",
+    url: "./images/header1.jpg",
   },
   {
-    url: "./images/FrenteEnteroRestaurante.jpeg",
+    url: "./images/header2.jpg",
   },
   {
-    url: "./images/FrontRestaurant.jpeg",
-  },
-  {
-    url: "./images/FrenteRestaurante.jpeg",
-  },
-  {
-    url: "./images/glamping4.jpeg",
+    url: "./images/header3.jpg",
   },
 ];
 

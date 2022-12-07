@@ -63,7 +63,8 @@ const styles = {
       borderRadius: "50%",
       zIndex: 1,
       border: "none",
-      boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+      boxShadow:
+        "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
       "&:hover": {
         cursor: "pointer",
         transform: "scale(1.04)",
