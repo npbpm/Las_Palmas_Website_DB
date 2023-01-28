@@ -2,7 +2,7 @@
   "name": "website-palmas",
   "version": "0.1.0",
   "main": "index.js",
-  "proxy": "https://papaya-frangipane-55db31.netlify.app",
+  
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",

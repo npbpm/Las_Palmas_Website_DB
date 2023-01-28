@@ -50,11 +50,22 @@ function Home(props) {
                   color: "#422711",
                 }}
               >
+                Bienvenidos al Eco Hotel Las Palmas de Cocora, un refugio de
+                tranquilidad y armonía en pleno corazón del impresionante Valle
+                de Cocora. Aquí, podrás disfrutar de la naturaleza en su estado
+                más puro mientras te sumerges en una experiencia única de
+                descanso y relajación.
+                <br />
                 Estamos adentrados en el valle de Cocora, justo en el Km 10.
                 Somos el primer restaurante al lado izquierdo.
                 <br />
                 Contamos con un lugar perfecto para pasar tiempo en familía y/o
                 con amigos, incluso tu amigo peludo es más que bienvenido.
+                <br />
+                En nuestro hotel, podrás conectarte con la naturaleza mientras
+                disfrutas de la mejor atención y servicio. Estamos deseando
+                darte la bienvenida y ayudarte a crear recuerdos inolvidables en
+                el hermoso Valle de Cocora.
                 <br />
                 Date la oportunidad de vivir nuevas experiencias en la
                 profundidad del valle de cocora. ¡Te esperamos con los brazos
