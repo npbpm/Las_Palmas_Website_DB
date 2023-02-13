@@ -41,7 +41,7 @@ export default function Authentication(props) {
     <div>
       <Button
         variant="outlined"
-        sx={{ color: lightGreen[800], borderColor: lightGreen[500] }}
+        sx={{ color: "rgb(199,28,0)", borderColor: "rgb(199,28,0)" }}
         onClick={handleClickOpen}
       >
         Editar

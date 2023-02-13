@@ -8,7 +8,7 @@ const style = {
   content: {
     padding: "40px",
     display: "flex",
-    backgroundColor: "#F6923D",
+    backgroundColor: "#b8e29f",
     "& img": {
       borderRadius: "13px",
       maxWidth: "100%",
@@ -22,7 +22,7 @@ const style = {
       borderRadius: "13px",
       fontSize: "1.5rem",
       textAlign: "left",
-      color: "#422711",
+      color: "#3c4001",
       [sizes.down("md")]: {
         margin: 0,
         marginTop: "40px",
@@ -39,7 +39,7 @@ const style = {
     },
   },
   collection: {
-    backgroundColor: "#422711",
+    backgroundColor: "rgba(116,183,38,0.7)",
     paddingBottom: "20px",
   },
 };

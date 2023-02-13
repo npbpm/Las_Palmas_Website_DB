@@ -5,8 +5,6 @@ const style = {
     marginTop: "10px",
     "& img": {
       borderRadius: "5px",
-      maxWidth: "100%",
-      maxHeight: "100%",
       marginLeft: "10px",
       boxShadow:
         "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
@@ -57,7 +55,8 @@ const style = {
     },
   },
   hikeImg: {
-    width: "95%",
+    width: "40%",
+    maxWidth: "95%",
     [sizes.down("sm")]: {
       width: "100%",
     },

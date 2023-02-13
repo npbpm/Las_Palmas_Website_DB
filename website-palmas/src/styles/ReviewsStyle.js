@@ -15,7 +15,7 @@ const style = {
     },
   },
   content: {
-    backgroundColor: "#422711",
+    backgroundColor: "rgba(116,183,38,0.7)",
     width: "90%",
     textAlign: "center",
     padding: "30px",
@@ -46,7 +46,7 @@ const style = {
   opinion: {
     padding: "10px",
     border: "solid 1px",
-    backgroundColor: "#F6923D",
+    backgroundColor: "#b8e29f",
     fontFamily: "'Bebas Neue', cursive !important",
     letterSpacing: "0.8px",
     fontSize: "1.3rem",

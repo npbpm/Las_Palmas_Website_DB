@@ -101,7 +101,7 @@ function Reviews(props) {
           name: "",
           evaluation: 5,
           message:
-            "Gran calidez y atención. Nos alegra mucho que nuestro evento haya sido un Ã©xito por sus servicios. Muchas gracias Alba.",
+            "Gran calidez y atención. Nos alegra mucho que nuestro evento haya sido un exito por sus servicios. Muchas gracias Alba.",
         },
         {
           name: "Fernando Parra",

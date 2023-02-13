@@ -152,7 +152,15 @@ function Bookings(props) {
               </span>
               <span>
                 <a href="tel:+573137321738">313 732 1738</a>
-                <span> - </span>
+                <span
+                  style={{
+                    color: "rgb(116,183,38)",
+                    textShadow: "1px 1px 2px #002f05",
+                  }}
+                >
+                  {" "}
+                  -{" "}
+                </span>
                 <a href="tel:+573104555400">310 455 5400</a>
               </span>
             </li>
@@ -179,7 +187,12 @@ function Bookings(props) {
                   <LocationOnIcon />
                 </IconButton>
               </span>
-              <span>
+              <span
+                style={{
+                  color: "rgb(116,183,38)",
+                  textShadow: "1px 1px 2px #002f05",
+                }}
+              >
                 Kilometro 10 Valle de Cocora Salento Quindío, {address}
               </span>
             </li>

@@ -55,10 +55,10 @@ const style = {
     alignItems: "center",
     justifyContent: "center",
     marginTop: "10px",
-    backgroundColor: "#422711",
+    /* backgroundColor: "#422711", */
     paddingTop: "40px",
     "& p": {
-      color: "#F6923D",
+      color: "#3c4001",
       marginLeft: "5px",
       fontSize: "1.5rem",
     },
@@ -75,6 +75,7 @@ const style = {
     width: "90%",
     display: "flex",
     flexWrap: "wrap",
+    paddingTop: "50px",
     marginTop: "20px",
     marginLeft: "auto",
     marginRight: "auto",
@@ -87,19 +88,24 @@ const style = {
     margin: "5px",
     width: "32%",
     height: "700px",
-    backgroundColor: "rgba(246,146,61,0.95)",
+    backgroundColor: "#b8e29f",
     borderRadius: "13px",
     paddingTop: "10px",
     boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+    "& p": {
+      color: "#3c4001",
+    },
     "& ul": {
       textAlign: "left",
+      color: "#3c4001",
+      marginLeft: "20px",
       [sizes.down("md")]: {
         margin: "0px 10px",
       },
     },
     "&:hover": {
       transform: "scale(1.2)",
-      transition: "ease-in-out all 0.3s",
+      transition: "ease-in-out all 0.4s",
       [sizes.down("md")]: {
         transform: "none",
       },

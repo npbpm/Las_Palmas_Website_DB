@@ -18,7 +18,7 @@ const style = {
     alignItems: "flex-start",
     marginLeft: "auto",
     marginRight: "auto",
-    backgroundColor: "#422711",
+    backgroundColor: "rgba(116,183,38,0.7)",
     padding: "70px",
     [sizes.down("md")]: {
       display: "block",
@@ -30,7 +30,7 @@ const style = {
     textAlign: "center",
     fontFamily: "'Bebas Neue', cursive !important",
     padding: "30px",
-    backgroundColor: "#F6923D",
+    backgroundColor: "#b8e29f",
     "& span": {
       marginRight: "10px",
     },
@@ -54,11 +54,11 @@ const style = {
     padding: "2px",
     width: "20%",
     borderRadius: "13px",
-    backgroundColor: "#F6923D",
+    backgroundColor: "#b8e29f",
     "& button": {
       margin: "20px",
-      color: "#422711",
-      backgroundColor: "#F6923D",
+      color: "#b8e29f",
+      backgroundColor: "#3c4001",
       border: "solid 1px #422711",
     },
     [sizes.down("xl")]: {

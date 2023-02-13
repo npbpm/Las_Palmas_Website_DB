@@ -47,7 +47,7 @@ const words = {
     friendsArrival: "Welcome to the restaurant with appetizers",
     friendsLunch: "Lunch",
     friendsRefreshment: "Little treats",
-    birthdayTitle: "Plan Cumpleaños",
+    birthdayTitle: "Birthday Package",
     birthdayDesc1:
       "Celebrate the most special day of the year in a cozy rural setting at our country side restaurant. We offer a wide range of menu options and the perfect atmosphere for a unique and unforgettable birthday party.",
     birthdayDesc2:

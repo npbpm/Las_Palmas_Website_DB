@@ -47,7 +47,7 @@ function Packages(props) {
       </div>
       <div
         style={{
-          backgroundColor: "#422711",
+          backgroundColor: "rgba(116,183,38,0.7)",
           width: "100%",
           paddingBottom: "40px  ",
         }}
