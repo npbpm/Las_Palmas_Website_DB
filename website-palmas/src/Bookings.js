@@ -101,6 +101,7 @@ function Bookings(props) {
               id="Name"
               name="Name"
               label={name}
+              placeholder="Ex: Sarah Hidalgo"
               type="text"
               variant="standard"
               onChange={handleChange}
@@ -114,6 +115,7 @@ function Bookings(props) {
               id="Email"
               name="Email"
               label={email}
+              placeholder="Ex: sarah@gmail.com"
               type="email"
               variant="standard"
               onChange={handleChange}
@@ -128,6 +130,7 @@ function Bookings(props) {
               id="Phone"
               name="Phone"
               label={phone}
+              placeholder="Ex: +57 3102548314"
               type="text"
               variant="standard"
               onChange={handleChange}
@@ -159,7 +162,7 @@ function Bookings(props) {
               onChange={handleChange}
               value={toSend.ArrivalDate}
               onFocus={changeType}
-              onBlur={changeType}
+              /* onBlur={changeType} */
               validators={["required"]}
               errorMessages={[errArrival]}
             />
@@ -174,7 +177,7 @@ function Bookings(props) {
               onChange={handleChange}
               value={toSend.DepartureDate}
               onFocus={changeType}
-              onBlur={changeType}
+              /* onBlur={changeType} */
               validators={["required"]}
               errorMessages={[errDeparture]}
             />

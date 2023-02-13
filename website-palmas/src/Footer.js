@@ -168,7 +168,7 @@ function Footer() {
           >
             laspalmasdecocora.com
           </a>
-          © 2022 | {developper}{" "}
+          © 2023 | {developper}{" "}
           <a
             className="developer"
             href="https://www.linkedin.com/in/nicolas-perez-burbano/"

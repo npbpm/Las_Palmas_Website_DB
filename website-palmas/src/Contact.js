@@ -83,6 +83,7 @@ function Bookings(props) {
               id="Name"
               name="Name"
               label={name}
+              placeholder="Ex: Sarah Hidalgo"
               type="text"
               variant="standard"
               onChange={handleChange}
@@ -96,6 +97,7 @@ function Bookings(props) {
               id="Email"
               name="Email"
               label={email}
+              placeholder="Ex: sarah@gmail.com"
               type="email"
               variant="standard"
               onChange={handleChange}
@@ -109,6 +111,7 @@ function Bookings(props) {
               id="Phone"
               name="Phone"
               label={phone}
+              placeholder="Ex: +57 3102548314"
               type="text"
               variant="standard"
               onChange={handleChange}
@@ -122,6 +125,7 @@ function Bookings(props) {
               id="City"
               name="City"
               label={city}
+              placeholder="Ex: Bogotá"
               type="text"
               variant="standard"
               onChange={handleChange}
