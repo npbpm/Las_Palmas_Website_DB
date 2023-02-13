@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.3a663b5f.css",
-    "main.js": "/static/js/main.44cad9a1.js",
+    "main.js": "/static/js/main.041fe512.js",
+    "static/media/Menu.pdf": "/static/media/Menu.4a0a27a266bc55e6365d.pdf",
     "static/media/header2.jpg": "/static/media/header2.cfd2c00589bdd78bd7e7.jpg",
     "static/media/header1.jpg": "/static/media/header1.fee5538b460768a0d3ee.jpg",
     "static/media/header3.jpg": "/static/media/header3.1da2299c32af7b255547.jpg",
@@ -9,7 +10,6 @@
     "static/media/plan_cabana.jpg": "/static/media/plan_cabana.91361c9afd0775c96df4.jpg",
     "static/media/naturaleza_y_yo.jpg": "/static/media/naturaleza_y_yo.bb693876b4273428d377.jpg",
     "static/media/promocion.jpg": "/static/media/promocion.86c09ecdf31ac58c36d4.jpg",
-    "static/media/Menu.pdf": "/static/media/Menu.53d1743ae753c82dfdf8.pdf",
     "static/media/valley-ge1efec97d_1920.jpg": "/static/media/valley-ge1efec97d_1920.36e0e9c1531122f878b3.jpg",
     "static/media/romance.jpg": "/static/media/romance.31b97bb120ba1a5d6ad4.jpg",
     "static/media/valle-de-cocora-g982a52cf0_1920.jpg": "/static/media/valle-de-cocora-g982a52cf0_1920.278311ee966874deb713.jpg",
@@ -20,6 +20,8 @@
     "static/media/Cabin.jpeg": "/static/media/Cabin.37b079d533758f0e7f87.jpeg",
     "static/media/atracciones1.jpeg": "/static/media/atracciones1.bc5780e8b97df32f7fba.jpeg",
     "static/media/gansos1.jpeg": "/static/media/gansos1.8040d1c1b29ba8f54adc.jpeg",
+    "static/media/cabana11.jpeg": "/static/media/cabana11.3eb8cfae7094434a4855.jpeg",
+    "static/media/cabana10.jpeg": "/static/media/cabana10.7d91dfe416869bdd730c.jpeg",
     "static/media/estiloPropio.jpeg": "/static/media/estiloPropio.3031ccee0fd5dad26a5e.jpeg",
     "static/media/vivero6.jpeg": "/static/media/vivero6.3c3104327e2727adb47d.jpeg",
     "static/media/FrontRestaurant.jpeg": "/static/media/FrontRestaurant.94062b1128af2498330b.jpeg",
@@ -29,11 +31,10 @@
     "static/media/HorseRiding.jpeg": "/static/media/HorseRiding.112fabd3a4e9752bcdf2.jpeg",
     "static/media/vivero5.jpeg": "/static/media/vivero5.adc9fe73041f82195727.jpeg",
     "static/media/artesanias.jpeg": "/static/media/artesanias.baffe8c0c5bbe9d19068.jpeg",
-    "static/media/Abstract Paper(2).png": "/static/media/Abstract Paper(2).2d6303261c92b6d3488d.png",
+    "static/media/campingFull.jpeg": "/static/media/campingFull.c627826ba96867f10a16.jpeg",
     "static/media/FrenteRestaurante.jpeg": "/static/media/FrenteRestaurante.35602f7b3297f572b27d.jpeg",
     "static/media/cabana8.jpeg": "/static/media/cabana8.598964b4bba533ca20c0.jpeg",
     "static/media/cabana6.jpeg": "/static/media/cabana6.b60ad8452441b57df1fb.jpeg",
-    "static/media/Abstract Paper(1).png": "/static/media/Abstract Paper(1).d209ce49db9d482b482b.png",
     "static/media/viveroMata7.jpeg": "/static/media/viveroMata7.d8c1a664cfad83a42fd1.jpeg",
     "static/media/viveroMata4.jpeg": "/static/media/viveroMata4.229f8e6b5b5868d73c19.jpeg",
     "static/media/viveroMata3.jpeg": "/static/media/viveroMata3.550ebef45574396dbcdd.jpeg",
@@ -62,6 +63,7 @@
     "static/media/WhatsApp Image 2022-10-02 at 11.50.43 PM.jpeg": "/static/media/WhatsApp Image 2022-10-02 at 11.50.43 PM.db743b24cbd055c49fdb.jpeg",
     "static/media/WhatsApp Image 2022-10-02 at 11.50.37 PM.jpeg": "/static/media/WhatsApp Image 2022-10-02 at 11.50.37 PM.7db6a2b581c64c2e8b75.jpeg",
     "static/media/EntradaParqueadero.jpeg": "/static/media/EntradaParqueadero.f800029f3cb233741a64.jpeg",
+    "static/media/outsideCabin.jpeg": "/static/media/outsideCabin.eec82a6d3d73327eecff.jpeg",
     "static/media/CertificacionPalmas.png": "/static/media/CertificacionPalmas.0dede69872e886e0df6e.png",
     "static/media/glamping20.jpeg": "/static/media/glamping20.fa396fc58ac445b7f69a.jpeg",
     "static/media/glamping19.jpeg": "/static/media/glamping19.0881364ac4e0031c004d.jpeg",
@@ -112,6 +114,7 @@
     "static/media/WhatsApp Image 2022-10-02 at 11.50.45 PM.jpeg": "/static/media/WhatsApp Image 2022-10-02 at 11.50.45 PM.8b4232ae7d8dd2f596c1.jpeg",
     "static/media/AlbertoP.jpeg": "/static/media/AlbertoP.a62e22cac37f583a27d8.jpeg",
     "static/media/pano4.jpeg": "/static/media/pano4.c1cedcef39a652d22af8.jpeg",
+    "static/media/platoEntero.jpeg": "/static/media/platoEntero.ab20ad0471bc7a251f42.jpeg",
     "static/media/MariaTYAlberto.jpeg": "/static/media/MariaTYAlberto.53cf69dec4fa2a59f1ef.jpeg",
     "static/media/Shiny Overlay.png": "/static/media/Shiny Overlay.f7e483e00aa5942a20f9.png",
     "static/media/pano2.jpeg": "/static/media/pano2.4abc75f21c3c7e7ab2e6.jpeg",
@@ -123,14 +126,12 @@
     "static/media/pano6.jpeg": "/static/media/pano6.a907f8446e047782d211.jpeg",
     "static/media/glamping22.jpeg": "/static/media/glamping22.8de2910976b899b7cdf6.jpeg",
     "static/media/logoGlamping.jpg": "/static/media/logoGlamping.25517e0eb9fada400de3.jpg",
-    "static/media/pattern-randomized.svg": "/static/media/pattern-randomized.5b01c06050f6bacd8ca0.svg",
     "index.html": "/index.html",
-    "static/media/flat-mountains.svg": "/static/media/flat-mountains.62bf5644e0709e3f0c562c4e4f781e3f.svg",
     "main.3a663b5f.css.map": "/static/css/main.3a663b5f.css.map",
-    "main.44cad9a1.js.map": "/static/js/main.44cad9a1.js.map"
+    "main.041fe512.js.map": "/static/js/main.041fe512.js.map"
   },
   "entrypoints": [
     "static/css/main.3a663b5f.css",
-    "static/js/main.44cad9a1.js"
+    "static/js/main.041fe512.js"
   ]
 }

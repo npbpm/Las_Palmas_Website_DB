@@ -31,6 +31,15 @@ const images = [
   {
     url: "./images/cabana9.jpeg",
   },
+  {
+    url: "./images/outsideCabin.jpeg",
+  },
+  {
+    url: "./images/cabana10.jpeg",
+  },
+  {
+    url: "./images/cabana11.jpeg",
+  },
 ];
 
 function Lodging(props) {

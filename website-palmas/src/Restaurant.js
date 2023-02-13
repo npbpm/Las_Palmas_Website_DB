@@ -48,6 +48,9 @@ const slideImages = [
   {
     url: "./images/WhatsApp Image 2022-10-02 at 11.50.45 PM(3).jpeg",
   },
+  {
+    url: "./images/platoEntero.jpeg",
+  },
 ];
 
 function Restaurant(props) {

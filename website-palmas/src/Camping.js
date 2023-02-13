@@ -16,6 +16,9 @@ const images = [
   {
     url: "./images/camping3.jpeg",
   },
+  {
+    url: "./images/campingFull.jpeg",
+  },
 ];
 
 function Camping(props) {
