@@ -61,14 +61,19 @@
         width: 100% !important;
     }
 
+    .slideNav img{
+        object-fit: cover;
+    }
     
 }
 
 @media(max-width: 575px){
     .slideNav{
-        height: 200px;
-        margin-bottom: 100px;
+        height: auto;
     }
 
+    .slideNav img{
+        object-fit: cover;
+    }
     
 }
