@@ -5,11 +5,9 @@ const style = {
     color: "#422711 !important",
     textDecoration: "none !important",
     fontWeight: "500 !important",
-    /* backgroundColor: "#F6923D !important", */
     textTransform: "none",
-    fontFamily: "'Lobster', cursive !important",
     borderRadius: "5px",
-    fontFamily: "'Gochi Hand', cursive !important",
+    fontFamily: "'Playfair Display', serif !important",
     fontSize: "28px !important",
     textShadow: "1px 1px 2px #FFD9B8",
     [sizes.down("md")]: {
@@ -24,7 +22,7 @@ const style = {
     fontSize: "1rem !important",
     backgroundColor: "transparent !important",
     textTransform: "none",
-    fontFamily: "'Gochi Hand', cursive !important",
+    fontFamily: "'Playfair Display', serif !important",
     borderRadius: "5px",
     [sizes.down("md")]: {
       fontSize: "1rem !important",
@@ -36,10 +34,9 @@ const style = {
     display: "block",
     fontWeight: "500",
     textDecoration: "none",
-    fontFamily: "'Gochi Hand', cursive !important",
+    fontFamily: "'Playfair Display', serif !important",
     width: "100%",
     fontSize: "28px !important",
-    /* backgroundColor: "#F6923D", */
     borderRadius: "5px",
     textShadow: "1px 1px 2px #FFD9B8",
     [sizes.down("md")]: {
@@ -47,12 +44,12 @@ const style = {
     },
   },
   menuItem: {
-    fontFamily: "'Gochi Hand', cursive !important",
+    fontFamily: "'Playfair Display', serif !important",
     fontSize: "25px !important",
     width: "100% !important",
   },
   menuItemNoSubServices: {
-    fontFamily: "'Gochi Hand', cursive !important",
+    fontFamily: "'Playfair Display', serif !important",
     fontSize: "1em !important",
     width: "100% !important",
   },

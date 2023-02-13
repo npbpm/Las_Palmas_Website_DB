@@ -73,7 +73,7 @@ function Restaurant(props) {
     <div className={classes.container}>
       <Typography variant="h1">{title}</Typography>
       <div className={classes.content}>
-        <Slideshow slideImages={slideImages} width={"500px"} height={"470px"} />
+        <Slideshow slideImages={slideImages} width={"500px"} />
         <div className={classes.text}>
           <div className={classes.description}>
             <p>{description}</p>

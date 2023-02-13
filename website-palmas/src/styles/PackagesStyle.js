@@ -85,7 +85,8 @@ const style = {
   },
   package: {
     margin: "5px",
-    width: "24%",
+    width: "32%",
+    height: "700px",
     backgroundColor: "rgba(246,146,61,0.95)",
     borderRadius: "13px",
     paddingTop: "10px",
