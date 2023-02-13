@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3a663b5f.css",
-    "main.js": "/static/js/main.041fe512.js",
+    "main.js": "/static/js/main.1e7bc686.js",
     "static/media/Menu.pdf": "/static/media/Menu.4a0a27a266bc55e6365d.pdf",
     "static/media/header2.jpg": "/static/media/header2.cfd2c00589bdd78bd7e7.jpg",
     "static/media/header1.jpg": "/static/media/header1.fee5538b460768a0d3ee.jpg",
@@ -128,10 +128,10 @@
     "static/media/logoGlamping.jpg": "/static/media/logoGlamping.25517e0eb9fada400de3.jpg",
     "index.html": "/index.html",
     "main.3a663b5f.css.map": "/static/css/main.3a663b5f.css.map",
-    "main.041fe512.js.map": "/static/js/main.041fe512.js.map"
+    "main.1e7bc686.js.map": "/static/js/main.1e7bc686.js.map"
   },
   "entrypoints": [
     "static/css/main.3a663b5f.css",
-    "static/js/main.041fe512.js"
+    "static/js/main.1e7bc686.js"
   ]
 }
