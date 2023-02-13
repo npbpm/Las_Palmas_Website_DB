@@ -7,9 +7,9 @@ const style = {
     fontSize: "1.5rem",
     display: "flex",
     marginTop: "10px",
-    color: "#422711",
+    color: "#3c4001",
     alignItems: "center",
-    backgroundColor: "#F6923D",
+    backgroundColor: "rgba(116,183,38,0.7)",
     "& img": {
       maxWidth: "100%",
       maxHeight: "100%",

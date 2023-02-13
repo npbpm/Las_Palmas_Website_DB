@@ -8,7 +8,7 @@ const style = {
     paddingBottom: "40px",
     paddingTop: "40px",
     alignItems: "center",
-    backgroundColor: "#F6923D",
+    backgroundColor: "rgba(116,183,38,0.7)",
     "& img": {
       boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
       borderRadius: "13px",
@@ -28,7 +28,7 @@ const style = {
       width: "40%",
       fontFamily: "'Bebas Neue', cursive !important",
       borderRadius: "13px",
-      color: "#422711",
+      color: "#3c4001",
       fontSize: "1.5rem",
       [sizes.down("md")]: {
         width: "90%",

@@ -140,7 +140,7 @@ function Glamping(props) {
         </div>
         <div
           style={{
-            backgroundColor: "#F6923D",
+            backgroundColor: "#b8e29f",
             paddingTop: "50px",
             paddingBottom: "10px",
           }}
@@ -157,13 +157,13 @@ function Glamping(props) {
               height={"400px"}
             />
             {language === "spanish" ? (
-              <p style={{ width: "700px", color: "#422711" }}>
+              <p style={{ width: "700px", color: "#3c4001" }}>
                 Nuestro servicio es de la mejor calidad, podrá disfrutar de la
                 naturaleza, la fauna y la flora del valle todo con un servicio
                 de alojamiento al aire libre VIP.
               </p>
             ) : (
-              <p style={{ width: "700px", color: "#422711" }}>
+              <p style={{ width: "700px", color: "#3c4001" }}>
                 With our first class service you will enjoy the nature, the
                 fauna and flora of the Valley, all with a VIP lodging service.
               </p>
@@ -171,7 +171,12 @@ function Glamping(props) {
           </div>
         </div>
         <div
-          style={{ backgroundColor: "#422711", paddingTop: "50px", margin: 0 }}
+          style={{
+            backgroundColor: "rgba(116,183,38,0.7)",
+            paddingTop: "50px",
+            margin: 0,
+            paddingBottom: "10px",
+          }}
         >
           <div className={classes.intro}>
             <Slideshow
@@ -180,13 +185,13 @@ function Glamping(props) {
               height={"400px"}
             />
             {language === "spanish" ? (
-              <p style={{ width: "700px", color: "#F6923D" }}>
+              <p style={{ width: "700px", color: "#3c4001" }}>
                 Cada una de nuestras carpas cuenta con una mesa particular y una
                 fogata para que puedan disfrutar de un momento inolvidable bajo
                 las estrellas.
               </p>
             ) : (
-              <p style={{ width: "700px", color: "#F6923D" }}>
+              <p style={{ width: "700px", color: "#3c4001" }}>
                 Every single one of our tents is integrated with an outside
                 table and a bonfire so you can enjoy an unforgetable moment
                 under the starlight.

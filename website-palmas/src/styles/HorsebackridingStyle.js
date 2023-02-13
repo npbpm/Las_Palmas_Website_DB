@@ -18,7 +18,7 @@ const style = {
       textAlign: "left",
       fontFamily: "'Bebas Neue', cusrive !important",
       fontSize: "1.5rem",
-      color: "#422711",
+      color: "#3c4001",
       borderRadius: "13px",
       padding: "25px",
       width: "60%",
@@ -71,7 +71,7 @@ const style = {
   },
   horseText: {
     width: "30% !important",
-    color: "#F6923D !important",
+    color: "#3c4001 !important",
     [sizes.down("md")]: {
       width: "80% !important",
       padding: "30px !important",

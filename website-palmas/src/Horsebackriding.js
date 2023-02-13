@@ -16,7 +16,12 @@ function Horsebackriding(props) {
     <div className={classes.container}>
       <Typography variant="h1">{title}</Typography>
       <div className={classes.content}>
-        <div style={{ backgroundColor: "#F6923D", paddingBottom: "20px" }}>
+        <div
+          style={{
+            backgroundColor: "rgba(116,183,38,0.7)",
+            paddingBottom: "20px",
+          }}
+        >
           <Typography variant="h3">
             {language === "spanish" ? "Caminatas" : "Hikes"}
           </Typography>
@@ -52,7 +57,7 @@ function Horsebackriding(props) {
             )}
           </div>
         </div>
-        <div style={{ backgroundColor: "rgb(131,77,33)", padding: "20px" }}>
+        <div style={{ backgroundColor: "#b8e29f", padding: "20px" }}>
           <Typography variant="h3">
             {language === "spanish" ? "Cabalgatas" : "Horse Ride"}
           </Typography>

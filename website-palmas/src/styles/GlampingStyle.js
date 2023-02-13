@@ -28,7 +28,7 @@ const style = {
       fontFamily: "'Bebas Neue', cursive !important",
       borderRadius: "13px",
       fontSize: "1.5rem",
-      color: "#F6923D",
+      color: "#3c4001",
       [sizes.down("md")]: {
         marginTop: "20px",
         fontSize: "1.2rem",
@@ -65,11 +65,11 @@ const style = {
   contact: {
     paddingTop: "25px",
     paddingBottom: "25px",
-    backgroundColor: "#A8642A",
+    backgroundColor: "rgba(151,211,251,0.4)",
     "& button": {
       "& svg": {
         "&:hover": {
-          color: "rgb(68, 168, 68)",
+          color: "#004243",
           transition: "ease-in-out all 0.3s",
         },
       },
