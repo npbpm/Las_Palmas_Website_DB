@@ -52,7 +52,7 @@ function WhoAreWe(props) {
             marginRight: "auto",
             marginLeft: "auto",
             fontSize: "1.3em",
-            color: "#A8642A",
+            color: "#252525",
           }}
         >
           {language === "spanish"
@@ -60,7 +60,7 @@ function WhoAreWe(props) {
             : "We are aware of the great importance that is taking care of our planet. That is why we make sure we have a minimal impact in the Eco System!"}
         </p>
       </div>
-      <div style={{ backgroundColor: "rgb(131,77,33)" }}>
+      <div style={{ backgroundColor: "#b8e29f" }}>
         <Typography variant="h3">{history}</Typography>
         <div className={classes.history}>
           {language === "spanish" ? (

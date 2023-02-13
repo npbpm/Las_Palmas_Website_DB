@@ -315,7 +315,7 @@ const ResponsiveAppBar = (props) => {
         <Fab
           size="small"
           aria-label="scroll back to top"
-          sx={{ backgroundColor: "#A8642A !important" }}
+          sx={{ backgroundColor: "#6dc1e7 !important" }}
         >
           <KeyboardArrowUpIcon />
         </Fab>

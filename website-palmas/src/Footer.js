@@ -71,7 +71,11 @@ function Footer() {
       <ul className="footer">
         <li className="list-section">
           <div>
-            <Typography variant="h5" className="access">
+            <Typography
+              variant="h5"
+              className="access"
+              sx={{ color: "rgb(199, 28, 0)" }}
+            >
               {access}
             </Typography>
             <ul>
@@ -95,7 +99,9 @@ function Footer() {
         </li>
         <li className="list-section">
           <div style={{ width: "100%" }}>
-            <Typography variant="h5">{contact}</Typography>
+            <Typography variant="h5" sx={{ color: "rgb(199, 28, 0)" }}>
+              {contact}
+            </Typography>
             <ul>
               <li>
                 <span>
@@ -103,7 +109,15 @@ function Footer() {
                 </span>
                 <span>
                   <a href="tel:+573137321738">313 732 1738</a>
-                  <span> - </span>
+                  <span
+                    style={{
+                      color: "rgb(116,183,38)",
+                      textShadow: "1px 1px 2px #002f05",
+                    }}
+                  >
+                    {" "}
+                    -{" "}
+                  </span>
                   <a href="tel:+573104555400">310 455 5400</a>
                 </span>
               </li>
@@ -131,7 +145,12 @@ function Footer() {
                     <LocationOnIcon />
                   </IconButton>
                 </span>
-                <span>
+                <span
+                  style={{
+                    color: "rgb(116,183,38)",
+                    textShadow: "1px 1px 2px #002f05",
+                  }}
+                >
                   Kilometro 10 Valle de Cocora Salento Quindío, {address}
                 </span>
               </li>

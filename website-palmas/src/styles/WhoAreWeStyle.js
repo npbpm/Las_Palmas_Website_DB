@@ -10,6 +10,9 @@ const style = {
       padding: "30px",
     },
   },
+  paragraph: {
+    color: "#3c4001 !important",
+  },
   description: {
     marginLeft: 0,
     textAlign: "center",
@@ -19,7 +22,7 @@ const style = {
     alignItems: "center",
     marginTop: "10px",
     padding: "40px",
-    backgroundColor: "#F6923D",
+    backgroundColor: "rgba(116,183,38,0.7)",
     [sizes.down("md")]: {
       width: "95%",
       justifyContent: "space-between",
@@ -39,7 +42,7 @@ const style = {
     margin: "2px",
     borderRadius: "50%",
     boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
-    border: "solid 0.3rem #F6923D",
+    border: "solid 0.3rem #3c4001",
     [sizes.down("md")]: {
       boxShadow:
         "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
@@ -83,7 +86,7 @@ const style = {
     marginRight: "40px",
     fontFamily: "'Bebas Neue', cursive",
     fontSize: "2rem",
-    color: "#422711",
+    color: "#3c4001",
     paddingTop: "15px",
     textAlign: "left",
     [sizes.down("md")]: {
@@ -100,7 +103,7 @@ const style = {
     display: "flex",
     justifyContent: "space-evenly",
     alignItems: "center",
-    backgroundColor: "rgb(131,77,33)",
+    backgroundColor: "#b8e29f",
     marginTop: "50px",
     paddingBottom: "50px",
     "& p": {

@@ -46,7 +46,7 @@ const style = {
     width: "100%",
     margin: "0 !important",
     marginTop: "5px !important",
-    backgroundColor: "#F6923D",
+    backgroundColor: "rgba(116,183,38,0.7)",
     "& img": {
       boxShadow:
         "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",

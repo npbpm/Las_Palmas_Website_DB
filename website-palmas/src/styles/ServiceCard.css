@@ -62,30 +62,30 @@
 
 h1{
     font-family: 'Playfair Display', serif !important;
-    color: #A8642A
+    color: rgb(199,28,0)
 }
 
 h2{
     font-family: 'Playfair Display', serif !important;
-    color: #2e7d32;
+    color: rgb(199,28,0);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 h3{
     font-family: 'Playfair Display', serif !important;
-    color: #2e7d32;
+    color: rgb(199,28,0);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 h4{
     font-family: 'Playfair Display', serif !important;
-    color: #2e7d32;
+    color: rgb(199,28,0);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 h5{
     font-family: 'Playfair Display', serif !important;
-    color: #2e7d32;
+    color: rgb(116,183,38);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 

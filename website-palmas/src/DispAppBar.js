@@ -14,10 +14,17 @@ export default function DispAppBar() {
     <Box sx={{ height: "80px" }}>
       <AppBar
         position="fixed"
-        sx={{ backgroundColor: "#422711", color: "rgb(245,238,219)" }}
+        sx={{
+          backgroundColor: "rgb(116,183,38)",
+          color: "rgb(199,28,0)",
+        }}
       >
         <Toolbar sx={{ minHeight: "40px !important" }}>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1, fontWeight: "700" }}
+          >
             {language === "spanish"
               ? "Abiertos de Lunes a Domingo, de 8am a 7pm"
               : "Open all week, from 8am to 7pm"}

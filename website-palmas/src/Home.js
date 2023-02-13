@@ -47,7 +47,7 @@ function Home(props) {
                   margin: "15px",
                   padding: "20px",
                   borderRadius: "13px",
-                  color: "#422711",
+                  color: "#3c4001",
                 }}
               >
                 Bienvenidos al Eco Hotel Las Palmas de Cocora, un refugio de
