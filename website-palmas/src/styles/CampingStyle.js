@@ -9,8 +9,8 @@ const style = {
     fontFamily: "'Bebas Neue', cursive !important",
     fontSize: "1.5rem",
     letterSpacing: "0.1rem",
-    color: "#F6923D",
-    backgroundColor: "rgb(131,77,33)",
+    color: "#3c4001",
+    backgroundColor: "rgba(116,183,38,0.7)",
     [sizes.down("md")]: {
       display: "block",
     },

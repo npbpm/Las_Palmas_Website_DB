@@ -4,7 +4,7 @@ const style = {
   content: {
     padding: "30px",
     display: "flex",
-    backgroundColor: "#422711",
+    backgroundColor: "rgba(116,183,38,0.7)",
     "& img": {
       boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
       borderRadius: "13px",
@@ -28,7 +28,7 @@ const style = {
       marginLeft: "70px",
       marginRight: "30px",
       borderRadius: "13px",
-      color: "#A8642A",
+      color: "#3c4001",
       fontFamily: "'Bebas Neue', cursive !important",
       padding: "30px",
       fontSize: "1.5rem",

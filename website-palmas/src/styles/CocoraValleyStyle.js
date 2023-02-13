@@ -6,7 +6,7 @@ const style = {
     padding: "10px",
     width: "100%",
     alignItems: "center",
-    backgroundColor: "#F6923D",
+    backgroundColor: "rgba(116,183,38,0.7)",
     [sizes.down("md")]: {
       display: "block",
       paddingLeft: 0,
@@ -35,7 +35,7 @@ const style = {
     marginLeft: "auto",
     marginRight: "auto",
     fontFamily: "'Bebas Neue', cursive !important",
-    color: "#422711",
+    color: "#3c4001",
     lineHeight: "35px",
     padding: "20px",
     borderRadius: "13px",

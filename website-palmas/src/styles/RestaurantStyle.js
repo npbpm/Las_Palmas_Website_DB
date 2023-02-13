@@ -31,7 +31,7 @@ const style = {
     padding: "10px",
     alignItems: "center",
     marginTop: "10px",
-    backgroundColor: "rgb(131,77,33)",
+    backgroundColor: "rgba(116,183,38,0.7)",
     [sizes.down("md")]: {
       display: "block",
       paddingBottom: "25px",
@@ -41,7 +41,7 @@ const style = {
     borderRadius: "13px",
     marginLeft: "10px",
     fontFamily: "'Bebas Neue', cursive !important",
-    color: "#F6923D",
+    color: "#3c4001",
     fontSize: "1.4rem",
     [sizes.down("md")]: {
       margin: 0,
@@ -56,15 +56,15 @@ const style = {
     padding: "20px",
   },
   menu: {
-    color: "#F6923D",
+    color: "#3c4001",
     fontFamily: "'Bebas Neue', cursive !important",
     fontSize: "1.5em",
     fontWeight: "800",
   },
   menuItem: {
-    color: "#F6923D",
+    color: "#3c4001",
     "&:hover": {
-      filter: "brightness(80%)",
+      filter: "brightness(50%)",
       transition: "ease-in-out all 0.2s",
     },
   },

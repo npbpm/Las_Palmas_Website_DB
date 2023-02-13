@@ -6,11 +6,11 @@ const style = {
     alignItems: "center",
     padding: "10px",
     marginTop: "10px",
-    backgroundColor: "#F6923D",
+    backgroundColor: "rgba(116,183,38,0.7)",
     "& p": {
       marginLeft: "10px",
       marginRight: "auto",
-      color: "#422711",
+      color: "#3c4001",
       fontSize: "1.5rem",
       fontFamily: "'Bebas Neue', cursive !important",
       borderRadius: "13px",

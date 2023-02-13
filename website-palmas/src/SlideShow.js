@@ -21,13 +21,14 @@ const Slideshow = (props) => {
     >
       <Slide>
         {slideImages.map((slideImage, index) => (
-          <div className="each-slide" key={index}>
+          <div style={{ height: height }} className="each-slide" key={index}>
             <div>
               <img
                 style={{
                   maxWidth: "100%",
                   maxHeight: "100%",
-                  width: width,
+                  width: "100%",
+                  height: "100%",
                   display: "block",
                   marginLeft: "auto",
                   marginRight: "auto",

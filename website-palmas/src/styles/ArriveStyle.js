@@ -26,7 +26,7 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     marginLeft: "auto",
-    backgroundColor: "rgb(131,77,33)",
+    backgroundColor: "rgba(116,183,38,0.7)",
   },
   img: {
     maxWidth: "100%",
@@ -43,7 +43,7 @@ const styles = {
   paragraph: {
     width: "60%",
     fontFamily: "'Bebas Neue', cursive",
-    color: "#F6923D",
+    color: "#3c4001",
     fontSize: "1.5rem",
     padding: "60px",
     borderRadius: "13px",
