@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6d5a7222.css",
-    "main.js": "/static/js/main.39cd61a7.js",
+    "main.css": "/static/css/main.fd64a423.css",
+    "main.js": "/static/js/main.8145856b.js",
     "static/media/header2.jpg": "/static/media/header2.cfd2c00589bdd78bd7e7.jpg",
     "static/media/header1.jpg": "/static/media/header1.fee5538b460768a0d3ee.jpg",
     "static/media/header3.jpg": "/static/media/header3.1da2299c32af7b255547.jpg",
@@ -14,6 +14,7 @@
     "static/media/romance.jpg": "/static/media/romance.31b97bb120ba1a5d6ad4.jpg",
     "static/media/valle-de-cocora-g982a52cf0_1920.jpg": "/static/media/valle-de-cocora-g982a52cf0_1920.278311ee966874deb713.jpg",
     "static/media/caminata1.jpg": "/static/media/caminata1.7bb9dd94fd09cb7b6dcf.jpg",
+    "static/media/Shiny Overlay(2).png": "/static/media/Shiny Overlay(2).8db01b969039dd31eb7e.png",
     "static/media/valle-del-cocora-g6b77a65af_1920.jpg": "/static/media/valle-del-cocora-g6b77a65af_1920.8bac44c075074aaa8e07.jpg",
     "static/media/cabana9.jpeg": "/static/media/cabana9.c59cde2f4167de7f58b1.jpeg",
     "static/media/Cabin.jpeg": "/static/media/Cabin.37b079d533758f0e7f87.jpeg",
@@ -24,6 +25,7 @@
     "static/media/FrontRestaurant.jpeg": "/static/media/FrontRestaurant.94062b1128af2498330b.jpeg",
     "static/media/cabana5.jpeg": "/static/media/cabana5.97b3b4e8e649100deda9.jpeg",
     "static/media/cabin2.jpeg": "/static/media/cabin2.c609d2eb4f373eae34af.jpeg",
+    "static/media/Shiny Overlay(1).png": "/static/media/Shiny Overlay(1).aa6067207149c34c1f9b.png",
     "static/media/HorseRiding.jpeg": "/static/media/HorseRiding.112fabd3a4e9752bcdf2.jpeg",
     "static/media/vivero5.jpeg": "/static/media/vivero5.adc9fe73041f82195727.jpeg",
     "static/media/artesanias.jpeg": "/static/media/artesanias.baffe8c0c5bbe9d19068.jpeg",
@@ -49,6 +51,7 @@
     "static/media/vivero2.jpeg": "/static/media/vivero2.b17dfb277306c2310871.jpeg",
     "static/media/viveroMata1.jpeg": "/static/media/viveroMata1.be3b9b029d66db0d8af6.jpeg",
     "static/media/vivero9.jpeg": "/static/media/vivero9.fbc81a199470aa26db07.jpeg",
+    "static/media/happy-birthday.jpg": "/static/media/happy-birthday.2a2e246f95728b7998c4.jpg",
     "static/media/WhatsApp Image 2022-10-02 at 11.50.37 PM(1).jpeg": "/static/media/WhatsApp Image 2022-10-02 at 11.50.37 PM(1).aa7acb7d6642511d6232.jpeg",
     "static/media/vivero8.jpeg": "/static/media/vivero8.2035fd0ae9a81d9dd482.jpeg",
     "static/media/cabana1.jpeg": "/static/media/cabana1.6436838836b534cb4fb0.jpeg",
@@ -63,7 +66,9 @@
     "static/media/glamping20.jpeg": "/static/media/glamping20.fa396fc58ac445b7f69a.jpeg",
     "static/media/glamping19.jpeg": "/static/media/glamping19.0881364ac4e0031c004d.jpeg",
     "static/media/FrenteEnteroRestaurante.jpeg": "/static/media/FrenteEnteroRestaurante.9955751fcfd6264b77cf.jpeg",
+    "static/media/Shiny Overlay(3).png": "/static/media/Shiny Overlay(3).5dc74ace32f1057c990e.png",
     "static/media/glamping7.jpeg": "/static/media/glamping7.351b58141a0df6a51d5c.jpeg",
+    "static/media/Shiny Overlay(4).png": "/static/media/Shiny Overlay(4).a55ac5e8c42282047a00.png",
     "static/media/WhatsApp Image 2022-10-02 at 11.50.45 PM(2).jpeg": "/static/media/WhatsApp Image 2022-10-02 at 11.50.45 PM(2).5189d59e69bb58a63e81.jpeg",
     "static/media/viveroMata6.jpeg": "/static/media/viveroMata6.b4ac934e9c1b1ba84753.jpeg",
     "static/media/cabana2.jpeg": "/static/media/cabana2.17fa86548320abf4cce5.jpeg",
@@ -121,11 +126,11 @@
     "static/media/pattern-randomized.svg": "/static/media/pattern-randomized.5b01c06050f6bacd8ca0.svg",
     "index.html": "/index.html",
     "static/media/flat-mountains.svg": "/static/media/flat-mountains.62bf5644e0709e3f0c562c4e4f781e3f.svg",
-    "main.6d5a7222.css.map": "/static/css/main.6d5a7222.css.map",
-    "main.39cd61a7.js.map": "/static/js/main.39cd61a7.js.map"
+    "main.fd64a423.css.map": "/static/css/main.fd64a423.css.map",
+    "main.8145856b.js.map": "/static/js/main.8145856b.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d5a7222.css",
-    "static/js/main.39cd61a7.js"
+    "static/css/main.fd64a423.css",
+    "static/js/main.8145856b.js"
   ]
 }
