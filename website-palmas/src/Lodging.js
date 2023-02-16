@@ -11,12 +11,6 @@ const images = [
     url: "./images/cabana1.jpeg",
   },
   {
-    url: "./images/cabana2.jpeg",
-  },
-  {
-    url: "./images/cabana3.jpeg",
-  },
-  {
     url: "./images/cabana5.jpeg",
   },
   {
@@ -24,9 +18,6 @@ const images = [
   },
   {
     url: "./images/cabana7.jpeg",
-  },
-  {
-    url: "./images/cabana8.jpeg",
   },
   {
     url: "./images/cabana9.jpeg",
@@ -39,6 +30,9 @@ const images = [
   },
   {
     url: "./images/cabana11.jpeg",
+  },
+  {
+    url: "./images/cabana12.jpeg",
   },
 ];
 

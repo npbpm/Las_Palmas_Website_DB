@@ -8,6 +8,8 @@ const words = {
     description5: "CUMPLEAÑOS: ",
     description6:
       "celebra tu cumpleaños en el RESTAURANTE LAS PALMAS DE COCORA, presenta tu cédula y de cortesía de la casa te invitamos a un delicioso POSTRE de tu elección.",
+    description7:
+      "Porfavor no dudes en contactarnos para obtener toda la información sobre la cotización de nuestros planes.",
     includes: "Incluye: ",
     ownStyleTitle: "Plan Estilo Propio",
     ownStyleText1:
@@ -35,6 +37,8 @@ const words = {
     description5: "BIRTHDAY: ",
     description6:
       "celebrate your birthday in the Restaurant LAS PALMAS DE COCORA, show us your ID and we'll give you a free dessert!!",
+    description7:
+      "Please do not hesitate to contact us for all the information on the pricing of our plans.",
     includes: "Includes: ",
     ownStyleTitle: "Package My Own Style",
     ownStyleText1:

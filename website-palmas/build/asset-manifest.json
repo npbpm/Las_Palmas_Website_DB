@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3a663b5f.css",
-    "main.js": "/static/js/main.1e7bc686.js",
+    "main.css": "/static/css/main.16a9cf19.css",
+    "main.js": "/static/js/main.9c973246.js",
     "static/media/Menu.pdf": "/static/media/Menu.4a0a27a266bc55e6365d.pdf",
     "static/media/header2.jpg": "/static/media/header2.cfd2c00589bdd78bd7e7.jpg",
     "static/media/header1.jpg": "/static/media/header1.fee5538b460768a0d3ee.jpg",
@@ -76,6 +76,7 @@
     "static/media/cabana2.jpeg": "/static/media/cabana2.17fa86548320abf4cce5.jpeg",
     "static/media/WhatsApp Image 2022-10-02 at 11.50.40 PM.jpeg": "/static/media/WhatsApp Image 2022-10-02 at 11.50.40 PM.0743453a8b9e36636a93.jpeg",
     "static/media/AtardercerPalmas.jpeg": "/static/media/AtardercerPalmas.8436dc526e18280b5c67.jpeg",
+    "static/media/postre.jpeg": "/static/media/postre.adb0597fa7eaec6a78e3.jpeg",
     "static/media/glamping18.jpeg": "/static/media/glamping18.6d027ae08b0cbbfa09b8.jpeg",
     "static/media/ternero1.jpeg": "/static/media/ternero1.e1563d0db3d9557a758e.jpeg",
     "static/media/caballos1.jpeg": "/static/media/caballos1.0927bede852757cf7469.jpeg",
@@ -125,13 +126,14 @@
     "static/media/MariaT.jpeg": "/static/media/MariaT.45845356fa3334ea0069.jpeg",
     "static/media/pano6.jpeg": "/static/media/pano6.a907f8446e047782d211.jpeg",
     "static/media/glamping22.jpeg": "/static/media/glamping22.8de2910976b899b7cdf6.jpeg",
+    "static/media/cabana12.jpeg": "/static/media/cabana12.e515402766464a8093aa.jpeg",
     "static/media/logoGlamping.jpg": "/static/media/logoGlamping.25517e0eb9fada400de3.jpg",
     "index.html": "/index.html",
-    "main.3a663b5f.css.map": "/static/css/main.3a663b5f.css.map",
-    "main.1e7bc686.js.map": "/static/js/main.1e7bc686.js.map"
+    "main.16a9cf19.css.map": "/static/css/main.16a9cf19.css.map",
+    "main.9c973246.js.map": "/static/js/main.9c973246.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a663b5f.css",
-    "static/js/main.1e7bc686.js"
+    "static/css/main.16a9cf19.css",
+    "static/js/main.9c973246.js"
   ]
 }

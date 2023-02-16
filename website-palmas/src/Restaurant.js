@@ -51,6 +51,9 @@ const slideImages = [
   {
     url: "./images/platoEntero.jpeg",
   },
+  {
+    url: "./images/postre.jpeg",
+  },
 ];
 
 function Restaurant(props) {

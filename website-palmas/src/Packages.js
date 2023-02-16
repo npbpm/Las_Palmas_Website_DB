@@ -17,6 +17,7 @@ function Packages(props) {
     description4,
     description5,
     description6,
+    description7,
     includes,
     ownStyleTitle,
     ownStyleText1,
@@ -43,6 +44,8 @@ function Packages(props) {
         <p>
           <strong>{description1}</strong> {description2} {description4}
           <br /> <strong>{description5}</strong> {description6}
+          <br />
+          {description7}
         </p>
       </div>
       <div

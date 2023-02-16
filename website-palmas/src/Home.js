@@ -5,6 +5,7 @@ import { Typography } from "@mui/material";
 import style from "./styles/HomeStyle";
 import { LanguageContext } from "./context/LanguageContext";
 import words from "./text/HomeWords";
+import Slideshow from "./SlideShow";
 
 function Home(props) {
   const { classes } = props;
@@ -12,6 +13,18 @@ function Home(props) {
   const { language } = useContext(LanguageContext);
 
   const servicesInfo = words[language];
+
+  const slideImages = [
+    {
+      url: "./images/header1.jpg",
+    },
+    {
+      url: "./images/header2.jpg",
+    },
+    {
+      url: "./images/header3.jpg",
+    },
+  ];
 
   const services = servicesInfo.map((service, idx) => (
     <ServiceCard
@@ -26,6 +39,12 @@ function Home(props) {
 
   return (
     <div className={classes.home}>
+      <Slideshow
+        slideImages={slideImages}
+        isNavbar={true}
+        width={"100%"}
+        height={"750px"}
+      />
       <div className={classes.homeBody}>
         <div>
           <Typography variant="h1">Eco - Hotel Las Palmas De Cocora</Typography>
@@ -81,14 +100,25 @@ function Home(props) {
                   color: "#422711",
                 }}
               >
+                Welcome to Eco Hotel Las Palmas de Cocora, a haven of
+                tranquility and harmony in the heart of the stunning Cocora
+                Valley. Here, you can enjoy nature in its purest state while
+                immersing yourself in a unique experience of rest and
+                relaxation.
+                <br />
+                In our hotel, you can connect with nature while enjoying the
+                best attention and service. We are looking forward to welcoming
+                you and helping you create unforgettable memories in the
+                beautiful Cocora Valley.
+                <br />
                 Deep inside the Cocora Valley, we are located on the 10
                 <sup>th</sup> Km of the Valley, first restaurant to your left.
                 <br />
                 This is the perfect place to spend time with your family and
                 friends, you can even bring your pets!
                 <br />
-                Let yourself live this new experience in the deeps of the
-                Valley, we are waiting for you with open arms!
+                Give yourself the opportunity to live new experiences in the
+                depths of the Cocora Valley. We await you with open arms!
               </p>
             )}
           </section>

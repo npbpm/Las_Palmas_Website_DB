@@ -21,23 +21,10 @@ import Reviews from "./Reviews";
 import Bookings from "./Bookings";
 import Contact from "./Contact";
 import Loading from "./Loading";
-import Slideshow from "./SlideShow";
 import { withStyles } from "@mui/styles";
 import style from "./styles/AppStyle";
 import { LanguageProvider } from "./context/LanguageContext";
 import { useEffect, useState } from "react";
-
-const slideImages = [
-  {
-    url: "./images/header1.jpg",
-  },
-  {
-    url: "./images/header2.jpg",
-  },
-  {
-    url: "./images/header3.jpg",
-  },
-];
 
 function App(props) {
   const { classes } = props;
@@ -69,12 +56,6 @@ function App(props) {
             <div className={classes.homeHeader}>
               <DispAppBar />
               <NavBar />
-              <Slideshow
-                slideImages={slideImages}
-                isNavbar={true}
-                width={"100%"}
-                height={"750px"}
-              />
             </div>
             <Routes>
               <Route path="/" element={<Home />} />

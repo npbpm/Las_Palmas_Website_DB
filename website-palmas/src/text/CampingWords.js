@@ -1,6 +1,6 @@
 const words = {
   spanish: {
-    title: "Campamento",
+    title: "Zona de Camping",
     description:
       "El Eco-Hotel Las Palmas de Cócora cuenta con un amplio espacio verde bajo un cielo descubierto, en las noches poblado de estrellas y constelaciones, se ubica en el centro de un paisaje exótico y exuberante, adaptado para camping.",
     services: "En esta zona ofrecemos servicios de: ",

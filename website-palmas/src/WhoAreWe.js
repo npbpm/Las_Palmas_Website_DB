@@ -98,16 +98,15 @@ function WhoAreWe(props) {
           {language === "spanish" ? (
             <p className={classes.paragraph}>
               Todos nuestros esfuerzos siempre han sido y siempre serán para
-              hacer de este el lugar por excelencia para pasar un buen momento
-              lejos de la ciudad, en familia, impregnandose de la naturaleza y
-              de la hermosura del Valle.
+              hacer de este un lugar acogedor y poder pasar un momento en
+              familia impregnandose de la naturaleza y de la hermosura del
+              Valle.
             </p>
           ) : (
             <p className={classes.paragraph}>
-              All of our efforts have gone and will continue to go towards the
-              same objective, to make this a great place to spend some time away
-              from the city, in family, filling your soul with nature and the
-              beauty of the Valley
+              All our efforts have always been and will always be to make this a
+              welcoming place where families can spend time together, immersing
+              themselves in nature and the beauty of the valley.
             </p>
           )}
         </div>
