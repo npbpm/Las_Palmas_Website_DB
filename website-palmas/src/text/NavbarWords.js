@@ -1,6 +1,6 @@
 const words = {
   spanish: {
-    home: "Inicio",
+    /*     home: "Inicio",
     place: "Lugar",
     who: "Quienes Somos?",
     arrive: "Como Llegar",
@@ -18,10 +18,14 @@ const words = {
     packages: "Planes y Promociones",
     reviews: "Testimonios",
     bookings: "Reservas",
+    contact: "Contáctenos", */
+    us: "Nosotros",
+    services: "Servicios",
+    packages: "Planes y Reservas",
     contact: "Contáctenos",
   },
   english: {
-    home: "Home",
+    /*    home: "Home",
     place: "Place",
     who: "Who Are We?",
     arrive: "How to Arrive",
@@ -39,7 +43,11 @@ const words = {
     packages: "Packages & Promotions",
     reviews: "Reviews",
     bookings: "Bookings",
-    contact: "Contact us",
+    contact: "Contact us", */
+    us: "Us",
+    services: "Services",
+    packages: "Packages and Bookings",
+    contact: "Contact Us",
   },
 };
 

@@ -54,7 +54,7 @@ function App(props) {
         ) : (
           <div className="container">
             <div className={classes.homeHeader}>
-              <DispAppBar />
+              {/* <DispAppBar /> */}
               <NavBar />
             </div>
             <Routes>

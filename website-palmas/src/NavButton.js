@@ -23,7 +23,7 @@ function MenuPopupState(props) {
     setAnchorEl(null);
   };
 
-  if (page.subservices !== 0) {
+  /* if (page.subservices !== 0) {
     return (
       <React.Fragment>
         <div>
@@ -69,20 +69,18 @@ function MenuPopupState(props) {
         </Menu>
       </React.Fragment>
     );
-  } else {
-    return (
-      <Link
-        className={classes.link}
-        to={page.path}
-        onClick={(e) => handleCloseNavMenu(e, page.path)}
-        style={{ color: "#422711" }}
-      >
-        <MenuItem className={classes.menuItemNoSubServices}>
-          {page.text}
-        </MenuItem>
-      </Link>
-    );
-  }
+  } else { */
+  return (
+    <Link
+      className={classes.link}
+      to={page.path}
+      onClick={(e) => handleCloseNavMenu(e, page.path)}
+      style={{ color: "#000000" }}
+    >
+      <MenuItem className={classes.menuItemNoSubServices}>{page.text}</MenuItem>
+    </Link>
+  );
 }
+/* } */
 
 export default withStyles(style)(MenuPopupState);

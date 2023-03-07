@@ -39,12 +39,12 @@ function Home(props) {
 
   return (
     <div className={classes.home}>
-      <Slideshow
+      {/* <Slideshow
         slideImages={slideImages}
         isNavbar={true}
         width={"100%"}
         height={"750px"}
-      />
+      /> */}
       <div className={classes.homeBody}>
         <div>
           <Typography variant="h1">Eco - Hotel Las Palmas De Cocora</Typography>

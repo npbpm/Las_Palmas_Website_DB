@@ -31,7 +31,7 @@ const style = {
     },
   },
   link: {
-    color: "rgb(199,28,0) !important",
+    color: "rgb(0,0,0) !important",
     display: "block",
     fontWeight: "500",
     textDecoration: "none",

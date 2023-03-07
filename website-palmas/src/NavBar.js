@@ -61,7 +61,7 @@ const ResponsiveAppBar = (props) => {
   const { language, changeLanguage } = useContext(LanguageContext);
 
   const pages = [
-    { text: words[language].home, path: "/", subservices: 0 },
+    /* { text: words[language].home, path: "/", subservices: 0 },
     {
       text: words[language].place,
       path: "/location",
@@ -129,7 +129,11 @@ const ResponsiveAppBar = (props) => {
     },
     { text: words[language].reviews, path: "/reviews", subservices: 0 },
     { text: words[language].bookings, path: "/booking", subservices: 0 },
-    { text: words[language].contact, path: "/contact-us", subservices: 0 },
+    { text: words[language].contact, path: "/contact-us", subservices: 0 }, */
+    { text: words[language].us, path: "/who-are-we" },
+    { text: words[language].services, path: "/services" },
+    { text: words[language].packages, path: "/packages-and-sales" },
+    { text: words[language].contact, path: "/contact-us" },
   ];
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -159,8 +163,6 @@ const ResponsiveAppBar = (props) => {
           >
             <Typography
               noWrap
-              component="a"
-              href="/"
               sx={{
                 display: {
                   xs: "none",
@@ -171,14 +173,13 @@ const ResponsiveAppBar = (props) => {
                 },
                 fontFamily: "monospace",
                 fontWeight: 700,
-                letterSpacing: ".3rem",
+                letterSpacing: ".05rem",
                 color: "black",
-                textDecoration: "none",
               }}
               className={classes.logoContainer}
             >
-              <Link to={"/"}>
-                <img
+              <Link to={"/"} style={{ textDecoration: "none" }}>
+                {/* <img
                   className={classes.logo}
                   src={require("./images/PALMAS_DE_COCORA_LOGO-1-removebg-preview.png")}
                   alt="Logo Not Found"
@@ -188,7 +189,8 @@ const ResponsiveAppBar = (props) => {
                     left: 0,
                     zIndex: "200",
                   }}
-                />
+                /> */}
+                <h1>Las Palmas de Cocora</h1>
               </Link>
             </Typography>
 
@@ -228,7 +230,7 @@ const ResponsiveAppBar = (props) => {
                   />
                 ))}
                 <MenuItem>
-                  <Select
+                  {/* <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     value={language}
@@ -239,7 +241,10 @@ const ResponsiveAppBar = (props) => {
                   >
                     <MenuItem value="spanish">🇨🇴</MenuItem>
                     <MenuItem value="english">🇺🇸</MenuItem>
-                  </Select>
+                  </Select> */}
+                  <div className={classes.langFlag}>
+                    <img src={require("./images/colombia.png")} />
+                  </div>
                 </MenuItem>
               </Menu>
             </Box>
@@ -288,8 +293,8 @@ const ResponsiveAppBar = (props) => {
                   />
                 </div>
               ))}
-              <div style={{ margin: "20px" }}>
-                <Select
+              <div className={classes.langFlag} style={{ margin: "20px" }}>
+                {/* <Select
                   labelId="demo-simple-select-label"
                   id="demo-simple-select"
                   value={language}
@@ -304,7 +309,17 @@ const ResponsiveAppBar = (props) => {
                 >
                   <MenuItem value="spanish">🇨🇴</MenuItem>
                   <MenuItem value="english">🇺🇸</MenuItem>
-                </Select>
+                </Select> */}
+                <img
+                  src={require("./images/colombia.png")}
+                  onClick={(e) => changeLanguage("spanish")}
+                />
+              </div>
+              <div className={classes.langFlag}>
+                <img
+                  src={require("./images/uk.jpg")}
+                  onClick={(e) => changeLanguage("english")}
+                />
               </div>
             </Box>
           </Toolbar>

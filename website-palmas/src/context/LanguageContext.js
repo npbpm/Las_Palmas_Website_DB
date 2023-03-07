@@ -6,7 +6,7 @@ export function LanguageProvider(props) {
   const [language, setLanguage] = useState("spanish");
 
   const changeLanguage = (e) => {
-    setLanguage(e.target.value);
+    setLanguage(e);
   };
 
   return (
