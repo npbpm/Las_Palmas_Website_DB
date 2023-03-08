@@ -45,7 +45,7 @@ const words = {
     {
       title: "Paseos Ecológicos a Caballo y Caminatas",
       description:
-        "Una cabalgata por el Valle de Cocora en Salento Quindío es la experiencia que no puede faltar en la agenda de vacaciones, un paisaje único en el mundo rodeado de palmas de cera en medio de la montaña.",
+        "Una cabalgata por el Valle de Cocora en Salento Quindío es la experiencia que no puede faltar en la agenda de vacaciones.",
       img: "./images/HorseRiding.jpeg",
       path: "/horseback-riding",
     },
@@ -110,7 +110,7 @@ const words = {
     {
       title: "Eco-friendly Activities",
       description:
-        "A Horseback Ride inside the Cocora Valley at Salento, Quindio is an experience you cannot miss on your agenda, a unique landscape filled with wax palm trees in the middle of the mountains.",
+        "A Horseback Ride inside the Cocora Valley at Salento, Quindio is an experience you cannot miss on your agenda.",
       img: "./images/HorseRiding.jpeg",
       path: "/horseback-riding",
     },

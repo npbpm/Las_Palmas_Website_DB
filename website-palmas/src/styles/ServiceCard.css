@@ -72,11 +72,11 @@ h2{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-h3{
+/* h3{
     font-family: 'Playfair Display', serif !important;
     color: rgb(199,28,0);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
+} */
 
 h4{
     font-family: 'Playfair Display', serif !important;

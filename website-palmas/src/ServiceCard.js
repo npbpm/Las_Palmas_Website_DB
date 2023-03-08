@@ -26,8 +26,47 @@ function ServiceCard(props) {
           onClick={(e) => handleMouseClick(e)}
           className={showingDesc ? classes.serviceCardImg : ""}
         />
-        <div>
-          <p>{description}</p>
+        <div className={classes.serviceCardInfo}>
+          <h3>{title}</h3>
+          <p
+            className={
+              showingDesc
+                ? classes.descriptionShowing
+                : classes.descriptionNotShowing
+            }
+          >
+            {description}
+          </p>
+          <button
+            style={
+              showingDesc
+                ? { display: "none", opacity: "0", transition: "all 0.2s" }
+                : {
+                    display: "block",
+                    opacity: "1",
+                    transition: "all 0.2s",
+                  }
+            }
+            className={classes.btn}
+            onClick={(e) => handleMouseClick(e)}
+          >
+            {language === "spanish" ? "Ver Más" : "More"}
+          </button>
+          <button
+            style={
+              !showingDesc
+                ? { display: "none", opacity: "0", transition: "all 0.2s" }
+                : {
+                    display: "block",
+                    opacity: "1",
+                    transition: "all 0.2s",
+                  }
+            }
+            className={classes.btn}
+            onClick={(e) => handleMouseClick(e)}
+          >
+            {language === "spanish" ? "Ver Menos" : "Hide"}
+          </button>
         </div>
       </div>
     </div>
@@ -37,11 +76,14 @@ function ServiceCard(props) {
 const styles = {
   serviceCard: {
     width: "33%",
-    height: "380px",
+    minHeight: "600px",
+    /* height: "auto", */
     position: "relative",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    marginBottom: "40px",
+    overflow: "hidden",
     [sizes.down("md")]: {
       width: "48%",
       height: "450px",
@@ -100,21 +142,27 @@ const styles = {
   }, */
   content: {
     width: "75%",
+    minHeight: "680px",
     height: "100%",
     textAlign: "center",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    justifyContent: "space-around",
+    justifyContent: "space-evenly",
+    backgroundColor: "rgb(20,174,92)",
+    borderRadius: "8px",
+    gap: "8px",
+    padding: "12px",
     "& img": {
       marginRight: "auto",
       marginLeft: "auto",
       maxWidth: "80%",
       maxHeight: "60%",
-      height: "500px",
+      height: "300px",
       width: "400px",
       /* borderRadius: "50%", */
-      zIndex: 1,
+      position: "static",
+      zIndex: "5",
       border: "none",
       /*  boxShadow:
         "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset", */
@@ -130,7 +178,12 @@ const styles = {
         transition: "ease-in-out all 0.2s",
       },
     },
+    "& h3": {
+      color: "white",
+      fontSize: "1.8rem",
+    },
     "& p": {
+      color: "white",
       width: "85%",
       whiteSpace: "inital",
       fontSize: "1.1rem !important",
@@ -139,6 +192,36 @@ const styles = {
       marginTop: "0px",
       padding: "15px 0",
     },
+  },
+  descriptionNotShowing: {
+    visibility: "hidden",
+    opacity: "0",
+    transition: "all 0.3s",
+  },
+  descriptionShowing: {
+    visibility: "visible",
+    opacity: "1",
+    transition: "all 0.3s",
+  },
+  btn: {
+    fontSize: "1.5rem",
+    padding: "15px 25px",
+    backgroundColor: "black",
+    color: "white",
+    border: "none",
+    borderRadius: "5px",
+    margin: "15px 0px",
+    "&:hover": {
+      cursor: "pointer",
+      transform: "scale(1.04)",
+      transition: "linear all 0.2s",
+    },
+  },
+  serviceCardInfo: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
   },
 };
 
