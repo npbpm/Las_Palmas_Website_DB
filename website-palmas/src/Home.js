@@ -46,7 +46,7 @@ function Home(props) {
         height={"750px"}
       /> */}
       <div className={classes.homeBody}>
-        <div>
+        {/* <div>
           <Typography variant="h1">Eco - Hotel Las Palmas De Cocora</Typography>
           <section className={classes.location}>
             <img
@@ -122,11 +122,36 @@ function Home(props) {
               </p>
             )}
           </section>
+        </div> */}
+        <div className={classes.topEl}>
+          <div className={classes.leftSide}>
+            <h1 className={classes.title} style={{ textAlign: "center" }}>
+              Eco - Hotel Las Palmas De Cocora
+            </h1>
+            <p>
+              {language === "spanish"
+                ? "Bienvenido al Eco Hotel Las Palmas de Cocora, un refugio de tranquilidad y armonía en pleno corazón del impresionante Valle de Cocora. Aquí, podrás disfrutar de la naturaleza en su estado más puro minetras te sumerges en una experiencia única de descanso y relajación, para pasar tiempo en familia y/o con amigos, incluso tu amigo peludo es más que bienvenido."
+                : "Welcome to Eco Hotel Las Palmas de Cocora, a haven of tranquility and harmony in the heart of the stunning Cocora Valley. Here, you can enjoy nature in its purest state while immersing yourself in a unique experience of rest and relaxation. Spend quality time with your family and/or friends, even your furry friend is more than welcome."}
+            </p>
+            <p>
+              {language === "spanish"
+                ? "Date la oportunidad de vivir nuevas experiencias en la profundidad del Valle de Cocora.\n Te esperamos con los brazos abiertos!"
+                : "Give yourself the opportunity to live new experiences in the depths of the Cocora Valley. We await you with open arms!"}
+            </p>
+          </div>
+          <div className={classes.rightSide}>
+            <Slideshow
+              slideImages={slideImages}
+              isNavbar={true}
+              width={"100%"}
+              height={"450px"}
+            />
+          </div>
         </div>
         <div className={classes.services}>
-          <Typography variant="h3" fontSize="4rem" marginBottom="55px">
+          {/* <Typography variant="h3" fontSize="4rem" marginBottom="55px">
             {language === "spanish" ? "Nuestros Servicios" : "Our Services"}
-          </Typography>
+          </Typography> */}
           <div className={classes.serviceCards}>{services}</div>
         </div>
       </div>

@@ -20,22 +20,14 @@ function ServiceCard(props) {
 
   return (
     <div className={classes.serviceCard}>
-      <img
-        src={require(`${img}`)}
-        onClick={(e) => handleMouseClick(e)}
-        className={showingDesc ? classes.serviceCardImg : ""}
-      />
-      <div
-        className={
-          showingDesc
-            ? classes.serviceTextShowing
-            : classes.serviceTextNotShowing
-        }
-      >
-        <Typography variant="h5">{title}</Typography>
-        {description}
-        <div className={classes.linkButton}>
-          <Link to={path}>{language === "spanish" ? "Ver Más" : "More"}</Link>
+      <div className={classes.content}>
+        <img
+          src={require(`${img}`)}
+          onClick={(e) => handleMouseClick(e)}
+          className={showingDesc ? classes.serviceCardImg : ""}
+        />
+        <div>
+          <p>{description}</p>
         </div>
       </div>
     </div>
@@ -44,9 +36,12 @@ function ServiceCard(props) {
 
 const styles = {
   serviceCard: {
-    width: "23%",
-    height: "550px",
+    width: "33%",
+    height: "380px",
     position: "relative",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
     [sizes.down("md")]: {
       width: "48%",
       height: "450px",
@@ -55,32 +50,16 @@ const styles = {
     [sizes.down("sm")]: {
       width: "98%",
     },
-    "& img": {
-      maxWidth: "100%",
-      maxHeight: "100%",
-      height: "500px",
-      width: "400px",
-      borderRadius: "50%",
-      zIndex: 1,
-      border: "none",
-      boxShadow:
-        "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
-      objectFit: "cover",
-      "&:hover": {
-        cursor: "pointer",
-        transform: "scale(1.04)",
-        transition: "ease-in-out all 0.2s",
-      },
-    },
-    "& a": {
+
+    /* "& a": {
       textDecoration: "none",
       color: "#F6923D",
-    },
+    }, */
   },
-  serviceCardImg: {
+  /* serviceCardImg: {
     filter: "brightness(30%)",
-  },
-  serviceTextShowing: {
+  }, */
+  /* serviceTextShowing: {
     position: "absolute",
     zIndex: 5,
     top: "40%",
@@ -100,8 +79,8 @@ const styles = {
   },
   serviceTextNotShowing: {
     visibility: "hidden",
-  },
-  linkButton: {
+  }, */
+  /* linkButton: {
     position: "absolute",
     top: "90%",
     transform: "translate(-50%,50%)",
@@ -117,6 +96,48 @@ const styles = {
       cursor: "pointer",
       backgroundColor: "rgba(0,0,0,0.8)",
       transition: "ease-in-out all 0.2s",
+    },
+  }, */
+  content: {
+    width: "75%",
+    height: "100%",
+    textAlign: "center",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "space-around",
+    "& img": {
+      marginRight: "auto",
+      marginLeft: "auto",
+      maxWidth: "80%",
+      maxHeight: "60%",
+      height: "500px",
+      width: "400px",
+      /* borderRadius: "50%", */
+      zIndex: 1,
+      border: "none",
+      /*  boxShadow:
+        "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset", */
+      objectFit: "cover",
+      /* "&:hover": {
+        cursor: "pointer",
+        transform: "scale(1.04)",
+        transition: "ease-in-out all 0.2s",
+      }, */
+      "&:hover": {
+        cursor: "pointer",
+        transform: "translateY(-8px)",
+        transition: "ease-in-out all 0.2s",
+      },
+    },
+    "& p": {
+      width: "85%",
+      whiteSpace: "inital",
+      fontSize: "1.1rem !important",
+      lineHeight: "1.1rem",
+      height: "auto",
+      marginTop: "0px",
+      padding: "15px 0",
     },
   },
 };

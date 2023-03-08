@@ -1,9 +1,12 @@
 const words = {
   spanish: {
-    access: "Acceso Rápido",
+    /* access: "Acceso Rápido", */
     home: "Inicio",
     services: "Servicios",
-    packages: "Planes y Promociones",
+    us: "Nosotros",
+    packages: "Planes y Reservas",
+    contact: "Contáctenos",
+    /*     packages: "Planes y Promociones",
     reviews: "Testimonios",
     contact: "Contáctenos",
     address: "primer restaurante a la izquierda",
@@ -16,13 +19,16 @@ const words = {
     horse: "Paseos Ecológicos a Caballo y Caminatas",
     crafts: "Artesanías de la Región",
     glamping: "Glamping Cocora Nidos del Cóndor",
-    flowers: "Vivero Cocora Viva",
+    flowers: "Vivero Cocora Viva", */
   },
   english: {
-    access: "Quick Access",
+    /* access: "Quick Access", */
     home: "Home",
     services: "Services",
-    packages: "Packages and Promotions",
+    us: "Us",
+    packages: "Packages and Bookings",
+    contact: "Contact Us",
+    /*     packages: "Packages and Promotions",
     reviews: "Reviews",
     contact: "Contact Us",
     address: "first restaurant to your left",
@@ -35,7 +41,7 @@ const words = {
     horse: "Horseback Riding",
     crafts: "Regional Crafts",
     glamping: "Glamping Cocora Nidos del Condor",
-    flowers: "Florist Cocora Viva",
+    flowers: "Florist Cocora Viva", */
   },
 };
 

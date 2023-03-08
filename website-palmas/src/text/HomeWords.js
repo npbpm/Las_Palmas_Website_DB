@@ -3,30 +3,9 @@ const words = {
     {
       title: "Restaurante",
       description:
-        "Nos enorgullecemos de nuestro menú típicamente Colombiano, desde patacones con hogao' hasta nuestra inigualable trucha al ajillo! Disfrute de su comida mientras exalta todos sus sentidos en este hermoso valle, apreciando la belleza paisajística del lugar con su majestuosa Palma de cera matizada con la gran gama de verdes de sus montañas.",
+        "Disfrute de su comida mientras exalta todos sus sentidos en este hermoso valle, apreciando la belleza paisajística del lugar con su majestuosa Palma de cera matizada con la gran gama de verdes de sus montañas.",
       img: "./images/FrenteRestaurante.jpeg",
       path: "/restaurant",
-    },
-    {
-      title: "Glamping Cocora Nidos del Cóndor",
-      description:
-        "Este es el lugar perfecto para esas escapadas de un fin de semana en pareja, para sacarse el peso de la ciudad y disfrutar de una experiencia única dentro de las montañas del Valle de Cocora.",
-      img: "./images/logoGlamping.jpg",
-      path: "/cocora-nidos-del-condor",
-    },
-    {
-      title: "Vivero Cocora Viva",
-      description:
-        "Venga y aproveche la oportunidad de llevarse con usted un recuerdo de la flora del Valle, con el toque único del Vivero Cocora Viva",
-      img: "./images/vivero1.jpeg",
-      path: "/cocora-viva",
-    },
-    {
-      title: "Casita del sabor",
-      description:
-        "Déjese atrapar por el aroma del café, disfrute de esta deliciosa bebida preparada en diferentes formas, en nuestra casita de arquitectura quindiana.",
-      img: "./images/CasitaDelSabor.jpeg",
-      path: "/cofee-house",
     },
     {
       title: "Hospedaje",
@@ -36,6 +15,13 @@ const words = {
       path: "/lodging",
     },
     {
+      title: "Glamping Cocora Nidos del Cóndor",
+      description:
+        "Este es el lugar perfecto para esas escapadas de un fin de semana en pareja, para sacarse el peso de la ciudad y disfrutar de una experiencia única dentro de las montañas del Valle de Cocora.",
+      img: "./images/logoGlamping.jpg",
+      path: "/cocora-nidos-del-condor",
+    },
+    {
       title: "Camping",
       description:
         "El Eco-Hotel Las Palmas de Cocora cuenta con un amplio espacio verde bajo un cielo descubierto que, al anochecer, se ilumina con la luz de las estrellas y constelaciones. Una experiencia única para los amantes de la naturaleza.",
@@ -43,11 +29,18 @@ const words = {
       path: "/camping",
     },
     {
-      title: "Atracciones",
+      title: "Casita del sabor",
       description:
-        "Contamos con una zona adaptada para los niños, para que los más chicos puedan divertirse, mientras los más grandes disfrutan de los servicios del Restaurante.",
-      img: "./images/Atracciones.jpeg",
-      path: "/games",
+        "Déjese atrapar por el aroma del café, disfrute de esta deliciosa bebida preparada en diferentes formas, en nuestra casita de arquitectura quindiana.",
+      img: "./images/CasitaDelSabor.jpeg",
+      path: "/cofee-house",
+    },
+    {
+      title: "Vivero Cocora Viva",
+      description:
+        "Venga y aproveche la oportunidad de llevarse con usted un recuerdo de la flora del Valle, con el toque único del Vivero Cocora Viva",
+      img: "./images/vivero1.jpeg",
+      path: "/cocora-viva",
     },
     {
       title: "Paseos Ecológicos a Caballo y Caminatas",
@@ -63,35 +56,21 @@ const words = {
       img: "./images/artesanias.jpeg",
       path: "/regional-crafts",
     },
+    {
+      title: "Atracciones",
+      description:
+        "Contamos con una zona adaptada para los niños, para que los más chicos puedan divertirse, mientras los más grandes disfrutan de los servicios del Restaurante.",
+      img: "./images/Atracciones.jpeg",
+      path: "/games",
+    },
   ],
   english: [
     {
       title: "Restaurant",
       description:
-        "We take pride on our typically colombian menu, here you can have a taste of what colombian culture is actually like. Allow yourself to awaken all of your senses in this beautiful Valley, while admiring the beauty of the land with its majestic wax palm trees and its green mountains.",
+        "Allow yourself to awaken all of your senses in this beautiful Valley, while admiring the beauty of the land with its majestic wax palm trees and its green mountains.",
       img: "./images/FrenteRestaurante.jpeg",
       path: "/restaurant",
-    },
-    {
-      title: "Glamping Cocora Nidos del Cóndor",
-      description:
-        "This is the perfect place for those one weekend couple runaways, take this chance to take the city's weight of your shoulders and enjoy of this unique experience deep inside the Valley's mountains.",
-      img: "./images/logoGlamping.jpg",
-      path: "/cocora-nidos-del-condor",
-    },
-    {
-      title: "Florist Cocora Viva",
-      description:
-        "Comme and take advantage of this opportunity to bring back home a memory with the special touch of the Florist Cocora Viva",
-      img: "./images/vivero1.jpeg",
-      path: "/cocora-viva",
-    },
-    {
-      title: "Coffee House",
-      description:
-        "Let yourself be infected with the aroma of coffee, enjoy this delicious beverage in all of its different forms in our little house of regional architecture.",
-      img: "./images/CasitaDelSabor.jpeg",
-      path: "/cofee-house",
     },
     {
       title: "Lodging",
@@ -101,6 +80,13 @@ const words = {
       path: "/lodging",
     },
     {
+      title: "Glamping Cocora Nidos del Cóndor",
+      description:
+        "This is the perfect place for those one weekend couple runaways, take this chance to take the city's weight of your shoulders and enjoy of this unique experience deep inside the Valley's mountains.",
+      img: "./images/logoGlamping.jpg",
+      path: "/cocora-nidos-del-condor",
+    },
+    {
       title: "Camping",
       description:
         "The Eco-Hotel Las Palmas de Cocora has a large green space, under the light of the night sky filled with stars and constellations for you to admire. A once in a lifetime experience for those nature lovers.",
@@ -108,11 +94,18 @@ const words = {
       path: "/camping",
     },
     {
-      title: "Games",
+      title: "Coffee House",
       description:
-        "We have a special zone for the kids, so that the little ones can have fun while the grownups enjoy of the restaurant services.",
-      img: "./images/Atracciones.jpeg",
-      path: "/games",
+        "Let yourself be infected with the aroma of coffee, enjoy this delicious beverage in all of its different forms in our little house of regional architecture.",
+      img: "./images/CasitaDelSabor.jpeg",
+      path: "/cofee-house",
+    },
+    {
+      title: "Florist Cocora Viva",
+      description:
+        "Comme and take advantage of this opportunity to bring back home a memory with the special touch of the Florist Cocora Viva",
+      img: "./images/vivero1.jpeg",
+      path: "/cocora-viva",
     },
     {
       title: "Eco-friendly Activities",
@@ -127,6 +120,13 @@ const words = {
         "Come visit our craft store, we have exclusive products handmade by Salento's craftsmen, here you can buy a nice souvenir so you can bring a part of the Valley with you!",
       img: "./images/artesanias.jpeg",
       path: "/regional-crafts",
+    },
+    {
+      title: "Games",
+      description:
+        "We have a special zone for the kids, so that the little ones can have fun while the grownups enjoy of the restaurant services.",
+      img: "./images/Atracciones.jpeg",
+      path: "/games",
     },
   ],
 };

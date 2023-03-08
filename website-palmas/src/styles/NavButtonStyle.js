@@ -9,7 +9,7 @@ const style = {
     borderRadius: "5px",
     fontFamily: "'Playfair Display', serif !important",
     fontSize: "28px !important",
-    textShadow: "1px 1px 2px #FFD9B8",
+    /* textShadow: "1px 1px 2px #FFD9B8", */
     [sizes.down("md")]: {
       fontSize: "1rem !important",
       marginLeft: "-12px !important",
@@ -23,7 +23,7 @@ const style = {
     backgroundColor: "transparent !important",
     textTransform: "none",
     fontFamily: "'Playfair Display', serif !important",
-    textShadow: "1px 1px 2px #002f05 !important",
+    /* textShadow: "1px 1px 2px #002f05 !important", */
     borderRadius: "5px",
     [sizes.down("md")]: {
       fontSize: "1rem !important",
@@ -39,7 +39,7 @@ const style = {
     width: "100%",
     fontSize: "28px !important",
     borderRadius: "5px",
-    textShadow: "1px 1px 2px #FFD9B8",
+    /*  textShadow: "1px 1px 2px #FFD9B8", */
     [sizes.down("md")]: {
       fontSize: "1rem",
     },

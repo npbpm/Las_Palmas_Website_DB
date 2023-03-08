@@ -19,7 +19,7 @@ const style = {
       padding: "20px",
       height: "100%",
       fontSize: "2rem",
-      fontFamily: "'Bebas Neue', cursive",
+      /* fontFamily: "'Bebas Neue', cursive", */
       [sizes.down("md")]: {
         fontSize: "1.2rem",
       },
@@ -66,6 +66,30 @@ const style = {
       display: "block",
       padding: 0,
     },
+  },
+
+  topEl: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "start",
+    justifyContent: "space-evenly",
+  },
+  leftSide: {
+    height: "100%",
+    width: "45%",
+    textAlign: "left",
+    "& p": {
+      fontSize: "1.5rem",
+    },
+  },
+  rightSide: {
+    height: "100%",
+    width: "35%",
+  },
+  title: {
+    fontSize: "2.7rem",
+    margin: "40px 0px",
+    color: "#84BF2A",
   },
 };
 
