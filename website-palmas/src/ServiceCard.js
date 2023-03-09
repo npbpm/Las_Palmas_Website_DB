@@ -21,13 +21,15 @@ function ServiceCard(props) {
   return (
     <div className={classes.serviceCard}>
       <div className={classes.content}>
-        <img
-          src={require(`${img}`)}
-          onClick={(e) => handleMouseClick(e)}
-          className={showingDesc ? classes.serviceCardImg : ""}
-        />
+        <Link to={path}>
+          <img
+            src={require(`${img}`)}
+            className={showingDesc ? classes.serviceCardImg : ""}
+          />
+        </Link>
+
         <div className={classes.serviceCardInfo}>
-          <h3>{title}</h3>
+          <h4>{title}</h4>
           <p
             className={
               showingDesc
@@ -86,7 +88,7 @@ const styles = {
     overflow: "hidden",
     [sizes.down("md")]: {
       width: "48%",
-      height: "450px",
+      /* height: "450px", */
       marginBottom: "10px",
     },
     [sizes.down("sm")]: {
@@ -153,6 +155,11 @@ const styles = {
     borderRadius: "8px",
     gap: "8px",
     padding: "12px",
+    "& a": {
+      [sizes.down("sm")]: {
+        height: "180px",
+      },
+    },
     "& img": {
       marginRight: "auto",
       marginLeft: "auto",
@@ -172,15 +179,22 @@ const styles = {
         transform: "scale(1.04)",
         transition: "ease-in-out all 0.2s",
       }, */
+      [sizes.down("sm")]: {
+        maxWidth: "100%",
+        maxHeight: "100%",
+      },
       "&:hover": {
         cursor: "pointer",
         transform: "translateY(-8px)",
         transition: "ease-in-out all 0.2s",
       },
     },
-    "& h3": {
+    "& h4": {
       color: "white",
       fontSize: "1.8rem",
+      [sizes.down("us")]: {
+        fontSize: "1.6rem",
+      },
     },
     "& p": {
       color: "white",
@@ -191,6 +205,9 @@ const styles = {
       height: "auto",
       marginTop: "0px",
       padding: "15px 0",
+      [sizes.down("us")]: {
+        fontSize: "0.8rem !important",
+      },
     },
   },
   descriptionNotShowing: {
@@ -205,12 +222,15 @@ const styles = {
   },
   btn: {
     fontSize: "1.5rem",
-    padding: "15px 25px",
+    padding: "18px 55px",
     backgroundColor: "black",
     color: "white",
     border: "none",
-    borderRadius: "5px",
+    borderRadius: "8px",
     margin: "15px 0px",
+    [sizes.down("us")]: {
+      fontSize: "1.2rem",
+    },
     "&:hover": {
       cursor: "pointer",
       transform: "scale(1.04)",

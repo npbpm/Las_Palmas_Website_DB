@@ -79,10 +79,20 @@ function Footer() {
     <footer>
       <div className="footer">
         <div className="leftImages" style={{}}>
-          <img
-            src={require("./images/PALMAS_DE_COCORA_LOGO-1-removebg-preview.png")}
-            className="palmasLogo"
-          />
+          <Link
+            to={"/"}
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <img
+              src={require("./images/PALMAS_DE_COCORA_LOGO-1-removebg-preview.png")}
+              className="palmasLogo"
+            />
+          </Link>
           <div className="logos">
             {/* <IconButton
               onClick={(e) =>

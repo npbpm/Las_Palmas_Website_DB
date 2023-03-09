@@ -73,6 +73,12 @@ const style = {
     flexDirection: "row",
     alignItems: "start",
     justifyContent: "space-evenly",
+    marginBottom: "60px",
+    [sizes.down("sm")]: {
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+    },
   },
   leftSide: {
     height: "100%",
@@ -80,16 +86,43 @@ const style = {
     textAlign: "left",
     "& p": {
       fontSize: "1.5rem",
+      [sizes.down("sm")]: {},
+    },
+    [sizes.down("sm")]: {
+      width: "95%",
+      "& p:nth-of-type(1)": {
+        marginTop: "470px",
+      },
+    },
+    [sizes.down("us")]: {
+      "& p:nth-of-type(1)": {
+        marginTop: "430px",
+      },
     },
   },
   rightSide: {
     height: "100%",
     width: "35%",
+    /*     padding: "25px",
+    backgroundColor: "#84BF2A",
+    borderRadius: "8px", */
+    [sizes.down("sm")]: {
+      position: "absolute",
+      top: "380px",
+      width: "95%",
+    },
+    [sizes.down("us")]: {
+      top: "250px",
+      width: "95%",
+    },
   },
   title: {
     fontSize: "2.7rem",
     margin: "40px 0px",
     color: "#84BF2A",
+    [sizes.down("sm")]: {
+      fontSize: "1.6rem",
+    },
   },
 };
 

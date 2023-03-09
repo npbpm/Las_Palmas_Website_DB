@@ -12,8 +12,8 @@ import { redirect, Link } from "react-router-dom";
 import { withStyles } from "@mui/styles";
 import NavButton from "./NavButton";
 import style from "./styles/NavbarStyle";
-import { green } from "@mui/material/colors";
-import { Select } from "@mui/material";
+/* import { green } from "@mui/material/colors";
+import { Select } from "@mui/material"; */
 import { LanguageContext } from "./context/LanguageContext";
 import words from "./text/NavbarWords";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
@@ -144,7 +144,7 @@ const ResponsiveAppBar = (props) => {
     setAnchorElNav(event.currentTarget);
   };
 
-  const handleCloseNavMenu = (newPath) => {
+  const handleCloseNavMenu = (e, newPath) => {
     setAnchorElNav(null);
     redirect(newPath);
   };
@@ -242,8 +242,17 @@ const ResponsiveAppBar = (props) => {
                     <MenuItem value="spanish">🇨🇴</MenuItem>
                     <MenuItem value="english">🇺🇸</MenuItem>
                   </Select> */}
+                  <div className={classes.langFlag} style={{ margin: "20px" }}>
+                    <img
+                      src={require("./images/colombia.png")}
+                      onClick={(e) => changeLanguage("spanish")}
+                    />
+                  </div>
                   <div className={classes.langFlag}>
-                    <img src={require("./images/colombia.png")} />
+                    <img
+                      src={require("./images/uk.jpg")}
+                      onClick={(e) => changeLanguage("english")}
+                    />
                   </div>
                 </MenuItem>
               </Menu>
@@ -262,12 +271,16 @@ const ResponsiveAppBar = (props) => {
                 textDecoration: "none",
               }}
             >
-              <Link to={"/"}>
-                <img
+              <Link
+                to={"/"}
+                style={{ textDecoration: "none", whiteSpace: "initial" }}
+              >
+                {/* <img
                   className={classes.logo}
                   src={require("./images/PALMAS_DE_COCORA_LOGO-1-removebg-preview.png")}
                   alt="Logo Not Found"
-                />
+                /> */}
+                <h1>Las Palmas de Cocora</h1>
               </Link>
             </Typography>
             <Box

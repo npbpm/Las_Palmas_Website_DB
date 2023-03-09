@@ -266,7 +266,8 @@ ul li h5{
 
 @media (max-width: 575.98px){
     footer{
-        width: 100%
+        width: 100%;
+        height: auto;
     }
     .list-section h5{
         font-size: 0.75em;
@@ -274,9 +275,19 @@ ul li h5{
     }  
 
     .footer{
-        align-items: flex-start;
+        flex-direction: column;
+        align-items: center;
         width: 100;
         justify-content: center;
+        height: auto;
+    }
+
+    .palmasLogo{
+        max-width: 90%;
+    }
+
+    .footer ul li{
+        text-align: center;
     }
 
     .list-section ul{
@@ -295,17 +306,23 @@ ul li h5{
         margin-top: -10px;
     }
 
-    .social-media{
-        font-size: 0.45em;
+    footer .social-media{
+        font-size: 0.8em;
+        padding: 0;
     }
 
     .social-media p{
         margin-left: -10px;
-        width: 50%
+        width: auto;
+    }
+
+    .clickableImg{
+        width: 60%;
     }
 
     .logo{
-        font-size: 1em !important;
+        /* font-size: 1em !important; */
+        max-width: 30%;
     }
 }
 

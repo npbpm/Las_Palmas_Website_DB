@@ -62,13 +62,14 @@
 
 
 h1{
-    font-family: 'Playfair Display', serif !important;
-    color: rgb(199,28,0)
+    /* font-family: 'Playfair Display', serif !important; */
+    font-family: 'Times New Roman', Times, serif;
+    color: #C71C00
 }
 
 h2{
     font-family: 'Playfair Display', serif !important;
-    color: rgb(199,28,0);
+    color: #C71C00;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
@@ -78,11 +79,11 @@ h2{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 } */
 
-h4{
+/* h4{
     font-family: 'Playfair Display', serif !important;
     color: rgb(199,28,0);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
+} */
 
 /* h5{
     font-family: 'Playfair Display', serif !important;
@@ -181,6 +182,14 @@ h4{
     }
 
     @media(max-width: 430px){
+        h1{
+            font-size: 1.8rem;
+        }
+
+        h4{
+            font-size: 1rem;
+        }
+
         .service-card{
             justify-content: flex-start;
         }

@@ -37,6 +37,10 @@ function Home(props) {
     />
   ));
 
+  function replaceWithBr(string) {
+    return string.replace(/\n/g, "<br />");
+  }
+
   return (
     <div className={classes.home}>
       {/* <Slideshow
@@ -133,11 +137,21 @@ function Home(props) {
                 ? "Bienvenido al Eco Hotel Las Palmas de Cocora, un refugio de tranquilidad y armonía en pleno corazón del impresionante Valle de Cocora. Aquí, podrás disfrutar de la naturaleza en su estado más puro minetras te sumerges en una experiencia única de descanso y relajación, para pasar tiempo en familia y/o con amigos, incluso tu amigo peludo es más que bienvenido."
                 : "Welcome to Eco Hotel Las Palmas de Cocora, a haven of tranquility and harmony in the heart of the stunning Cocora Valley. Here, you can enjoy nature in its purest state while immersing yourself in a unique experience of rest and relaxation. Spend quality time with your family and/or friends, even your furry friend is more than welcome."}
             </p>
-            <p>
-              {language === "spanish"
-                ? "Date la oportunidad de vivir nuevas experiencias en la profundidad del Valle de Cocora.\n Te esperamos con los brazos abiertos!"
-                : "Give yourself the opportunity to live new experiences in the depths of the Cocora Valley. We await you with open arms!"}
-            </p>
+            <p
+              dangerouslySetInnerHTML={
+                language === "spanish"
+                  ? {
+                      __html: replaceWithBr(
+                        "Date la oportunidad de vivir nuevas experiencias en la profundidad del Valle de Cocora.\n ¡Te esperamos con los brazos abiertos!"
+                      ),
+                    }
+                  : {
+                      __html: replaceWithBr(
+                        "Give yourself the opportunity to live new experiences in the depths of the Cocora Valley.\n We await you with open arms!"
+                      ),
+                    }
+              }
+            />
           </div>
           <div className={classes.rightSide}>
             <Slideshow
