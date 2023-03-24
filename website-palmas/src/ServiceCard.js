@@ -151,7 +151,7 @@ const styles = {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "space-evenly",
-    backgroundColor: "rgb(20,174,92)",
+    backgroundColor: "#75B727",
     borderRadius: "8px",
     gap: "8px",
     padding: "12px",

@@ -16,7 +16,11 @@ router.route("/api/create").post((req, res) => {
 });
 
 router.route("/api/reviews").get((req, res) => {
-  Review.find().then((foundReviews) => res.json(foundReviews));
+  try {
+    Review.find().then((foundReviews) => res.json(foundReviews));
+  } catch (err) {
+    console.error(err);
+  }
 });
 
 module.exports = router;

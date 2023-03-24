@@ -42,12 +42,13 @@ function Reviews(props) {
     };
   }, []);
 
-  /*  axios.defaults.baseURL = "http://localhost:3001"; */
+  axios.defaults.baseURL = "http://localhost:3001";
 
-  const fetchData = async () => {
+  const fetchData = () => {
     try {
-      const defaultReviews = await axios.get("/api/reviews");
-      setOpinions(defaultReviews.data);
+      axios.get("/api/reviews").then(function (response) {
+        setOpinions(response.data);
+      });
     } catch {
       const defaultReviews = [
         {

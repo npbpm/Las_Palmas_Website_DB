@@ -9,9 +9,13 @@ app.use(cors());
 app.use(express.json());
 
 //connect to mongoose
-mongoose.connect(
-  "mongodb+srv://palmas:riMK5ZWHErheLdWb@las-palmas-website.oi3ax9i.mongodb.net/reviewsDB"
-);
+try {
+  mongoose.connect(
+    "mongodb+srv://palmas:riMK5ZWHErheLdWb@las-palmas-website.oi3ax9i.mongodb.net/reviewsDB"
+  );
+} catch (err) {
+  console.log("Not Connected to the Database");
+}
 
 //require route
 app.use("/", require("./routes/reviewRoute"));
