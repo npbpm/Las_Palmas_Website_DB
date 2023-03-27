@@ -12,7 +12,9 @@ router.route("/api/create").post((req, res) => {
     message,
   });
 
-  newReview.save();
+  if (evaluation >= 3) {
+    newReview.save();
+  }
 });
 
 router.route("/api/reviews").get((req, res) => {

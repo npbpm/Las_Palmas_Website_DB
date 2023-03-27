@@ -4,18 +4,13 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const path = require("path");
 const Review = require("./models/reviewModel");
+const connectDB = require("./config/db");
 
 app.use(cors());
 app.use(express.json());
 
 //connect to mongoose
-try {
-  mongoose.connect(
-    "mongodb+srv://palmas:riMK5ZWHErheLdWb@las-palmas-website.oi3ax9i.mongodb.net/reviewsDB"
-  );
-} catch (err) {
-  console.log("Not Connected to the Database");
-}
+connectDB();
 
 //require route
 app.use("/", require("./routes/reviewRoute"));
