@@ -145,8 +145,13 @@ function Reviews(props) {
 
   const handleClick = (id) => {
     try {
-      axios.delete("/api/delete/" + id);
-      alert("Review deleted");
+      console.log(id);
+      if (isAuthenticated) {
+        axios.delete(`/api/delete/${id}`);
+        alert("Review deleted");
+      } else {
+        console.log("No admin connected");
+      }
     } catch (error) {
       console.log("ERROR");
     }

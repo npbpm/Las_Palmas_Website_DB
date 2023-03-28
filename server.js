@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const mongoose = require("mongoose");
 const path = require("path");
+const mongoose = require("mongoose");
 const Review = require("./models/reviewModel");
 const connectDB = require("./config/db");
 
@@ -16,19 +16,9 @@ connectDB();
 app.use("/", require("./routes/reviewRoute"));
 app.use("/api/admin", require("./routes/adminRoute"));
 app.use("/api/auth", require("./routes/authRoute"));
+app.use("/api/delete", require("./routes/deleteRoute"));
 
 // Serve static asses in production
-
-app.delete("/api/delete/:id", function (req, res) {
-  const id = mongoose.Types.ObjectId(req.params.id);
-  Review.findByIdAndDelete(id, function (err) {
-    if (!err) {
-      console.log("No Error");
-    } else {
-      console.log("Error");
-    }
-  });
-});
 
 if (process.env.NODE_ENV === "production") {
   // Set static folder

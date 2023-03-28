@@ -5,6 +5,7 @@
 // export default AuthContext;
 import React, { createContext, useState } from "react";
 import axios from "axios";
+import setAuthToken from "../../utils/setAuthToken";
 
 export const AuthContext = createContext();
 
@@ -24,6 +25,8 @@ export function AuthProvider(props) {
         localStorage.setItem("token", res.data.token);
       }
       setIsAuthenticated(true);
+
+      setAuthToken(localStorage.token);
     } catch (error) {
       console.log("Not authentified");
     }
@@ -33,6 +36,11 @@ export function AuthProvider(props) {
     localStorage.removeItem("token");
     setIsAuthenticated(false);
   };
+
+  /*   const deleteReview = (formData) => {
+    axios.delete("/api/delete/" + id, formData, config);
+  }; */
+
   return (
     <AuthContext.Provider value={{ isAuthenticated, login, logout }}>
       {props.children}
