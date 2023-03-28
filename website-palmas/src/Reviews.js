@@ -5,6 +5,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import style from "./styles/ReviewsStyle";
 import { IconButton, Typography } from "@mui/material";
 import { LanguageContext } from "./context/LanguageContext";
+import { AuthContext } from "./context/auth/AuthContext";
 import axios from "axios";
 import Authentication from "./Authentication";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
@@ -30,6 +31,8 @@ function Reviews(props) {
 
   const { language } = useContext(LanguageContext);
 
+  const { isAuthenticated, logout } = useContext(AuthContext);
+
   useEffect(() => {
     setIsLoading(true);
 
@@ -41,6 +44,14 @@ function Reviews(props) {
       document.removeEventListener("keydown", keyDownHandler);
     };
   }, []);
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      validateAdmin();
+    } else {
+      setAdminValidated(false);
+    }
+  }, [isAuthenticated]);
 
   axios.defaults.baseURL = "http://localhost:3001";
 
@@ -124,6 +135,7 @@ function Reviews(props) {
       event.preventDefault();
       setEditing(false);
       setAdminValidated(false);
+      logout();
     }
   };
 

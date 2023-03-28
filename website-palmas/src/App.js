@@ -24,6 +24,8 @@ import Loading from "./Loading";
 import { withStyles } from "@mui/styles";
 import style from "./styles/AppStyle";
 import { LanguageProvider } from "./context/LanguageContext";
+import { AuthProvider } from "./context/auth/AuthContext";
+import setAuthToken from "./utils/setAuthToken";
 import { useEffect, useState } from "react";
 
 function App(props) {
@@ -46,41 +48,47 @@ function App(props) {
     }
   }, []);
 
+  if (localStorage.token) {
+    setAuthToken(localStorage.token);
+  }
+
   return (
     <div className="App">
-      <LanguageProvider>
-        {isLoading ? (
-          <Loading />
-        ) : (
-          <div className="container">
-            <div className={classes.homeHeader}>
-              {/* <DispAppBar /> */}
-              <NavBar />
+      <AuthProvider>
+        <LanguageProvider>
+          {isLoading ? (
+            <Loading />
+          ) : (
+            <div className="container">
+              <div className={classes.homeHeader}>
+                {/* <DispAppBar /> */}
+                <NavBar />
+              </div>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="*" element={<Home />} />
+                <Route path="/packages-and-sales" element={<Packages />} />
+                <Route path="/reviews" element={<Reviews />} />
+                <Route path="/booking" element={<Bookings />} />
+                <Route path="/contact-us" element={<Contact />} />
+                <Route path="/who-are-we" element={<WhoAreWe />} />
+                <Route path="/arrive" element={<Arrive />} />
+                <Route path="/cocora-valley" element={<CocoraValley />} />
+                <Route path="/restaurant" element={<Restaurant />} />
+                <Route path="/cofee-house" element={<CofeeHouse />} />
+                <Route path="/lodging" element={<Lodging />} />
+                <Route path="/camping" element={<Camping />} />
+                <Route path="/games" element={<Games />} />
+                <Route path="/horseback-riding" element={<Horsebackriding />} />
+                <Route path="/regional-crafts" element={<Regionalcrafts />} />
+                <Route path="/cocora-nidos-del-condor" element={<Glamping />} />
+                <Route path="/cocora-viva" element={<Cocoraviva />} />
+              </Routes>
+              <Footer />
             </div>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="*" element={<Home />} />
-              <Route path="/packages-and-sales" element={<Packages />} />
-              <Route path="/reviews" element={<Reviews />} />
-              <Route path="/booking" element={<Bookings />} />
-              <Route path="/contact-us" element={<Contact />} />
-              <Route path="/who-are-we" element={<WhoAreWe />} />
-              <Route path="/arrive" element={<Arrive />} />
-              <Route path="/cocora-valley" element={<CocoraValley />} />
-              <Route path="/restaurant" element={<Restaurant />} />
-              <Route path="/cofee-house" element={<CofeeHouse />} />
-              <Route path="/lodging" element={<Lodging />} />
-              <Route path="/camping" element={<Camping />} />
-              <Route path="/games" element={<Games />} />
-              <Route path="/horseback-riding" element={<Horsebackriding />} />
-              <Route path="/regional-crafts" element={<Regionalcrafts />} />
-              <Route path="/cocora-nidos-del-condor" element={<Glamping />} />
-              <Route path="/cocora-viva" element={<Cocoraviva />} />
-            </Routes>
-            <Footer />
-          </div>
-        )}
-      </LanguageProvider>
+          )}
+        </LanguageProvider>
+      </AuthProvider>
     </div>
   );
 }

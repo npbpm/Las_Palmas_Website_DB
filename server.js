@@ -14,6 +14,8 @@ connectDB();
 
 //require route
 app.use("/", require("./routes/reviewRoute"));
+app.use("/api/admin", require("./routes/adminRoute"));
+app.use("/api/auth", require("./routes/authRoute"));
 
 // Serve static asses in production
 

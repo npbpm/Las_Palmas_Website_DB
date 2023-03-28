@@ -1,3 +1,4 @@
 {
-    "mongo_URI": "mongodb+srv://palmas:riMK5ZWHErheLdWb@las-palmas-website.oi3ax9i.mongodb.net/reviewsDB"
+    "mongo_URI": "mongodb+srv://palmas:riMK5ZWHErheLdWb@las-palmas-website.oi3ax9i.mongodb.net/reviewsDB",
+    "jwtSecret": "LasPalmasSecret"
 }

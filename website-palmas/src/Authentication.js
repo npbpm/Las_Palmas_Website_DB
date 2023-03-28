@@ -5,8 +5,10 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 import { TextValidator, ValidatorForm } from "react-material-ui-form-validator";
 import { lightGreen } from "@mui/material/colors";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { LanguageContext } from "./context/LanguageContext";
+import { AuthContext } from "./context/auth/AuthContext";
+import axios from "axios";
 
 export default function Authentication(props) {
   const { validateAdmin, keyDownHandler } = props;
@@ -14,6 +16,17 @@ export default function Authentication(props) {
   const [open, setOpen] = React.useState(false);
 
   const { language } = useContext(LanguageContext);
+
+  const { isAuthenticated, login } = useContext(AuthContext);
+
+  /*   useEffect(() => {
+    if (isAuthenticated) {
+      validateAdmin();
+    } else {
+      alert("Incorrect Password");
+      setPassword("");
+    }
+  }, [isAuthenticated]); */
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -27,13 +40,12 @@ export default function Authentication(props) {
     setPassword(event.target.value);
   };
 
-  const handleSubmit = () => {
-    if (password === "LasPalmasAdmin") {
-      validateAdmin();
-    } else {
-      alert("Incorrect Password");
-      setPassword("");
-    }
+  const handleSubmit = async () => {
+    login({
+      name: "Carmenza",
+      password,
+    });
+
     handleClose();
   };
 
