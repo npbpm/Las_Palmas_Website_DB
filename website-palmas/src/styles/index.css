@@ -3,6 +3,13 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "ShadedLarch";   /*Can be any text*/
+  src: local("ShadedLarch"),
+    url("../fonts/ShadedLarch.ttf") format("truetype");
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

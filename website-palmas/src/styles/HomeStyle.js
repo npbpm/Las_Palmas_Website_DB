@@ -28,13 +28,6 @@ const style = {
       },
     },
   },
-  serviceCards: {
-    width: "100%",
-    display: "flex",
-    justifyContent: "space-evenly",
-    alignItems: "center",
-    flexWrap: "wrap",
-  },
   services: {
     marginTop: "20px",
   },
@@ -119,10 +112,24 @@ const style = {
   title: {
     fontSize: "2.7rem",
     margin: "40px 0px",
-    color: "#84BF2A",
+    color: "#82BF26",
     [sizes.down("sm")]: {
       fontSize: "1.6rem",
     },
+  },
+  greenServices: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#E7F2D5",
+  },
+  whiteServices: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#FFFFFF",
   },
 };
 

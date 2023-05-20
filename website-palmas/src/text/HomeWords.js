@@ -15,10 +15,10 @@ const words = {
       path: "/lodging",
     },
     {
-      title: "Glamping Cocora Nidos del Cóndor",
+      title: "Glamping",
       description:
         "Este es el lugar perfecto para esas escapadas de un fin de semana en pareja, para sacarse el peso de la ciudad y disfrutar de una experiencia única dentro de las montañas del Valle de Cocora.",
-      img: "./images/logoGlamping.jpg",
+      img: "./images/glamping21.jpeg",
       path: "/cocora-nidos-del-condor",
     },
     {
@@ -43,7 +43,7 @@ const words = {
       path: "/cocora-viva",
     },
     {
-      title: "Paseos Ecológicos a Caballo y Caminatas",
+      title: "Paseos Ecológicos",
       description:
         "Una cabalgata por el Valle de Cocora en Salento Quindío es la experiencia que no puede faltar en la agenda de vacaciones.",
       img: "./images/HorseRiding.jpeg",
@@ -80,10 +80,10 @@ const words = {
       path: "/lodging",
     },
     {
-      title: "Glamping Cocora Nidos del Cóndor",
+      title: "Glamping",
       description:
         "This is the perfect place for those one weekend couple runaways, take this chance to take the city's weight of your shoulders and enjoy of this unique experience deep inside the Valley's mountains.",
-      img: "./images/logoGlamping.jpg",
+      img: "./images/glamping21.jpeg",
       path: "/cocora-nidos-del-condor",
     },
     {

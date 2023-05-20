@@ -1,7 +1,7 @@
 footer{
     /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
  */
-    border-top: solid 4px #F2F2F2;
+    border-top: solid 4px #B3B3B3;
 }
 
 .clickableImg{
@@ -26,18 +26,15 @@ li a:hover{
     max-height: 100%;
     border: solid 2px #F2F2F2;
     border-radius: 8px;
-    filter: grayscale();
 }
 
-.mapImg:hover{
-    filter: none;
+.mapImg:hover{  
     transform: scale(1.09);
     transition: linear all 0.3s;
 }
 
 .footer{
     font-size: 1.5em;
-/*     background-color:  #007700; */
     height: 250px;
     display: flex;
     justify-content: space-around;
@@ -46,7 +43,6 @@ li a:hover{
     bottom: 0;
     margin-bottom: 0;
     padding: 15px 0 25px 0;
-    /* font-family: 'Playfair Display', serif !important; */
     margin-top: 0;
     gap: 25px
 }
@@ -78,7 +74,7 @@ footer .social-media{
     padding-left: 15px;
     /* padding-top: 5px; */
     /* padding-bottom: 5px; */
-    background-color: #84BF2A;
+    background-color: #82BF26;
     width: 100%;
     height: 40px;
     display: flex;
@@ -148,30 +144,6 @@ footer .social-media{
     transform: scale(1.05);
     transition: ease-in-out all 0.2s ;
 }
-
-/* div.logos button svg{
-    color: black;
-}
-
-div.logos button svg:hover{
-    color: rgb(48, 139, 48);
-    transition: ease-in-out all 0.3s;
-} */
-
-/* .list-section div li button{
-    text-align: center;
-    text-transform: none;
-    font-size: 1em !important;
-    margin: 2px;
-    padding: 0;
-    flex-shrink: 1 !important;
-}
-
-.MuiIconButton-root{
-    color: black !important;
-    opacity: 1 !important;
-    padding: 0 !important
-} */
 
 div ul li{
     font-weight: 700;

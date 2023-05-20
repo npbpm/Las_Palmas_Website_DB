@@ -12,14 +12,22 @@ import { redirect, Link } from "react-router-dom";
 import { withStyles } from "@mui/styles";
 import NavButton from "./NavButton";
 import style from "./styles/NavbarStyle";
-/* import { green } from "@mui/material/colors";
-import { Select } from "@mui/material"; */
 import { LanguageContext } from "./context/LanguageContext";
 import words from "./text/NavbarWords";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Fade from "@mui/material/Fade";
 import Fab from "@mui/material/Fab";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      // Purple and green play nicely together.
+      main: "#F2F2F2",
+    },
+  },
+});
 
 function ScrollTop(props) {
   const { children, window } = props;
@@ -150,87 +158,85 @@ const ResponsiveAppBar = (props) => {
   };
 
   return (
-    <React.Fragment>
-      <AppBar position="static" color="transparent" elevation={0}>
-        <Container maxWidth="100%">
-          <Toolbar
-            disableGutters
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-            }}
-          >
-            <Typography
-              noWrap
+    <ThemeProvider theme={theme}>
+      <React.Fragment>
+        <AppBar position="static" color="primary" elevation={0}>
+          <Container maxWidth="100%">
+            <Toolbar
+              disableGutters
               sx={{
-                display: {
-                  xs: "none",
-                  md: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  width: "auto",
-                },
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".05rem",
-                color: "black",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
               }}
-              className={classes.logoContainer}
             >
-              <Link to={"/"} style={{ textDecoration: "none" }}>
-                {/* <img
-                  className={classes.logo}
-                  src={require("./images/PALMAS_DE_COCORA_LOGO-1-removebg-preview.png")}
-                  alt="Logo Not Found"
-                  style={{
-                    position: "relative",
-                    top: 0,
-                    left: 0,
-                    zIndex: "200",
-                  }}
-                /> */}
-                <h1>Las Palmas de Cocora</h1>
-              </Link>
-            </Typography>
-
-            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-              <IconButton
-                size="large"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenNavMenu}
-                sx={{ color: "black" }}
-              >
-                <MenuIcon />
-              </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorElNav}
-                anchorOrigin={{
-                  vertical: "bottom",
-                  horizontal: "left",
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "left",
-                }}
-                open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
+              <Typography
+                noWrap
                 sx={{
-                  display: { xs: "block", md: "none" },
+                  display: {
+                    xs: "none",
+                    md: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    width: "25%",
+                  },
                 }}
               >
-                {pages.map((page, idx) => (
-                  <NavButton
-                    key={idx}
-                    page={page}
-                    handleCloseNavMenu={handleCloseNavMenu}
+                <Link to={"/"} style={{ textDecoration: "none" }}>
+                  <img
+                    className={classes.logo}
+                    src={require("./images/Logo web montañas.png")}
+                    alt="Logo Not Found"
+                    style={{
+                      position: "relative",
+                      top: 0,
+                      left: 0,
+                      zIndex: "200",
+                    }}
                   />
-                ))}
-                <MenuItem>
-                  {/* <Select
+                  {/*                   <h1 style={{ fontFamily: "ShadedLarch" }}>
+                    Las Palmas de Cocora
+                  </h1> */}
+                </Link>
+              </Typography>
+
+              <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+                <IconButton
+                  size="large"
+                  aria-controls="menu-appbar"
+                  aria-haspopup="true"
+                  onClick={handleOpenNavMenu}
+                  sx={{ color: "black" }}
+                >
+                  <MenuIcon />
+                </IconButton>
+                <Menu
+                  id="menu-appbar"
+                  anchorEl={anchorElNav}
+                  anchorOrigin={{
+                    vertical: "bottom",
+                    horizontal: "left",
+                  }}
+                  keepMounted
+                  transformOrigin={{
+                    vertical: "top",
+                    horizontal: "left",
+                  }}
+                  open={Boolean(anchorElNav)}
+                  onClose={handleCloseNavMenu}
+                  sx={{
+                    display: { xs: "block", md: "none" },
+                  }}
+                >
+                  {pages.map((page, idx) => (
+                    <NavButton
+                      key={idx}
+                      page={page}
+                      handleCloseNavMenu={handleCloseNavMenu}
+                    />
+                  ))}
+                  <MenuItem>
+                    {/* <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     value={language}
@@ -242,72 +248,83 @@ const ResponsiveAppBar = (props) => {
                     <MenuItem value="spanish">🇨🇴</MenuItem>
                     <MenuItem value="english">🇺🇸</MenuItem>
                   </Select> */}
-                  <div className={classes.langFlag} style={{ margin: "20px" }}>
-                    <img
-                      src={require("./images/colombia.png")}
-                      onClick={(e) => changeLanguage("spanish")}
-                    />
-                  </div>
-                  <div className={classes.langFlag}>
-                    <img
-                      src={require("./images/uk.jpg")}
-                      onClick={(e) => changeLanguage("english")}
-                    />
-                  </div>
-                </MenuItem>
-              </Menu>
-            </Box>
-            <Typography
-              variant="h5"
-              noWrap
-              component="a"
-              href="/"
-              sx={{
-                display: { xs: "flex", md: "none" },
-                flexGrow: 1,
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "black",
-                textDecoration: "none",
-              }}
-            >
-              <Link
-                to={"/"}
-                style={{ textDecoration: "none", whiteSpace: "initial" }}
+                    <div
+                      className={classes.langFlag}
+                      style={{ margin: "20px" }}
+                    >
+                      <img
+                        src={require("./images/colombia.png")}
+                        onClick={(e) => changeLanguage("spanish")}
+                      />
+                    </div>
+                    <div className={classes.langFlag}>
+                      <img
+                        src={require("./images/uk.jpg")}
+                        onClick={(e) => changeLanguage("english")}
+                      />
+                    </div>
+                  </MenuItem>
+                </Menu>
+              </Box>
+              <Typography
+                variant="h5"
+                noWrap
+                component="a"
+                href="/"
+                sx={{
+                  display: { xs: "flex", md: "none" },
+                  flexGrow: 1,
+                  fontWeight: 700,
+                  letterSpacing: ".3rem",
+                  color: "black",
+                  textDecoration: "none",
+                }}
               >
-                {/* <img
-                  className={classes.logo}
-                  src={require("./images/PALMAS_DE_COCORA_LOGO-1-removebg-preview.png")}
-                  alt="Logo Not Found"
-                /> */}
-                <h1>Las Palmas de Cocora</h1>
-              </Link>
-            </Typography>
-            <Box
-              sx={{
-                flexGrow: 0,
-                display: {
-                  xs: "none",
-                  width: "auto",
-                  height: "50px",
-                  md: "flex",
-                  justifyContent: "flex-end",
-                  alignItems: "center",
-                  backgroundColor: "transparent",
-                  borderRadius: "30px",
-                },
-              }}
-            >
-              {pages.map((page, idx) => (
-                <div key={idx} style={{ margin: "20px" }}>
-                  <NavButton
-                    page={page}
-                    handleCloseNavMenu={handleCloseNavMenu}
+                <Link
+                  to={"/"}
+                  style={{ textDecoration: "none", whiteSpace: "initial" }}
+                >
+                  <img
+                    className={classes.logo}
+                    src={require("./images/Logo web montañas.png")}
+                    alt="Logo Not Found"
+                    style={{
+                      position: "relative",
+                      top: 0,
+                      left: 0,
+                      zIndex: "200",
+                    }}
                   />
-                </div>
-              ))}
-              <div className={classes.langFlag} style={{ margin: "20px" }}>
-                {/* <Select
+                  {/* <h1 style={{ fontFamily: "ShadedLarch" }}>
+                    Las Palmas de Cocora
+                  </h1> */}
+                </Link>
+              </Typography>
+              <Box
+                sx={{
+                  flexGrow: 0,
+                  display: {
+                    xs: "none",
+                    width: "auto",
+                    height: "50px",
+                    md: "flex",
+                    justifyContent: "flex-end",
+                    alignItems: "center",
+                    backgroundColor: "transparent",
+                    borderRadius: "30px",
+                  },
+                }}
+              >
+                {pages.map((page, idx) => (
+                  <div key={idx} style={{ margin: "20px" }}>
+                    <NavButton
+                      page={page}
+                      handleCloseNavMenu={handleCloseNavMenu}
+                    />
+                  </div>
+                ))}
+                <div className={classes.langFlag} style={{ margin: "20px" }}>
+                  {/* <Select
                   labelId="demo-simple-select-label"
                   id="demo-simple-select"
                   value={language}
@@ -323,32 +340,33 @@ const ResponsiveAppBar = (props) => {
                   <MenuItem value="spanish">🇨🇴</MenuItem>
                   <MenuItem value="english">🇺🇸</MenuItem>
                 </Select> */}
-                <img
-                  src={require("./images/colombia.png")}
-                  onClick={(e) => changeLanguage("spanish")}
-                />
-              </div>
-              <div className={classes.langFlag}>
-                <img
-                  src={require("./images/uk.jpg")}
-                  onClick={(e) => changeLanguage("english")}
-                />
-              </div>
-            </Box>
-          </Toolbar>
-        </Container>
-      </AppBar>
-      <Toolbar id="back-to-top-anchor" />
-      <ScrollTop {...props}>
-        <Fab
-          size="small"
-          aria-label="scroll back to top"
-          sx={{ backgroundColor: "#6dc1e7 !important" }}
-        >
-          <KeyboardArrowUpIcon />
-        </Fab>
-      </ScrollTop>
-    </React.Fragment>
+                  <img
+                    src={require("./images/colombia.png")}
+                    onClick={(e) => changeLanguage("spanish")}
+                  />
+                </div>
+                <div className={classes.langFlag}>
+                  <img
+                    src={require("./images/uk.jpg")}
+                    onClick={(e) => changeLanguage("english")}
+                  />
+                </div>
+              </Box>
+            </Toolbar>
+          </Container>
+        </AppBar>
+        <Toolbar id="back-to-top-anchor" />
+        <ScrollTop {...props}>
+          <Fab
+            size="small"
+            aria-label="scroll back to top"
+            sx={{ backgroundColor: "#6dc1e7 !important" }}
+          >
+            <KeyboardArrowUpIcon />
+          </Fab>
+        </ScrollTop>
+      </React.Fragment>
+    </ThemeProvider>
   );
 };
 export default withStyles(style)(ResponsiveAppBar);
