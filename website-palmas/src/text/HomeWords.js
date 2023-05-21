@@ -46,11 +46,11 @@ const words = {
       title: "Paseos Ecológicos",
       description:
         "Una cabalgata por el Valle de Cocora en Salento Quindío es la experiencia que no puede faltar en la agenda de vacaciones.",
-      img: "./images/HorseRiding.jpeg",
+      img: "./images/valle-de-cocora-g982a52cf0_1920.jpg",
       path: "/horseback-riding",
     },
     {
-      title: "Artesanías de la región",
+      title: "Artesanías",
       description:
         "Visite nuestro almacén de artesanía con productos exclusivos fabricados por artesanos de Salento donde podrá adquirir un lindo souvenir para llevar de recuerdo.",
       img: "./images/artesanias.jpeg",
@@ -111,7 +111,7 @@ const words = {
       title: "Eco-friendly Activities",
       description:
         "A Horseback Ride inside the Cocora Valley at Salento, Quindio is an experience you cannot miss on your agenda.",
-      img: "./images/HorseRiding.jpeg",
+      img: "./images/valle-de-cocora-g982a52cf0_1920.jpg",
       path: "/horseback-riding",
     },
     {

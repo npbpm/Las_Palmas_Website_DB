@@ -1,7 +1,7 @@
 import "./styles/App.css";
 import { Routes, Route /* Navigate */ } from "react-router-dom";
 import Home from "./Home";
-import DispAppBar from "./DispAppBar";
+import Services from "./Services";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import WhoAreWe from "./WhoAreWe";
@@ -71,6 +71,7 @@ function App(props) {
                 <Route path="/reviews" element={<Reviews />} />
                 <Route path="/booking" element={<Bookings />} />
                 <Route path="/contact-us" element={<Contact />} />
+                <Route path="/services" element={<Services />} />
                 <Route path="/who-are-we" element={<WhoAreWe />} />
                 <Route path="/arrive" element={<Arrive />} />
                 <Route path="/cocora-valley" element={<CocoraValley />} />

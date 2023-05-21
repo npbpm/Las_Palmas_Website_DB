@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { withStyles } from "@mui/styles";
 import style from "./styles/WhoAreWeStyle";
 import { LanguageContext } from "./context/LanguageContext";
@@ -7,72 +7,16 @@ import Review from "./Review";
 import Paginator from "./Paginator";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-
-const defaultReviews = [
-  {
-    name: "Clara Arenas",
-    evaluation: 5,
-    message:
-      "Una magnifica oportunidad para deleitarse con la vida y conmerar momentos inolvidables. Dios les bendiga, y en Cocora a insistir, persistir, resistir y nunca desistir!!! La humanidad ha de atesorar todos sus esfuerzos y las proximas generaciones lo agradeceran!!!",
-  },
-  {
-    name: "Andrés Felipe",
-    evaluation: 4,
-    message:
-      "Todo excelente, un lugar para volver definitivamente. No se sabe que es mejor, si el servicio o la comida.",
-  },
-  {
-    name: "Jorge Pelaez",
-    evaluation: 5,
-    message: "Genial lugar. Todo excelente. ",
-  },
-  {
-    name: "Carolina Manzur",
-    evaluation: 5,
-    message:
-      "Me encanta, volvería un millón de veces. Es un lugar espectacular y la atención aún más. Sus productos y atención al cliente son algo sorprendente. Incluso cuando están atareados, siempre se preocupan por dar la mejor atención y el mejor servicio. Gracias. ",
-  },
-  {
-    name: "Camila Rey",
-    evaluation: 3,
-    message:
-      "Hermoso lugar, excelente servicio. Experiencia inimaginable. Para repetir absolutamente. De ir al Valle del Cocora hay que ir a este lugar en especial.",
-  },
-  {
-    name: "César Augusto y Liliana",
-    evaluation: 5,
-    message:
-      "Hermoso lugar. Un paraiso en el Quindío. Inmensamente agradecidos con la excelente atención por parte de las personas que atienden en este maravilloso sitio. Gracias Carmenza, gracias Mario, gracias Jorge y gracias Angie. Hasta una próxima oportunidad. Dios les pague.",
-  },
-  {
-    name: "Marcela Pinedo",
-    evaluation: 5,
-    message:
-      "Un excelente lugar, la comida deliciosa, el servicio muy bueno... un lugar maravilloso que vale la pena conocer. recomendado ",
-  },
-  {
-    name: "M&JP",
-    evaluation: 5,
-    message:
-      "Estuvimos en la zona de camping el 1 y 2 de enero de 2015. Tiene muy bien adecuada la zona de montaje de carpas y de fogatas. El desayuno estuvo muy rico, el ambiente es muy agradable. La atención de todo el personal es excelente. Lugar muy recomendado y volveremos. M&JP; by www.bitacoradeviajes.co",
-  },
-  {
-    name: "",
-    evaluation: 5,
-    message:
-      "Gran calidez y atención. Nos alegra mucho que nuestro evento haya sido un exito por sus servicios. Muchas gracias Alba.",
-  },
-  {
-    name: "Fernando Parra",
-    evaluation: 5,
-    message: "Grandioso lugar con excelente servicio",
-  },
-];
+import axios from "axios";
 
 function WhoAreWe(props) {
   const { classes } = props;
 
   const [index, setIndex] = useState(0);
+
+  const [opinions, setOpinions] = useState([]);
+
+  const [isLoading, setIsLoading] = useState(false);
 
   const slideLeft = () => {
     if (index - 1 >= 0) {
@@ -81,9 +25,90 @@ function WhoAreWe(props) {
   };
 
   const slideRight = () => {
-    if (index + 1 <= defaultReviews.length - 1) {
+    if (index + 1 <= opinions.length - 1) {
       setIndex(index + 1);
     }
+  };
+
+  useEffect(() => {
+    setIsLoading(true);
+
+    fetchData();
+  }, []);
+
+  //NEEDS TO BE CHANGED BEFORE DEPLOYMENT
+  axios.defaults.baseURL = "http://localhost:3001";
+
+  const fetchData = () => {
+    try {
+      axios.get("/api/reviews").then(function (response) {
+        setOpinions(response.data);
+      });
+    } catch {
+      console.log("IM HERE");
+      const defaultReviews = [
+        {
+          name: "Clara Arenas",
+          evaluation: 5,
+          message:
+            "Una magnifica oportunidad para deleitarse con la vida y conmerar momentos inolvidables. Dios les bendiga, y en Cocora a insistir, persistir, resistir y nunca desistir!!! La humanidad ha de atesorar todos sus esfuerzos y las proximas generaciones lo agradeceran!!!",
+        },
+        {
+          name: "Andrés Felipe",
+          evaluation: 4,
+          message:
+            "Todo excelente, un lugar para volver definitivamente. No se sabe que es mejor, si el servicio o la comida.",
+        },
+        {
+          name: "Jorge Pelaez",
+          evaluation: 5,
+          message: "Genial lugar. Todo excelente. ",
+        },
+        {
+          name: "Carolina Manzur",
+          evaluation: 5,
+          message:
+            "Me encanta, volvería un millón de veces. Es un lugar espectacular y la atención aún más. Sus productos y atención al cliente son algo sorprendente. Incluso cuando están atareados, siempre se preocupan por dar la mejor atención y el mejor servicio. Gracias. ",
+        },
+        {
+          name: "Camila Rey",
+          evaluation: 3,
+          message:
+            "Hermoso lugar, excelente servicio. Experiencia inimaginable. Para repetir absolutamente. De ir al Valle del Cocora hay que ir a este lugar en especial.",
+        },
+        {
+          name: "César Augusto y Liliana",
+          evaluation: 5,
+          message:
+            "Hermoso lugar. Un paraiso en el Quindío. Inmensamente agradecidos con la excelente atención por parte de las personas que atienden en este maravilloso sitio. Gracias Carmenza, gracias Mario, gracias Jorge y gracias Angie. Hasta una próxima oportunidad. Dios les pague.",
+        },
+        {
+          name: "Marcela Pinedo",
+          evaluation: 5,
+          message:
+            "Un excelente lugar, la comida deliciosa, el servicio muy bueno... un lugar maravilloso que vale la pena conocer. recomendado ",
+        },
+        {
+          name: "M&JP",
+          evaluation: 5,
+          message:
+            "Estuvimos en la zona de camping el 1 y 2 de enero de 2015. Tiene muy bien adecuada la zona de montaje de carpas y de fogatas. El desayuno estuvo muy rico, el ambiente es muy agradable. La atención de todo el personal es excelente. Lugar muy recomendado y volveremos. M&JP; by www.bitacoradeviajes.co",
+        },
+        {
+          name: "",
+          evaluation: 5,
+          message:
+            "Gran calidez y atención. Nos alegra mucho que nuestro evento haya sido un exito por sus servicios. Muchas gracias Alba.",
+        },
+        {
+          name: "Fernando Parra",
+          evaluation: 5,
+          message: "Grandioso lugar con excelente servicio",
+        },
+      ];
+      setOpinions(defaultReviews);
+    }
+    setIsLoading(false);
   };
 
   const { language } = useContext(LanguageContext);
@@ -209,10 +234,10 @@ function WhoAreWe(props) {
 
       <div className={classes.reviews}>
         <div className={classes.cardContainer}>
-          <Paginator dataLength={defaultReviews.length} activeIndex={index} />
+          <Paginator dataLength={opinions.length} activeIndex={index} />
           <ChevronLeftIcon onClick={slideLeft} className={classes.leftBtn} />
           <ChevronRightIcon onClick={slideRight} className={classes.rightBtn} />
-          {defaultReviews.map((review, n) => {
+          {opinions.map((review, n) => {
             let position =
               n > index ? "nextCard" : n === index ? "activeCard" : "prevCard";
             return <Review {...review} cardStyle={position} />;

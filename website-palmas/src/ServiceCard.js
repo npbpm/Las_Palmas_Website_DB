@@ -2,7 +2,6 @@ import React, { useState, useContext } from "react";
 import "./styles/ServiceCard.css";
 import { Link } from "react-router-dom";
 import { LanguageContext } from "./context/LanguageContext";
-import { Typography } from "@mui/material";
 import { withStyles } from "@mui/styles";
 import sizes from "./styles/sizes";
 
@@ -10,13 +9,6 @@ function ServiceCard(props) {
   const { language } = useContext(LanguageContext);
 
   const { img, title, description, display, path, classes } = props;
-
-  const [showingDesc, setShowingDesc] = useState(false);
-
-  const handleMouseClick = (e) => {
-    e.stopPropagation();
-    setShowingDesc(!showingDesc);
-  };
 
   return (
     <div className={classes.serviceCard}>
