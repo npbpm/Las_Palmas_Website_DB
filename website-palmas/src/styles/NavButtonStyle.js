@@ -47,7 +47,7 @@ const style = {
     width: "100% !important",
   },
   menuItemNoSubServices: {
-    fontFamily: "Myriad Pro !important",
+    fontFamily: "Myriad Pro Regular",
     fontSize: "1em !important",
     width: "100% !important",
   },

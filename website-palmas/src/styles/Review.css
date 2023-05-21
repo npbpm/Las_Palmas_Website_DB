@@ -1,0 +1,76 @@
+.card {
+    position: absolute;
+  
+    height: 15rem;
+
+    overflow: scroll;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+
+    scrollbar-width: none;  /* Firefox */
+
+    width: 100%;
+  
+    margin: 1rem;
+  
+    border-radius: 1rem;
+  
+    text-align: center;
+  
+    box-sizing: border-box;
+  
+    user-select: none;
+
+    transition: all 1s;
+
+    border: solid 2px #F2F2F2
+}
+
+.card::-webkit-scrollbar {
+    display: none;
+  }
+
+.prevCard {
+    left: calc(0% + 2rem);
+    opacity: 0;
+    z-index: -1;
+}
+
+.activeCard {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nextCard {
+    left: 100%;
+    transform: translateX(calc(-100% - 2rem));
+    opacity: 0;
+    z-index: -1;
+}
+
+.title{
+    text-align: left;
+    border-bottom: solid 2px #F2F2F2;
+    font-size: 30px;
+    padding: 10px 15px;
+    text-shadow: none;
+    color: #000000;
+    font-family: "Myriad Pro Regular" !important;
+}  
+
+.review{
+    text-align: left;
+    padding: 10px 20px
+}
+
+.review p{
+    font-size: 24px;
+    color: #8a8a8a;
+}
+
+.review h4{
+    margin-top: 10px;
+    font-size: 24px;
+    color: #bbbbbb;
+    font-family: "Myriad Pro Regular" !important;
+}

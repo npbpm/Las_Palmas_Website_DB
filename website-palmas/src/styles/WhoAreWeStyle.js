@@ -6,23 +6,53 @@ const style = {
     textAlign: "center",
     "& p": {
       backgroundColor: "transparent",
-      fontFamily: "'Bebas Neue', cursive",
-      padding: "30px",
+      fontFamily: "Roboto",
+      fontWeight: "500",
     },
   },
-  paragraph: {
-    color: "#3c4001 !important",
+  cocoraValley: {
+    "& div": {
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "space-around",
+    },
+    "& h1": {
+      color: "#82BF26",
+      fontSize: "45px",
+      fontFamily: "Myriad Pro Bold",
+    },
+  },
+  cocoraDesc: {
+    fontFamily: "Roboto",
+    width: "50%",
+    textAlign: "left",
+    fontSize: "24px",
+  },
+  cocoraImg: {
+    maxWidth: "40%",
+    width: "300px",
+    height: "300px",
+    borderRadius: "50%",
+  },
+  us: {
+    width: "100%",
+    "& h1": {
+      color: "#82BF26",
+      fontSize: "45px",
+      fontFamily: "Myriad Pro Bold",
+    },
   },
   description: {
     marginLeft: 0,
-    textAlign: "center",
+    textAlign: "left",
+    fontSize: "24px",
     width: "100%",
     display: "flex",
     justifyContent: "space-evenly",
     alignItems: "center",
     marginTop: "10px",
     padding: "40px",
-    backgroundColor: "rgba(116,183,38,0.7)",
     [sizes.down("md")]: {
       width: "95%",
       justifyContent: "space-between",
@@ -36,13 +66,8 @@ const style = {
     },
   },
   img: {
-    maxWidth: "100%",
-    maxHeight: "100%",
-    width: "28%",
+    width: "6%",
     margin: "2px",
-    borderRadius: "50%",
-    boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
-    border: "solid 0.3rem #3c4001",
     [sizes.down("md")]: {
       boxShadow:
         "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
@@ -54,13 +79,10 @@ const style = {
     },
   },
   imgEntrance: {
-    maxWidth: "100%",
-    maxHeight: "100%",
-    height: "auto",
-    width: "30%",
-    marginRight: "80px",
-    borderRadius: "13px",
-    boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
+    maxWidth: "20%",
+    maxHeight: "50%",
+    borderRadius: "120px",
+    marginRight: "30px",
     [sizes.down("md")]: {
       margin: 0,
       width: "25rem",
@@ -82,11 +104,9 @@ const style = {
     },
   },
   paragraphHistory: {
-    width: "70%",
-    marginRight: "40px",
-    fontFamily: "'Bebas Neue', cursive",
-    fontSize: "2rem",
-    color: "#3c4001",
+    width: "60%",
+    fontSize: "24px",
+    color: "#000000",
     paddingTop: "15px",
     textAlign: "left",
     [sizes.down("md")]: {
@@ -101,18 +121,17 @@ const style = {
   },
   history: {
     display: "flex",
-    justifyContent: "space-evenly",
+    justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#b8e29f",
-    marginTop: "50px",
-    paddingBottom: "50px",
+    padding: "20px",
     "& p": {
-      width: "33%",
-      fontFamily: "'Bebas Neue', cursive",
-      color: "#F6923D",
-      fontSize: "1.5rem",
+      width: "auto",
+      fontFamily: "Roboto",
+      color: "#466421",
+      fontSize: "24px",
       paddingTop: "15px",
-      textAlign: "left",
+      textAlign: "center",
+      margin: "0 10px",
       [sizes.down("md")]: {
         width: "85%",
         marginLeft: "auto",
@@ -127,11 +146,49 @@ const style = {
       marginTop: "25px",
     },
   },
-  society: {
-    marginTop: "50px",
-    [sizes.down("sm")]: {
-      marginTop: "25px",
+  cardContainer: {
+    position: "relative",
+    width: "36rem",
+    height: "22rem",
+    "& svg": {
+      position: "absolute",
+      top: "50%",
+      transform: "translateY(-90%)",
+      fontSize: "3rem",
     },
+  },
+  reviews: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    width: "80%",
+    height: "480px",
+    margin: "auto",
+  },
+  leftBtn: {
+    left: "-2.9rem",
+    color: "#D91604",
+    "&:hover": {
+      cursor: "pointer",
+    },
+  },
+  rightBtn: {
+    right: "-4.5rem",
+    color: "#D91604",
+    "&:hover": {
+      cursor: "pointer",
+    },
+  },
+  ecoFooter: {
+    textAlign: "center",
+    fontSize: "24px",
+    fontFamily: "Roboto !important",
+    fontStyle: "italic",
+    fontWeight: "700 !important",
+    width: "50%",
+    marginRight: "auto",
+    marginLeft: "auto",
+    marginBottom: "50px",
   },
 };
 

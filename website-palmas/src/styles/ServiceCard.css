@@ -61,17 +61,16 @@
 }
 
 
-h1{
-    /* font-family: 'Playfair Display', serif !important; */
+/* h1{
     font-family: 'Times New Roman', Times, serif;
-    color: #C71C00
-}
+    color: #C71C00;
+} */
 
-h2{
+/* h2{
     font-family: 'Playfair Display', serif !important;
     color: #C71C00;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
+} */
 
 /* h3{
     font-family: 'Playfair Display', serif !important;

@@ -10,15 +10,21 @@
 }
 
 @font-face {
-  font-family: "Myriad Font";
-  src: local("Myriad Fontr"),
-    url("../fonts/Myriad Font.ttf") format("truetype");
+  font-family: "Myriad Pro Regular";
+  src: local("MyriadPro"),
+    url("../fonts/Myriad Pro Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "NewGothicCondensedBQ";
+  font-family: "Myriad Pro Bold";
+  src: local("MyriadPro"),
+    url("../fonts/Myriad Pro Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "New Gothic Condensed";
   src: local("NewsGothicCondensedBQ-Regular"),
-    url("../fonts/NewsGothicCondensedBQ-Regular.otf") format("otf");
+    url("../fonts/NewsGothicCondensedBQ-Regular.otf") format("opentype");
 }
 
 
