@@ -15,5 +15,8 @@ const style = {
       },
     },
   },
+  activeTab: {
+    color: "red !important",
+  },
 };
 export default style;

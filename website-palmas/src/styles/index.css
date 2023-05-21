@@ -4,9 +4,21 @@
 }
 
 @font-face {
-  font-family: "ShadedLarch";   /*Can be any text*/
+  font-family: "ShadedLarch";
   src: local("ShadedLarch"),
     url("../fonts/ShadedLarch.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Myriad Font";
+  src: local("Myriad Fontr"),
+    url("../fonts/Myriad Font.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NewGothicCondensedBQ";
+  src: local("NewsGothicCondensedBQ-Regular"),
+    url("../fonts/NewsGothicCondensedBQ-Regular.otf") format("otf");
 }
 
 

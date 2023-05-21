@@ -8,7 +8,7 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
-import { redirect, Link } from "react-router-dom";
+import { redirect, NavLink, Link } from "react-router-dom";
 import { withStyles } from "@mui/styles";
 import NavButton from "./NavButton";
 import style from "./styles/NavbarStyle";
@@ -69,75 +69,6 @@ const ResponsiveAppBar = (props) => {
   const { language, changeLanguage } = useContext(LanguageContext);
 
   const pages = [
-    /* { text: words[language].home, path: "/", subservices: 0 },
-    {
-      text: words[language].place,
-      path: "/location",
-      subservices: [
-        {
-          title: words[language].who,
-          path: "/who-are-we",
-        },
-        {
-          title: words[language].arrive,
-          path: "/arrive",
-        },
-        {
-          title: words[language].valley,
-          path: "/cocora-valley",
-        },
-      ],
-    },
-    {
-      text: words[language].services,
-      path: "/services",
-      subservices: [
-        {
-          title: words[language].restaurant,
-          path: "/restaurant",
-        },
-        {
-          title: words[language].coffee,
-          path: "/cofee-house",
-        },
-        {
-          title: words[language].lodging,
-          path: "/lodging",
-        },
-        {
-          title: words[language].camping,
-          path: "/camping",
-        },
-        {
-          title: words[language].games,
-          path: "/games",
-        },
-        {
-          title: words[language].horse,
-          path: "/horseback-riding",
-        },
-        {
-          title: words[language].crafts,
-          path: "/regional-crafts",
-        },
-        {
-          title: words[language].glamping,
-          path: "/cocora-nidos-del-condor",
-        },
-        {
-          title: words[language].flowers,
-          path: "/cocora-viva",
-        },
-      ],
-    },
-    {
-      text: words[language].packages,
-      path: "/packages-and-sales",
-      subservices: 0,
-    },
-    { text: words[language].reviews, path: "/reviews", subservices: 0 },
-    { text: words[language].bookings, path: "/booking", subservices: 0 },
-    { text: words[language].contact, path: "/contact-us", subservices: 0 }, */
     { text: words[language].us, path: "/who-are-we" },
     { text: words[language].services, path: "/services" },
     { text: words[language].packages, path: "/packages-and-sales" },
@@ -161,7 +92,7 @@ const ResponsiveAppBar = (props) => {
     <ThemeProvider theme={theme}>
       <React.Fragment>
         <AppBar position="static" color="primary" elevation={0}>
-          <Container maxWidth="100%">
+          <Container maxWidth="100%" sx={{ margin: " 8px 0px" }}>
             <Toolbar
               disableGutters
               sx={{
@@ -182,7 +113,11 @@ const ResponsiveAppBar = (props) => {
                   },
                 }}
               >
-                <Link to={"/"} style={{ textDecoration: "none" }}>
+                <NavLink
+                  to={"/"}
+                  activeClassName={classes.activeTab}
+                  style={{ textDecoration: "none" }}
+                >
                   <img
                     className={classes.logo}
                     src={require("./images/Logo web montañas.png")}
@@ -194,10 +129,7 @@ const ResponsiveAppBar = (props) => {
                       zIndex: "200",
                     }}
                   />
-                  {/*                   <h1 style={{ fontFamily: "ShadedLarch" }}>
-                    Las Palmas de Cocora
-                  </h1> */}
-                </Link>
+                </NavLink>
               </Typography>
 
               <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -236,18 +168,6 @@ const ResponsiveAppBar = (props) => {
                     />
                   ))}
                   <MenuItem>
-                    {/* <Select
-                    labelId="demo-simple-select-label"
-                    id="demo-simple-select"
-                    value={language}
-                    label="Language"
-                    onChange={changeLanguage}
-                    size="small"
-                    variant="standard"
-                  >
-                    <MenuItem value="spanish">🇨🇴</MenuItem>
-                    <MenuItem value="english">🇺🇸</MenuItem>
-                  </Select> */}
                     <div
                       className={classes.langFlag}
                       style={{ margin: "20px" }}
@@ -280,9 +200,10 @@ const ResponsiveAppBar = (props) => {
                   textDecoration: "none",
                 }}
               >
-                <Link
+                <NavLink
                   to={"/"}
                   style={{ textDecoration: "none", whiteSpace: "initial" }}
+                  activeClassName={classes.activeTab}
                 >
                   <img
                     className={classes.logo}
@@ -295,10 +216,7 @@ const ResponsiveAppBar = (props) => {
                       zIndex: "200",
                     }}
                   />
-                  {/* <h1 style={{ fontFamily: "ShadedLarch" }}>
-                    Las Palmas de Cocora
-                  </h1> */}
-                </Link>
+                </NavLink>
               </Typography>
               <Box
                 sx={{
@@ -324,22 +242,6 @@ const ResponsiveAppBar = (props) => {
                   </div>
                 ))}
                 <div className={classes.langFlag} style={{ margin: "20px" }}>
-                  {/* <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
-                  value={language}
-                  label="Language"
-                  onChange={changeLanguage}
-                  size="small"
-                  variant="standard"
-                  sx={{
-                    padding: "5px",
-                    borderRadius: "5px",
-                  }}
-                >
-                  <MenuItem value="spanish">🇨🇴</MenuItem>
-                  <MenuItem value="english">🇺🇸</MenuItem>
-                </Select> */}
                   <img
                     src={require("./images/colombia.png")}
                     onClick={(e) => changeLanguage("spanish")}
