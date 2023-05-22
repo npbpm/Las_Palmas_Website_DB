@@ -4,10 +4,10 @@ const style = {
   container: {
     textAlign: "center",
     height: "auto",
+    backgroundColor: "#F2F2F2",
     "& img": {
       maxWidth: "100%",
       maxHeight: "100%",
-      boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
       borderRadius: "50%",
       width: "250px",
       height: "250px",
@@ -31,10 +31,10 @@ const style = {
     "& p": {
       marginLeft: "auto",
       marginRight: "auto",
-      fontFamily: "'Bebas Neue', cursive !important",
-      fontSize: "1.2rem",
+      fontFamily: "Roboto",
+      fontSize: "24px",
       borderRadius: "13px",
-      width: "90%",
+      // width: "50%",
       padding: "20px",
     },
     "& ul": {
@@ -42,6 +42,10 @@ const style = {
       fontSize: "1.2rem",
     },
     "& h1": {
+      color: "#82BF26",
+      fontFamily: "Myriad Pro Bold",
+      fontSize: "40px",
+      backgroundColor: "#FFFFFF",
       [sizes.down("md")]: {
         fontSize: "5em",
       },
@@ -50,26 +54,10 @@ const style = {
       },
     },
   },
-  sales: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    marginTop: "10px",
-    /* backgroundColor: "#422711", */
-    paddingTop: "40px",
-    "& p": {
-      color: "#3c4001",
-      marginLeft: "5px",
-      fontSize: "1.5rem",
-    },
-    [sizes.down("lg")]: {},
-    [sizes.down("md")]: {
-      display: "block",
-      "& p": {
-        margin: 0,
-        marginTop: "40px",
-      },
-    },
+  slides: {
+    width: "100%",
+    marginBottom: "20px",
+    backgroundColor: "#FFFFFF",
   },
   packages: {
     width: "90%",
@@ -85,27 +73,39 @@ const style = {
     },
   },
   package: {
-    margin: "5px",
-    width: "32%",
+    margin: "5px 28px",
+    width: "30%",
     height: "700px",
-    backgroundColor: "#b8e29f",
+    backgroundColor: "#CEE6AA",
     borderRadius: "13px",
     paddingTop: "10px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "space-around",
+    paddingBottom: "30px",
     boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+    "& h4": {
+      fontFamily: "Myriad Pro Bold",
+      fontSize: "40px",
+      width: "60%",
+      marginRight: "auto",
+      marginLeft: "auto",
+    },
     "& p": {
-      color: "#3c4001",
+      color: "#000000",
     },
     "& ul": {
       textAlign: "left",
-      color: "#3c4001",
+      color: "#000000",
       marginLeft: "20px",
       [sizes.down("md")]: {
         margin: "0px 10px",
       },
     },
     "&:hover": {
-      transform: "scale(1.2)",
-      transition: "ease-in-out all 0.4s",
+      transform: "scale(1.03)",
+      transition: "all 0.4s",
       [sizes.down("md")]: {
         transform: "none",
       },
@@ -136,6 +136,23 @@ const style = {
       [sizes.down("us")]: {
         height: "290px !important",
       },
+    },
+  },
+  cardtext: {
+    // width: "50%",
+    height: "500px",
+  },
+  reserveBtn: {
+    padding: "13px 50px",
+    borderRadius: "12px",
+    backgroundColor: "#FFFFFF",
+    textDecoration: "none",
+    fontSize: "24px",
+    color: "#000000",
+    fontFamily: "Myriad Pro Regular",
+    "&:hover": {
+      backgroundColor: "#F2F2F2",
+      transition: "all 0.3s",
     },
   },
 };

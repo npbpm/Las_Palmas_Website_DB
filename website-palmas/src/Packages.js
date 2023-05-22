@@ -2,8 +2,22 @@ import React, { useContext } from "react";
 import { withStyles } from "@mui/styles";
 import { Typography } from "@mui/material";
 import style from "./styles/PackagesStyle";
+import { Link } from "react-router-dom";
 import { LanguageContext } from "./context/LanguageContext";
 import words from "./text/PackagesWords";
+import Slideshow from "./SlideShow";
+
+const slideImages = [
+  {
+    url: "./images/header1.jpg",
+  },
+  {
+    url: "./images/header2.jpg",
+  },
+  {
+    url: "./images/header3.jpg",
+  },
+];
 
 function Packages(props) {
   const { classes } = props;
@@ -35,22 +49,28 @@ function Packages(props) {
   return (
     <div className={classes.container}>
       <Typography variant="h1">{title}</Typography>
-      <div className={classes.sales}>
-        <img
-          alt="Error: Not Found"
-          src={require("./images/promocion.jpg")}
-          style={{ width: "700px", height: "600px" }}
+      <div className={classes.slides}>
+        <Slideshow
+          slideImages={slideImages}
+          isNavbar={false}
+          width={"100%"}
+          height={"470px"}
         />
-        <p>
-          <strong>{description1}</strong> {description2} {description4}
-          <br /> <strong>{description5}</strong> {description6}
-          <br />
-          {description7}
-        </p>
       </div>
+      {language === "spanish" ? (
+        <p>
+          Aquí en las Palmas de Cocora tenemos un plan para todo el mundo. Ya
+          sea por ti solo o con tus amigos, ven a disfrutar con nosotros!
+        </p>
+      ) : (
+        <p>
+          Here at Las Palmas de Cocora, we have a plan for everyone. Whether
+          you're by yourself or with your friends, come and enjoy with us!
+        </p>
+      )}
       <div
         style={{
-          backgroundColor: "rgba(116,183,38,0.7)",
+          backgroundColor: "#F2F2F2",
           width: "100%",
           paddingBottom: "40px  ",
         }}
@@ -62,11 +82,15 @@ function Packages(props) {
               src={require("./images/estiloPropio.jpeg")}
             />
             <Typography variant="h4">{ownStyleTitle}</Typography>
-            <p style={{ background: "none", boxShadow: "none" }}>
-              {ownStyleText1}
-              <br />
-              {ownStyleText2}
-            </p>
+            <div className={classes.cardText}>
+              <p style={{ background: "none", boxShadow: "none" }}>
+                {ownStyleText2}
+              </p>
+            </div>
+
+            <Link to="/contact-us" className={classes.reserveBtn}>
+              {language === "spanish" ? "Reservar" : "Book"}
+            </Link>
           </div>
           <div className={classes.package}>
             <img
@@ -74,11 +98,14 @@ function Packages(props) {
               src={require("./images/happy-birthday.jpg")}
             />
             <Typography variant="h4">{birthdayTitle}</Typography>
-            <p style={{ background: "none", boxShadow: "none" }}>
-              {birthdayDesc1}
-              <br />
-              {birthdayDesc2}
-            </p>
+            <div className={classes.cardText}>
+              <p style={{ background: "none", boxShadow: "none" }}>
+                {birthdayDesc1}
+              </p>
+            </div>
+            <Link to="/contact-us" className={classes.reserveBtn}>
+              {language === "spanish" ? "Reservar" : "Book"}
+            </Link>
           </div>
           <div className={classes.package}>
             <img
@@ -86,15 +113,14 @@ function Packages(props) {
               src={require("./images/valley-ge1efec97d_1920.jpg")}
             />
             <Typography variant="h4">{friendsTitle}</Typography>
-            <p style={{ background: "none", boxShadow: "none" }}>
-              {friendsText}
-            </p>
-            <ul>
-              <strong>{includes}</strong>
-              <li>{friendsArrival}</li>
-              <li>{friendsLunch}</li>
-              <li>{friendsRefreshment}</li>
-            </ul>
+            <div className={classes.cardText}>
+              <p style={{ background: "none", boxShadow: "none" }}>
+                {friendsText}
+              </p>
+            </div>
+            <Link to="/contact-us" className={classes.reserveBtn}>
+              {language === "spanish" ? "Reservar" : "Book"}
+            </Link>
           </div>
         </div>
       </div>

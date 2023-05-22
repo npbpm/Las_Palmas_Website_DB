@@ -32,7 +32,7 @@ const Slideshow = (props) => {
                   display: "block",
                   marginLeft: "auto",
                   marginRight: "auto",
-                  borderRadius: `${isNavbar ? "none" : "13px"}`,
+                  borderRadius: `${isNavbar ? "none" : "0px"}`,
                 }}
                 src={require(`${slideImage.url}`)}
                 alt="Error not found"

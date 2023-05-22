@@ -1,6 +1,6 @@
 const words = {
   spanish: {
-    title: "Planes y Promociones",
+    title: "PLANES",
     description1: "APROVECHA!!!",
     description2: "ESTA TEMPORADA Y DISFRUTE DEL VALLE DE COCORA",
     description4:
@@ -18,7 +18,7 @@ const words = {
       "Ven y disfruta del eco-hotel Las Palmas de Cocora, incluso si no tienes un plan, aquí encontrarás comida típica colombiana, paisajes hermosos y una experiencia inolvidable.",
     friendsTitle: "Plan Básico Amigos",
     friendsText:
-      "Este plan es dirigido para las personas que quieran vivir una experiencia llena de diversión y aventuras.",
+      "Este plan está dirigido para las personas que quieran vivir una experiencia llena de diversión y aventuras.",
     friendsArrival: "Bienvenida con aperitivos",
     friendsLunch: "Almuerzo",
     friendsRefreshment: "Refrigerio",
@@ -29,7 +29,7 @@ const words = {
       "Nos aseguramos de darte una experiencia inolvidable en el día en el que la persona más importante eres tú! Nos haremos cargo de decorar y de tener todo listo para su llegada y la de sus invitados!",
   },
   english: {
-    title: "Packages & Sales",
+    title: "PACKAGES",
     description1: "PROFIT!!!",
     description2: "THIS SEASON ENJOY COCORA VALLEY ",
     description4:
