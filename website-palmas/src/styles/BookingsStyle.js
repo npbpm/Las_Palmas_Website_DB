@@ -56,10 +56,7 @@ const style = {
     borderRadius: "13px",
     backgroundColor: "#b8e29f",
     "& button": {
-      margin: "20px",
-      color: "#b8e29f",
-      backgroundColor: "#3c4001",
-      border: "solid 1px #422711",
+      margin: "20px 0px",
     },
     [sizes.down("xl")]: {
       width: "40%",

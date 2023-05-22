@@ -34,7 +34,7 @@ const style = {
       fontFamily: "Roboto",
       fontSize: "24px",
       borderRadius: "13px",
-      // width: "50%",
+      width: "50%",
       padding: "20px",
     },
     "& ul": {

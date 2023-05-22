@@ -1,8 +1,10 @@
 const words = {
   spanish: {
-    title: "Contáctenos",
+    title: "CONTACTO",
     name: "Nombre",
     email: "Correo Electrónico",
+    description:
+      "Valoramos su opinión y estamos aquí para atender cualquier consulta o inquietud que pueda tener. ¡No dude en contactarnos, estamos listos para brindarle el mejor servicio!",
     phone: "Teléfono",
     city: "Ciudad",
     message: "Mensaje",
@@ -14,9 +16,11 @@ const words = {
     errPhone: "Por favor denos un número de teléfono",
   },
   english: {
-    title: "Contact Us",
+    title: "CONTACT",
     name: "Name",
     email: "Email",
+    description:
+      "We value your feedback and are here to address any questions or concerns you may have. Please don't hesitate to contact us; we are ready to provide you with the best service!",
     phone: "Phone Number",
     city: "City",
     message: "Message",

@@ -59,13 +59,17 @@ function Packages(props) {
       </div>
       {language === "spanish" ? (
         <p>
-          Aquí en las Palmas de Cocora tenemos un plan para todo el mundo. Ya
-          sea por ti solo o con tus amigos, ven a disfrutar con nosotros!
+          En Las Palmas de Cocora, tenemos el plan perfecto para todos. Ya sea
+          que estés buscando un escape tranquilo para ti mismo o una experiencia
+          memorable con amigos, ven y únete a nosotros para disfrutar de la
+          belleza de nuestro restaurante campestre.
         </p>
       ) : (
         <p>
-          Here at Las Palmas de Cocora, we have a plan for everyone. Whether
-          you're by yourself or with your friends, come and enjoy with us!
+          At Las Palmas de Cocora, we have the perfect plan for everyone.
+          Whether you're seeking a tranquil escape for yourself or a memorable
+          experience with friends, come and join us in embracing the beauty of
+          our countryside restaurant.
         </p>
       )}
       <div
@@ -110,7 +114,7 @@ function Packages(props) {
           <div className={classes.package}>
             <img
               alt="Error: Not Found"
-              src={require("./images/valley-ge1efec97d_1920.jpg")}
+              src={require("./images/women-1487825_960_720.jpg")}
             />
             <Typography variant="h4">{friendsTitle}</Typography>
             <div className={classes.cardText}>
