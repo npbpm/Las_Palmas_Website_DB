@@ -28,67 +28,76 @@ const style = {
   },
   content: {
     display: "flex",
+    flexDirection: "column",
     padding: "10px",
     alignItems: "center",
+    justifyContent: "center",
     marginTop: "10px",
-    backgroundColor: "rgba(116,183,38,0.7)",
     [sizes.down("md")]: {
       display: "block",
       paddingBottom: "25px",
     },
   },
-  text: {
-    borderRadius: "13px",
-    marginLeft: "10px",
-    fontFamily: "'Bebas Neue', cursive !important",
-    color: "#3c4001",
-    fontSize: "1.4rem",
-    [sizes.down("md")]: {
-      margin: 0,
-    },
+  titleImg: {
+    maxWidth: "30%",
   },
-  image: {
-    maxWidth: "100%",
-    maxHeight: "100%",
-    display: "block",
+  subtitle: {
+    width: "45%",
     marginLeft: "auto",
     marginRight: "auto",
-    padding: "20px",
+    fontSize: "24px",
+    fontFamily: "Roboto",
+  },
+  presentation: {
+    width: "90%",
+    height: "500px",
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  images: {
+    width: "45%",
+    height: "100%",
+  },
+  restaurantImg: {
+    maxWidth: "80%",
+    borderRadius: "45px",
+  },
+  dessertImg: {
+    maxWidth: "35%",
+    borderRadius: "50%",
+    position: "relative",
+    bottom: "220px",
+    right: "-230px",
   },
   menu: {
-    color: "#3c4001",
-    fontFamily: "'Bebas Neue', cursive !important",
-    fontSize: "1.5em",
-    fontWeight: "800",
+    width: "30%",
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-start",
+    alignItems: "space-evenly",
+  },
+  menuImg: {
+    maxWidth: "60%",
+    marginTop: "50px",
+  },
+  menuText: {
+    fontSize: "40px",
+    fontFamily: "Roboto",
+    fontWeight: "500",
   },
   menuItem: {
-    color: "#3c4001",
-    "&:hover": {
-      filter: "brightness(50%)",
-      transition: "ease-in-out all 0.2s",
-    },
+    textDecoration: "none",
+    color: "#000000",
+    fontWeight: "600",
   },
-  environments: {
-    padding: "8px 2px",
-    "& ul": {
-      [sizes.down("xl")]: {
-        margin: 0,
-        padding: 0,
-      },
-    },
-    [sizes.down("us")]: {
-      fontSize: "1.1rem",
-    },
-  },
-  plans: {
-    display: "flex",
-    alignItems: "center",
-    marginBottom: "-35px",
-    marginTop: "10px",
-    "& p": {
-      transform: "translateY(-3px)",
-      margin: 0,
-    },
+  ambientTitle: {
+    fontSize: "40px",
+    fontFamily: "Myriad Pro Bold",
+    color: "#82BF26",
+    marginTop: "80px",
   },
 };
 

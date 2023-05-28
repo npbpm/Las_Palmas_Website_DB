@@ -2,10 +2,10 @@ const words = {
   spanish: {
     title: "Restaurante",
     description:
-      "Permítase exaltar todos sus sentidos en este hermoso valle, apreciando la belleza paisajística del lugar con su majestuosa Palma de cera matizada con la gran gama de verdes de sus montañas, disfrutando de su exquisita gastronomía con su protagonista, la trucha, plato típico de la región preparada en variadas y deliciosas formas. Las palmas de Cocora ofrece a sus clientes la posibilidad de degustar de un delicioso plato en diferentes ambientes según su gusto.",
-    menuTitle: "Échale un vistazo a nuestro ",
+      "Permítase exaltar todos sus sentidos en este hermoso valle, apreciando la belleza paisajística del lugar, disfrutando de su exquisita gastronomía con su protagonista, la trucha, plato típico de la región preparada en variadas y deliciosas formas.",
+    menuTitle: "Revisa nuestro ",
     menu: "menú",
-    ambientTitle: "Ambientes",
+    ambientTitle: "Nuestros ambientes",
     romantic: "Ambiente Romántico",
     romanticText:
       "Deléitese al interior del restaurante con ambiente romántico alrededor de una calurosa chimenea.",
@@ -19,10 +19,10 @@ const words = {
   english: {
     title: "Restaurant",
     description:
-      "Allow yourself to connect with all of your senses in this beautiful valley, admiring the amazing landscape with its wax palm trees that fill its mountains, enjoying the exquisit cuisine with the main character, the trout, a traditional dish cooked in all of its variants. Las Palmas de Cocora offers its clients the possibility to enjoy a delicious meal in the environment that best suits you.",
-    menuTitle: "Take a look at our ",
+      "Allow yourself to connect with all of your senses in this beautiful valley, admiring the amazing landscape, enjoying the exquisit cuisine with the main character, the trout, a traditional dish cooked in all of its variants.",
+    menuTitle: "Check our ",
     menu: "menu",
-    ambientTitle: "Environments",
+    ambientTitle: "Our Environments",
     romantic: "Romantic Environment",
     romanticText:
       "Give yourself a treat inside the restaurant with a romantic environment around a hot fireplace",
