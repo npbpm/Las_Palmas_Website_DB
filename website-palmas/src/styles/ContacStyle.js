@@ -115,7 +115,7 @@ const style = {
     padding: "30px",
     color: "#F2F2F2",
     borderRadius: "15px",
-    top: "16%",
+    top: "95px",
     left: "-10%",
     fontSize: "15px",
     fontWeight: "700",

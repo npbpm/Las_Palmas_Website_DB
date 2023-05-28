@@ -24,7 +24,7 @@ const words = {
     friendsRefreshment: "Refrigerio",
     birthdayTitle: "Plan Cumpleaños",
     birthdayDesc1:
-      "Celebre el día más especial del año en un entorno rural y acogedor en nuestro restaurante campestre. Ofrecemos una amplia variedad de opciones de menú y un ambiente perfecto para una fiesta de cumpleaños única e inolvidable.",
+      "Celebre tu día especial en un entorno rural y acogedor en nuestro restaurante campestre. Ofrecemos una amplia variedad de opciones de menú y un ambiente perfecto para una fiesta de cumpleaños única e inolvidable.",
     birthdayDesc2:
       "Nos aseguramos de darte una experiencia inolvidable en el día en el que la persona más importante eres tú! Nos haremos cargo de decorar y de tener todo listo para su llegada y la de sus invitados!",
   },

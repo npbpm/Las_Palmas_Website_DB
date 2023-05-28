@@ -6,13 +6,15 @@ const style = {
     height: "auto",
     backgroundColor: "#F2F2F2",
     "& img": {
-      maxWidth: "100%",
+      maxWidth: "80%",
       maxHeight: "100%",
       borderRadius: "50%",
       width: "250px",
       height: "250px",
       margin: "10px",
       marginBottom: "40px",
+      aspectRatio: 3 / 2,
+      objectFit: "cover",
       [sizes.down("lg")]: {
         boxShadow:
           "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
@@ -75,14 +77,14 @@ const style = {
   package: {
     margin: "5px 28px",
     width: "30%",
-    height: "700px",
+    height: "800px",
     backgroundColor: "#CEE6AA",
     borderRadius: "13px",
     paddingTop: "10px",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    justifyContent: "space-around",
+    justifyContent: "flex-start",
     paddingBottom: "30px",
     boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
     "& h4": {
@@ -150,6 +152,7 @@ const style = {
     fontSize: "24px",
     color: "#000000",
     fontFamily: "Myriad Pro Regular",
+    marginTop: "auto",
     "&:hover": {
       backgroundColor: "#F2F2F2",
       transition: "all 0.3s",
