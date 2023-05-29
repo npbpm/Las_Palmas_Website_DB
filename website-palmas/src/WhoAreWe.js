@@ -39,13 +39,12 @@ function WhoAreWe(props) {
   //NEEDS TO BE CHANGED BEFORE DEPLOYMENT
   axios.defaults.baseURL = "http://localhost:3001";
 
-  const fetchData = () => {
+  const fetchData = async () => {
     try {
-      axios.get("/api/reviews").then(function (response) {
+      await axios.get("/api/reviews").then(function (response) {
         setOpinions(response.data);
       });
     } catch {
-      console.log("IM HERE");
       const defaultReviews = [
         {
           name: "Clara Arenas",
