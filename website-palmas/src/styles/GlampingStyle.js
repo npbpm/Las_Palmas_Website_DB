@@ -2,33 +2,30 @@ import sizes from "./sizes";
 
 const style = {
   content: {
-    marginTop: "10px",
-    marginRight: "0",
-    marginLeft: "0",
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingBottom: "300px",
     [sizes.down("lg")]: {
       display: "block",
     },
   },
-  firstText: {
-    paddingTop: "50px",
-    paddingBottom: "50px",
-    width: "100%",
-    paddingLeft: "20px",
-    [sizes.down("md")]: {
-      padding: 0,
-      paddingTop: "10px",
-      paddingBottom: "5px",
-    },
+  titleImg: {
+    maxWidth: "30%",
   },
   container: {
     textAlign: "center",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
     "& p": {
-      marginLeft: "20px",
+      width: "40%",
       padding: "20px",
-      fontFamily: "'Bebas Neue', cursive !important",
-      borderRadius: "13px",
-      fontSize: "1.5rem",
-      color: "#3c4001",
+      fontFamily: "Myriad Pro Regular",
+      fontSize: "24px",
+      color: "#000000",
       [sizes.down("md")]: {
         marginTop: "20px",
         fontSize: "1.2rem",
@@ -43,36 +40,71 @@ const style = {
       },
     },
   },
-  intro: {
-    display: "flex",
-    justifyContent: "space-evenly",
-    alignItems: "center",
-    [sizes.down("md")]: {
-      display: "block",
-      justifyContent: "center",
-      marginLeft: 0,
-      marginRight: 0,
-      marginBottom: "70px",
-    },
-  },
-  insideIntro: {
-    padding: "5px",
-    textAlign: "center",
-    [sizes.down("md")]: {
-      padding: 0,
-    },
-  },
   contact: {
     paddingTop: "25px",
     paddingBottom: "25px",
-    backgroundColor: "rgba(151,211,251,0.4)",
     "& button": {
-      "& svg": {
-        "&:hover": {
-          color: "#004243",
-          transition: "ease-in-out all 0.3s",
-        },
+      border: "none",
+      backgroundColor: "transparent",
+      width: "50px",
+      margin: "0px 15px",
+      "&:hover": {
+        transform: "scale(1.05)",
+        transition: "all 0.3s",
+        cursor: "pointer",
       },
+      "& img": {
+        width: "100%",
+        borderRadius: "8px",
+      },
+    },
+  },
+  images: {
+    width: "50%",
+    height: "100%",
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  text: {
+    width: "40%",
+    alignSelf: "stretch",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "200px 0px",
+  },
+  firstImg: {
+    borderRadius: "50%",
+    maxWidth: "100%",
+    width: "700px",
+    height: "700px",
+    objectFit: "cover",
+  },
+  secondImg: {
+    borderRadius: "50%",
+    maxWidth: "80%",
+    width: "500px",
+    height: "500px",
+    objectFit: "cover",
+    position: "absolute",
+    bottom: "-600px",
+    right: "820px",
+  },
+  textElement: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "flex-start",
+    "& p": {
+      fontFamily: "Myriad Pro Regular",
+      fontSize: "20px",
+      width: "60%",
+    },
+    "& img": {
+      maxWidth: "30%",
     },
   },
 };
