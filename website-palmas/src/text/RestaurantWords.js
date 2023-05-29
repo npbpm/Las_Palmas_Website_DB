@@ -6,13 +6,13 @@ const words = {
     menuTitle: "Revisa nuestro ",
     menu: "menú",
     ambientTitle: "Nuestros ambientes",
-    romantic: "Ambiente Romántico",
+    romantic: "Romántico",
     romanticText:
       "Deléitese al interior del restaurante con ambiente romántico alrededor de una calurosa chimenea.",
-    nature: "Ambiente de Naturaleza",
+    nature: "Natural",
     natureText:
       "Déjese llevar por la naturaleza sentado en mesas rústicas bajo los árboles en el jardín de los gnomos disfrutando de un exquisito plato mientras apreciamos la danza de los gansos en la tranquilidad de nuestro lago.",
-    cultural: "Ambiente Folclórico Quindiano",
+    cultural: "Folclór Quindiano",
     culturalText:
       "Si desea un ambiente folclórico disfrute de la pagoda, con sus mesas de tronco de árbol, sintiendo la pureza del aire y el aroma de una buena taza de café de la casita quindiana.",
   },
@@ -23,13 +23,13 @@ const words = {
     menuTitle: "Check our ",
     menu: "menu",
     ambientTitle: "Our Environments",
-    romantic: "Romantic Environment",
+    romantic: "Romantic",
     romanticText:
       "Give yourself a treat inside the restaurant with a romantic environment around a hot fireplace",
-    nature: "Natural Environment",
+    nature: "Natural",
     natureText:
       "Embrace the nature while you are sitting in our rustic tables under the troll's garden trees, enjoy your meal while amiring the geese dance in the tranquility of our lake.",
-    cultural: "Flokloric Environment",
+    cultural: "Flokloric",
     culturalText:
       "If what you are looking for is a traditional Quindian experience, enjoy our Pagoda with its tables made out of regional trees, all while breathing the purest of airs and the scent of a good cup of coffee from our coffee house.",
   },

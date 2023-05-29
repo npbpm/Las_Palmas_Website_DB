@@ -1,13 +1,7 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { withStyles } from "@mui/styles";
-import Slideshow from "./SlideShow";
 import Menu from "./images/Menu.pdf";
 import style from "./styles/RestaurantStyle";
-import { Typography } from "@mui/material";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import { red, green, yellow } from "@mui/material/colors";
-import LandscapeIcon from "@mui/icons-material/Landscape";
-import AirIcon from "@mui/icons-material/Air";
 import { LanguageContext } from "./context/LanguageContext";
 import words from "./text/RestaurantWords";
 
@@ -58,6 +52,26 @@ const slideImages = [
 
 function Restaurant(props) {
   const { classes } = props;
+
+  const [clickedCardR, setClickedCardR] = useState(false);
+  const [clickedCardN, setClickedCardN] = useState(false);
+  const [clickedCardF, setClickedCardF] = useState(false);
+
+  const flipCardR = (e) => {
+    e.stopPropagation();
+    setClickedCardR(!clickedCardR);
+    console.log(clickedCardR);
+  };
+
+  const flipCardN = (e) => {
+    e.stopPropagation();
+    setClickedCardN(!clickedCardN);
+  };
+
+  const flipCardF = (e) => {
+    e.stopPropagation();
+    setClickedCardF(!clickedCardF);
+  };
 
   const { language } = useContext(LanguageContext);
 
@@ -121,6 +135,157 @@ function Restaurant(props) {
         </div>
         <div className={classes.ambients}>
           <h2 className={classes.ambientTitle}>{ambientTitle}</h2>
+          <div className={classes.ambientCards}>
+            <div className={classes.ambientCard}>
+              <div
+                className={
+                  clickedCardR
+                    ? classes.flippedCardInner
+                    : classes.ambientCardInner
+                }
+              >
+                <div
+                  className={classes.ambientCardFront}
+                  style={{
+                    backgroundColor: "#F4AFAF",
+                  }}
+                >
+                  {clickedCardR ? (
+                    <div className={classes.backInner}>
+                      <button
+                        className={classes.closeIcon}
+                        onClick={(e) => {
+                          flipCardR(e);
+                        }}
+                      >
+                        <img
+                          src={require("./images/cerrar-simbolo-de-boton-circular.png")}
+                        />
+                      </button>
+                      <p className={classes.backText}>{romanticText}</p>
+                      <img src={require("./images/amor_de_luna.jpeg")} />
+                    </div>
+                  ) : (
+                    <div className={classes.frontInner}>
+                      <img
+                        src={require("./images/bebidas.png")}
+                        className={classes.cardLogo}
+                      />
+                      <h3>{romantic}</h3>
+                      <button
+                        className={classes.reserveBtn}
+                        onClick={(e) => {
+                          flipCardR(e);
+                        }}
+                      >
+                        {language === "spanish" ? "Ver más" : "See more"}
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+            <div className={classes.ambientCard}>
+              <div
+                className={
+                  clickedCardN
+                    ? classes.flippedCardInner
+                    : classes.ambientCardInner
+                }
+              >
+                <div
+                  className={classes.ambientCardFront}
+                  style={{
+                    backgroundColor: "#14AE5C",
+                  }}
+                >
+                  {clickedCardN ? (
+                    <div className={classes.backInner}>
+                      <button
+                        className={classes.closeIcon}
+                        onClick={(e) => {
+                          flipCardN(e);
+                        }}
+                      >
+                        <img
+                          src={require("./images/cerrar-simbolo-de-boton-circular.png")}
+                        />
+                      </button>
+                      <p className={classes.backText}>{natureText}</p>
+                      <img src={require("./images/glamping22.jpeg")} />
+                    </div>
+                  ) : (
+                    <div className={classes.frontInner}>
+                      <img
+                        src={require("./images/brote.png")}
+                        className={classes.cardLogo}
+                      />
+                      <h3>{nature}</h3>
+                      <button
+                        className={classes.reserveBtn}
+                        onClick={(e) => {
+                          flipCardN(e);
+                        }}
+                      >
+                        {language === "spanish" ? "Ver más" : "See more"}
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+            <div className={classes.ambientCard}>
+              <div
+                className={
+                  clickedCardF
+                    ? classes.flippedCardInner
+                    : classes.ambientCardInner
+                }
+              >
+                <div
+                  className={classes.ambientCardFront}
+                  style={{
+                    backgroundColor: "#FFCD29",
+                  }}
+                >
+                  {clickedCardF ? (
+                    <div className={classes.backInner}>
+                      <button
+                        className={classes.closeIcon}
+                        onClick={(e) => {
+                          flipCardF(e);
+                        }}
+                      >
+                        <img
+                          src={require("./images/cerrar-simbolo-de-boton-circular.png")}
+                        />
+                      </button>
+                      <p className={classes.backText}>{romanticText}</p>
+                      <img
+                        src={require("./images/WhatsApp Image 2022-10-02 at 11.50.37 PM.jpeg")}
+                      />
+                    </div>
+                  ) : (
+                    <div className={classes.frontInner}>
+                      <img
+                        src={require("./images/cafe.png")}
+                        className={classes.cardLogo}
+                      />
+                      <h3>{romantic}</h3>
+                      <button
+                        className={classes.reserveBtn}
+                        onClick={(e) => {
+                          flipCardF(e);
+                        }}
+                      >
+                        {language === "spanish" ? "Ver más" : "See more"}
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
