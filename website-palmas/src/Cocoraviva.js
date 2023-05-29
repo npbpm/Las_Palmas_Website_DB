@@ -57,18 +57,18 @@ function Cocoraviva(props) {
 
   return (
     <div className={classes.container}>
-      <Typography variant="h1">
-        Cocora Viva - {language === "spanish" ? "Vivero" : "Florist"}
-      </Typography>
+      <img src={require("./images/Vivero.png")} className={classes.titleImg} />
+      <div className={classes.slideContainer}>
+        <Slideshow slideImages={images} width={"700px"} height={"500px"} />
+      </div>
       <div className={classes.content}>
-        <Slideshow slideImages={images} width={"800px"} height={"600px"} />
         {language === "spanish" ? (
           <p>
             Somos un empresa de talla humana, fundada hace ya 5 años, contamos
             con una gran variedad de plantas para todos los gustos.
             <br />
             <br />
-            Contamos con arreglos florales de todos los tamaños, hechos 100% a
+            Encuentra arreglos florales de todos los tamaños, hechos 100% a
             mano.
             <br />
             <br />
@@ -82,27 +82,13 @@ function Cocoraviva(props) {
             flowers field, we have a great variety of flowers and plants for
             every taste.
             <br /> <br />
-            We have flower arrangements of every size, 100% handmade.
+            Find here flower arrangements of every size, 100% hand made.
             <br /> <br />
             Comme and take advantage of this opportunity to bring back home a
             memory with the special touch of the{" "}
             <strong>Florist Cocora Viva</strong>
           </p>
         )}
-      </div>
-      <div className={classes.collection}>
-        <Typography variant="h3">
-          {language === "spanish" ? "Nuestra colección" : "Our collection"}
-        </Typography>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <Slideshow slideImages={plantImg} width={"600px"} height={"800px"} />
-        </div>
       </div>
     </div>
   );

@@ -14,14 +14,12 @@ function Horsebackriding(props) {
 
   return (
     <div className={classes.container}>
-      <Typography variant="h1">{title}</Typography>
+      <img
+        src={require("./images/Paseos ecológicos.png")}
+        className={classes.titleImg}
+      />
       <div className={classes.content}>
-        <div
-          style={{
-            backgroundColor: "rgba(116,183,38,0.7)",
-            paddingBottom: "20px",
-          }}
-        >
+        <div className={classes.section}>
           <Typography variant="h3">
             {language === "spanish" ? "Caminatas" : "Hikes"}
           </Typography>
@@ -57,7 +55,7 @@ function Horsebackriding(props) {
             )}
           </div>
         </div>
-        <div style={{ backgroundColor: "#b8e29f", padding: "20px" }}>
+        <div className={classes.section}>
           <Typography variant="h3">
             {language === "spanish" ? "Cabalgatas" : "Horse Ride"}
           </Typography>
@@ -68,20 +66,20 @@ function Horsebackriding(props) {
               alt="Error Not Found"
             />
             {language === "spanish" ? (
-              <p className={classes.horseText}>
+              <p>
                 Para los entusiastas de los caballos, les ofrecemos una
                 cabalgata entre las montañas, acompañados en todo momento por
                 uno de nuestros caballistas.
-                <br />
+                <br /> <br />
                 Dese la oportunidad de disfrutar de la belleza del Valle
                 mientras vive una experiencia única en familia y/o entre amigos!
               </p>
             ) : (
-              <p className={classes.horseText}>
+              <p>
                 For those horse enthusiasts, we offer you a horseback ride
                 between the mountains, you will be joined by one of our riders
                 at all times.
-                <br />
+                <br /> <br />
                 Let yourself enjoy the beauty of the Valley while you live a
                 once in a lifetime experience in family or with friends!
               </p>

@@ -1,25 +1,14 @@
+import { withStyles } from "@mui/styles";
 import sizes from "./sizes";
 
 const style = {
   content: {
-    padding: "30px",
+    padding: "120px 30px",
     display: "flex",
-    backgroundColor: "rgba(116,183,38,0.7)",
-    "& img": {
-      boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
-      borderRadius: "13px",
-      maxWidth: "100%",
-      maxHeight: "100%",
-      width: "90%",
-      [sizes.down("xl")]: {
-        width: "40%",
-        boxShadow:
-          "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
-      },
-      [sizes.down("md")]: {
-        width: "100%",
-      },
-    },
+    alignItems: "center",
+    justifyContent: "space-evenly",
+    marginTop: "10px",
+    marginBottom: "150px",
     [sizes.down("md")]: {
       display: "block",
       padding: 0,
@@ -28,21 +17,54 @@ const style = {
       marginLeft: "70px",
       marginRight: "30px",
       borderRadius: "13px",
-      color: "#3c4001",
-      fontFamily: "'Bebas Neue', cursive !important",
+      color: "#000000",
+      fontFamily: "Myriad Pro Regular",
+      textAlign: "center",
       padding: "30px",
       fontSize: "1.5rem",
-      textAlign: "left",
       [sizes.down("md")]: {
         marginLeft: "auto",
         marginRight: "auto",
       },
     },
-    alignItems: "center",
-    marginTop: "10px",
+  },
+  titleImg: {
+    maxWidth: "30%",
   },
   container: {
     textAlign: "center",
+  },
+  text: {
+    width: "40%",
+    color: "#000000",
+    fontFamily: "Myriad Pro Regular",
+    "& div": {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "space-around",
+      gap: "80px 0px",
+    },
+  },
+  images: {
+    width: "40%",
+    display: "flex",
+    flexDirection: "column",
+    alignSelf: "stretch",
+    alignItems: "center",
+    justifyContent: "flex-start",
+  },
+  firstImage: {
+    maxWidth: "100%",
+    borderRadius: "80px",
+  },
+  roundedImage: {
+    borderRadius: "50%",
+    width: "500px",
+    height: "500px",
+    position: "absolute",
+    bottom: "-300px",
+    left: "550px",
   },
 };
 
