@@ -46,11 +46,18 @@ function Camping(props) {
 
   return (
     <div className={classes.container}>
-      <Typography variant="h1">{title}</Typography>
+      <img
+        src={require("./images/Campamento.png")}
+        className={classes.titleImg}
+        alt="Couldn't charge the image"
+      />
       <div className={classes.content}>
-        <Slideshow slideImages={images} width={"700px"} height={"500px"} />
+        <div className={classes.slideContainer}>
+          <Slideshow slideImages={images} width={"600px"} height={"600px"} />
+        </div>
         <div className={classes.description}>
           <p>{description}</p>
+          <br />
           <ul className={classes.list}>
             <Typography variant="h4">{services}</Typography>
             <div style={{ marginRight: "auto", marginLeft: "auto" }}>
@@ -60,10 +67,10 @@ function Camping(props) {
               <li>{showers}</li>
               <li>{horsemen}</li>
               <li>{sink}</li>
+              <li>{firewood}</li>
             </div>
           </ul>
           <ul className={classes.list}>
-            {firewood}
             <div style={{ marginRight: "auto", marginLeft: "auto" }}>
               <li>
                 <span style={{ fontWeight: "900" }}>{firewoodPrice}</span>
@@ -76,6 +83,7 @@ function Camping(props) {
               </li>
             </div>
           </ul>
+          <br />
           <p>
             <span style={{ fontWeight: "900" }}>{note}</span>
             {rules}

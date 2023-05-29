@@ -4,16 +4,21 @@ const style = {
   content: {
     display: "flex",
     alignItems: "center",
+    justifyContent: "center",
     padding: "10px",
     marginTop: "10px",
-    fontFamily: "'Bebas Neue', cursive !important",
-    fontSize: "1.5rem",
+    fontFamily: "Myriad Pro Regular",
+    fontSize: "24px",
     letterSpacing: "0.1rem",
-    color: "#3c4001",
-    backgroundColor: "rgba(116,183,38,0.7)",
+    textAlign: "left",
+    color: "#000000",
+    marginBottom: "40px",
     [sizes.down("md")]: {
       display: "block",
     },
+  },
+  titleImg: {
+    maxWidth: "30%",
   },
   container: {
     textAlign: "center",
@@ -24,13 +29,12 @@ const style = {
     },
   },
   list: {
-    textAlign: "center",
-    display: "flex",
-    justifyContent: "center",
-    flexDirection: "column",
+    textAlign: "left",
     "& li": {
+      listStyle: "disc",
       marginBottom: "5px",
       whiteSpace: "normal",
+      marginLeft: "35px",
       [sizes.down("md")]: {
         fontSize: "1.2rem",
       },
@@ -51,12 +55,10 @@ const style = {
   },
   description: {
     marginRight: "auto",
-    borderRadius: "13px",
-    marginLeft: "20px",
+    marginLeft: "auto",
     padding: "25px",
+    width: "40%",
     "& li": {
-      marginLeft: "auto",
-      marginRight: "auto",
       textAlign: "left",
     },
     [sizes.down("lg")]: {
@@ -66,6 +68,15 @@ const style = {
       marginTop: "20px",
       marginLeft: "auto",
       marginRight: "auto",
+    },
+  },
+  slideContainer: {
+    width: "40%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    "& div": {
+      borderRadius: "25px",
     },
   },
 };
