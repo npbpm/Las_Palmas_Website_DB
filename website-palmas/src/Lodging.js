@@ -45,22 +45,35 @@ function Lodging(props) {
 
   return (
     <div className={classes.container}>
-      <Typography variant="h1">{title}</Typography>
-      <div className={classes.content}>
+      <img
+        src={require("./images/Hospedaje.png")}
+        alt="Hospedaje"
+        className={classes.titleImg}
+      />
+      <div className={classes.slideContainer}>
         <Slideshow slideImages={images} width={"700px"} height={"500px"} />
+      </div>
+
+      <div className={classes.content}>
         {language === "spanish" ? (
           <p>
             Viva una experiencia de paz, tranquilidad y armonía que le ofrece
             las Palmas de Cocora en su cabaña construida en madera, rodeada de
             coloridas flores, palmas de cera y enmarcada por la silueta de las
             montañas de la cordillera central, hogar del cóndor andino.
-            <br />
-            <span style={{ textDecoration: "underline", fontWeight: "900" }}>
-              NOTA: EN TEMPORADA BAJA HAY DESCUENTOS EN LAS TARIFAS!!!
-            </span>{" "}
-            <br /> La cabaña es de 2 pisos completamente independiente.
+            <br /> <br /> La cabaña es de 2 pisos completamente independiente.
             <br />
             Capacidad para 16 personas.
+            <p
+              style={{
+                fontWeight: "700",
+                color: "#D11B00",
+              }}
+            >
+              <img src={require("./images/icons8-percentage.gif")} alt="%" /> EN
+              TEMPORADA BAJA HAY DESCUENTOS EN LAS TARIFAS!!!{" "}
+              <img src={require("./images/icons8-percentage.gif")} alt="%" />
+            </p>
           </p>
         ) : (
           <p>
@@ -68,14 +81,18 @@ function Lodging(props) {
             offers Las Palmas de Cocora in its cabin built with wood surrounded
             by flowers, wax palm trees and the mountains of the Valley, home of
             the Condor de los Andes.
-            <br />
-            <span style={{ textDecoration: "underline", fontWeight: "900" }}>
-              NOTE: DURING THE LOW SEASON THE PRICES ARE REDUCED!!!
-            </span>{" "}
-            <br />
+            <br /> <br />
             The cabin has 2 floors completely independent from one another.
             <br />
             Capacity for 16 people.
+            <p style={{ fontWeight: "700", color: "#D11B00" }}>
+              <img src={require("./images/icons8-percentage.gif")} alt="%" />
+              NOTE: DURING THE LOW SEASON THE PRICES ARE REDUCED!!!
+              <img
+                src={require("./images/icons8-percentage.gif")}
+                alt="%"
+              />{" "}
+            </p>
           </p>
         )}
       </div>

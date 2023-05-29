@@ -5,51 +5,6 @@ import style from "./styles/RestaurantStyle";
 import { LanguageContext } from "./context/LanguageContext";
 import words from "./text/RestaurantWords";
 
-const slideImages = [
-  {
-    url: "./images/AtardercerPalmas.jpeg",
-  },
-  {
-    url: "./images/Who-are-we.jpeg",
-  },
-  {
-    url: "./images/FrontRestaurant.jpeg",
-  },
-  {
-    url: "./images/FrenteRestaurante.jpeg",
-  },
-  {
-    url: "./images/WhatsApp Image 2022-10-02 at 11.50.37 PM.jpeg",
-  },
-  {
-    url: "./images/WhatsApp Image 2022-10-02 at 11.50.43 PM.jpeg",
-  },
-  {
-    url: "./images/WhatsApp Image 2022-10-02 at 11.50.37 PM(1).jpeg",
-  },
-  {
-    url: "./images/WhatsApp Image 2022-10-02 at 11.50.40 PM.jpeg",
-  },
-  {
-    url: "./images/WhatsApp Image 2022-10-02 at 11.50.45 PM.jpeg",
-  },
-  {
-    url: "./images/WhatsApp Image 2022-10-02 at 11.50.45 PM(1).jpeg",
-  },
-  {
-    url: "./images/WhatsApp Image 2022-10-02 at 11.50.45 PM(2).jpeg",
-  },
-  {
-    url: "./images/WhatsApp Image 2022-10-02 at 11.50.45 PM(3).jpeg",
-  },
-  {
-    url: "./images/platoEntero.jpeg",
-  },
-  {
-    url: "./images/postre.jpeg",
-  },
-];
-
 function Restaurant(props) {
   const { classes } = props;
 
@@ -76,7 +31,6 @@ function Restaurant(props) {
   const { language } = useContext(LanguageContext);
 
   const {
-    title,
     description,
     menuTitle,
     menu,
@@ -94,6 +48,7 @@ function Restaurant(props) {
       <img
         src={require("./images/Restaurante.png")}
         className={classes.titleImg}
+        alt="Couldn't charge the image"
       />
       <p className={classes.subtitle}>{description}</p>
       <div className={classes.content}>
@@ -102,10 +57,12 @@ function Restaurant(props) {
             <img
               src={require("./images/FrenteEnteroRestaurante.jpeg")}
               className={classes.restaurantImg}
+              alt="Couldn't charge the Image"
             />
             <img
               src={require("./images/WhatsApp Image 2022-10-02 at 11.50.45 PM(3).jpeg")}
               className={classes.dessertImg}
+              alt="Couldn't charge the Image"
             />
           </div>
           <div className={classes.menu}>
@@ -118,6 +75,7 @@ function Restaurant(props) {
               <img
                 src={require("./images/menu.png")}
                 className={classes.menuImg}
+                alt="MenuImage"
               />
             </a>
             <p className={classes.menuText}>
@@ -160,6 +118,7 @@ function Restaurant(props) {
                       >
                         <img
                           src={require("./images/cerrar-simbolo-de-boton-circular.png")}
+                          alt="CLOSE"
                         />
                       </button>
                       <p className={classes.backText}>{romanticText}</p>
@@ -170,6 +129,7 @@ function Restaurant(props) {
                       <img
                         src={require("./images/bebidas.png")}
                         className={classes.cardLogo}
+                        alt="Couldn't charge the image"
                       />
                       <h3>{romantic}</h3>
                       <button
@@ -209,16 +169,21 @@ function Restaurant(props) {
                       >
                         <img
                           src={require("./images/cerrar-simbolo-de-boton-circular.png")}
+                          alt="CLOSE"
                         />
                       </button>
                       <p className={classes.backText}>{natureText}</p>
-                      <img src={require("./images/glamping22.jpeg")} />
+                      <img
+                        src={require("./images/glamping22.jpeg")}
+                        alt="Couldn't charge the image"
+                      />
                     </div>
                   ) : (
                     <div className={classes.frontInner}>
                       <img
                         src={require("./images/brote.png")}
                         className={classes.cardLogo}
+                        alt="Couldn't charge the image"
                       />
                       <h3>{nature}</h3>
                       <button
@@ -258,11 +223,13 @@ function Restaurant(props) {
                       >
                         <img
                           src={require("./images/cerrar-simbolo-de-boton-circular.png")}
+                          alt="CLOSE"
                         />
                       </button>
-                      <p className={classes.backText}>{romanticText}</p>
+                      <p className={classes.backText}>{culturalText}</p>
                       <img
                         src={require("./images/WhatsApp Image 2022-10-02 at 11.50.37 PM.jpeg")}
+                        alt="Couldn't charge the image"
                       />
                     </div>
                   ) : (
@@ -270,8 +237,9 @@ function Restaurant(props) {
                       <img
                         src={require("./images/cafe.png")}
                         className={classes.cardLogo}
+                        alt="Couldn't charge the image"
                       />
-                      <h3>{romantic}</h3>
+                      <h3>{cultural}</h3>
                       <button
                         className={classes.reserveBtn}
                         onClick={(e) => {
