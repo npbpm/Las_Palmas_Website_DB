@@ -21,15 +21,15 @@ function Horsebackriding(props) {
       />
       <div className={classes.content}>
         <div className={classes.section}>
-          <Typography variant="h3">
-            {language === "spanish" ? "Caminatas" : "Hikes"}
-          </Typography>
           <div className={classes.item}>
             <img
               className={classes.hikeImg}
               src={require("./images/caminata1.jpg")}
               alt="Error Not Found"
             />
+            <Typography variant="h3">
+              {language === "spanish" ? "Caminatas" : "Hikes"}
+            </Typography>
             {language === "spanish" ? (
               <p>
                 En el restaurante Las Palmas de cocora, le ofrecemos varias
@@ -57,15 +57,15 @@ function Horsebackriding(props) {
           </div>
         </div>
         <div className={classes.section}>
-          <Typography variant="h3">
-            {language === "spanish" ? "Cabalgatas" : "Horse Ride"}
-          </Typography>
           <div className={classes.item}>
             <img
               className={classes.horseImg}
               src={require("./images/caballos1.jpeg")}
               alt="Error Not Found"
             />
+            <Typography variant="h3">
+              {language === "spanish" ? "Cabalgatas" : "Horse Ride"}
+            </Typography>
             {language === "spanish" ? (
               <p>
                 Para los entusiastas de los caballos, les ofrecemos una

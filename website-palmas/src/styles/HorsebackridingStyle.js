@@ -58,6 +58,11 @@ const style = {
     [sizes.down("md")]: {
       display: "block",
     },
+    "& h3": {
+      color: "#D31D01",
+      fontFamily: "Myriad Pro Regular",
+      marginTop: "25px",
+    },
   },
   hikeImg: {
     width: "600px",
