@@ -4,32 +4,19 @@ const style = {
   content: {
     padding: "10px",
     display: "flex",
+    flexDirection: "row",
     marginTop: "10px",
     paddingBottom: "40px",
-    paddingTop: "40px",
     alignItems: "center",
-    backgroundColor: "rgba(116,183,38,0.7)",
-    "& img": {
-      boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
-      borderRadius: "13px",
-      maxWidth: "100%",
-      maxHeight: "100%",
-      width: "55%",
-      [sizes.down("md")]: {
-        width: "100%",
-        boxShadow:
-          "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
-      },
-    },
+    justifyContent: "space-around",
+    height: "800px",
+    marginBottom: "150px",
     "& p": {
-      marginLeft: "auto",
-      marginRight: "auto",
-      padding: "20px",
-      width: "40%",
-      fontFamily: "'Bebas Neue', cursive !important",
+      width: "100%",
+      fontFamily: "Myriad Pro Regular",
       borderRadius: "13px",
-      color: "#3c4001",
-      fontSize: "1.5rem",
+      color: "#000000",
+      fontSize: "24px",
       [sizes.down("md")]: {
         width: "90%",
       },
@@ -44,6 +31,9 @@ const style = {
       paddingTop: "20px",
     },
   },
+  titleImg: {
+    maxWidth: "30%",
+  },
   container: {
     textAlign: "center",
     "& h1": {
@@ -51,6 +41,29 @@ const style = {
         fontSize: "3em",
       },
     },
+  },
+  text: {
+    width: "50%",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  images: {
+    width: "45%",
+    alignSelf: "strech",
+  },
+  firstImage: {
+    maxWidth: "100%",
+    borderRadius: "80px",
+  },
+  roundedImage: {
+    borderRadius: "50%",
+    width: "500px",
+    height: "500px",
+    position: "absolute",
+    bottom: "-310px",
+    left: "550px",
   },
 };
 

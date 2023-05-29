@@ -14,16 +14,30 @@ function Regionalcrafts(props) {
 
   return (
     <div className={classes.container}>
-      <Typography variant="h1">{title}</Typography>
+      <img
+        src={require("./images/Artesanias.png")}
+        className={classes.titleImg}
+      />
       <div className={classes.content}>
-        <img src={require("./images/artesanias.jpeg")} alt="Error: Not Found" />
-        <p>
-          {text1}
-          <br /> <br />
-          {text2}
-          <br /> <br />
-          {text3}
-        </p>
+        <div className={classes.images}>
+          <img
+            src={require("./images/artesanias.jpeg")}
+            alt="Error: Not Found"
+            className={classes.firstImage}
+          />
+          <img
+            src={require("./images/artesanias2.png")}
+            alt="Error: Not Found"
+            className={classes.roundedImage}
+          />
+        </div>
+        <div className={classes.text}>
+          <p>
+            {text1} {text2}
+            <br /> <br />
+            {text3}
+          </p>
+        </div>
       </div>
     </div>
   );

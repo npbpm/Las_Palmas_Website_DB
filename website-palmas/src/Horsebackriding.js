@@ -17,6 +17,7 @@ function Horsebackriding(props) {
       <img
         src={require("./images/Paseos ecológicos.png")}
         className={classes.titleImg}
+        alt="Couldn't charge the image"
       />
       <div className={classes.content}>
         <div className={classes.section}>

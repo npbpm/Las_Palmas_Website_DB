@@ -1,4 +1,3 @@
-import { withStyles } from "@mui/styles";
 import sizes from "./sizes";
 
 const style = {

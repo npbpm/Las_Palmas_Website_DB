@@ -1,8 +1,7 @@
 const words = {
   spanish: {
     title: "Atracciones",
-    content:
-      "LAS PALMAS DE COCORA lo invita a que disfrute de nuestras instalaciones para niños y adultos:",
+    content: "Disfruta de nuestras instalaciones para niños y adultos:",
     games: "PARQUE INFANTIL",
     volley: "CANCHA DE VOLEY-VERDE",
     football: "CANCHA DE MICRO FÚTBOL",
@@ -12,8 +11,7 @@ const words = {
   },
   english: {
     title: "Attractions",
-    content:
-      "LAS PALMAS DE COCORA invites you to enjoy our installations for children and adults: ",
+    content: "Enjoy our playzone for children and adults",
     games: "PLAY ZONE",
     volley: "VOLLEYBALL FIELD",
     football: "FOOTBALL FIELD",

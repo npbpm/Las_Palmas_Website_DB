@@ -34,12 +34,17 @@ function Games(props) {
 
   return (
     <div className={classes.container}>
-      <Typography variant="h1">{title}</Typography>
+      <img
+        src={require("./images/Atracciones.png")}
+        className={classes.titleImg}
+      />
+      <div className={classes.slideContainer}>
+        <Slideshow slideImages={images} width={"700px"} height={"500px"} />
+      </div>
       <div className={classes.content}>
-        <Slideshow slideImages={images} width={"630px"} height={"500px"} />
         <div className={classes.description}>
+          <Typography variant="h4">{content}</Typography>
           <ul>
-            <Typography variant="h4">{content}</Typography>
             <li>{games}</li>
             <li>{volley}</li>
             <li>{football}</li>

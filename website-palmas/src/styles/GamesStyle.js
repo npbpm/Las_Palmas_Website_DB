@@ -3,19 +3,20 @@ import sizes from "./sizes";
 const style = {
   content: {
     padding: "10px",
-    fontFamily: "'Bebas Neue', curisve !important",
-    fontSize: "1.5rem",
+    fontFamily: "Myriad Pro Regular",
+    fontSize: "24px",
     display: "flex",
     marginTop: "10px",
-    color: "#3c4001",
+    color: "#000000",
     alignItems: "center",
-    backgroundColor: "rgba(116,183,38,0.7)",
+    width: "100%",
     "& img": {
       maxWidth: "100%",
       maxHeight: "100%",
     },
     "& li": {
       marginLeft: "15px",
+      listStyle: "disc",
     },
     alignItems: "center",
     justifyContent: "center",
@@ -30,11 +31,17 @@ const style = {
       display: "block",
     },
   },
+  titleImg: {
+    maxWidth: "30%",
+  },
   description: {
     padding: "20px",
+    width: "55%",
     textAlign: "center",
-    borderRadius: "13px",
-    marginLeft: "40px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
     [sizes.down("md")]: {
       marginLeft: "auto",
       marginRight: "auto",
@@ -54,6 +61,15 @@ const style = {
       [sizes.down("us")]: {
         fontSize: "3.8em",
       },
+    },
+  },
+  slideContainer: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    "& div": {
+      borderRadius: "25px",
     },
   },
 };
