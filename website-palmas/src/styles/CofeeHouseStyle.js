@@ -129,6 +129,10 @@ const style = {
       bottom: "210px",
       left: "370px",
     },
+    [sizes.down("xxs")]: {
+      bottom: "290px",
+      left: "270px",
+    },
   },
 };
 

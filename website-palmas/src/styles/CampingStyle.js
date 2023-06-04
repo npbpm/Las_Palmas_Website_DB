@@ -28,6 +28,9 @@ const style = {
     [sizes.down("lg")]: {
       maxWidth: "45%",
     },
+    [sizes.down("xs")]: {
+      maxWidth: "70%",
+    },
   },
   container: {
     textAlign: "center",

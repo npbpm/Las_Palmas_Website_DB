@@ -72,6 +72,9 @@ const style = {
     [sizes.down("xs")]: {
       flexWrap: "wrap",
     },
+    [sizes.down("xxs")]: {
+      marginTop: "0px",
+    },
   },
   package: {
     margin: "5px 28px",
@@ -153,6 +156,7 @@ const style = {
     [sizes.down("xs")]: {
       gap: "30px 0px",
     },
+
     "& img": {
       [sizes.down("lg")]: {
         width: "85%",

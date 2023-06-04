@@ -29,6 +29,9 @@ const style = {
       height: "450px",
       width: "92%",
     },
+    [sizes.down("xxs")]: {
+      height: "350px",
+    },
   },
   serviceCardImg: {
     width: "100%",
@@ -59,11 +62,22 @@ const style = {
         backgroundColor: "#F2F2F2",
         transition: "all 0.3s",
       },
+      [sizes.down("xxs")]: {
+        marginTop: "auto",
+        marginBottom: "8px",
+      },
     },
     [sizes.down("lg")]: {
       "& h4": {
         fontSize: "30px",
       },
+    },
+    [sizes.down("xxs")]: {
+      display: "flex",
+      flexDirection: "column",
+      height: "100%",
+      alignItems: "center",
+      justifyContent: "center",
     },
   },
 };

@@ -79,7 +79,7 @@ function Footer() {
               <Link to="/who-are-we">{us}</Link>
             </li>
             <li>
-              <Link to="/">{services}</Link>
+              <Link to="/services">{services}</Link>
             </li>
             <li>
               <Link to="/packages-and-sales">{packages}</Link>

@@ -46,6 +46,9 @@ const style = {
     [sizes.down("xs")]: {
       height: "250px",
     },
+    [sizes.down("xxs")]: {
+      height: "210px",
+    },
   },
   us: {
     width: "100%",

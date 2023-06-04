@@ -7,6 +7,9 @@ const style = {
   },
   titleImg: {
     maxWidth: "30%",
+    [sizes.down("xs")]: {
+      maxWidth: "70%",
+    },
   },
   content: {
     padding: "40px",

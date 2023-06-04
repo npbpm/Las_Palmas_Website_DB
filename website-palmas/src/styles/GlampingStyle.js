@@ -24,6 +24,9 @@ const style = {
     [sizes.down("lg")]: {
       maxWidth: "45%",
     },
+    [sizes.down("xs")]: {
+      maxWidth: "70%",
+    },
   },
   container: {
     textAlign: "center",
@@ -124,6 +127,9 @@ const style = {
     [sizes.down("xs")]: {
       height: "450px",
     },
+    [sizes.down("xxs")]: {
+      height: "380px",
+    },
   },
   secondImg: {
     borderRadius: "50%",
@@ -158,6 +164,12 @@ const style = {
       bottom: "-120px",
       right: "10px",
     },
+    [sizes.down("xxs")]: {
+      height: "250px",
+      width: "250px",
+      bottom: "-90px",
+      right: "10px",
+    },
   },
   textElement: {
     display: "flex",
@@ -180,6 +192,9 @@ const style = {
       [sizes.down("xs")]: {
         fontSize: "14px",
         textAlign: "left",
+      },
+      [sizes.down("xxs")]: {
+        fontSize: "12px",
       },
     },
     "& img": {

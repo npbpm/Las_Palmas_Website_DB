@@ -29,6 +29,12 @@ const style = {
           fontSize: "17px",
         },
       },
+      [sizes.down("xxs")]: {
+        fontSize: "18px",
+        "& p": {
+          fontSize: "13px",
+        },
+      },
     },
     [sizes.down("lg")]: {
       width: "75%",
@@ -52,6 +58,9 @@ const style = {
     marginBottom: "80px",
     [sizes.down("lg")]: {
       maxWidth: "45%",
+    },
+    [sizes.down("xs")]: {
+      maxWidth: "70%",
     },
   },
   slideContainer: {

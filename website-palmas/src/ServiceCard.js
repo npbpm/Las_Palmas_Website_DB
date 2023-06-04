@@ -60,6 +60,9 @@ const styles = {
       [sizes.down("xs")]: {
         height: "140px",
       },
+      [sizes.down("xxs")]: {
+        height: "100px",
+      },
     },
     "& img": {
       marginRight: "auto",
@@ -86,6 +89,9 @@ const styles = {
     "& h4": {
       color: "#466421",
       fontSize: "1.8rem",
+      [sizes.down("xxs")]: {
+        fontSize: "20px",
+      },
       [sizes.down("us")]: {
         fontSize: "1.6rem",
       },

@@ -154,13 +154,13 @@
         }
     }
 
-    @media(max-width: 430px){
+@media(max-width: 480px){
         h1{
             font-size: 1.8rem;
         }
 
-        h4{
-            font-size: 1rem;
+        .service-card content h4{
+            font-size: 24px;
         }
 
         .service-card{
