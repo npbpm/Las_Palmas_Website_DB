@@ -57,6 +57,9 @@ const styles = {
       [sizes.down("sm")]: {
         height: "180px",
       },
+      [sizes.down("xs")]: {
+        height: "140px",
+      },
     },
     "& img": {
       marginRight: "auto",

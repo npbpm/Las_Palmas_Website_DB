@@ -62,6 +62,10 @@ const style = {
     [sizes.down("lg")]: {
       alignItems: "center",
     },
+    [sizes.down("xs")]: {
+      flexDirection: "column",
+      width: "100%",
+    },
   },
   leftSide: {
     height: "100%",
@@ -78,12 +82,18 @@ const style = {
         marginTop: "430px",
       },
     },
+    [sizes.down("xs")]: {
+      width: "100%",
+    },
   },
   rightSide: {
     height: "100%",
     width: "35%",
     [sizes.down("sm")]: {
       width: "50%",
+    },
+    [sizes.down("xs")]: {
+      width: "90%",
     },
     [sizes.down("us")]: {
       top: "250px",
@@ -96,6 +106,9 @@ const style = {
     color: "#82BF26",
     [sizes.down("sm")]: {
       fontSize: "1.6rem",
+    },
+    [sizes.down("xs")]: {
+      width: "100%",
     },
   },
   greenServices: {

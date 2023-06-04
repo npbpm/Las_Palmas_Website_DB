@@ -3,6 +3,9 @@ import sizes from "./sizes";
 const style = {
   serviceCard: {
     width: "33%",
+    [sizes.down("xs")]: {
+      width: "50%",
+    },
   },
   content: {
     width: "80%",
@@ -39,6 +42,9 @@ const style = {
       marginBottom: "60px",
       [sizes.down("sm")]: {
         fontSize: "20px",
+      },
+      [sizes.down("xs")]: {
+        fontSize: "22px",
       },
     },
     "& a": {

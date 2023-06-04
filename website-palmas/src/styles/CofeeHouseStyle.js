@@ -15,6 +15,10 @@ const style = {
       justifyContent: "space-between",
       padding: 0,
     },
+    [sizes.down("xs")]: {
+      flexDirection: "column",
+      justifyContent: "center",
+    },
     "& p": {
       marginLeft: "70px",
       marginRight: "30px",
@@ -38,6 +42,9 @@ const style = {
     [sizes.down("lg")]: {
       maxWidth: "45%",
     },
+    [sizes.down("xs")]: {
+      maxWidth: "70%",
+    },
   },
   container: {
     textAlign: "center",
@@ -58,6 +65,12 @@ const style = {
         gap: "20px 0px",
       },
     },
+    [sizes.down("xs")]: {
+      width: "80%",
+      "& div": {
+        gap: "0px",
+      },
+    },
   },
   images: {
     width: "40%",
@@ -71,6 +84,12 @@ const style = {
     },
     [sizes.down("sm")]: {
       justifyContent: "center",
+    },
+    [sizes.down("xs")]: {
+      marginLeft: "auto",
+      marginRight: "auto",
+      marginBottom: "80px",
+      width: "80%",
     },
   },
   firstImage: {
@@ -105,6 +124,10 @@ const style = {
       height: "200px",
       bottom: "60px",
       left: "290px",
+    },
+    [sizes.down("xs")]: {
+      bottom: "210px",
+      left: "370px",
     },
   },
 };

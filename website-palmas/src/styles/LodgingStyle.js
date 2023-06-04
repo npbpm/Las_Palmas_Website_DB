@@ -23,6 +23,12 @@ const style = {
       [sizes.down("sm")]: {
         padding: "20px 5px",
       },
+      [sizes.down("xs")]: {
+        fontSize: "20px",
+        "& p": {
+          fontSize: "17px",
+        },
+      },
     },
     [sizes.down("lg")]: {
       width: "75%",
@@ -51,6 +57,9 @@ const style = {
   slideContainer: {
     marginLeft: "auto",
     marginRight: "auto",
+    [sizes.down("xs")]: {
+      width: "100%",
+    },
   },
 };
 

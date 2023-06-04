@@ -13,6 +13,11 @@ const style = {
     [sizes.down("sm")]: {
       paddingBottom: "150px",
     },
+    [sizes.down("xs")]: {
+      flexDirection: "column",
+      paddingBottom: "60px",
+      paddingTop: "40px",
+    },
   },
   titleImg: {
     maxWidth: "30%",
@@ -76,6 +81,9 @@ const style = {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
+    [sizes.down("xs")]: {
+      width: "75%",
+    },
   },
   text: {
     width: "40%",
@@ -90,6 +98,12 @@ const style = {
     },
     [sizes.down("md")]: {
       gap: "30px 00px",
+    },
+    [sizes.down("xs")]: {
+      flexDirection: "row",
+      width: "100%",
+      flexWrap: "wrap",
+      marginTop: "100px",
     },
   },
   firstImg: {
@@ -106,6 +120,9 @@ const style = {
     },
     [sizes.down("sm")]: {
       height: "400px",
+    },
+    [sizes.down("xs")]: {
+      height: "450px",
     },
   },
   secondImg: {
@@ -137,6 +154,10 @@ const style = {
       width: "300px",
       height: "300px",
     },
+    [sizes.down("xs")]: {
+      bottom: "-120px",
+      right: "10px",
+    },
   },
   textElement: {
     display: "flex",
@@ -156,12 +177,20 @@ const style = {
       [sizes.down("sm")]: {
         fontSize: "15px",
       },
+      [sizes.down("xs")]: {
+        fontSize: "14px",
+        textAlign: "left",
+      },
     },
     "& img": {
       maxWidth: "30%",
       [sizes.down("lg")]: {
         maxWidth: "15%",
       },
+    },
+    [sizes.down("xs")]: {
+      width: "50%",
+      gap: "0px 10px",
     },
   },
 };

@@ -7,7 +7,7 @@ const style = {
     backgroundColor: "#F2F2F2",
     "& img": {
       maxWidth: "80%",
-      maxHeight: "100%",
+      // maxHeight: "100%",
       borderRadius: "50%",
       width: "250px",
       height: "250px",
@@ -16,14 +16,16 @@ const style = {
       aspectRatio: 3 / 2,
       objectFit: "cover",
       [sizes.down("lg")]: {
-        boxShadow:
-          "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
         margin: 0,
-        width: "35% !important",
-        height: "auto !important",
+        width: "35%",
+        height: "auto",
       },
       [sizes.down("md")]: {
         margin: 0,
+      },
+      [sizes.down("xs")]: {
+        maxWidth: "90%",
+        width: "30%",
       },
     },
     "& p": {
@@ -34,6 +36,10 @@ const style = {
       borderRadius: "13px",
       width: "50%",
       padding: "20px",
+      [sizes.down("xs")]: {
+        width: "70%",
+        fontSize: "18px",
+      },
     },
     "& ul": {
       fontFamily: "'Bebas Neue', cursive !important",
@@ -59,14 +65,13 @@ const style = {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-evenly",
-    // flexWrap: "wrap",
     paddingTop: "50px",
     marginTop: "20px",
     marginLeft: "auto",
     marginRight: "auto",
-    // [sizes.down("sm")]: {
-    //   display: "block",
-    // },
+    [sizes.down("xs")]: {
+      flexWrap: "wrap",
+    },
   },
   package: {
     margin: "5px 28px",
@@ -92,6 +97,9 @@ const style = {
       },
       [sizes.down("sm")]: {
         fontSize: "24px",
+      },
+      [sizes.down("xs")]: {
+        fontSize: "34px",
       },
     },
     "& p": {
@@ -142,22 +150,26 @@ const style = {
       width: "95%",
       height: "700px",
     },
+    [sizes.down("xs")]: {
+      gap: "30px 0px",
+    },
     "& img": {
       [sizes.down("lg")]: {
-        width: "85% !important",
-        height: "250px !important",
+        width: "85%",
+        height: "250px",
       },
       [sizes.down("md")]: {
         height: "250px",
       },
       [sizes.down("xs")]: {
-        height: "500px !important",
+        width: "40%",
+        height: "200px",
       },
       [sizes.down("xxs")]: {
-        height: "400px !important",
+        height: "400px",
       },
       [sizes.down("us")]: {
-        height: "290px !important",
+        height: "290px",
       },
     },
   },

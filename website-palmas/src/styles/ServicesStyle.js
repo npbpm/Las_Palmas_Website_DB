@@ -9,6 +9,9 @@ const style = {
       fontSize: "50px",
       fontFamily: "Myriad Pro Bold",
       marginBottom: "20px",
+      [sizes.down("xs")]: {
+        fontSize: "30px",
+      },
     },
     "& p": {
       fontSize: "24px",
@@ -22,6 +25,10 @@ const style = {
       },
       [sizes.down("sm")]: {
         fontSize: "20px",
+      },
+      [sizes.down("xs")]: {
+        fontSize: "18px",
+        width: "80%",
       },
     },
   },

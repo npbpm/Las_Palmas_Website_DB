@@ -20,7 +20,7 @@ const style = {
       justifyContent: "space-between",
     },
     [sizes.down("sm")]: {
-      display: "block",
+      flexDirection: "column",
     },
   },
   titleImg: {
@@ -106,6 +106,15 @@ const style = {
     [sizes.down("sm")]: {
       marginLeft: "auto",
       marginRight: "auto",
+    },
+    [sizes.down("xs")]: {
+      marginLeft: "0px",
+      marginRight: "0px",
+      width: "100%",
+      "& div": {
+        marginLeft: "auto",
+        marginRight: "auto",
+      },
     },
   },
 };

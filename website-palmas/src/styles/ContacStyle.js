@@ -24,6 +24,11 @@ const style = {
     borderRadius: "50px",
     background:
       "linear-gradient(to right, #E7F2D5 0%, #E7F2D5 70%, #82BF26 70%, #82BF26 100%)",
+    [sizes.down("xs")]: {
+      background:
+        "linear-gradient(to bottom, #E7F2D5 0%, #E7F2D5 70%, #82BF26 70%, #82BF26 100%)",
+      flexDirection: "column",
+    },
   },
   contactUs: {
     display: "flex",
@@ -102,6 +107,10 @@ const style = {
       padding: 0,
       marginBottom: "30px",
     },
+    [sizes.down("xs")]: {
+      width: "100%",
+      margin: "0px",
+    },
   },
   secondHeader: {
     fontFamily: "Myriad Pro Regular",
@@ -127,12 +136,20 @@ const style = {
         marginLeft: "20px",
         marginBottom: "180px",
       },
+      [sizes.down("xs")]: {
+        maxWidth: "100%",
+        marginLeft: "0px",
+        marginBottom: "0px",
+      },
     },
     [sizes.down("lg")]: {
       width: "50%",
     },
     [sizes.down("md")]: {
       width: "55%",
+    },
+    [sizes.down("xs")]: {
+      width: "100%",
     },
   },
   address: {
@@ -155,6 +172,9 @@ const style = {
     },
     [sizes.down("md")]: {
       left: "5px",
+    },
+    [sizes.down("xs")]: {
+      left: "-45px",
     },
   },
 };

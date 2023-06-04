@@ -36,6 +36,9 @@ const style = {
     [sizes.down("lg")]: {
       maxWidth: "45%",
     },
+    [sizes.down("xs")]: {
+      maxWidth: "70%",
+    },
   },
   description: {
     padding: "20px",
@@ -53,6 +56,9 @@ const style = {
         padding: 0,
         margin: 0,
       },
+    },
+    [sizes.down("xs")]: {
+      width: "90%",
     },
   },
   container: {

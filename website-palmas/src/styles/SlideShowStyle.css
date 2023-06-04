@@ -70,6 +70,10 @@
         height: auto;
     }
 
+    .slide-container{
+        width: 100% !important;
+    }
+
     .slideNav img{
         object-fit: cover;
     }

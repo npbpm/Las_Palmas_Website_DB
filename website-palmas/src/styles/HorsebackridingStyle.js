@@ -34,11 +34,18 @@ const style = {
         fontSize: "1.4em !important",
       },
     },
+    [sizes.down("xs")]: {
+      flexDirection: "column",
+      alignItems: "center",
+    },
   },
   titleImg: {
     maxWidth: "30%",
     [sizes.down("lg")]: {
       maxWidth: "45%",
+    },
+    [sizes.down("xs")]: {
+      maxWidth: "70%",
     },
   },
   container: {
@@ -87,6 +94,9 @@ const style = {
       width: "300px",
       height: "300px",
     },
+    [sizes.down("xs")]: {
+      width: "100%",
+    },
   },
   section: {
     display: "flex",
@@ -99,6 +109,9 @@ const style = {
     },
     [sizes.down("md")]: {
       width: "45%",
+    },
+    [sizes.down("xs")]: {
+      width: "90%",
     },
   },
 };

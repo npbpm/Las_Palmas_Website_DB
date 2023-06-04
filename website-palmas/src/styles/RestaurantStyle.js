@@ -39,6 +39,9 @@ const style = {
     [sizes.down("lg")]: {
       maxWidth: "45%",
     },
+    [sizes.down("xs")]: {
+      maxWidth: "70%",
+    },
   },
   subtitle: {
     width: "45%",
@@ -51,6 +54,9 @@ const style = {
     },
     [sizes.down("sm")]: {
       width: "70%",
+    },
+    [sizes.down("xs")]: {
+      fontSize: "18px",
     },
   },
   presentation: {
@@ -69,12 +75,20 @@ const style = {
     [sizes.down("sm")]: {
       justifyContent: "space-between",
     },
+    [sizes.down("xs")]: {
+      flexDirection: "column",
+      height: "650px",
+    },
   },
   images: {
     width: "45%",
     height: "100%",
     [sizes.down("sm")]: {
       width: "60%",
+    },
+    [sizes.down("xs")]: {
+      height: "300px",
+      width: "75%",
     },
   },
   restaurantImg: {
@@ -95,6 +109,11 @@ const style = {
       bottom: "130px",
       right: "-180px",
     },
+    [sizes.down("xs")]: {
+      maxWidth: "45%",
+      bottom: "100px",
+      right: "-140px",
+    },
   },
   menu: {
     width: "30%",
@@ -103,15 +122,25 @@ const style = {
     flexDirection: "column",
     justifyContent: "flex-start",
     alignItems: "space-evenly",
+    [sizes.down("xs")]: {
+      width: "100%",
+    },
   },
   menuImg: {
     maxWidth: "80%",
     marginTop: "50px",
+    [sizes.down("xs")]: {
+      maxWidth: "40%",
+    },
   },
   menuText: {
     fontSize: "34px",
     fontFamily: "Roboto",
     fontWeight: "500",
+    [sizes.down("xs")]: {
+      width: "100%",
+      fontSize: "25px",
+    },
   },
   menuItem: {
     textDecoration: "none",
@@ -149,6 +178,13 @@ const style = {
       width: "60%",
       gap: "0px 15px",
     },
+    [sizes.down("xs")]: {
+      flexDirection: "column",
+      margin: "40px auto",
+      gap: "25px 0px",
+      alignItems: "center",
+      height: "auto",
+    },
   },
   ambientCard: {
     width: "400px",
@@ -164,6 +200,9 @@ const style = {
     "& h3": {
       fontSize: "30px",
       fontFamily: "Myriad Pro Regular",
+    },
+    [sizes.down("xs")]: {
+      width: "250px",
     },
   },
   flippedCardInner: {
@@ -185,6 +224,9 @@ const style = {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "space-around",
+    [sizes.down("xs")]: {
+      padding: "60px 0px",
+    },
   },
   backInner: {
     height: "100%",
@@ -254,6 +296,9 @@ const style = {
     },
     [sizes.down("sm")]: {
       right: "110px",
+    },
+    [sizes.down("xs")]: {
+      right: "120px",
     },
   },
 };

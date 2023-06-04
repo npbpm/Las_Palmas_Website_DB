@@ -21,6 +21,9 @@ const style = {
       color: "#82BF26",
       fontSize: "45px",
       fontFamily: "Myriad Pro Bold",
+      [sizes.down("xs")]: {
+        fontSize: "30px",
+      },
     },
   },
   cocoraDesc: {
@@ -31,12 +34,18 @@ const style = {
     [sizes.down("sm")]: {
       fontSize: "20px",
     },
+    [sizes.down("xs")]: {
+      fontSize: "15px",
+    },
   },
   cocoraImg: {
     maxWidth: "40%",
     width: "300px",
     height: "300px",
     borderRadius: "50%",
+    [sizes.down("xs")]: {
+      height: "250px",
+    },
   },
   us: {
     width: "100%",
@@ -44,6 +53,10 @@ const style = {
       color: "#82BF26",
       fontSize: "45px",
       fontFamily: "Myriad Pro Bold",
+      [sizes.down("xs")]: {
+        fontSize: "30px",
+        marginTop: "40px",
+      },
     },
   },
   description: {
@@ -95,6 +108,9 @@ const style = {
     [sizes.down("sm")]: {
       maxWidth: "50%",
     },
+    [sizes.down("xs")]: {
+      maxWidth: "55%",
+    },
   },
   imgCertificate: {
     maxWidth: "100%",
@@ -121,6 +137,9 @@ const style = {
       marginTop: "35px",
       fontSize: "20px",
     },
+    [sizes.down("xs")]: {
+      fontSize: "15px",
+    },
   },
   history: {
     display: "flex",
@@ -140,8 +159,10 @@ const style = {
         marginLeft: "auto",
         marginRight: "auto",
         fontSize: "1.3em",
-
         padding: "15px",
+      },
+      [sizes.down("xs")]: {
+        fontSize: "15px",
       },
     },
     [sizes.down("md")]: {
@@ -181,7 +202,7 @@ const style = {
     },
   },
   rightBtn: {
-    right: "-4.5rem",
+    right: "-2.7rem",
     color: "#D91604",
     "&:hover": {
       cursor: "pointer",
@@ -199,6 +220,9 @@ const style = {
     marginBottom: "50px",
     [sizes.down("sm")]: {
       width: "70%",
+    },
+    [sizes.down("xs")]: {
+      fontSize: "18px",
     },
   },
 };
