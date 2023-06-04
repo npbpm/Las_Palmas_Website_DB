@@ -28,6 +28,7 @@ const style = {
       background:
         "linear-gradient(to bottom, #E7F2D5 0%, #E7F2D5 70%, #82BF26 70%, #82BF26 100%)",
       flexDirection: "column",
+      padding: "25px",
     },
   },
   contactUs: {

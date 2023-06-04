@@ -161,7 +161,7 @@ const style = {
       height: "300px",
     },
     [sizes.down("xs")]: {
-      bottom: "-120px",
+      bottom: "-160px",
       right: "10px",
     },
     [sizes.down("xxs")]: {
