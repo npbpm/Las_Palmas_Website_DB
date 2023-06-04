@@ -25,7 +25,7 @@ const style = {
       width: "75%",
     },
     [sizes.down("md")]: {
-      display: "block",
+      width: "90%",
     },
   },
   container: {

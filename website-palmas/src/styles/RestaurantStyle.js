@@ -33,10 +33,6 @@ const style = {
     alignItems: "center",
     justifyContent: "center",
     marginTop: "10px",
-    [sizes.down("md")]: {
-      display: "block",
-      paddingBottom: "25px",
-    },
   },
   titleImg: {
     maxWidth: "30%",
@@ -50,6 +46,9 @@ const style = {
     marginRight: "auto",
     fontSize: "24px",
     fontFamily: "Roboto",
+    [sizes.down("md")]: {
+      width: "60%",
+    },
   },
   presentation: {
     width: "90%",
@@ -60,6 +59,9 @@ const style = {
     justifyContent: "center",
     [sizes.down("lg")]: {
       justifyContent: "space-evenly",
+    },
+    [sizes.down("md")]: {
+      justifyContent: "space-around",
     },
   },
   images: {
@@ -112,6 +114,9 @@ const style = {
     fontFamily: "Myriad Pro Bold",
     color: "#82BF26",
     marginTop: "80px",
+    [sizes.down("md")]: {
+      marginTop: "0",
+    },
   },
   ambientCards: {
     display: "flex",
@@ -127,6 +132,9 @@ const style = {
     gap: "0px 40px",
     [sizes.down("lg")]: {
       width: "90%",
+    },
+    [sizes.down("md")]: {
+      width: "75%",
     },
   },
   ambientCard: {
@@ -179,6 +187,10 @@ const style = {
       height: "200px",
       marginTop: "auto",
       marginBottom: "10px",
+      [sizes.down("md")]: {
+        height: "180px",
+        maxWidth: "60%",
+      },
     },
   },
   ambientCardFront: {
@@ -192,6 +204,9 @@ const style = {
     transform: "rotateY(180deg)",
     fontSize: "24px",
     fontFamily: "Myriad Pro Regular",
+    [sizes.down("md")]: {
+      fontSize: "20px",
+    },
   },
   reserveBtn: {
     padding: "13px 50px",
@@ -216,8 +231,7 @@ const style = {
     height: "50px",
     position: "relative",
     top: "-90px",
-    right: "180px",
-
+    right: "140px",
     "&:hover": {
       cursor: "pointer",
     },

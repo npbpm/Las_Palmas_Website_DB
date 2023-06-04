@@ -17,6 +17,9 @@ const style = {
       marginLeft: "auto",
       marginBottom: "40px",
       width: "50%",
+      [sizes.down("md")]: {
+        width: "70%",
+      },
     },
   },
   services: {

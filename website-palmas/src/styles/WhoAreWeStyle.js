@@ -88,9 +88,7 @@ const style = {
     },
     [sizes.down("md")]: {
       margin: 0,
-      width: "25rem",
-      boxShadow:
-        "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
+      maxWidth: "40%",
     },
     [sizes.down("sm")]: {
       width: "35rem",
@@ -114,7 +112,7 @@ const style = {
     textAlign: "left",
     [sizes.down("md")]: {
       margin: 0,
-      fontSize: "1.3em",
+      fontSize: "24px",
       width: "40%",
     },
     [sizes.down("sm")]: {
@@ -159,6 +157,9 @@ const style = {
       transform: "translateY(-90%)",
       fontSize: "3rem",
     },
+    [sizes.down("md")]: {
+      height: "15rem",
+    },
   },
   reviews: {
     display: "flex",
@@ -167,6 +168,9 @@ const style = {
     width: "80%",
     height: "480px",
     margin: "auto",
+    [sizes.down("md")]: {
+      height: "400px",
+    },
   },
   leftBtn: {
     left: "-2.9rem",

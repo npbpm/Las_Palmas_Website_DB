@@ -12,7 +12,7 @@ const style = {
       marginBottom: "40px",
     },
     [sizes.down("md")]: {
-      display: "block",
+      justifyContent: "space-between",
       padding: 0,
     },
     "& p": {
@@ -87,6 +87,12 @@ const style = {
       height: "400px",
       bottom: "-220px",
       left: "400px",
+    },
+    [sizes.down("md")]: {
+      width: "300px",
+      height: "300px",
+      bottom: "-50px",
+      left: "340px",
     },
   },
 };

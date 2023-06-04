@@ -32,14 +32,8 @@ const style = {
       width: "40%",
       [sizes.down("md")]: {
         margin: 0,
-        marginTop: "40px",
+        width: "70%",
       },
-    },
-
-    [sizes.down("md")]: {
-      display: "block",
-      margin: 0,
-      marginTop: "60px",
     },
   },
   slideContainer: {

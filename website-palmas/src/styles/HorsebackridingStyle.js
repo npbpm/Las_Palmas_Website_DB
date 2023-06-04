@@ -26,14 +26,13 @@ const style = {
         marginLeft: "auto",
         marginRight: "auto",
         marginTop: "40px",
-        fontSize: "1.8em !important",
+        padding: "0px",
+        // fontSize: "1.8em !important",
+        width: "100%",
       },
       [sizes.down("sm")]: {
         fontSize: "1.4em !important",
       },
-    },
-    [sizes.down("md")]: {
-      display: "block",
     },
   },
   titleImg: {
@@ -44,11 +43,6 @@ const style = {
   },
   container: {
     textAlign: "center",
-    "& h1": {
-      [sizes.down("us")]: {
-        fontSize: "4em",
-      },
-    },
   },
   item: {
     display: "flex",
@@ -58,13 +52,13 @@ const style = {
     justifyContent: "center",
     marginBottom: "50px",
     marginTop: "20px",
-    [sizes.down("md")]: {
-      display: "block",
-    },
     "& h3": {
       color: "#D31D01",
       fontFamily: "Myriad Pro Regular",
       marginTop: "25px",
+    },
+    [sizes.down("md")]: {
+      width: "80%",
     },
   },
   hikeImg: {
@@ -73,6 +67,10 @@ const style = {
     [sizes.down("lg")]: {
       width: "400px",
       height: "400px",
+    },
+    [sizes.down("md")]: {
+      width: "300px",
+      height: "300px",
     },
     [sizes.down("sm")]: {
       width: "100%",
@@ -86,7 +84,8 @@ const style = {
       height: "400px",
     },
     [sizes.down("md")]: {
-      width: "95%",
+      width: "300px",
+      height: "300px",
     },
   },
   section: {
@@ -97,6 +96,9 @@ const style = {
     width: "40%",
     [sizes.down("lg")]: {
       width: "60%",
+    },
+    [sizes.down("md")]: {
+      width: "45%",
     },
   },
 };

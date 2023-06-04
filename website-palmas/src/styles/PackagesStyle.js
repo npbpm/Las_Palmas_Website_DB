@@ -23,11 +23,7 @@ const style = {
         height: "auto !important",
       },
       [sizes.down("md")]: {
-        boxShadow:
-          "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
         margin: 0,
-        width: "95% !important",
-        height: "auto !important",
       },
     },
     "& p": {
@@ -64,7 +60,9 @@ const style = {
   packages: {
     width: "90%",
     display: "flex",
-    flexWrap: "wrap",
+    alignItems: "center",
+    justifyContent: "space-evenly",
+    // flexWrap: "wrap",
     paddingTop: "50px",
     marginTop: "20px",
     marginLeft: "auto",
@@ -93,9 +91,16 @@ const style = {
       width: "60%",
       marginRight: "auto",
       marginLeft: "auto",
+      [sizes.down("md")]: {
+        fontSize: "30px",
+      },
     },
     "& p": {
       color: "#000000",
+      [sizes.down("md")]: {
+        fontSize: "20px",
+        width: "80%",
+      },
       [sizes.down("xl")]: {
         overflow: "scroll",
         msOverflowStyle: "none" /* IE and Edge */,
@@ -131,7 +136,8 @@ const style = {
       },
     },
     [sizes.down("md")]: {
-      width: "31%",
+      width: "30%",
+      margin: "5px 10px",
     },
     [sizes.down("sm")]: {
       width: "95%",
@@ -142,7 +148,7 @@ const style = {
         height: "250px !important",
       },
       [sizes.down("md")]: {
-        height: "300px !important",
+        height: "250px",
       },
       [sizes.down("sm")]: {
         height: "670px !important",

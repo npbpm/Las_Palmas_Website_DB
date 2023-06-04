@@ -30,10 +30,6 @@ const style = {
     borderRadius: "50px",
     background:
       "linear-gradient(to right, #E7F2D5 0%, #E7F2D5 70%, #82BF26 70%, #82BF26 100%)",
-    [sizes.down("md")]: {
-      display: "block",
-      padding: 0,
-    },
   },
   contactUs: {
     display: "flex",
@@ -52,6 +48,10 @@ const style = {
         fontSize: "30px",
       },
     },
+    [sizes.down("md")]: {
+      gap: "0px 35px",
+      alignItems: "flex-start",
+    },
   },
   contactCol: {
     display: "flex",
@@ -63,6 +63,10 @@ const style = {
     },
     [sizes.down("lg")]: {
       width: "38%",
+    },
+    [sizes.down("md")]: {
+      width: "50%",
+      fontSize: "13px",
     },
   },
   form: {
@@ -91,7 +95,8 @@ const style = {
     [sizes.down("md")]: {
       marginLeft: "auto",
       marginRight: "auto",
-      width: "90%",
+      // width: "90%",
+      padding: 0,
       marginBottom: "30px",
     },
   },
@@ -118,6 +123,9 @@ const style = {
     [sizes.down("lg")]: {
       width: "50%",
     },
+    [sizes.down("md")]: {
+      width: "55%",
+    },
   },
   address: {
     width: "200px",
@@ -136,6 +144,9 @@ const style = {
       fontSize: "12px",
       top: "85px",
       left: "-5px",
+    },
+    [sizes.down("md")]: {
+      left: "5px",
     },
   },
 };

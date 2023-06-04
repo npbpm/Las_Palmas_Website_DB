@@ -1,6 +1,11 @@
+import sizes from "./sizes";
+
 const style = {
   logo: {
     maxWidth: "100%",
+    [sizes.down("md")]: {
+      maxWidth: "80%",
+    },
   },
   langFlag: {
     width: "40px",

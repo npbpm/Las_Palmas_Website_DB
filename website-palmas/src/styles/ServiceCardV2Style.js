@@ -19,6 +19,9 @@ const style = {
     [sizes.down("lg")]: {
       height: "550px",
     },
+    [sizes.down("md")]: {
+      width: "90%",
+    },
   },
   serviceCardImg: {
     width: "100%",

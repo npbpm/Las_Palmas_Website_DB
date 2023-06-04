@@ -17,7 +17,7 @@ const style = {
       fontSize: "18px",
     },
     [sizes.down("md")]: {
-      display: "block",
+      justifyContent: "space-between",
     },
   },
   titleImg: {
@@ -74,8 +74,8 @@ const style = {
     },
     [sizes.down("md")]: {
       marginTop: "20px",
-      marginLeft: "auto",
-      marginRight: "auto",
+      marginLeft: "0",
+      marginRight: "0",
     },
   },
   slideContainer: {
@@ -88,6 +88,12 @@ const style = {
     },
     [sizes.down("lg")]: {
       width: "35%",
+    },
+    [sizes.down("md")]: {
+      width: "50%",
+      "& div": {
+        width: "450px",
+      },
     },
   },
 };

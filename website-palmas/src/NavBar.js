@@ -106,7 +106,8 @@ const ResponsiveAppBar = (props) => {
                 sx={{
                   display: {
                     xs: "none",
-                    md: "flex",
+                    md: "none",
+                    lg: "block",
                     alignItems: "center",
                     justifyContent: "center",
                     width: "25%",
@@ -132,7 +133,12 @@ const ResponsiveAppBar = (props) => {
                 </NavLink>
               </Typography>
 
-              <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+              <Box
+                sx={{
+                  flexGrow: 1,
+                  display: { xs: "flex", md: "block", lg: "none" },
+                }}
+              >
                 <IconButton
                   size="large"
                   aria-controls="menu-appbar"
@@ -157,7 +163,7 @@ const ResponsiveAppBar = (props) => {
                   open={Boolean(anchorElNav)}
                   onClose={handleCloseNavMenu}
                   sx={{
-                    display: { xs: "block", md: "none" },
+                    display: { xs: "block", md: "block", lg: "none" },
                   }}
                 >
                   {pages.map((page, idx) => (
@@ -192,7 +198,7 @@ const ResponsiveAppBar = (props) => {
                 component="a"
                 href="/"
                 sx={{
-                  display: { xs: "flex", md: "none" },
+                  display: { xs: "flex", md: "block", lg: "none" },
                   flexGrow: 1,
                   fontWeight: 700,
                   letterSpacing: ".3rem",
@@ -225,7 +231,8 @@ const ResponsiveAppBar = (props) => {
                     xs: "none",
                     width: "auto",
                     height: "50px",
-                    md: "flex",
+                    md: "none",
+                    lg: "flex",
                     justifyContent: "flex-end",
                     alignItems: "center",
                     backgroundColor: "transparent",

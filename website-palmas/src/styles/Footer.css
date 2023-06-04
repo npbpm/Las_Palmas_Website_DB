@@ -162,7 +162,6 @@ ul li h5{
 
     .footer ul li a{
         width: fit-content;
-        
     }
     
     ul li h5{
@@ -174,6 +173,10 @@ ul li h5{
 @media (max-width: 991.98px){
     .list-section{
         width: 25rem
+    }
+
+    .footer{
+        gap: 10px
     }
     .list-section div li button{
         font-family: 'Gochi Hand', cursive !important;

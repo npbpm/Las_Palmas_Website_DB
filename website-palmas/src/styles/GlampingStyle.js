@@ -7,7 +7,9 @@ const style = {
     alignItems: "center",
     justifyContent: "space-between",
     paddingBottom: "300px",
-    [sizes.down("lg")]: {},
+    [sizes.down("md")]: {
+      paddingBottom: "200px",
+    },
   },
   titleImg: {
     maxWidth: "30%",
@@ -30,8 +32,8 @@ const style = {
       [sizes.down("md")]: {
         marginTop: "20px",
         fontSize: "1.2rem",
+        width: "60%",
         margin: 0,
-        width: "100% !important",
         padding: 0,
       },
     },
@@ -79,6 +81,9 @@ const style = {
     [sizes.down("lg")]: {
       gap: "0",
     },
+    [sizes.down("md")]: {
+      gap: "30px 00px",
+    },
   },
   firstImg: {
     borderRadius: "50%",
@@ -88,6 +93,9 @@ const style = {
     objectFit: "cover",
     [sizes.down("lg")]: {
       height: "600px",
+    },
+    [sizes.down("md")]: {
+      height: "500px",
     },
   },
   secondImg: {
@@ -107,6 +115,12 @@ const style = {
       bottom: "-570px",
       right: "470px",
     },
+    [sizes.down("md")]: {
+      bottom: "-420px",
+      right: "400px",
+      width: "400px",
+      height: "400px",
+    },
   },
   textElement: {
     display: "flex",
@@ -119,6 +133,9 @@ const style = {
       width: "60%",
       [sizes.down("lg")]: {
         fontSize: "18px",
+      },
+      [sizes.down("md")]: {
+        width: "80%",
       },
     },
     "& img": {

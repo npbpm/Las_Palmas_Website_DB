@@ -70,8 +70,6 @@ const styles = {
       maxHeight: "80%",
       aspectRatio: 3 / 2,
       objectFit: "contain",
-      // height: "300px",
-      // width: "450px",
       position: "static",
       zIndex: "5",
       border: "none",
