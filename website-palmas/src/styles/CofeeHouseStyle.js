@@ -7,7 +7,10 @@ const style = {
     alignItems: "center",
     justifyContent: "space-evenly",
     marginTop: "10px",
-    marginBottom: "150px",
+    marginBottom: "250px",
+    [sizes.down("lg")]: {
+      marginBottom: "40px",
+    },
     [sizes.down("md")]: {
       display: "block",
       padding: 0,
@@ -29,6 +32,9 @@ const style = {
   },
   titleImg: {
     maxWidth: "30%",
+    [sizes.down("lg")]: {
+      maxWidth: "45%",
+    },
   },
   container: {
     textAlign: "center",
@@ -44,6 +50,11 @@ const style = {
       justifyContent: "space-around",
       gap: "80px 0px",
     },
+    [sizes.down("lg")]: {
+      "& div": {
+        gap: "20px 0px",
+      },
+    },
   },
   images: {
     width: "40%",
@@ -52,6 +63,9 @@ const style = {
     alignSelf: "stretch",
     alignItems: "center",
     justifyContent: "flex-start",
+    [sizes.down("lg")]: {
+      width: "60%",
+    },
   },
   firstImage: {
     maxWidth: "100%",
@@ -64,6 +78,16 @@ const style = {
     position: "absolute",
     bottom: "-300px",
     left: "550px",
+    [sizes.down("xl")]: {
+      bottom: "-320px",
+      left: "430px",
+    },
+    [sizes.down("lg")]: {
+      width: "400px",
+      height: "400px",
+      bottom: "-220px",
+      left: "400px",
+    },
   },
 };
 

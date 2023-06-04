@@ -49,13 +49,13 @@ const words = {
       img: "./images/valle-de-cocora-g982a52cf0_1920.jpg",
       path: "/horseback-riding",
     },
-    {
-      title: "Artesanías",
-      description:
-        "Visite nuestro almacén de artesanía con productos exclusivos fabricados por artesanos de Salento donde podrá adquirir un lindo souvenir para llevar de recuerdo.",
-      img: "./images/artesanias.jpeg",
-      path: "/regional-crafts",
-    },
+    // {
+    //   title: "Artesanías",
+    //   description:
+    //     "Visite nuestro almacén de artesanía con productos exclusivos fabricados por artesanos de Salento donde podrá adquirir un lindo souvenir para llevar de recuerdo.",
+    //   img: "./images/artesanias.jpeg",
+    //   path: "/regional-crafts",
+    // },
     {
       title: "Atracciones",
       description:
@@ -114,13 +114,13 @@ const words = {
       img: "./images/valle-de-cocora-g982a52cf0_1920.jpg",
       path: "/horseback-riding",
     },
-    {
-      title: "Regional Crafts",
-      description:
-        "Come visit our craft store, we have exclusive products handmade by Salento's craftsmen, here you can buy a nice souvenir so you can bring a part of the Valley with you!",
-      img: "./images/artesanias.jpeg",
-      path: "/regional-crafts",
-    },
+    // {
+    //   title: "Regional Crafts",
+    //   description:
+    //     "Come visit our craft store, we have exclusive products handmade by Salento's craftsmen, here you can buy a nice souvenir so you can bring a part of the Valley with you!",
+    //   img: "./images/artesanias.jpeg",
+    //   path: "/regional-crafts",
+    // },
     {
       title: "Games",
       description:

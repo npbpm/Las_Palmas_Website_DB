@@ -96,6 +96,15 @@ const style = {
     },
     "& p": {
       color: "#000000",
+      [sizes.down("xl")]: {
+        overflow: "scroll",
+        msOverflowStyle: "none" /* IE and Edge */,
+        scrollbarWidth: "none" /* Firefox */,
+        height: "250px",
+        "&::-webkit-scrollbar": {
+          display: "none",
+        },
+      },
     },
     "& ul": {
       textAlign: "left",
@@ -112,6 +121,15 @@ const style = {
         transform: "none",
       },
     },
+    [sizes.down("xl")]: {
+      width: "29%",
+    },
+    [sizes.down("lg")]: {
+      width: "28%",
+      "& h4": {
+        fontSize: "34px",
+      },
+    },
     [sizes.down("md")]: {
       width: "31%",
     },
@@ -120,8 +138,8 @@ const style = {
     },
     "& img": {
       [sizes.down("lg")]: {
-        width: "95% !important",
-        height: "330px !important",
+        width: "85% !important",
+        height: "250px !important",
       },
       [sizes.down("md")]: {
         height: "300px !important",

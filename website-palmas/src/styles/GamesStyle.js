@@ -33,6 +33,9 @@ const style = {
   },
   titleImg: {
     maxWidth: "30%",
+    [sizes.down("lg")]: {
+      maxWidth: "45%",
+    },
   },
   description: {
     padding: "20px",

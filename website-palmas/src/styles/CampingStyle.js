@@ -13,12 +13,18 @@ const style = {
     textAlign: "left",
     color: "#000000",
     marginBottom: "40px",
+    [sizes.down("lg")]: {
+      fontSize: "18px",
+    },
     [sizes.down("md")]: {
       display: "block",
     },
   },
   titleImg: {
     maxWidth: "30%",
+    [sizes.down("lg")]: {
+      maxWidth: "45%",
+    },
   },
   container: {
     textAlign: "center",
@@ -62,7 +68,9 @@ const style = {
       textAlign: "left",
     },
     [sizes.down("lg")]: {
-      width: "60%",
+      width: "40%",
+      marginRight: "0",
+      marginLeft: "90px",
     },
     [sizes.down("md")]: {
       marginTop: "20px",
@@ -77,6 +85,9 @@ const style = {
     justifyContent: "center",
     "& div": {
       borderRadius: "25px",
+    },
+    [sizes.down("lg")]: {
+      width: "35%",
     },
   },
 };

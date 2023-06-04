@@ -164,12 +164,12 @@ function WhoAreWe(props) {
             <p className={classes.paragraphHistory}>
               Tenemos el orgullo de decir que somos el primer restaurante en el
               Valle de Cocora, gestores de la corriente turística hacia la
-              región con una tradición de más de 30 años en el departamento del
+              región con una tradición de más de 45 años en el departamento del
               Quindío.
               <br />
               <br />
               Desde sus inicios, Las Palmas de Cocora han sido un restaurante
-              familiar, fundado hace más de 30 años por el ganadero Alberto
+              familiar, fundado hace más de 45 años por el ganadero Alberto
               Pérez Puerta y su esposa Maria Teresa Puerta Manzano.Fue el primer
               restaurante que apareció en el Valle de Cocora impulsando así el
               turismo y el desarrollo de la región.Hemos sido durante años un
@@ -180,13 +180,13 @@ function WhoAreWe(props) {
           ) : (
             <p className={classes.paragraphHistory}>
               We are proud to say that we are the first restaurant in the Cocora
-              Valley, we are pioneers in the region tourism with more than 30
+              Valley, we are pioneers in the region tourism with more than 45
               years of tradition in the department of El Quindío
               <br />
               <br />
               Since its beginnings, Las Palmas de Cocora has been a family
-              restaurant, founded over 30 years ago by cattle rancher Alberto
-              Pérez Puerta and his wife Maria Teresa Puerta Manzano. It was the
+              restaurant, founded over 45 years ago by cattle rancher Alberto
+              Pérez Puerta and his wife Maria Teresa Puerta Montoya. It was the
               first restaurant to appear in the Cocora Valley, thus promoting
               tourism and the development of the region. We have been a family
               business for years, so we care about making everyone feel at home.

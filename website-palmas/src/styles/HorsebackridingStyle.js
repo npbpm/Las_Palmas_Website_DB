@@ -38,6 +38,9 @@ const style = {
   },
   titleImg: {
     maxWidth: "30%",
+    [sizes.down("lg")]: {
+      maxWidth: "45%",
+    },
   },
   container: {
     textAlign: "center",
@@ -67,6 +70,10 @@ const style = {
   hikeImg: {
     width: "600px",
     height: "400px",
+    [sizes.down("lg")]: {
+      width: "400px",
+      height: "400px",
+    },
     [sizes.down("sm")]: {
       width: "100%",
     },
@@ -74,6 +81,10 @@ const style = {
   horseImg: {
     width: "600px",
     height: "400px",
+    [sizes.down("lg")]: {
+      width: "400px",
+      height: "400px",
+    },
     [sizes.down("md")]: {
       width: "95%",
     },
@@ -84,6 +95,9 @@ const style = {
     justifyContent: "center",
     alignItems: "center",
     width: "40%",
+    [sizes.down("lg")]: {
+      width: "60%",
+    },
   },
 };
 

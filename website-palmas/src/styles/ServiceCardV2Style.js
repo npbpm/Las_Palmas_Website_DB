@@ -16,6 +16,9 @@ const style = {
     alignItems: "center",
     justifyContent: "flex-start",
     marginBottom: "30px",
+    [sizes.down("lg")]: {
+      height: "550px",
+    },
   },
   serviceCardImg: {
     width: "100%",
@@ -39,6 +42,11 @@ const style = {
       "&:hover": {
         backgroundColor: "#F2F2F2",
         transition: "all 0.3s",
+      },
+    },
+    [sizes.down("lg")]: {
+      "& h4": {
+        fontSize: "30px",
       },
     },
   },

@@ -21,6 +21,9 @@ const style = {
         marginRight: "auto",
       },
     },
+    [sizes.down("lg")]: {
+      width: "75%",
+    },
     [sizes.down("md")]: {
       display: "block",
     },
@@ -35,6 +38,9 @@ const style = {
   titleImg: {
     maxWidth: "30%",
     marginBottom: "80px",
+    [sizes.down("lg")]: {
+      maxWidth: "45%",
+    },
   },
   slideContainer: {
     marginLeft: "auto",

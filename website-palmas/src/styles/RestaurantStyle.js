@@ -40,6 +40,9 @@ const style = {
   },
   titleImg: {
     maxWidth: "30%",
+    [sizes.down("lg")]: {
+      maxWidth: "45%",
+    },
   },
   subtitle: {
     width: "45%",
@@ -55,6 +58,9 @@ const style = {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
+    [sizes.down("lg")]: {
+      justifyContent: "space-evenly",
+    },
   },
   images: {
     width: "45%",
@@ -63,6 +69,9 @@ const style = {
   restaurantImg: {
     maxWidth: "80%",
     borderRadius: "45px",
+    [sizes.down("lg")]: {
+      maxWidth: "100%",
+    },
   },
   dessertImg: {
     maxWidth: "35%",
@@ -70,6 +79,11 @@ const style = {
     position: "relative",
     bottom: "220px",
     right: "-230px",
+    [sizes.down("lg")]: {
+      maxWidth: "50%",
+      bottom: "130px",
+      right: "-180px",
+    },
   },
   menu: {
     width: "30%",
@@ -80,11 +94,11 @@ const style = {
     alignItems: "space-evenly",
   },
   menuImg: {
-    maxWidth: "60%",
+    maxWidth: "80%",
     marginTop: "50px",
   },
   menuText: {
-    fontSize: "40px",
+    fontSize: "34px",
     fontFamily: "Roboto",
     fontWeight: "500",
   },
@@ -111,6 +125,9 @@ const style = {
     marginLeft: "auto",
     marginRight: "auto",
     gap: "0px 40px",
+    [sizes.down("lg")]: {
+      width: "90%",
+    },
   },
   ambientCard: {
     width: "400px",

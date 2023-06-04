@@ -7,12 +7,13 @@ const style = {
     alignItems: "center",
     justifyContent: "space-between",
     paddingBottom: "300px",
-    [sizes.down("lg")]: {
-      display: "block",
-    },
+    [sizes.down("lg")]: {},
   },
   titleImg: {
     maxWidth: "30%",
+    [sizes.down("lg")]: {
+      maxWidth: "45%",
+    },
   },
   container: {
     textAlign: "center",
@@ -75,6 +76,9 @@ const style = {
     alignItems: "center",
     justifyContent: "center",
     gap: "200px 0px",
+    [sizes.down("lg")]: {
+      gap: "0",
+    },
   },
   firstImg: {
     borderRadius: "50%",
@@ -82,6 +86,9 @@ const style = {
     width: "700px",
     height: "700px",
     objectFit: "cover",
+    [sizes.down("lg")]: {
+      height: "600px",
+    },
   },
   secondImg: {
     borderRadius: "50%",
@@ -92,6 +99,14 @@ const style = {
     position: "absolute",
     bottom: "-600px",
     right: "820px",
+    [sizes.down("xl")]: {
+      bottom: "-700px",
+      right: "720px",
+    },
+    [sizes.down("lg")]: {
+      bottom: "-570px",
+      right: "470px",
+    },
   },
   textElement: {
     display: "flex",
@@ -102,9 +117,15 @@ const style = {
       fontFamily: "Myriad Pro Regular",
       fontSize: "20px",
       width: "60%",
+      [sizes.down("lg")]: {
+        fontSize: "18px",
+      },
     },
     "& img": {
       maxWidth: "30%",
+      [sizes.down("lg")]: {
+        maxWidth: "15%",
+      },
     },
   },
 };

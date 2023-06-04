@@ -46,6 +46,12 @@ const style = {
       color: "#82BF26",
       fontSize: "40px",
     },
+    [sizes.down("lg")]: {
+      fontSize: "15px",
+      "& svg": {
+        fontSize: "30px",
+      },
+    },
   },
   contactCol: {
     display: "flex",
@@ -54,6 +60,9 @@ const style = {
     alignItems: "center",
     "& div": {
       marginLeft: "10px",
+    },
+    [sizes.down("lg")]: {
+      width: "38%",
     },
   },
   form: {
@@ -106,6 +115,9 @@ const style = {
       borderRadius: "25px",
       objectFit: "cover",
     },
+    [sizes.down("lg")]: {
+      width: "50%",
+    },
   },
   address: {
     width: "200px",
@@ -119,6 +131,12 @@ const style = {
     left: "-10%",
     fontSize: "15px",
     fontWeight: "700",
+    [sizes.down("lg")]: {
+      width: "150px",
+      fontSize: "12px",
+      top: "85px",
+      left: "-5px",
+    },
   },
 };
 

@@ -83,6 +83,9 @@ const style = {
     maxHeight: "50%",
     borderRadius: "120px",
     marginRight: "30px",
+    [sizes.down("lg")]: {
+      borderRadius: "80px",
+    },
     [sizes.down("md")]: {
       margin: 0,
       width: "25rem",

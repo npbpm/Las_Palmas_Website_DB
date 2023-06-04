@@ -67,6 +67,9 @@ const style = {
     alignItems: "start",
     justifyContent: "space-evenly",
     marginBottom: "60px",
+    [sizes.down("lg")]: {
+      alignItems: "center",
+    },
     [sizes.down("sm")]: {
       flexDirection: "column",
       alignItems: "center",

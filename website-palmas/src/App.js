@@ -81,7 +81,7 @@ function App(props) {
                 <Route path="/camping" element={<Camping />} />
                 <Route path="/games" element={<Games />} />
                 <Route path="/horseback-riding" element={<Horsebackriding />} />
-                <Route path="/regional-crafts" element={<Regionalcrafts />} />
+                {/* <Route path="/regional-crafts" element={<Regionalcrafts />} /> */}
                 <Route path="/cocora-nidos-del-condor" element={<Glamping />} />
                 <Route path="/cocora-viva" element={<Cocoraviva />} />
               </Routes>
