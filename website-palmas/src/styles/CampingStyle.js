@@ -19,6 +19,9 @@ const style = {
     [sizes.down("md")]: {
       justifyContent: "space-between",
     },
+    [sizes.down("sm")]: {
+      display: "block",
+    },
   },
   titleImg: {
     maxWidth: "30%",
@@ -77,6 +80,11 @@ const style = {
       marginLeft: "0",
       marginRight: "0",
     },
+    [sizes.down("sm")]: {
+      marginLeft: "auto",
+      marginRight: "auto",
+      width: "70%",
+    },
   },
   slideContainer: {
     width: "40%",
@@ -94,6 +102,10 @@ const style = {
       "& div": {
         width: "450px",
       },
+    },
+    [sizes.down("sm")]: {
+      marginLeft: "auto",
+      marginRight: "auto",
     },
   },
 };

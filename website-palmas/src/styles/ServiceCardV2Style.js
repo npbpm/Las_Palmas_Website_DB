@@ -22,6 +22,10 @@ const style = {
     [sizes.down("md")]: {
       width: "90%",
     },
+    [sizes.down("sm")]: {
+      height: "450px",
+      width: "92%",
+    },
   },
   serviceCardImg: {
     width: "100%",
@@ -33,6 +37,9 @@ const style = {
     "& h4": {
       fontSize: "45px",
       marginBottom: "60px",
+      [sizes.down("sm")]: {
+        fontSize: "20px",
+      },
     },
     "& a": {
       padding: "13px 50px",

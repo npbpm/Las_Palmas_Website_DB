@@ -58,9 +58,6 @@
 
 }
 @media(max-width: 767.98px){
-    .slide-container{
-        width: 100% !important;
-    }
 
     .slideNav img{
         object-fit: cover;

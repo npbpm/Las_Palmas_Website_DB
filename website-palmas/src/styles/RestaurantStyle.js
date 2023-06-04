@@ -49,6 +49,9 @@ const style = {
     [sizes.down("md")]: {
       width: "60%",
     },
+    [sizes.down("sm")]: {
+      width: "70%",
+    },
   },
   presentation: {
     width: "90%",
@@ -63,10 +66,16 @@ const style = {
     [sizes.down("md")]: {
       justifyContent: "space-around",
     },
+    [sizes.down("sm")]: {
+      justifyContent: "space-between",
+    },
   },
   images: {
     width: "45%",
     height: "100%",
+    [sizes.down("sm")]: {
+      width: "60%",
+    },
   },
   restaurantImg: {
     maxWidth: "80%",
@@ -135,6 +144,10 @@ const style = {
     },
     [sizes.down("md")]: {
       width: "75%",
+    },
+    [sizes.down("sm")]: {
+      width: "60%",
+      gap: "0px 15px",
     },
   },
   ambientCard: {
@@ -238,6 +251,9 @@ const style = {
     "& img": {
       maxWidth: "100%",
       objectFit: "contain",
+    },
+    [sizes.down("sm")]: {
+      right: "110px",
     },
   },
 };

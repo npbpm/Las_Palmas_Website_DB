@@ -20,6 +20,9 @@ const style = {
       [sizes.down("md")]: {
         width: "70%",
       },
+      [sizes.down("sm")]: {
+        fontSize: "20px",
+      },
     },
   },
   services: {

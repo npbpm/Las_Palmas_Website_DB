@@ -29,19 +29,14 @@ const styles = {
   serviceCard: {
     width: "33%",
     /* height: "auto", */
-    position: "relative",
+    // position: "relative",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     marginBottom: "25px",
     overflow: "hidden",
     [sizes.down("md")]: {
-      width: "48%",
-      /* height: "450px", */
       marginBottom: "10px",
-    },
-    [sizes.down("sm")]: {
-      width: "98%",
     },
   },
   serviceCardImg: {

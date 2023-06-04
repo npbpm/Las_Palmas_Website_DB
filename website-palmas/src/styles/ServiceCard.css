@@ -60,36 +60,6 @@
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-
-/* h1{
-    font-family: 'Times New Roman', Times, serif;
-    color: #C71C00;
-} */
-
-/* h2{
-    font-family: 'Playfair Display', serif !important;
-    color: #C71C00;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-} */
-
-/* h3{
-    font-family: 'Playfair Display', serif !important;
-    color: rgb(199,28,0);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-} */
-
-/* h4{
-    font-family: 'Playfair Display', serif !important;
-    color: rgb(199,28,0);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-} */
-
-/* h5{
-    font-family: 'Playfair Display', serif !important;
-    color: rgb(116,183,38);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-} */
-
 @media(max-width: 1199.98px){
     .service-card{
         padding: 35px 0;

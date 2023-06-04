@@ -44,9 +44,6 @@ const style = {
       fontFamily: "Myriad Pro Bold",
       fontSize: "40px",
       backgroundColor: "#FFFFFF",
-      [sizes.down("md")]: {
-        fontSize: "5em",
-      },
       [sizes.down("us")]: {
         fontSize: "3.4em",
       },
@@ -67,10 +64,9 @@ const style = {
     marginTop: "20px",
     marginLeft: "auto",
     marginRight: "auto",
-    [sizes.down("sm")]: {
-      display: "block",
-      marginTop: "100px",
-    },
+    // [sizes.down("sm")]: {
+    //   display: "block",
+    // },
   },
   package: {
     margin: "5px 28px",
@@ -93,6 +89,9 @@ const style = {
       marginLeft: "auto",
       [sizes.down("md")]: {
         fontSize: "30px",
+      },
+      [sizes.down("sm")]: {
+        fontSize: "24px",
       },
     },
     "& p": {
@@ -141,6 +140,7 @@ const style = {
     },
     [sizes.down("sm")]: {
       width: "95%",
+      height: "700px",
     },
     "& img": {
       [sizes.down("lg")]: {
@@ -149,9 +149,6 @@ const style = {
       },
       [sizes.down("md")]: {
         height: "250px",
-      },
-      [sizes.down("sm")]: {
-        height: "670px !important",
       },
       [sizes.down("xs")]: {
         height: "500px !important",

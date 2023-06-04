@@ -19,12 +19,8 @@ const style = {
       padding: "20px",
       height: "100%",
       fontSize: "2rem",
-      /* fontFamily: "'Bebas Neue', cursive", */
       [sizes.down("md")]: {
         fontSize: "1.2rem",
-      },
-      [sizes.down("sm")]: {
-        fontSize: "1.5rem",
       },
     },
   },
@@ -55,10 +51,6 @@ const style = {
     },
     marginLeft: "20px",
     marginRight: "10px",
-    [sizes.down("sm")]: {
-      display: "block",
-      padding: 0,
-    },
   },
 
   topEl: {
@@ -70,11 +62,6 @@ const style = {
     [sizes.down("lg")]: {
       alignItems: "center",
     },
-    [sizes.down("sm")]: {
-      flexDirection: "column",
-      alignItems: "center",
-      justifyContent: "center",
-    },
   },
   leftSide: {
     height: "100%",
@@ -82,12 +69,8 @@ const style = {
     textAlign: "left",
     "& p": {
       fontSize: "1.5rem",
-      [sizes.down("sm")]: {},
-    },
-    [sizes.down("sm")]: {
-      width: "95%",
-      "& p:nth-of-type(1)": {
-        marginTop: "470px",
+      [sizes.down("sm")]: {
+        fontSize: "20px",
       },
     },
     [sizes.down("us")]: {
@@ -99,13 +82,8 @@ const style = {
   rightSide: {
     height: "100%",
     width: "35%",
-    /*     padding: "25px",
-    backgroundColor: "#84BF2A",
-    borderRadius: "8px", */
     [sizes.down("sm")]: {
-      position: "absolute",
-      top: "380px",
-      width: "95%",
+      width: "50%",
     },
     [sizes.down("us")]: {
       top: "250px",
@@ -123,14 +101,14 @@ const style = {
   greenServices: {
     display: "flex",
     flexDirection: "row",
-    alignItems: "center",
+    alignItems: "baseline",
     justifyContent: "center",
     backgroundColor: "#E7F2D5",
   },
   whiteServices: {
     display: "flex",
     flexDirection: "row",
-    alignItems: "center",
+    alignItems: "baseline",
     justifyContent: "center",
     backgroundColor: "#FFFFFF",
   },

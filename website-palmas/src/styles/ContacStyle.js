@@ -10,12 +10,6 @@ const style = {
       fontFamily: "Myriad Pro Bold",
       fontSize: "40px",
       marginBottom: "100px",
-      [sizes.down("md")]: {
-        fontSize: "5em",
-      },
-      [sizes.down("us")]: {
-        fontSize: "3.8em",
-      },
     },
   },
   content: {
@@ -52,6 +46,9 @@ const style = {
       gap: "0px 35px",
       alignItems: "flex-start",
     },
+    [sizes.down("sm")]: {
+      gap: "0px 30px",
+    },
   },
   contactCol: {
     display: "flex",
@@ -60,6 +57,9 @@ const style = {
     alignItems: "center",
     "& div": {
       marginLeft: "10px",
+      [sizes.down("sm")]: {
+        width: "auto",
+      },
     },
     [sizes.down("lg")]: {
       width: "38%",
@@ -67,6 +67,9 @@ const style = {
     [sizes.down("md")]: {
       width: "50%",
       fontSize: "13px",
+    },
+    [sizes.down("sm")]: {
+      width: "auto",
     },
   },
   form: {
@@ -119,6 +122,11 @@ const style = {
       height: "500px",
       borderRadius: "25px",
       objectFit: "cover",
+      [sizes.down("sm")]: {
+        maxWidth: "100%",
+        marginLeft: "20px",
+        marginBottom: "180px",
+      },
     },
     [sizes.down("lg")]: {
       width: "50%",

@@ -28,6 +28,9 @@ const style = {
     width: "50%",
     textAlign: "left",
     fontSize: "24px",
+    [sizes.down("sm")]: {
+      fontSize: "20px",
+    },
   },
   cocoraImg: {
     maxWidth: "40%",
@@ -61,20 +64,19 @@ const style = {
     [sizes.down("sm")]: {
       width: "80%",
       marginLeft: "auto",
-      flexDirection: "column-reverse",
+      marginRight: "auto",
+      // flexDirection: "column-reverse",
       marginBottom: "50px",
+      gap: "0px 40px",
+      padding: "0px",
     },
   },
   img: {
     width: "6%",
     margin: "2px",
-    [sizes.down("md")]: {
-      boxShadow:
-        "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
-    },
     [sizes.down("sm")]: {
       borderRadius: "5px",
-      width: "70%",
+      width: "20%",
       border: "none",
     },
   },
@@ -91,7 +93,7 @@ const style = {
       maxWidth: "40%",
     },
     [sizes.down("sm")]: {
-      width: "35rem",
+      maxWidth: "50%",
     },
   },
   imgCertificate: {
@@ -117,7 +119,7 @@ const style = {
     },
     [sizes.down("sm")]: {
       marginTop: "35px",
-      width: "95%",
+      fontSize: "20px",
     },
   },
   history: {
@@ -143,7 +145,6 @@ const style = {
       },
     },
     [sizes.down("md")]: {
-      display: "block",
       marginTop: "25px",
     },
   },
@@ -196,6 +197,9 @@ const style = {
     marginRight: "auto",
     marginLeft: "auto",
     marginBottom: "50px",
+    [sizes.down("sm")]: {
+      width: "70%",
+    },
   },
 };
 

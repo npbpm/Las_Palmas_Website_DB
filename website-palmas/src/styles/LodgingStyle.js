@@ -20,12 +20,18 @@ const style = {
         marginLeft: "auto",
         marginRight: "auto",
       },
+      [sizes.down("sm")]: {
+        padding: "20px 5px",
+      },
     },
     [sizes.down("lg")]: {
       width: "75%",
     },
     [sizes.down("md")]: {
       width: "90%",
+    },
+    [sizes.down("sm")]: {
+      width: "100%",
     },
   },
   container: {

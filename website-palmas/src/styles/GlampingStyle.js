@@ -10,6 +10,9 @@ const style = {
     [sizes.down("md")]: {
       paddingBottom: "200px",
     },
+    [sizes.down("sm")]: {
+      paddingBottom: "150px",
+    },
   },
   titleImg: {
     maxWidth: "30%",
@@ -35,6 +38,10 @@ const style = {
         width: "60%",
         margin: 0,
         padding: 0,
+      },
+      [sizes.down("sm")]: {
+        width: "70%",
+        fontSize: "15px",
       },
     },
     "& h1": {
@@ -97,6 +104,9 @@ const style = {
     [sizes.down("md")]: {
       height: "500px",
     },
+    [sizes.down("sm")]: {
+      height: "400px",
+    },
   },
   secondImg: {
     borderRadius: "50%",
@@ -121,6 +131,12 @@ const style = {
       width: "400px",
       height: "400px",
     },
+    [sizes.down("sm")]: {
+      bottom: "-240px",
+      right: "320px",
+      width: "300px",
+      height: "300px",
+    },
   },
   textElement: {
     display: "flex",
@@ -136,6 +152,9 @@ const style = {
       },
       [sizes.down("md")]: {
         width: "80%",
+      },
+      [sizes.down("sm")]: {
+        fontSize: "15px",
       },
     },
     "& img": {

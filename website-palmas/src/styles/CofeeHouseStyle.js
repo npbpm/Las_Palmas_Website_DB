@@ -28,6 +28,9 @@ const style = {
         marginLeft: "auto",
         marginRight: "auto",
       },
+      [sizes.down("sm")]: {
+        fontSize: "18px",
+      },
     },
   },
   titleImg: {
@@ -66,6 +69,9 @@ const style = {
     [sizes.down("lg")]: {
       width: "60%",
     },
+    [sizes.down("sm")]: {
+      justifyContent: "center",
+    },
   },
   firstImage: {
     maxWidth: "100%",
@@ -93,6 +99,12 @@ const style = {
       height: "300px",
       bottom: "-50px",
       left: "340px",
+    },
+    [sizes.down("sm")]: {
+      width: "200px",
+      height: "200px",
+      bottom: "60px",
+      left: "290px",
     },
   },
 };

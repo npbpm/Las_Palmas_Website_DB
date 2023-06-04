@@ -125,6 +125,14 @@ function Footer() {
           </a>
         </p>
       </div>
+      <div style={{ backgroundColor: "#82BF26", width: "100vw" }}>
+        <a
+          style={{ textDecoration: "none", color: "#71AE26" }}
+          href="https://icons8.com"
+        >
+          icons8.com
+        </a>
+      </div>
     </footer>
   );
 }
