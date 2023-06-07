@@ -30,6 +30,12 @@ const style = {
         fontSize: "18px",
         width: "80%",
       },
+      [sizes.down("us")]: {
+        width: "95%",
+      },
+    },
+    [sizes.down("us")]: {
+      padding: "5px",
     },
   },
   services: {
@@ -38,6 +44,9 @@ const style = {
     flexWrap: "wrap",
     alignItems: "center",
     justifyContent: "center",
+    [sizes.down("us")]: {
+      width: "100%",
+    },
   },
 };
 

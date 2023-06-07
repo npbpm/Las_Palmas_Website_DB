@@ -38,6 +38,9 @@ const styles = {
     [sizes.down("md")]: {
       marginBottom: "10px",
     },
+    [sizes.down("us")]: {
+      width: "90%",
+    },
   },
   serviceCardImg: {
     width: "100%",
@@ -62,6 +65,10 @@ const styles = {
       },
       [sizes.down("xxs")]: {
         height: "100px",
+      },
+      [sizes.down("us")]: {
+        width: "95%",
+        height: "auto",
       },
     },
     "& img": {

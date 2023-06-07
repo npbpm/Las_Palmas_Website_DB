@@ -38,6 +38,9 @@ const style = {
       flexDirection: "column",
       alignItems: "center",
     },
+    [sizes.down("us")]: {
+      fontSize: "12px",
+    },
   },
   titleImg: {
     maxWidth: "30%",
@@ -46,6 +49,9 @@ const style = {
     },
     [sizes.down("xs")]: {
       maxWidth: "70%",
+    },
+    [sizes.down("us")]: {
+      maxWidth: "90%",
     },
   },
   container: {
@@ -66,6 +72,9 @@ const style = {
     },
     [sizes.down("md")]: {
       width: "80%",
+    },
+    [sizes.down("us")]: {
+      width: "100%",
     },
   },
   hikeImg: {

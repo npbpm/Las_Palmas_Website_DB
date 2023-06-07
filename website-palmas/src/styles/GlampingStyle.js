@@ -27,6 +27,9 @@ const style = {
     [sizes.down("xs")]: {
       maxWidth: "70%",
     },
+    [sizes.down("us")]: {
+      maxWidth: "90%",
+    },
   },
   container: {
     textAlign: "center",
@@ -50,6 +53,9 @@ const style = {
       [sizes.down("sm")]: {
         width: "70%",
         fontSize: "15px",
+      },
+      [sizes.down("us")]: {
+        width: "95%",
       },
     },
     "& h1": {
@@ -108,6 +114,9 @@ const style = {
       flexWrap: "wrap",
       marginTop: "100px",
     },
+    [sizes.down("us")]: {
+      marginTop: "50px",
+    },
   },
   firstImg: {
     borderRadius: "50%",
@@ -129,6 +138,9 @@ const style = {
     },
     [sizes.down("xxs")]: {
       height: "380px",
+    },
+    [sizes.down("us")]: {
+      height: "300px",
     },
   },
   secondImg: {
@@ -170,6 +182,12 @@ const style = {
       bottom: "-90px",
       right: "10px",
     },
+    [sizes.down("us")]: {
+      height: "180px",
+      width: "180px",
+      bottom: "50px",
+      right: "10px",
+    },
   },
   textElement: {
     display: "flex",
@@ -206,6 +224,9 @@ const style = {
     [sizes.down("xs")]: {
       width: "50%",
       gap: "0px 10px",
+    },
+    [sizes.down("us")]: {
+      width: "80%",
     },
   },
 };

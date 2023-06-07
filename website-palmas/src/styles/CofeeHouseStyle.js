@@ -45,6 +45,9 @@ const style = {
     [sizes.down("xs")]: {
       maxWidth: "70%",
     },
+    [sizes.down("us")]: {
+      maxWidth: "90%",
+    },
   },
   container: {
     textAlign: "center",
@@ -71,6 +74,9 @@ const style = {
         gap: "0px",
       },
     },
+    [sizes.down("us")]: {
+      width: "90%",
+    },
   },
   images: {
     width: "40%",
@@ -91,10 +97,17 @@ const style = {
       marginBottom: "80px",
       width: "80%",
     },
+    [sizes.down("us")]: {
+      width: "90%",
+      marginBottom: "60px",
+    },
   },
   firstImage: {
     maxWidth: "100%",
     borderRadius: "80px",
+    [sizes.down("us")]: {
+      borderRadius: "50px",
+    },
   },
   roundedImage: {
     borderRadius: "50%",
@@ -132,6 +145,12 @@ const style = {
     [sizes.down("xxs")]: {
       bottom: "290px",
       left: "270px",
+    },
+    [sizes.down("us")]: {
+      width: "150px",
+      height: "150px",
+      bottom: "370px",
+      left: "220px",
     },
   },
 };

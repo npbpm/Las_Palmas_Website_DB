@@ -10,6 +10,9 @@ const style = {
     [sizes.down("xs")]: {
       maxWidth: "70%",
     },
+    [sizes.down("us")]: {
+      maxWidth: "90%",
+    },
   },
   content: {
     padding: "40px",
@@ -36,6 +39,11 @@ const style = {
       [sizes.down("md")]: {
         margin: 0,
         width: "70%",
+      },
+      [sizes.down("us")]: {
+        fontSize: "18px",
+        width: "95%",
+        padding: "0px",
       },
     },
   },

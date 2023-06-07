@@ -27,6 +27,11 @@ const style = {
         maxWidth: "90%",
         width: "30%",
       },
+      [sizes.down("us")]: {
+        maxWidth: "90%",
+        width: "90%",
+        height: "450px",
+      },
     },
     "& p": {
       marginLeft: "auto",
@@ -39,6 +44,10 @@ const style = {
       [sizes.down("xs")]: {
         width: "70%",
         fontSize: "18px",
+      },
+      [sizes.down("us")]: {
+        width: "95%",
+        padding: "5px",
       },
     },
     "& ul": {
@@ -173,7 +182,8 @@ const style = {
         height: "400px",
       },
       [sizes.down("us")]: {
-        height: "290px",
+        height: "220px",
+        width: "220px",
       },
     },
   },

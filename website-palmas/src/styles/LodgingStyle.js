@@ -35,6 +35,13 @@ const style = {
           fontSize: "13px",
         },
       },
+      [sizes.down("us")]: {
+        "& img": {
+          "&:last-child": {
+            display: "none",
+          },
+        },
+      },
     },
     [sizes.down("lg")]: {
       width: "75%",
@@ -61,6 +68,9 @@ const style = {
     },
     [sizes.down("xs")]: {
       maxWidth: "70%",
+    },
+    [sizes.down("us")]: {
+      maxWidth: "90%",
     },
   },
   slideContainer: {

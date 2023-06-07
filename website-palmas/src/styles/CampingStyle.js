@@ -31,6 +31,9 @@ const style = {
     [sizes.down("xs")]: {
       maxWidth: "70%",
     },
+    [sizes.down("us")]: {
+      maxWidth: "90%",
+    },
   },
   container: {
     textAlign: "center",
@@ -88,6 +91,13 @@ const style = {
       marginRight: "auto",
       width: "70%",
     },
+    [sizes.down("us")]: {
+      marginLeft: "auto",
+      marginRight: "auto",
+      paddingLeft: "0px",
+      paddingRight: "0px",
+      width: "90%",
+    },
   },
   slideContainer: {
     width: "40%",
@@ -115,6 +125,13 @@ const style = {
       marginRight: "0px",
       width: "100%",
       "& div": {
+        marginLeft: "auto",
+        marginRight: "auto",
+      },
+    },
+    [sizes.down("us")]: {
+      "& div": {
+        width: "100%",
         marginLeft: "auto",
         marginRight: "auto",
       },

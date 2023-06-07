@@ -42,6 +42,9 @@ const style = {
     [sizes.down("xs")]: {
       maxWidth: "70%",
     },
+    [sizes.down("us")]: {
+      maxWidth: "90%",
+    },
   },
   subtitle: {
     width: "45%",
@@ -57,6 +60,9 @@ const style = {
     },
     [sizes.down("xs")]: {
       fontSize: "18px",
+    },
+    [sizes.down("us")]: {
+      width: "95%",
     },
   },
   presentation: {
@@ -79,6 +85,9 @@ const style = {
       flexDirection: "column",
       height: "650px",
     },
+    [sizes.down("us")]: {
+      marginBottom: "40px",
+    },
   },
   images: {
     width: "45%",
@@ -89,6 +98,9 @@ const style = {
     [sizes.down("xs")]: {
       height: "300px",
       width: "75%",
+    },
+    [sizes.down("us")]: {
+      width: "100%",
     },
   },
   restaurantImg: {
@@ -114,6 +126,10 @@ const style = {
       bottom: "100px",
       right: "-140px",
     },
+    [sizes.down("us")]: {
+      bottom: "70px",
+      right: "-110px",
+    },
   },
   menu: {
     width: "30%",
@@ -131,6 +147,9 @@ const style = {
     marginTop: "50px",
     [sizes.down("xs")]: {
       maxWidth: "40%",
+    },
+    [sizes.down("us")]: {
+      maxWidth: "80%",
     },
   },
   menuText: {

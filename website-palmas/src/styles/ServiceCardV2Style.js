@@ -6,6 +6,9 @@ const style = {
     [sizes.down("xs")]: {
       width: "50%",
     },
+    [sizes.down("us")]: {
+      width: "100%",
+    },
   },
   content: {
     width: "80%",
@@ -31,6 +34,9 @@ const style = {
     },
     [sizes.down("xxs")]: {
       height: "350px",
+    },
+    [sizes.down("us")]: {
+      height: "450px",
     },
   },
   serviceCardImg: {

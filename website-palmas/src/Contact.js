@@ -156,14 +156,29 @@ function Bookings(props) {
               <PhoneInTalkOutlinedIcon />
               <div>
                 <h4>WhatsApp</h4>
-                <p>313 732 1738 - 310 455 5400</p>
+                <p>
+                  <a className={classes.phoneNum} href="tel:313 732 1738">
+                    313 732 1738
+                  </a>{" "}
+                  -{" "}
+                  <a className={classes.phoneNum} href="tel:310 455 5400">
+                    310 455 5400
+                  </a>
+                </p>
               </div>
             </div>
             <div className={classes.contactCol}>
               <EmailOutlinedIcon />
               <div>
                 <h4>E-MAIL</h4>
-                <p>info@laspalmasdecocora.com</p>
+                <p>
+                  <a
+                    className={classes.phoneNum}
+                    href="mailto:info@laspalmasdecocora.com"
+                  >
+                    info@laspalmasdecocora.com
+                  </a>
+                </p>
               </div>
             </div>
           </div>

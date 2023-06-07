@@ -26,9 +26,15 @@ const style = {
       [sizes.down("md")]: {
         fontSize: "1.3em",
       },
+      [sizes.down("us")]: {
+        fontSize: "20px",
+      },
     },
     [sizes.down("md")]: {
       display: "block",
+    },
+    [sizes.down("us")]: {
+      fontSize: "15px",
     },
   },
   titleImg: {
@@ -38,6 +44,9 @@ const style = {
     },
     [sizes.down("xs")]: {
       maxWidth: "70%",
+    },
+    [sizes.down("us")]: {
+      maxWidth: "90%",
     },
   },
   description: {
@@ -60,6 +69,10 @@ const style = {
     [sizes.down("xs")]: {
       width: "90%",
     },
+    [sizes.down("us")]: {
+      padding: "0px",
+      margin: "0px",
+    },
   },
   container: {
     textAlign: "center",
@@ -79,6 +92,15 @@ const style = {
     justifyContent: "center",
     "& div": {
       borderRadius: "25px",
+    },
+    [sizes.down("us")]: {
+      width: "98%",
+      marginRight: "auto",
+      marginLeft: "auto",
+      height: "300px",
+      "& div": {
+        height: "100%",
+      },
     },
   },
 };

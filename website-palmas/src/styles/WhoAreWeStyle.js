@@ -16,6 +16,13 @@ const style = {
       flexDirection: "row",
       alignItems: "center",
       justifyContent: "space-around",
+      [sizes.down("us")]: {
+        flexDirection: "column",
+        gap: "25px 0px",
+        "& p": {
+          width: "90%",
+        },
+      },
     },
     "& h1": {
       color: "#82BF26",
@@ -48,6 +55,10 @@ const style = {
     },
     [sizes.down("xxs")]: {
       height: "210px",
+    },
+    [sizes.down("us")]: {
+      maxWidth: "65%",
+      height: "250px",
     },
   },
   us: {
@@ -86,6 +97,10 @@ const style = {
       gap: "0px 40px",
       padding: "0px",
     },
+    [sizes.down("us")]: {
+      flexDirection: "column-reverse",
+      gap: "25px 0px",
+    },
   },
   img: {
     width: "6%",
@@ -113,6 +128,10 @@ const style = {
     },
     [sizes.down("xs")]: {
       maxWidth: "55%",
+    },
+    [sizes.down("us")]: {
+      maxWidth: "85%",
+      // height: "250px",
     },
   },
   imgCertificate: {
@@ -142,6 +161,9 @@ const style = {
     },
     [sizes.down("xs")]: {
       fontSize: "15px",
+    },
+    [sizes.down("us")]: {
+      width: "95%",
     },
   },
   history: {

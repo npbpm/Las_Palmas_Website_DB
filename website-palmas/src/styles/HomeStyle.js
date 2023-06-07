@@ -77,11 +77,6 @@ const style = {
         fontSize: "20px",
       },
     },
-    [sizes.down("us")]: {
-      "& p:nth-of-type(1)": {
-        marginTop: "430px",
-      },
-    },
     [sizes.down("xs")]: {
       width: "100%",
     },
@@ -117,6 +112,9 @@ const style = {
     alignItems: "baseline",
     justifyContent: "center",
     backgroundColor: "#E7F2D5",
+    [sizes.down("us")]: {
+      flexWrap: "wrap",
+    },
   },
   whiteServices: {
     display: "flex",
@@ -124,6 +122,9 @@ const style = {
     alignItems: "baseline",
     justifyContent: "center",
     backgroundColor: "#FFFFFF",
+    [sizes.down("us")]: {
+      flexWrap: "wrap",
+    },
   },
 };
 

@@ -55,6 +55,17 @@ const style = {
     [sizes.down("sm")]: {
       gap: "0px 30px",
     },
+    [sizes.down("us")]: {
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "space-around",
+      gap: "25px 0px",
+      marginBottom: "0px",
+    },
+  },
+  phoneNum: {
+    textDecoration: "none",
+    color: "#000000",
   },
   contactCol: {
     display: "flex",
@@ -142,6 +153,9 @@ const style = {
         marginLeft: "0px",
         marginBottom: "0px",
       },
+      [sizes.down("us")]: {
+        height: "300px",
+      },
     },
     [sizes.down("lg")]: {
       width: "50%",
@@ -176,6 +190,10 @@ const style = {
     },
     [sizes.down("xs")]: {
       left: "-45px",
+    },
+    [sizes.down("us")]: {
+      left: "-15px",
+      top: "55px",
     },
   },
 };
