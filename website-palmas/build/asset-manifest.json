@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.04eab3e3.css",
-    "main.js": "/static/js/main.3a07e08f.js",
+    "main.css": "/static/css/main.8cec0162.css",
+    "main.js": "/static/js/main.63b21cbf.js",
     "static/media/Menu.pdf": "/static/media/Menu.4a0a27a266bc55e6365d.pdf",
     "static/media/header2.jpg": "/static/media/header2.cfd2c00589bdd78bd7e7.jpg",
     "static/media/header1.jpg": "/static/media/header1.fee5538b460768a0d3ee.jpg",
@@ -154,11 +154,11 @@
     "static/media/Campamento.png": "/static/media/Campamento.db07ee25a408def63053.png",
     "static/media/cerrar-simbolo-de-boton-circular.png": "/static/media/cerrar-simbolo-de-boton-circular.ba91d08268f9bb14ec17.png",
     "index.html": "/index.html",
-    "main.04eab3e3.css.map": "/static/css/main.04eab3e3.css.map",
-    "main.3a07e08f.js.map": "/static/js/main.3a07e08f.js.map"
+    "main.8cec0162.css.map": "/static/css/main.8cec0162.css.map",
+    "main.63b21cbf.js.map": "/static/js/main.63b21cbf.js.map"
   },
   "entrypoints": [
-    "static/css/main.04eab3e3.css",
-    "static/js/main.3a07e08f.js"
+    "static/css/main.8cec0162.css",
+    "static/js/main.63b21cbf.js"
   ]
 }
