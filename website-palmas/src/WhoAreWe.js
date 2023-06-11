@@ -170,11 +170,11 @@ function WhoAreWe(props) {
               <br />
               Desde sus inicios, Las Palmas de Cocora han sido un restaurante
               familiar, fundado hace más de 45 años por el ganadero Alberto
-              Pérez Puerta y su esposa Maria Teresa Puerta Manzano.Fue el primer
-              restaurante que apareció en el Valle de Cocora impulsando así el
-              turismo y el desarrollo de la región.Hemos sido durante años un
-              negocio familiar, por lo que nos preocupamos por hacer que cada
-              quién se sienta como en su casa
+              Pérez Puerta y su esposa Maria Teresa Puerta Montoya. Fuimos el
+              primer restaurante que apareció en el Valle de Cocora impulsando
+              así el turismo y el desarrollo de la región. Hemos sido durante
+              años un negocio familiar, preocupandonos por hacer que cada quién
+              se sienta como en su casa
               <br />
             </p>
           ) : (
@@ -186,7 +186,7 @@ function WhoAreWe(props) {
               <br />
               Since its beginnings, Las Palmas de Cocora has been a family
               restaurant, founded over 45 years ago by cattle rancher Alberto
-              Pérez Puerta and his wife Maria Teresa Puerta Montoya. It was the
+              Pérez Puerta and his wife Maria Teresa Puerta Montoya. We were the
               first restaurant to appear in the Cocora Valley, thus promoting
               tourism and the development of the region. We have been a family
               business for years, so we care about making everyone feel at home.
