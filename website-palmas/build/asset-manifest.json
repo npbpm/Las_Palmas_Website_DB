@@ -1,19 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.8cec0162.css",
-    "main.js": "/static/js/main.d119a120.js",
+    "main.js": "/static/js/main.2aa8215b.js",
     "static/media/Menu.pdf": "/static/media/Menu.4a0a27a266bc55e6365d.pdf",
     "static/media/header2.jpg": "/static/media/header2.cfd2c00589bdd78bd7e7.jpg",
     "static/media/header1.jpg": "/static/media/header1.fee5538b460768a0d3ee.jpg",
     "static/media/header3.jpg": "/static/media/header3.1da2299c32af7b255547.jpg",
     "static/media/ecosemilla.jpg": "/static/media/ecosemilla.6e444a12de9455f31711.jpg",
     "static/media/Logo vectorizado.svg": "/static/media/Logo vectorizado.e94dd3ac330c648897c8.svg",
+    "static/media/CasitaDelSabor-modified.png": "/static/media/CasitaDelSabor-modified.9c7b801e22d169055008.png",
     "static/media/plan_cabana.jpg": "/static/media/plan_cabana.91361c9afd0775c96df4.jpg",
     "static/media/naturaleza_y_yo.jpg": "/static/media/naturaleza_y_yo.bb693876b4273428d377.jpg",
     "static/media/artesanias2.png": "/static/media/artesanias2.9faf2894ac64373a6461.png",
     "static/media/PALMAS_DE_COCORA_LOGO-1-removebg-preview.png": "/static/media/PALMAS_DE_COCORA_LOGO-1-removebg-preview.1258a7265a30deba286f.png",
     "static/media/Instagram-Icon.png": "/static/media/Instagram-Icon.3d6c8f9c6e4bb23ce95e.png",
     "static/media/promocion.jpg": "/static/media/promocion.86c09ecdf31ac58c36d4.jpg",
+    "static/media/glampingUnified.png": "/static/media/glampingUnified.99f26ce0c5d9ef212ca8.png",
     "static/media/valley-ge1efec97d_1920.jpg": "/static/media/valley-ge1efec97d_1920.36e0e9c1531122f878b3.jpg",
     "static/media/romance.jpg": "/static/media/romance.31b97bb120ba1a5d6ad4.jpg",
     "static/media/valle-de-cocora-g982a52cf0_1920.jpg": "/static/media/valle-de-cocora-g982a52cf0_1920.278311ee966874deb713.jpg",
@@ -155,10 +157,10 @@
     "static/media/cerrar-simbolo-de-boton-circular.png": "/static/media/cerrar-simbolo-de-boton-circular.ba91d08268f9bb14ec17.png",
     "index.html": "/index.html",
     "main.8cec0162.css.map": "/static/css/main.8cec0162.css.map",
-    "main.d119a120.js.map": "/static/js/main.d119a120.js.map"
+    "main.2aa8215b.js.map": "/static/js/main.2aa8215b.js.map"
   },
   "entrypoints": [
     "static/css/main.8cec0162.css",
-    "static/js/main.d119a120.js"
+    "static/js/main.2aa8215b.js"
   ]
 }

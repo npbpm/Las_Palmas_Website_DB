@@ -20,7 +20,7 @@ function CofeeHouse(props) {
 
       <div className={classes.content}>
         <div className={classes.images}>
-          <img
+          {/*           <img
             className={classes.firstImage}
             src={require("./images/CasitaDelSabor.jpeg")}
             alt="Error: Not found"
@@ -28,6 +28,11 @@ function CofeeHouse(props) {
           <img
             className={classes.roundedImage}
             src={require("./images/coffee-g169851bf0_1280.jpg")}
+            alt="Error: Not found"
+          /> */}
+          <img
+            className={classes.image}
+            src={require("./images/CasitaDelSabor-modified.png")}
             alt="Error: Not found"
           />
         </div>

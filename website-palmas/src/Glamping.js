@@ -78,7 +78,7 @@ function Glamping(props) {
       )}
       <div className={classes.content}>
         <div className={classes.images}>
-          <img
+          {/*           <img
             src={require("./images/glamping18.jpeg")}
             alt="Couldn't charge the image"
             className={classes.firstImg}
@@ -87,6 +87,11 @@ function Glamping(props) {
             src={require("./images/glamping21.jpeg")}
             alt="Couldn't charge the image"
             className={classes.secondImg}
+          /> */}
+          <img
+            src={require("./images/glampingUnified.png")}
+            alt="Couldn't charge the image"
+            className={classes.image}
           />
         </div>
         <div className={classes.text}>

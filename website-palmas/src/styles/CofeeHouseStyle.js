@@ -79,7 +79,7 @@ const style = {
     },
   },
   images: {
-    width: "40%",
+    width: "50%",
     display: "flex",
     flexDirection: "column",
     alignSelf: "stretch",
@@ -101,6 +101,9 @@ const style = {
       width: "90%",
       marginBottom: "60px",
     },
+  },
+  image: {
+    maxWidth: "100%",
   },
   firstImage: {
     maxWidth: "100%",

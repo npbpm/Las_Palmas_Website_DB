@@ -5,7 +5,7 @@ const style = {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-between",
+    justifyContent: "space-evenly",
     paddingBottom: "300px",
     [sizes.down("md")]: {
       paddingBottom: "200px",
@@ -84,7 +84,7 @@ const style = {
     },
   },
   images: {
-    width: "50%",
+    width: "55%",
     height: "100%",
     display: "flex",
     flexDirection: "row",
@@ -93,6 +93,9 @@ const style = {
     [sizes.down("xs")]: {
       width: "75%",
     },
+  },
+  image: {
+    maxWidth: "100%",
   },
   text: {
     width: "40%",
