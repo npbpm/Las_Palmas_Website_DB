@@ -87,7 +87,6 @@ function Bookings(props) {
                 id="Name"
                 name="Name"
                 label={name}
-                placeholder="Ex: Rosana Burbano"
                 type="text"
                 variant="standard"
                 onChange={handleChange}
