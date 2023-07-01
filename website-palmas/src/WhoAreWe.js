@@ -170,10 +170,10 @@ function WhoAreWe(props) {
               <br />
               Desde sus inicios, Las Palmas de Cocora han sido un restaurante
               familiar, fundado hace más de 45 años por el ganadero Alberto
-              Pérez Puerta y su esposa Maria Teresa Puerta Montoya. Fuimos el
+              Pérez Salazar y su esposa Maria Teresa Puerta Montoya. Fuimos el
               primer restaurante que apareció en el Valle de Cocora impulsando
               así el turismo y el desarrollo de la región. Hemos sido durante
-              años un negocio familiar, preocupandonos por hacer que cada quién
+              años un negocio familiar, preocupándonos por hacer que cada quien
               se sienta como en su casa
               <br />
             </p>
@@ -186,10 +186,11 @@ function WhoAreWe(props) {
               <br />
               Since its beginnings, Las Palmas de Cocora has been a family
               restaurant, founded over 45 years ago by cattle rancher Alberto
-              Pérez Puerta and his wife Maria Teresa Puerta Montoya. We were the
-              first restaurant to appear in the Cocora Valley, thus promoting
-              tourism and the development of the region. We have been a family
-              business for years, so we care about making everyone feel at home.
+              Pérez Salazar and his wife Maria Teresa Puerta Montoya. We were
+              the first restaurant to appear in the Cocora Valley, thus
+              promoting tourism and the development of the region. We have been
+              a family business for years, so we care about making everyone feel
+              at home.
             </p>
           )}
         </div>
@@ -212,7 +213,7 @@ function WhoAreWe(props) {
               Si no cuentan con vehículo personal, siempre pueden optar por los
               jeeps que suben al valle,
               <br />
-              estos los dejaran justo en al entrada del restaurante.
+              estos los dejarán justo en al entrada del restaurante.
             </p>
           ) : (
             <p>
@@ -248,9 +249,9 @@ function WhoAreWe(props) {
         {language === "spanish" ? (
           <p className={classes.ecoFooter}>
             Todos nuestros esfuerzos siempre han sido y siempre serán para hacer
-            de este un lugar acogedor y poder pasar un momento en familia
-            impregnandose de la naturaleza y de la hermosura del Valle, causando
-            el menor impacto en el medio ambiente
+            de este un lugar acogedor para pasar un momento agradable en
+            familia, impregnándose de la naturaleza y de la hermosura del Valle,
+            causando el menor impacto en el medio ambiente
           </p>
         ) : (
           <p className={classes.ecoFooter}>

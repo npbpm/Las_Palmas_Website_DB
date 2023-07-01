@@ -28,7 +28,7 @@ const words = {
       "Give yourself a treat inside the restaurant with a romantic environment around a hot fireplace",
     nature: "Natural",
     natureText:
-      "Embrace the nature while you are sitting in our rustic tables under the troll's garden trees, enjoy your meal while amiring the geese dance in the tranquility of our lake.",
+      "Embrace the nature while you are sitting in our rustic tables under the troll's garden trees, enjoy your meal while admiring the geese dance in the tranquility of our lake.",
     cultural: "Flokloric",
     culturalText:
       "If what you are looking for is a traditional Quindian experience, enjoy our Pagoda with its tables made out of regional trees, all while breathing the purest of airs and the scent of a good cup of coffee from our coffee house.",

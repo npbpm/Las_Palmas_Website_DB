@@ -227,7 +227,7 @@ const style = {
     },
   },
   rightBtn: {
-    right: "-2.7rem",
+    right: "-3.5rem",
     color: "#D91604",
     "&:hover": {
       cursor: "pointer",

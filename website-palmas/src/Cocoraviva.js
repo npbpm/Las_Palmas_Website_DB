@@ -64,12 +64,12 @@ function Cocoraviva(props) {
       <div className={classes.content}>
         {language === "spanish" ? (
           <p>
-            Somos un empresa de talla humana, fundada hace ya 5 años, contamos
-            con una gran variedad de plantas para todos los gustos.
+            Somos un empresa de talla humana, fundada hace ya cinco años,
+            contamos con una gran variedad de plantas para todos los gustos.
             <br />
             <br />
-            Encuentra arreglos florales de todos los tamaños, hechos 100% a
-            mano.
+            Ordene su arreglo con plantas vivas, para celebraciones especiales o
+            decoración.
             <br />
             <br />
             Venga y aproveche la oportunidad de llevarse con usted un recuerdo
@@ -78,11 +78,12 @@ function Cocoraviva(props) {
           </p>
         ) : (
           <p>
-            We are a small business with more than 5 years of experience in the
-            flowers field, we have a great variety of flowers and plants for
+            We are a small business with more than five years of experience in
+            the flowers field, we have a great variety of flowers and plants for
             every taste.
             <br /> <br />
-            Find here flower arrangements of every size, 100% hand made.
+            Order your arrangement with live plants, for special celebrations or
+            decoration.
             <br /> <br />
             Comme and take advantage of this opportunity to bring back home a
             memory with the special touch of the{" "}

@@ -13,7 +13,6 @@ import Lodging from "./Lodging";
 import Camping from "./Camping";
 import Games from "./Games";
 import Horsebackriding from "./Horsebackriding";
-import Regionalcrafts from "./Regionalcrafts";
 import Glamping from "./Glamping";
 import Cocoraviva from "./Cocoraviva";
 import Packages from "./Packages";

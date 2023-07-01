@@ -157,11 +157,11 @@ function Bookings(props) {
                 <h4>WhatsApp</h4>
                 <p>
                   <a className={classes.phoneNum} href="tel:313 732 1738">
-                    313 732 1738
+                    +57 313 732 1738
                   </a>{" "}
                   -{" "}
                   <a className={classes.phoneNum} href="tel:310 455 5400">
-                    310 455 5400
+                    +57 310 455 5400
                   </a>
                 </p>
               </div>

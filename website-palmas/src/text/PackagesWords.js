@@ -18,7 +18,7 @@ const words = {
       "Ven y disfruta del eco-hotel Las Palmas de Cocora, incluso si no tienes un plan, aquí encontrarás un menú con diferentes preparaciones de trucha, carnes y algo típico, paisajes hermosos y una experiencia inolvidable.",
     friendsTitle: "Plan Básico Amigos",
     friendsText:
-      "Este plan está dirigido para las personas que quieran vivir una experiencia llena de diversión y aventuras.",
+      "Este plan está dirigido a las personas que quieran vivir una experiencia llena de diversión y aventuras.",
     friendsArrival: "Bienvenida con aperitivos",
     friendsLunch: "Almuerzo",
     friendsRefreshment: "Refrigerio",

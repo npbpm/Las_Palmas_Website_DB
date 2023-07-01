@@ -36,22 +36,22 @@ function Horsebackriding(props) {
                 actividades ecológicas para que disfrute de una experiencia
                 única durante su visita al Valle de Cocora.
                 <br />
-                Para los amantes del deporte y de la naturaleza, Las Palmas les
-                ofrece una caminata por un sendero privado, aquí podran
+                Para los amantes del deporte y de la naturaleza, Las Palmas de
+                Cocora ofrece una caminata por un sendero privado, aquí podran
                 aprovechar de esta oportunidad para admirar la belleza del
                 paisaje, interactuar con la fauna del Valle y terminar con una
                 visita a nuestra cascada.
               </p>
             ) : (
               <p>
-                In Las Palmas restaurant, we oofer you various eco-friendly
+                In Las Palmas restaurant, we offer you various eco-friendly
                 activities for you to enjoy of a one in a lifetime experience
                 during your visit to the Cocora Valley.
                 <br />
-                For those sports and nature lovers, Las Palmas offers you a hike
-                in our private path, during this hike you can admire the beauty
-                of the Valley, interact with the Valley's wildlife and end with
-                a visit to our own waterfall.
+                For those sports and nature lovers, Las Palmas de Cocora offers
+                you a hike in our private path, during this hike you can admire
+                the beauty of the Valley, interact with the Valley's wildlife
+                and end with a visit to our own waterfall.
               </p>
             )}
           </div>

@@ -305,7 +305,7 @@ const style = {
     height: "50px",
     position: "relative",
     top: "-90px",
-    right: "140px",
+    right: "180px",
     "&:hover": {
       cursor: "pointer",
     },

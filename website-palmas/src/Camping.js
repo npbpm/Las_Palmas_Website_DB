@@ -17,7 +17,7 @@ const images = [
     url: "./images/camping3.jpeg",
   },
   {
-    url: "./images/campingFull.jpeg",
+    url: "./images/campingFull.jpg",
   },
 ];
 
@@ -34,10 +34,8 @@ function Camping(props) {
     pagoda,
     bathrooms,
     showers,
-    horsemen,
     sink,
     firewood,
-    firewoodPrice,
     campingPrice,
     ownCampingEquipment,
     note,
@@ -65,17 +63,12 @@ function Camping(props) {
               <li>{pagoda}</li>
               <li>{bathrooms}</li>
               <li>{showers}</li>
-              <li>{horsemen}</li>
               <li>{sink}</li>
               <li>{firewood}</li>
             </div>
           </ul>
           <ul className={classes.list}>
             <div style={{ marginRight: "auto", marginLeft: "auto" }}>
-              <li>
-                <span style={{ fontWeight: "900" }}>{firewoodPrice}</span>
-                <span style={{ textDecoration: "underline" }}>$20.000</span>
-              </li>
               <li>
                 <span style={{ fontWeight: "900" }}>{campingPrice}</span>
                 <span style={{ textDecoration: "underline" }}>$20.000</span>,

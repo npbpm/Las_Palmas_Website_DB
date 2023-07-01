@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.8cec0162.css",
-    "main.js": "/static/js/main.b110e5f4.js",
-    "static/media/Menu.pdf": "/static/media/Menu.4a0a27a266bc55e6365d.pdf",
+    "main.js": "/static/js/main.b2a1fa73.js",
+    "static/media/Menu.pdf": "/static/media/Menu.98fbd2535490bc6b2d2a.pdf",
     "static/media/header2.jpg": "/static/media/header2.cfd2c00589bdd78bd7e7.jpg",
     "static/media/header1.jpg": "/static/media/header1.fee5538b460768a0d3ee.jpg",
     "static/media/header3.jpg": "/static/media/header3.1da2299c32af7b255547.jpg",
@@ -10,11 +10,8 @@
     "static/media/Logo vectorizado.svg": "/static/media/Logo vectorizado.e94dd3ac330c648897c8.svg",
     "static/media/CasitaDelSabor-modified.png": "/static/media/CasitaDelSabor-modified.9c7b801e22d169055008.png",
     "static/media/plan_cabana.jpg": "/static/media/plan_cabana.91361c9afd0775c96df4.jpg",
-    "static/media/naturaleza_y_yo.jpg": "/static/media/naturaleza_y_yo.bb693876b4273428d377.jpg",
-    "static/media/artesanias2.png": "/static/media/artesanias2.9faf2894ac64373a6461.png",
     "static/media/PALMAS_DE_COCORA_LOGO-1-removebg-preview.png": "/static/media/PALMAS_DE_COCORA_LOGO-1-removebg-preview.1258a7265a30deba286f.png",
     "static/media/Instagram-Icon.png": "/static/media/Instagram-Icon.3d6c8f9c6e4bb23ce95e.png",
-    "static/media/promocion.jpg": "/static/media/promocion.86c09ecdf31ac58c36d4.jpg",
     "static/media/glampingUnified.png": "/static/media/glampingUnified.99f26ce0c5d9ef212ca8.png",
     "static/media/valley-ge1efec97d_1920.jpg": "/static/media/valley-ge1efec97d_1920.36e0e9c1531122f878b3.jpg",
     "static/media/romance.jpg": "/static/media/romance.31b97bb120ba1a5d6ad4.jpg",
@@ -38,8 +35,10 @@
     "static/media/salento.jpg": "/static/media/salento.cd7e4ac033a0563167eb.jpg",
     "static/media/artesanias.jpeg": "/static/media/artesanias.baffe8c0c5bbe9d19068.jpeg",
     "static/media/campingFull.jpeg": "/static/media/campingFull.c627826ba96867f10a16.jpeg",
+    "static/media/campingFull.jpg": "/static/media/campingFull.3b3de00e8cf3fb179841.jpg",
     "static/media/FrenteRestaurante.jpeg": "/static/media/FrenteRestaurante.35602f7b3297f572b27d.jpeg",
     "static/media/cabana8.jpeg": "/static/media/cabana8.598964b4bba533ca20c0.jpeg",
+    "static/media/caballos1.jpeg": "/static/media/caballos1.28a03a8702556d8b5121.jpeg",
     "static/media/cabana6.jpeg": "/static/media/cabana6.b60ad8452441b57df1fb.jpeg",
     "static/media/viveroMata7.jpeg": "/static/media/viveroMata7.d8c1a664cfad83a42fd1.jpeg",
     "static/media/viveroMata4.jpeg": "/static/media/viveroMata4.229f8e6b5b5868d73c19.jpeg",
@@ -85,7 +84,6 @@
     "static/media/postre.jpeg": "/static/media/postre.adb0597fa7eaec6a78e3.jpeg",
     "static/media/glamping18.jpeg": "/static/media/glamping18.6d027ae08b0cbbfa09b8.jpeg",
     "static/media/ternero1.jpeg": "/static/media/ternero1.e1563d0db3d9557a758e.jpeg",
-    "static/media/caballos1.jpeg": "/static/media/caballos1.0927bede852757cf7469.jpeg",
     "static/media/Who-are-we.jpeg": "/static/media/Who-are-we.5ed170575b6973b9b894.jpeg",
     "static/media/ShadedLarch.ttf": "/static/media/ShadedLarch.b6ac1f0df29e0b6c5076.ttf",
     "static/media/vivero7.jpeg": "/static/media/vivero7.df9186f779ad9fdfb8d2.jpeg",
@@ -157,10 +155,10 @@
     "static/media/cerrar-simbolo-de-boton-circular.png": "/static/media/cerrar-simbolo-de-boton-circular.ba91d08268f9bb14ec17.png",
     "index.html": "/index.html",
     "main.8cec0162.css.map": "/static/css/main.8cec0162.css.map",
-    "main.b110e5f4.js.map": "/static/js/main.b110e5f4.js.map"
+    "main.b2a1fa73.js.map": "/static/js/main.b2a1fa73.js.map"
   },
   "entrypoints": [
     "static/css/main.8cec0162.css",
-    "static/js/main.b110e5f4.js"
+    "static/js/main.b2a1fa73.js"
   ]
 }

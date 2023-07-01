@@ -17,9 +17,6 @@ const images = [
     url: "./images/ternero1.jpeg",
   },
   {
-    url: "./images/gansos1.jpeg",
-  },
-  {
     url: "./images/caballos1.jpeg",
   },
 ];
