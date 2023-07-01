@@ -32,7 +32,11 @@ function Games(props) {
   return (
     <div className={classes.container}>
       <img
-        src={require("./images/Atracciones.png")}
+        src={
+          language === "spanish"
+            ? require("./images/Atracciones.png")
+            : require("./images/Attractions.png")
+        }
         className={classes.titleImg}
       />
       <div className={classes.slideContainer}>

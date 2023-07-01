@@ -14,7 +14,11 @@ function CofeeHouse(props) {
   return (
     <div className={classes.container}>
       <img
-        src={require("./images/Casita del Sabor.png")}
+        src={
+          language === "spanish"
+            ? require("./images/Casita del Sabor.png")
+            : require("./images/house of flavor.png")
+        }
         className={classes.titleImg}
       />
 

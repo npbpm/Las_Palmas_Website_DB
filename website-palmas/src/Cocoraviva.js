@@ -57,7 +57,14 @@ function Cocoraviva(props) {
 
   return (
     <div className={classes.container}>
-      <img src={require("./images/Vivero.png")} className={classes.titleImg} />
+      <img
+        src={
+          language === "spanish"
+            ? require("./images/Vivero.png")
+            : require("./images/Nursery.png")
+        }
+        className={classes.titleImg}
+      />
       <div className={classes.slideContainer}>
         <Slideshow slideImages={images} width={"700px"} height={"500px"} />
       </div>

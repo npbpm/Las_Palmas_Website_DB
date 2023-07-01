@@ -46,7 +46,11 @@ function Restaurant(props) {
   return (
     <div className={classes.container}>
       <img
-        src={require("./images/Restaurante.png")}
+        src={
+          language === "spanish"
+            ? require("./images/Restaurante.png")
+            : require("./images/Restaurant.png")
+        }
         className={classes.titleImg}
         alt="Couldn't charge the image"
       />

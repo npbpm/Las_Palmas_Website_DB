@@ -46,7 +46,11 @@ function Lodging(props) {
   return (
     <div className={classes.container}>
       <img
-        src={require("./images/Hospedaje.png")}
+        src={
+          language === "spanish"
+            ? require("./images/Hospedaje.png")
+            : require("./images/Lodging.png")
+        }
         alt="Hospedaje"
         className={classes.titleImg}
       />

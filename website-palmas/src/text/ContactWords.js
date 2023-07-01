@@ -20,7 +20,7 @@ const words = {
     name: "Name",
     email: "Email",
     description:
-      "We value your feedback and are here to address any questions or concerns you may have. Please don't hesitate to contact us; we are ready to provide you with the best service!",
+      "We value your feedback and are here to address any questions or concerns you may have. Please don't hesitate to contact us, we are ready to provide you with the best service!",
     phone: "Phone Number",
     city: "City",
     message: "Message",

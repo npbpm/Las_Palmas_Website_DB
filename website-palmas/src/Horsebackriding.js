@@ -15,7 +15,11 @@ function Horsebackriding(props) {
   return (
     <div className={classes.container}>
       <img
-        src={require("./images/Paseos ecológicos.png")}
+        src={
+          language === "spanish"
+            ? require("./images/Paseos ecológicos.png")
+            : require("./images/Ecological tours.png")
+        }
         className={classes.titleImg}
         alt="Couldn't charge the image"
       />

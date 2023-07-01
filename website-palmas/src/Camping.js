@@ -45,7 +45,11 @@ function Camping(props) {
   return (
     <div className={classes.container}>
       <img
-        src={require("./images/Campamento.png")}
+        src={
+          language === "spanish"
+            ? require("./images/Campamento.png")
+            : require("./images/Camp.png")
+        }
         className={classes.titleImg}
         alt="Couldn't charge the image"
       />
