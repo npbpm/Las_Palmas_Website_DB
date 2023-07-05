@@ -19,6 +19,9 @@ const images = [
   {
     url: "./images/caballos1.jpeg",
   },
+  {
+    url: "./images/lagoGansos.jpeg",
+  },
 ];
 
 function Games(props) {

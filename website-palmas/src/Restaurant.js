@@ -73,7 +73,7 @@ function Restaurant(props) {
             <a
               className={classes.menuItem}
               href={Menu}
-              target="_ blank"
+              target="_blank"
               rel="noreferrer"
             >
               <img
@@ -87,7 +87,7 @@ function Restaurant(props) {
               <a
                 className={classes.menuItem}
                 href={Menu}
-                target="_ blank"
+                target="_blank"
                 rel="noreferrer"
               >
                 {menu}
