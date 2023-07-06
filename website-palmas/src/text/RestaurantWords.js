@@ -14,7 +14,7 @@ const words = {
       "Déjese llevar por la naturaleza sentado en mesas rústicas bajo los árboles en el jardín de los gnomos disfrutando de un exquisito plato mientras apreciamos la danza de los gansos en la tranquilidad de nuestro lago.",
     cultural: "Folclór Quindiano",
     culturalText:
-      "Si desea un ambiente folclórico disfrute de la pagoda, con sus mesas de tronco de árbol, sintiendo la pureza del aire y el aroma de una buena taza de café de la casita quindiana.",
+      "Si desea un ambiente folclórico disfrute del invernadero, con sus mesas de tronco de árbol, sintiendo la pureza del aire y el aroma de una buena taza de café de la casita quindiana.",
   },
   english: {
     title: "Restaurant",
@@ -31,7 +31,7 @@ const words = {
       "Embrace the nature while you are sitting in our rustic tables under the troll's garden trees, enjoy your meal while admiring the geese dance in the tranquility of our lake.",
     cultural: "Flokloric",
     culturalText:
-      "If what you are looking for is a traditional Quindian experience, enjoy our Pagoda with its tables made out of regional trees, all while breathing the purest of airs and the scent of a good cup of coffee from our coffee house.",
+      "If what you are looking for is a traditional Quindian experience, enjoy our greenhouse with its tables made out of regional trees, all while breathing the purest of airs and the scent of a good cup of coffee from our coffee house.",
   },
 };
 
