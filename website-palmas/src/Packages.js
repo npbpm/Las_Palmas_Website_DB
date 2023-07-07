@@ -112,10 +112,7 @@ function Packages(props) {
             </Link>
           </div>
           <div className={classes.package}>
-            <img
-              alt="Error: Not Found"
-              src={require("./images/women-1487825_960_720.jpg")}
-            />
+            <img alt="Error: Not Found" src={require("./images/amigos.jpg")} />
             <Typography variant="h4">{friendsTitle}</Typography>
             <div className={classes.cardText}>
               <p style={{ background: "none", boxShadow: "none" }}>

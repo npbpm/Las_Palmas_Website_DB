@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8cec0162.css",
-    "main.js": "/static/js/main.925ce8e9.js",
+    "main.js": "/static/js/main.dda345cb.js",
     "static/media/Menu.pdf": "/static/media/Menu.98fbd2535490bc6b2d2a.pdf",
     "static/media/header2.jpg": "/static/media/header2.cfd2c00589bdd78bd7e7.jpg",
     "static/media/header1.jpg": "/static/media/header1.fee5538b460768a0d3ee.jpg",
@@ -23,6 +23,7 @@
     "static/media/atracciones1.jpeg": "/static/media/atracciones1.bc5780e8b97df32f7fba.jpeg",
     "static/media/gansos1.jpeg": "/static/media/gansos1.8040d1c1b29ba8f54adc.jpeg",
     "static/media/cabana11.jpeg": "/static/media/cabana11.3eb8cfae7094434a4855.jpeg",
+    "static/media/amigos.jpg": "/static/media/amigos.6c94cd53073c35b47010.jpg",
     "static/media/cabana10.jpeg": "/static/media/cabana10.7d91dfe416869bdd730c.jpeg",
     "static/media/estiloPropio.jpeg": "/static/media/estiloPropio.3031ccee0fd5dad26a5e.jpeg",
     "static/media/vivero6.jpeg": "/static/media/vivero6.3c3104327e2727adb47d.jpeg",
@@ -165,10 +166,10 @@
     "static/media/cerrar-simbolo-de-boton-circular.png": "/static/media/cerrar-simbolo-de-boton-circular.ba91d08268f9bb14ec17.png",
     "index.html": "/index.html",
     "main.8cec0162.css.map": "/static/css/main.8cec0162.css.map",
-    "main.925ce8e9.js.map": "/static/js/main.925ce8e9.js.map"
+    "main.dda345cb.js.map": "/static/js/main.dda345cb.js.map"
   },
   "entrypoints": [
     "static/css/main.8cec0162.css",
-    "static/js/main.925ce8e9.js"
+    "static/js/main.dda345cb.js"
   ]
 }
