@@ -75,7 +75,7 @@ function Camping(props) {
             <div style={{ marginRight: "auto", marginLeft: "auto" }}>
               <li>
                 <span style={{ fontWeight: "900" }}>{campingPrice}</span>
-                <span style={{ textDecoration: "underline" }}>$20.000</span>,
+                <span style={{ textDecoration: "underline" }}>$25.000</span>,
                 {ownCampingEquipment}
               </li>
             </div>
